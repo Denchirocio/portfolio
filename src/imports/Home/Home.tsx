@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import imgBanner from "./Banner.png";
+import FadeIn from "../../app/components/FadeIn";
 import svgPaths from "./svg-ek4j21yj9u";
 import imgWireframe1 from "./483d2b5fb9135af80493b63eb9d11b5a20e88c06.png";
 import imgAccesibility1 from "./8560324619c7e6225750fc6c0ac0844adc4fb439.png";
@@ -189,7 +190,7 @@ function Frame57() {
 function Frame10() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col h-full items-start min-w-px relative">
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[16px] text-black w-full">My name is Denise, but my friends call me Denchi. I’m a UX Designer with strong experience in research and user experience. Over the past six years, I’ve focused on understanding products, users, and how they interact—helping organizations align user needs with business goals through thoughtful design.</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[16px] text-black w-full">My name is Denise, but my friends call me Denchi. I’m a Sr. Product Designer with strong experience in research and user experience. Over the past six years, I’ve focused on understanding products, users, and how they interact—helping organizations align user needs with business goals through thoughtful design.</p>
     </div>
   );
 }
@@ -223,7 +224,7 @@ function Frame59() {
 
 function Frame12() {
   return (
-    <div className="content-stretch flex items-center justify-between relative shrink-0 w-full">
+    <div className="content-stretch flex items-center justify-between gap-[80px] relative shrink-0 w-full">
       <Frame57 />
       <Frame59 />
     </div>
@@ -531,21 +532,27 @@ function Title2() {
 function Frame13() {
   return (
     <div className="content-stretch flex gap-[42px] items-center relative shrink-0 w-full">
-      <Link to="/payana" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 6">
-        <Group11 />
-        <Title />
-        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[16px] w-[365px]">Led the redesign of the Payana app, optimizing core user flows to simplify financial management and improve usability.</p>
-        <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[14px] text-black w-[365px]">Client Project · 2025</p>
-      </Link>
-      <div className="content-stretch flex flex-col items-center relative shrink-0 w-[366px]" data-name="Component 6">
-        <ProjectCard />
-      </div>
-      <Link to="/bookup" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 7">
-        <Group13 />
-        <Title2 />
-        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[16px] w-[365px]">Designed an accessibility-focused experience for an online bookstore, improving navigation and usability for diverse users.</p>
-        <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[14px] text-black w-[365px]">UTN Project · 2022</p>
-      </Link>
+      <FadeIn delay={0} className="shrink-0 w-[366px]">
+        <Link to="/payana" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative w-full no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 6">
+          <Group11 />
+          <Title />
+          <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[16px] w-[365px]">Led the redesign of the Payana app, optimizing core user flows to simplify financial management and improve usability.</p>
+          <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[14px] text-black w-[365px]">Client Project · 2025</p>
+        </Link>
+      </FadeIn>
+      <FadeIn delay={0.15} className="shrink-0 w-[366px]">
+        <div className="content-stretch flex flex-col items-center relative w-full" data-name="Component 6">
+          <ProjectCard />
+        </div>
+      </FadeIn>
+      <FadeIn delay={0.3} className="shrink-0 w-[366px]">
+        <Link to="/bookup" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative w-full no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 7">
+          <Group13 />
+          <Title2 />
+          <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[16px] w-[365px]">Designed an accessibility-focused experience for an online bookstore, improving navigation and usability for diverse users.</p>
+          <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[14px] text-black w-[365px]">UTN Project · 2022</p>
+        </Link>
+      </FadeIn>
     </div>
   );
 }
@@ -1290,15 +1297,19 @@ function Frame56() {
 function Frame61() {
   return (
     <div className="content-stretch flex flex-col gap-[80px] items-start relative shrink-0 w-full">
-      <Frame23 />
-      <Frame56 />
+      <FadeIn>
+        <Frame23 />
+      </FadeIn>
+      <FadeIn delay={0.15}>
+        <Frame56 />
+      </FadeIn>
     </div>
   );
 }
 
 function Frame41() {
   return (
-    <div className="content-stretch flex flex-col items-center justify-center mx-auto mt-[76px] mb-[80px] relative w-[1186px]">
+    <div className="content-stretch flex flex-col items-center justify-center mx-auto mt-[88px] mb-[80px] relative w-[1186px]">
       <Frame61 />
     </div>
   );
@@ -1341,7 +1352,7 @@ function SpeechBalloon1() {
 
 function Frame52() {
   return (
-    <div className="bg-black content-stretch flex gap-[10px] items-center justify-center px-[16px] py-[10px] relative rounded-[100px] shrink-0">
+    <div className="bg-black content-stretch flex gap-[10px] items-center justify-center px-[16px] py-[10px] relative rounded-[100px] shrink-0 hover:bg-[#333333] transition-colors cursor-pointer">
       <div aria-hidden="true" className="absolute border border-black border-solid inset-0 pointer-events-none rounded-[100px]" />
       <SpeechBalloon1 />
       <Link to="/about" className="block font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[20px] text-white whitespace-nowrap no-underline">
@@ -1362,9 +1373,18 @@ function Frame51() {
 function Frame45() {
   return (
     <div className="content-stretch flex gap-[24px] items-center relative shrink-0">
-      <Link to="/" className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap no-underline hover:opacity-70 transition-opacity">Home</Link>
+      <span className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap cursor-default">Home</span>
       <Link to="/about" className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap no-underline hover:opacity-70 transition-opacity">About me</Link>
-      <Frame51 />
+      <div className="flex items-center gap-[8px]">
+        <a
+          href="/CV- Denise Chiapin EN - Classic.pdf"
+          download
+          className="font-['Inter:Regular',sans-serif] font-normal text-[20px] text-black border border-black px-[16px] py-[6px] rounded-[100px] whitespace-nowrap hover:bg-black hover:text-white transition-colors"
+        >
+          My CV
+        </a>
+        <Frame51 />
+      </div>
     </div>
   );
 }
@@ -1443,7 +1463,7 @@ function Frame53() {
             <span className="leading-[normal] text-[16px]">about creating beautifu</span>
             <span className="leading-[normal] text-[20px]">l</span>
             <span className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] text-[20px]">{` `}</span>
-            <span className="font-['Monomakh',sans-serif] leading-[normal] text-[24px]">user friendly product</span>
+            <span className="font-['Monomakh',sans-serif] leading-[normal] text-[24px]">user friendly products</span>
           </p>
           <Pencil />
         </div>

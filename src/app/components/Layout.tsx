@@ -1,5 +1,6 @@
 import { Outlet, Link, useLocation } from "react-router";
 import AppFooter from "./AppFooter";
+import ScrollToTop from "./ScrollToTop";
 
 export default function Layout() {
   const location = useLocation();
@@ -8,6 +9,7 @@ export default function Layout() {
 
   return (
     <div className="min-h-screen bg-white">
+      <ScrollToTop />
       <header className="sticky top-0 z-50 bg-white border-b border-[#EBEBEB]">
         <div className="max-w-[1440px] mx-auto px-[80px] py-[24px]">
           <nav className="flex items-center justify-between">
@@ -31,6 +33,13 @@ export default function Layout() {
               >
                 About me
               </Link>
+              <a
+                href="/CV- Denise Chiapin EN - Classic.pdf"
+                download
+                className="font-['Inter:Regular',sans-serif] font-normal text-[16px] text-black border border-black px-[16px] py-[6px] rounded-[100px] hover:bg-black hover:text-white transition-colors"
+              >
+                My CV
+              </a>
               <a
                 href="#"
                 className="bg-black text-white px-[24px] py-[12px] rounded-[100px] font-['Inter:Regular',sans-serif] font-normal text-[16px] hover:bg-[#333] transition-colors"

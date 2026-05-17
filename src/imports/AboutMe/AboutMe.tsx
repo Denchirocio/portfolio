@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import FadeIn from "../../app/components/FadeIn";
 import imgBannerAboutMe from "./About.png";
 import imgThings from "./things.png";
 import svgPaths from "./svg-pw6w0vxexd";
@@ -66,11 +67,11 @@ function SpeechBalloon() {
 
 function Frame1() {
   return (
-    <div className="bg-black content-stretch flex gap-[10px] items-center justify-center px-[16px] py-[10px] relative rounded-[100px] shrink-0">
+    <div className="bg-black content-stretch flex gap-[10px] items-center justify-center px-[16px] py-[10px] relative rounded-[100px] shrink-0 hover:bg-[#333333] transition-colors cursor-pointer">
       <div aria-hidden="true" className="absolute border border-black border-solid inset-0 pointer-events-none rounded-[100px]" />
       <SpeechBalloon />
-      <a className="block font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[20px] text-white whitespace-nowrap" href="https://wa.me/5491126231993" target="_blank">
-        <p className="cursor-pointer leading-[normal]">Press start!</p>
+      <a className="block font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[20px] text-white whitespace-nowrap" href="/carta-de-presentacion.pdf" download>
+        <p className="cursor-pointer leading-[normal]">Mi carta de presentación</p>
       </a>
     </div>
   );
@@ -891,7 +892,7 @@ function Frame24() {
 
 function Frame17() {
   return (
-    <div className="-translate-x-1/2 absolute content-stretch flex flex-col items-start left-1/2 top-[145px] w-[1245px]">
+    <div className="-translate-x-1/2 absolute content-stretch flex flex-col items-start left-1/2 top-[160px] w-[1245px]">
       <Frame24 />
     </div>
   );
@@ -1470,7 +1471,7 @@ function SpeechBalloon1() {
 
 function Frame10() {
   return (
-    <div className="bg-black content-stretch flex gap-[10px] items-center justify-center px-[16px] py-[10px] relative rounded-[100px] shrink-0">
+    <div className="bg-black content-stretch flex gap-[10px] items-center justify-center px-[16px] py-[10px] relative rounded-[100px] shrink-0 hover:bg-[#333333] transition-colors cursor-pointer">
       <div aria-hidden="true" className="absolute border border-black border-solid inset-0 pointer-events-none rounded-[100px]" />
       <SpeechBalloon1 />
       <a className="block font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[20px] text-white whitespace-nowrap" href="https://www.linkedin.com/in/denisechiapin/?skipRedirect=true" target="_blank">
@@ -1493,7 +1494,16 @@ function Frame9() {
     <div className="content-stretch flex gap-[24px] items-center relative shrink-0">
       <Link to="/" className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] no-underline not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap hover:opacity-70 transition-opacity">Home</Link>
       <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap">About me</p>
-      <Frame18 />
+      <div className="flex items-center gap-[8px]">
+        <a
+          href="/CV- Denise Chiapin EN - Classic.pdf"
+          download
+          className="font-['Inter:Regular',sans-serif] font-normal text-[20px] text-black border border-black px-[16px] py-[6px] rounded-[100px] whitespace-nowrap hover:bg-black hover:text-white transition-colors"
+        >
+          My CV
+        </a>
+        <Frame18 />
+      </div>
     </div>
   );
 }
@@ -1572,7 +1582,7 @@ function Frame25() {
             <span className="leading-[normal] text-[16px]">about creating beautifu</span>
             <span className="leading-[normal] text-[20px]">l</span>
             <span className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] text-[20px]">{` `}</span>
-            <span className="font-['Monomakh',sans-serif] leading-[normal] text-[24px]">user friendly product</span>
+            <span className="font-['Monomakh',sans-serif] leading-[normal] text-[24px]">user friendly products</span>
           </p>
           <Pencil />
         </div>
@@ -1594,9 +1604,13 @@ export default function AboutMe() {
   return (
     <div className="bg-white flex flex-col min-h-screen relative" data-name="About me">
       <Frame26 />
-      <Frame17 />
+      <FadeIn>
+        <Frame17 />
+      </FadeIn>
       <div className="absolute left-1/2 -translate-x-1/2 top-[870px] w-[1186px]">
-        <img src={imgBannerAboutMe} alt="About me banner" className="w-full object-cover rounded-[16px]" />
+        <FadeIn delay={0.2}>
+          <img src={imgBannerAboutMe} alt="About me banner" className="w-full object-cover rounded-[16px]" />
+        </FadeIn>
       </div>
       <Footer />
     </div>
