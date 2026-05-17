@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import imgBanner from "./banner.png";
+import imgBanner from "./Banner.png";
 import svgPaths from "./svg-ek4j21yj9u";
 import imgWireframe1 from "./483d2b5fb9135af80493b63eb9d11b5a20e88c06.png";
 import imgAccesibility1 from "./8560324619c7e6225750fc6c0ac0844adc4fb439.png";
