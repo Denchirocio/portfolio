@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import imgBannerAboutMe from "./About.png";
+import imgThings from "./things.png";
 import svgPaths from "./svg-pw6w0vxexd";
 import img4D0Dc89D2239B6Ff70Cfed36Ee3249AcRemovebgPreview1 from "./5dead96c50586a01d45666f9bd570a0c58bfaff6.png";
 import imgImage1 from "./94e4c242b271b388c3f3cd50e98b9165967f6b70.png";
@@ -868,147 +869,9 @@ function Frame15() {
 
 function Group12() {
   return (
-    <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-0 place-items-start relative row-1">
-      <div className="col-1 ml-[249.81px] mt-[330px] relative row-1 size-[134px]">
-        <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 134 134">
-          <circle cx="67" cy="67" id="Ellipse 4" r="66.5" stroke="var(--stroke-0, #AFAFAF)" />
-        </svg>
-      </div>
-      <div className="bg-white border border-[#afafaf] border-solid col-1 h-[128px] ml-[0.81px] mt-[42px] relative rounded-[16px] row-1 w-[195px]" data-name="image 2" />
-      <div className="col-1 flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-end ml-[270.81px] mt-[223px] not-italic relative row-1 text-[24px] text-black whitespace-nowrap">
-        <p className="leading-[normal]">About Me</p>
-      </div>
-      <Group3 />
-      <div className="col-1 flex h-0 items-center justify-center ml-[101.81px] mt-[240px] relative row-1 w-[143px]">
-        <div className="flex-none rotate-180">
-          <div className="h-0 relative w-[143px]">
-            <div className="absolute inset-[-2.67px_0_-2.67px_-1.86%]">
-              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 145.667 5.33333">
-                <path d={svgPaths.p3324cef0} fill="var(--stroke-0, black)" id="Line 4" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="col-1 h-0 ml-[399.81px] mt-[241.5px] relative row-1 w-[129.016px]">
-        <div className="absolute inset-[-2.67px_0_-2.67px_-2.07%]">
-          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 131.682 5.33333">
-            <path d={svgPaths.p2aacbf00} fill="var(--stroke-0, black)" id="Line 5" />
-          </svg>
-        </div>
-      </div>
-      <div className="col-1 flex h-[126px] items-center justify-center ml-[528.81px] mt-[241px] relative row-1 w-0" style={{ "--transform-inner-width": "1200", "--transform-inner-height": "19" } as React.CSSProperties}>
-        <div className="flex-none rotate-90">
-          <div className="h-0 relative w-[126px]">
-            <div className="absolute inset-[-3.68px_-0.4%_-3.68px_0]">
-              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 126.5 7.36396">
-                <path d={svgPaths.p4ef4c80} fill="var(--stroke-0, black)" id="Arrow 2" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="col-1 flex h-[54px] items-center justify-center ml-[322.81px] mt-[261px] relative row-1 w-0" style={{ "--transform-inner-width": "1200", "--transform-inner-height": "19" } as React.CSSProperties}>
-        <div className="flex-none rotate-90">
-          <div className="h-0 relative w-[54px]">
-            <div className="absolute inset-[-3.68px_-0.93%_-3.68px_-4.94%]">
-              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 57.1667 7.36396">
-                <path d={svgPaths.p3daaee80} fill="var(--stroke-0, black)" id="Arrow 3" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="col-1 flex h-[111.005px] items-center justify-center ml-[291.8px] mt-[106px] relative row-1 w-0" style={{ "--transform-inner-width": "1200", "--transform-inner-height": "19" } as React.CSSProperties}>
-        <div className="-rotate-90 flex-none">
-          <div className="h-0 relative w-[111.005px]">
-            <div className="absolute inset-[-2.67px_0_-2.67px_-2.4%]">
-              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 113.671 5.33333">
-                <path d={svgPaths.pef834f0} fill="var(--stroke-0, black)" id="Line 6" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="col-1 flex h-[154px] items-center justify-center ml-[363.59px] mt-[53px] relative row-1 w-0" style={{ "--transform-inner-width": "1200", "--transform-inner-height": "19" } as React.CSSProperties}>
-        <div className="-rotate-90 flex-none">
-          <div className="h-0 relative w-[154px]">
-            <div className="absolute inset-[-2.67px_0_-2.67px_-1.73%]">
-              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 156.667 5.33333">
-                <path d={svgPaths.p157fb680} fill="var(--stroke-0, black)" id="Line 8" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="col-1 flex h-0 items-center justify-center ml-[197.8px] mt-[106.5px] relative row-1 w-[94.021px]">
-        <div className="flex-none rotate-180">
-          <div className="h-0 relative w-[94.021px]">
-            <div className="absolute inset-[-3.68px_-0.53%_-3.68px_0]">
-              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 94.5213 7.36396">
-                <path d={svgPaths.p2ab5a240} fill="var(--stroke-0, black)" id="Line 7" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="col-1 h-0 ml-[363.59px] mt-[53.5px] relative row-1 w-[108.246px]">
-        <div className="absolute inset-[-3.68px_-0.46%_-3.68px_0]">
-          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 108.746 7.36396">
-            <path d={svgPaths.p30436b80} fill="var(--stroke-0, black)" id="Line 9" />
-          </svg>
-        </div>
-      </div>
-      <div className="col-1 h-[120px] ml-[5.81px] mt-[46px] relative rounded-[16px] row-1 w-[186px]" data-name="image 1">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[16px] size-full" src={imgImage1} />
-      </div>
-      <Group8 />
-      <div className="col-1 h-[90px] ml-[480.81px] mt-0 relative row-1 w-[98px]" data-name="61771b244370172e59ae2765a6887317-removebg-preview 1">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img61771B244370172E59Ae2765A6887317RemovebgPreview1} />
-      </div>
-      <Group4 />
-      <Group6 />
-      <Group11 />
-      <Frame20 />
-      <Frame23 />
-      <Frame22 />
-      <Frame21 />
-      <div className="col-1 flex flex-col font-['Annie_Use_Your_Telescope:Regular',sans-serif] justify-end ml-[218.81px] mt-[304px] not-italic relative row-1 text-[16px] text-black whitespace-nowrap">
-        <p className="leading-[normal]">Ramen is always</p>
-      </div>
-      <div className="col-1 flex flex-col font-['Annie_Use_Your_Telescope:Regular',sans-serif] justify-end ml-[316.59px] mt-[469px] not-italic relative row-1 text-[16px] text-black whitespace-nowrap">
-        <p className="leading-[normal]">my first option</p>
-      </div>
-      <div className="col-1 flex items-center justify-center ml-[446.81px] mt-[353px] relative row-1 size-[174.373px]" style={{ "--transform-inner-width": "1200", "--transform-inner-height": "19" } as React.CSSProperties}>
-        <div className="flex-none rotate-[28.57deg]">
-          <div className="relative size-[128.547px]" data-name="a36cc7b5a54a1f6c53b12f5fc0a9acdd-removebg-preview 1">
-            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgA36Cc7B5A54A1F6C53B12F5Fc0A9AcddRemovebgPreview1} />
-          </div>
-        </div>
-      </div>
-      <Group14 />
-      <Bulb />
-      <div className="col-1 ml-[26.81px] mt-[411px] relative row-1 size-[139px]" data-name="0255156a0ca0dd98a54695dbc1f28aa9-removebg-preview 1">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img0255156A0Ca0Dd98A54695Dbc1F28Aa9RemovebgPreview1} />
-      </div>
-      <div className="col-1 flex h-[157px] items-center justify-center ml-[101.81px] mt-[240px] relative row-1 w-0" style={{ "--transform-inner-width": "1200", "--transform-inner-height": "19" } as React.CSSProperties}>
-        <div className="flex-none rotate-90">
-          <div className="h-0 relative w-[157px]">
-            <div className="absolute inset-[-3.68px_-0.32%_-3.68px_0]">
-              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 157.5 7.36396">
-                <path d={svgPaths.p1408aa00} fill="var(--stroke-0, black)" id="Arrow 4" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="border border-[#afafaf] border-solid col-1 h-[156px] ml-[19.81px] mt-[402px] relative rounded-[8px] row-1 w-[154px]" />
-      <Group22 />
-      <Frame15 />
-    </div>
+    <img src={imgThings} alt="Things about me" className="w-[580px] object-contain" />
   );
 }
-
 function Group36() {
   return (
     <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0">
