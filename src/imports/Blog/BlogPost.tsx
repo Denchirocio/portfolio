@@ -1,6 +1,7 @@
 import { Link, useParams } from "react-router";
 import { posts } from "./posts";
 import imgBannerBlog from "./banner1.png";
+import imgFirma from "./firma.png";
 
 const imgSpeechBalloon = "https://www.figma.com/api/mcp/asset/3498e7d1-cf65-4c99-8b2c-54172ccb0d44";
 
@@ -112,7 +113,7 @@ export default function BlogPost() {
 
         {/* Signature */}
         <div className="flex justify-end mt-[24px]">
-          <span className="font-['Kimochi:Regular',sans-serif] text-[40px] text-black">Denchi</span>
+          <img src={imgFirma} alt="Denchi" className="h-[60px] object-contain" />
         </div>
       </div>
 
