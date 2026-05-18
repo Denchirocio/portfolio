@@ -1,4 +1,5 @@
 import { Link, useParams } from "react-router";
+import { useState } from "react";
 import { posts } from "./posts";
 import imgBannerBlog from "./banner1.png";
 import imgFirma from "./firma.png";
@@ -81,6 +82,18 @@ export default function BlogPost() {
   }
 
   const otherPosts = posts.filter((p) => p.slug && p.slug !== slug);
+  const [copied, setCopied] = useState(false);
+
+  const handleShare = async () => {
+    const url = window.location.href;
+    if (navigator.share) {
+      await navigator.share({ title: post.title, url });
+    } else {
+      await navigator.clipboard.writeText(url);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }
+  };
 
   return (
     <div className="bg-white min-h-screen flex flex-col">
@@ -92,9 +105,22 @@ export default function BlogPost() {
 
       {/* Article */}
       <div className="max-w-[780px] mx-auto px-[40px] py-[64px] flex flex-col gap-[24px] flex-1">
-        <h1 className="font-['Inter:Bold',sans-serif] font-bold text-[32px] text-black leading-normal">
-          {post.title}
-        </h1>
+        <div className="flex items-start justify-between gap-[16px]">
+          <h1 className="font-['Inter:Bold',sans-serif] font-bold text-[32px] text-black leading-normal">
+            {post.title}
+          </h1>
+          <button
+            onClick={handleShare}
+            title="Share this post"
+            className="shrink-0 mt-[8px] flex items-center gap-[8px] border border-black rounded-[100px] px-[16px] h-[44px] hover:bg-black hover:text-white transition-colors cursor-pointer bg-transparent font-['Inter:Regular',sans-serif] font-normal text-[16px] text-black whitespace-nowrap"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+            </svg>
+            {copied ? "Copied!" : "Share"}
+          </button>
+        </div>
         {post.body.map((paragraph, i) => (
           <p key={i} className="font-['Inter:Regular',sans-serif] font-normal text-[16px] text-black leading-[1.8]">
             {paragraph}
@@ -102,8 +128,8 @@ export default function BlogPost() {
         ))}
 
         {/* Signature */}
-        <div className="flex justify-end mt-[24px]">
-          <img src={imgFirma} alt="Denchi" className="h-[60px] object-contain" />
+        <div className="flex justify-end mt-[-64px]">
+          <img src={imgFirma} alt="Denchi" className="h-[100px] object-contain" />
         </div>
       </div>
 
