@@ -16,6 +16,14 @@
   font-style: normal;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  box-shadow: 0 0 0px 1000px white inset;
+  -webkit-text-fill-color: black;
+}
+
 @keyframes wave-icon {
   0%, 100% { transform: translateY(0); }
   40%       { transform: translateY(-14px); }
