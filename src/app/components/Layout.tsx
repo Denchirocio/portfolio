@@ -6,7 +6,7 @@ export default function Layout() {
   const location = useLocation();
   const isHome = location.pathname === "/";
   const isAbout = location.pathname === "/about";
-  const isBlog = location.pathname === "/blog";
+  const isBlog = location.pathname.startsWith("/blog");
 
   return (
     <div className="min-h-screen bg-white">

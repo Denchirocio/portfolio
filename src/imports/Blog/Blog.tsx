@@ -2,37 +2,10 @@ import { Link } from "react-router";
 import imgBannerBlog from "./Bannerblog.png";
 
 const imgSpeechBalloon = "https://www.figma.com/api/mcp/asset/3498e7d1-cf65-4c99-8b2c-54172ccb0d44";
-const imgPost1 = "https://www.figma.com/api/mcp/asset/74940caa-8a8d-43e9-8a99-5d28b420a4e1";
-
-const posts = [
-  {
-    id: 1,
-    date: "17/05/2026",
-    image: imgPost1,
-    overlay: true,
-    title: "UX Design in Asia. Why is it so different?",
-    description: "From Japan to the West, a look into why some interfaces that feel chaotic to us can represent innovation, efficiency and a completely natural experience for others.",
-  },
-  {
-    id: 2,
-    date: "DD/MM/AAAA",
-    image: null,
-    overlay: false,
-    title: "Coming soon",
-    description: "Stay tuned for more articles about UX, design systems and product thinking.",
-  },
-  {
-    id: 3,
-    date: "DD/MM/AAAA",
-    image: null,
-    overlay: false,
-    title: "Coming soon",
-    description: "Stay tuned for more articles about UX, design systems and product thinking.",
-  },
-];
+import { posts } from "./posts";
 
 function BlogCard({ post, isFirst }: { post: typeof posts[0]; isFirst: boolean }) {
-  return (
+  const inner = (
     <div className="flex flex-col gap-[16px] items-start shrink-0 w-[360px]">
       {/* Image + date row */}
       <div className="flex items-start justify-between w-full">
@@ -58,7 +31,7 @@ function BlogCard({ post, isFirst }: { post: typeof posts[0]; isFirst: boolean }
           {isFirst && (
             <div className="absolute bg-white border border-black left-[80px] top-[50px] w-[180px] h-[180px] flex flex-col justify-center p-[16px]">
               <p className="font-['Inter:Regular',sans-serif] text-[20px] text-black leading-normal mb-[8px]">
-                si, eso también es
+                Yes, that's also
               </p>
               <p className="font-['Monomakh',sans-serif] text-[56px] text-black leading-none">
                 UX.
@@ -79,6 +52,10 @@ function BlogCard({ post, isFirst }: { post: typeof posts[0]; isFirst: boolean }
       </div>
     </div>
   );
+
+  return post.slug
+    ? <Link to={`/blog/${post.slug}`} className="no-underline">{inner}</Link>
+    : inner;
 }
 
 function Header() {
@@ -149,7 +126,9 @@ export default function Blog() {
       <div className="flex-1 flex items-start justify-center gap-0 px-[80px] py-[60px]">
         {posts.map((post, i) => (
           <div key={post.id} className="flex items-stretch">
-            <BlogCard post={post} isFirst={i === 0} />
+            <div className={(post as any).hidden ? "invisible w-[360px]" : ""}>
+              {!(post as any).hidden && <BlogCard post={post} isFirst={i === 0} />}
+            </div>
             {i < posts.length - 1 && (
               <div className="w-px bg-black mx-[16px] self-stretch" />
             )}
