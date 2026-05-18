@@ -155,12 +155,12 @@ export default function AboutMe() {
       <Footer />
 
       <FadeIn>
-        <div className="flex items-center gap-[40px] mt-[160px] pl-0 pr-[48px] w-full 2xl:max-w-[1186px] 2xl:mx-auto 2xl:pr-0">
+        <div className="absolute content-stretch flex items-start justify-between left-0 top-[160px] w-full">
           {/* Left: collage */}
           <img src={imgCollage} alt="About me collage" className="w-[680px] object-contain shrink-0" />
 
           {/* Right: text content */}
-          <div className="flex flex-col items-start pl-[40px] pr-[80px] py-[10px] relative w-[520px] shrink-0">
+          <div className="content-stretch flex flex-col items-start pl-[40px] pr-[80px] py-[10px] relative shrink-0">
             <FadeIn delay={0.2}>
               <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0">
                 <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full">
@@ -186,7 +186,7 @@ export default function AboutMe() {
                     </div>
                   </div>
                 </div>
-                <div className="font-['Inter:Light',sans-serif] font-light leading-[0] not-italic relative shrink-0 text-[16px] text-black w-full whitespace-pre-wrap">
+                <div className="font-['Inter:Light',sans-serif] font-light leading-[0] not-italic relative shrink-0 text-[16px] text-black w-[493px] whitespace-pre-wrap">
                   <p className="leading-[28px] mb-0">
                     {`I've been working as a Designer for the past 6 years, mostly across fintech, SaaS and B2B/B2C products.`}
                     <br /><br />

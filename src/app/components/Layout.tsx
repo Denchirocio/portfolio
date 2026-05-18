@@ -10,7 +10,7 @@ export default function Layout() {
   return (
     <div className="min-h-screen bg-white">
       <ScrollToTop />
-      <header className="sticky top-0 z-50 bg-white border-b border-[#EBEBEB]">
+      {!isAbout && <header className="sticky top-0 z-50 bg-white border-b border-[#EBEBEB]">
         <div className="max-w-[1440px] mx-auto px-[80px] py-[24px]">
           <nav className="flex items-center justify-between">
             <Link to="/" className="flex items-center gap-[8px]">
@@ -51,7 +51,7 @@ export default function Layout() {
             </div>
           </nav>
         </div>
-      </header>
+      </header>}
 
       <main>
         <Outlet />
