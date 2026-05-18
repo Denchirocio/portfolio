@@ -359,6 +359,7 @@ function Header({ onBannerClick }: { onBannerClick: () => void }) {
         <div className="flex gap-[24px] items-center">
           <Link to="/" className="font-['Inter:Regular',sans-serif] font-normal text-[20px] text-black no-underline hover:opacity-70 transition-opacity whitespace-nowrap">Home</Link>
           <span className="font-['Inter:Bold',sans-serif] font-bold text-[20px] text-black whitespace-nowrap">About me</span>
+          <Link to="/blog" className="font-['Inter:Regular',sans-serif] font-normal text-[20px] text-black no-underline hover:opacity-70 transition-opacity whitespace-nowrap">Blog</Link>
           <div className="flex gap-[8px] items-center">
             <a
               href="/CV- Denise Chiapin EN - Classic.pdf"

@@ -6,6 +6,7 @@ import MyWorkChatty from "./pages/MyWorkChatty";
 import MyWorkGruya from "./pages/MyWorkGruya";
 import MyWorkBookup from "./pages/MyWorkBookup";
 import AboutMe from "./pages/AboutMe";
+import Blog from "./pages/Blog";
 
 export const router = createBrowserRouter([
   {
@@ -17,6 +18,7 @@ export const router = createBrowserRouter([
       { path: "/gruya", Component: MyWorkGruya },
       { path: "/bookup", Component: MyWorkBookup },
       { path: "/about", Component: AboutMe },
+      { path: "/blog", Component: Blog },
     ],
   },
 ]);

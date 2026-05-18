@@ -35,6 +35,12 @@ export default function Layout() {
               >
                 About me
               </Link>
+              <Link
+                to="/blog"
+                className="font-['Inter:Regular',sans-serif] font-normal text-[16px] text-black hover:opacity-70 transition-opacity"
+              >
+                Blog
+              </Link>
               <a
                 href="/CV- Denise Chiapin EN - Classic.pdf"
                 download

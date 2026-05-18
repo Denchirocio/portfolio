@@ -1390,6 +1390,7 @@ function Frame45() {
     <div className="content-stretch flex gap-[24px] items-center relative shrink-0">
       <span className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap cursor-default">Home</span>
       <Link to="/about" className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap no-underline hover:opacity-70 transition-opacity">About me</Link>
+      <Link to="/blog" className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap no-underline hover:opacity-70 transition-opacity">Blog</Link>
       <div className="flex items-center gap-[8px]">
         <a
           href="/CV- Denise Chiapin EN - Classic.pdf"
