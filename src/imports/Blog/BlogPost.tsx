@@ -85,14 +85,9 @@ export default function BlogPost() {
   const [copied, setCopied] = useState(false);
 
   const handleShare = async () => {
-    const url = window.location.href;
-    if (navigator.share) {
-      await navigator.share({ title: post.title, url });
-    } else {
-      await navigator.clipboard.writeText(url);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    }
+    await navigator.clipboard.writeText(window.location.href);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
   };
 
   return (
@@ -103,23 +98,38 @@ export default function BlogPost() {
       {/* Hero image */}
       <img src={imgBannerBlog} alt={post.title} className="w-full object-cover shrink-0" />
 
+      {/* Breadcrumb */}
+      <div className="max-w-[780px] mx-auto px-[40px] pt-[32px] w-full flex items-center gap-[8px]">
+        <Link to="/" className="font-['Inter:Regular',sans-serif] font-normal text-[16px] text-black no-underline hover:opacity-60 transition-opacity">‹ Home</Link>
+        <span className="font-['Inter:Regular',sans-serif] font-normal text-[16px] text-black">/</span>
+        <Link to="/blog" className="font-['Inter:Regular',sans-serif] font-normal text-[16px] text-black no-underline hover:opacity-60 transition-opacity">Blog</Link>
+        <span className="font-['Inter:Regular',sans-serif] font-normal text-[16px] text-black">/</span>
+        <span className="font-['Inter:Bold',sans-serif] font-bold text-[16px] text-black truncate">{post.title}</span>
+      </div>
+
       {/* Article */}
-      <div className="max-w-[780px] mx-auto px-[40px] py-[64px] flex flex-col gap-[24px] flex-1">
+      <div className="max-w-[780px] mx-auto px-[40px] py-[32px] flex flex-col gap-[24px] flex-1">
         <div className="flex items-start justify-between gap-[16px]">
           <h1 className="font-['Inter:Bold',sans-serif] font-bold text-[32px] text-black leading-normal">
             {post.title}
           </h1>
-          <button
-            onClick={handleShare}
-            title="Share this post"
-            className="shrink-0 mt-[8px] flex items-center gap-[8px] border border-black rounded-[100px] px-[16px] h-[44px] hover:bg-black hover:text-white transition-colors cursor-pointer bg-transparent font-['Inter:Regular',sans-serif] font-normal text-[16px] text-black whitespace-nowrap"
-          >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
-              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
-            </svg>
-            {copied ? "Copied!" : "Share"}
-          </button>
+          <div className="relative shrink-0 mt-[8px]">
+            <button
+              onClick={handleShare}
+              className="bg-transparent border-none cursor-pointer p-[4px] hover:opacity-60 transition-opacity"
+            >
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+              </svg>
+            </button>
+            {copied && (
+              <div className="absolute -top-[36px] left-1/2 -translate-x-1/2 bg-black text-white font-['Inter:Regular',sans-serif] font-normal text-[13px] px-[10px] py-[4px] rounded-[6px] whitespace-nowrap">
+                Link copied!
+                <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-black" />
+              </div>
+            )}
+          </div>
         </div>
         {post.body.map((paragraph, i) => (
           <p key={i} className="font-['Inter:Regular',sans-serif] font-normal text-[16px] text-black leading-[1.8]">
