@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { Link } from "react-router";
 import FadeIn from "../../app/components/FadeIn";
 import svgPaths from "./svg-pw6w0vxexd";
@@ -205,23 +204,18 @@ const figmaAssets = {
 };
 
 export default function AboutMe() {
-  useEffect(() => {
-    document.body.style.overflow = "hidden";
-    return () => { document.body.style.overflow = ""; };
-  }, []);
-
   return (
-    <div className="bg-white relative h-screen overflow-hidden" data-name="About me">
+    <div className="bg-white relative min-h-screen" data-name="About me">
       <Frame26 />
       <Footer />
 
       <FadeIn>
-        <div className="absolute content-stretch flex items-start gap-[40px] left-1/2 -translate-x-1/2 top-[160px] w-[1186px]">
+        <div className="flex items-center gap-[40px] mt-[140px] px-[48px] w-full 2xl:max-w-[1186px] 2xl:mx-auto 2xl:px-0">
           {/* Left: collage */}
           <img src={imgCollage} alt="About me collage" className="w-[680px] object-contain shrink-0" />
 
           {/* Right: text content */}
-          <div className="content-stretch flex flex-col items-start pl-[40px] pr-[80px] py-[10px] relative shrink-0">
+          <div className="flex flex-col items-start py-[10px] relative flex-1">
             <FadeIn delay={0.2}>
               <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0">
                 <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full">
@@ -247,7 +241,7 @@ export default function AboutMe() {
                     </div>
                   </div>
                 </div>
-                <div className="font-['Inter:Light',sans-serif] font-light leading-[0] not-italic relative shrink-0 text-[16px] text-black w-[493px] whitespace-pre-wrap">
+                <div className="font-['Inter:Light',sans-serif] font-light leading-[0] not-italic relative shrink-0 text-[16px] text-black w-full whitespace-pre-wrap">
                   <p className="leading-[28px] mb-0">
                     {`I've been working as a Designer for the past 6 years, mostly across fintech, SaaS and B2B/B2C products.`}
                     <br /><br />
