@@ -100,9 +100,7 @@ export default function BlogPost() {
 
       {/* Breadcrumb */}
       <div className="max-w-[780px] mx-auto px-[40px] pt-[32px] w-full flex items-center gap-[8px]">
-        <Link to="/" className="font-['Inter:Regular',sans-serif] font-normal text-[16px] text-black no-underline hover:opacity-60 transition-opacity">‹ Home</Link>
-        <span className="font-['Inter:Regular',sans-serif] font-normal text-[16px] text-black">/</span>
-        <Link to="/blog" className="font-['Inter:Regular',sans-serif] font-normal text-[16px] text-black no-underline hover:opacity-60 transition-opacity">Blog</Link>
+        <Link to="/blog" className="font-['Inter:Regular',sans-serif] font-normal text-[16px] text-black no-underline hover:opacity-60 transition-opacity">‹ Blog</Link>
         <span className="font-['Inter:Regular',sans-serif] font-normal text-[16px] text-black">/</span>
         <span className="font-['Inter:Bold',sans-serif] font-bold text-[16px] text-black truncate">{post.title}</span>
       </div>
