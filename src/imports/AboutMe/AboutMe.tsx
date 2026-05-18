@@ -98,9 +98,9 @@ export default function AboutMe() {
       <Header />
 
       {/* Main content — starts below fixed header (80px nav + 49px banner = 129px) */}
-      <div className="flex items-center justify-between pt-[160px] w-full max-w-[1440px] mx-auto flex-1">
-        {/* Left: collage */}
-        <div className="shrink-0 w-[50%] max-w-[700px]">
+      <div className="flex items-center pt-[160px] w-full flex-1">
+        {/* Left: collage — flush left, no margin */}
+        <div className="shrink-0 w-[55%]">
           <img
             src={imgCollage}
             alt="About me collage"
@@ -109,7 +109,7 @@ export default function AboutMe() {
         </div>
 
         {/* Right: text */}
-        <div className="flex flex-col gap-[24px] items-start pl-[40px] pr-[80px] shrink-0 flex-1">
+        <div className="flex flex-col gap-[24px] items-start pl-[60px] pr-[80px] shrink-0 flex-1">
           {/* Name */}
           <div className="flex flex-col gap-[16px] w-full">
             <div className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] text-[40px] text-black whitespace-nowrap">
