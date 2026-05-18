@@ -17,6 +17,10 @@
   font-style: normal;
 }
 
+* {
+  cursor: url('/cursorfigma.cur'), auto !important;
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
