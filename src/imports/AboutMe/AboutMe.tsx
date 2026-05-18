@@ -1,5 +1,4 @@
 import { Link } from "react-router";
-import FadeIn from "../../app/components/FadeIn";
 import svgPaths from "./svg-pw6w0vxexd";
 import imgCollage from "./collage.png";
 
@@ -154,14 +153,13 @@ export default function AboutMe() {
       <Frame26 />
       <Footer />
 
-      <FadeIn>
         <div className="absolute content-stretch flex items-start justify-between left-0 top-[160px] w-full">
           {/* Left: collage */}
           <img src={imgCollage} alt="About me collage" className="w-[680px] object-contain shrink-0" />
 
           {/* Right: text content */}
           <div className="content-stretch flex flex-col items-start pl-[40px] pr-[80px] py-[10px] relative shrink-0">
-            <FadeIn delay={0.2}>
+            <div>
               <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0">
                 <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full">
                   <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black whitespace-nowrap">
@@ -210,10 +208,9 @@ export default function AboutMe() {
                   </a>
                 </div>
               </div>
-            </FadeIn>
+            </div>
           </div>
         </div>
-      </FadeIn>
     </div>
   );
 }
