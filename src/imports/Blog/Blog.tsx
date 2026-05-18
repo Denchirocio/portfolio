@@ -1,8 +1,10 @@
+import { useState } from "react";
 import { Link } from "react-router";
 import imgBannerBlog from "./Bannerblog.png";
+import { posts } from "./posts";
+import { ContactDrawer } from "../shared/ContactDrawer";
 
 const imgSpeechBalloon = "https://www.figma.com/api/mcp/asset/3498e7d1-cf65-4c99-8b2c-54172ccb0d44";
-import { posts } from "./posts";
 
 function BlogCard({ post, isFirst }: { post: typeof posts[0]; isFirst: boolean }) {
   const inner = (
@@ -58,7 +60,7 @@ function BlogCard({ post, isFirst }: { post: typeof posts[0]; isFirst: boolean }
     : inner;
 }
 
-function Header() {
+function Header({ onBannerClick }: { onBannerClick: () => void }) {
   return (
     <div className="bg-white fixed flex flex-col items-start left-0 top-0 w-full z-50">
       {/* Nav */}
@@ -91,7 +93,7 @@ function Header() {
         </div>
       </div>
       {/* Banner */}
-      <div className="bg-[#f8f8f8] border-t border-b border-[#d6d1d1] flex h-[56px] items-center justify-center p-[10px] shrink-0 w-full">
+      <button onClick={onBannerClick} className="bg-[#f8f8f8] border-t border-b border-[#d6d1d1] flex h-[56px] items-center justify-center p-[10px] shrink-0 w-full cursor-pointer hover:bg-[#f0f0f0] transition-colors">
         <div className="flex gap-[2px] items-center">
           <div className="bg-[rgba(223,169,234,0.6)] flex h-[32px] items-center justify-center px-[8px] py-[4px]">
             <span className="font-['Monomakh',sans-serif] text-[24px] text-black leading-normal">I'm here</span>
@@ -107,15 +109,17 @@ function Header() {
             (For free, this is not a sales pitch)
           </span>
         </div>
-      </div>
+      </button>
     </div>
   );
 }
 
 export default function Blog() {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   return (
     <div className="bg-[#f8f8f8] min-h-screen flex flex-col">
-      <Header />
+      <Header onBannerClick={() => setIsDrawerOpen(true)} />
+      <ContactDrawer isOpen={isDrawerOpen} onClose={() => setIsDrawerOpen(false)} />
       {/* Space for fixed header (80px nav + 56px banner) */}
       <div className="h-[136px] shrink-0" />
 

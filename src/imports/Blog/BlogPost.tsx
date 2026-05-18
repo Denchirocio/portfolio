@@ -1,12 +1,13 @@
 import { Link, useParams } from "react-router";
 import { useState } from "react";
+import { ContactDrawer } from "../shared/ContactDrawer";
 import { posts } from "./posts";
 import imgBannerBlog from "./banner1.png";
 import imgFirma from "./firma.png";
 
 const imgSpeechBalloon = "https://www.figma.com/api/mcp/asset/3498e7d1-cf65-4c99-8b2c-54172ccb0d44";
 
-function Header() {
+function Header({ onBannerClick }: { onBannerClick: () => void }) {
   return (
     <div className="bg-white fixed flex flex-col items-start left-0 top-0 w-full z-50">
       <div className="bg-white flex h-[80px] items-center justify-between px-[48px] shrink-0 w-full">
@@ -29,7 +30,7 @@ function Header() {
           </div>
         </div>
       </div>
-      <div className="bg-[#f8f8f8] border-t border-b border-[#d6d1d1] flex h-[56px] items-center justify-center p-[10px] shrink-0 w-full">
+      <button onClick={onBannerClick} className="bg-[#f8f8f8] border-t border-b border-[#d6d1d1] flex h-[56px] items-center justify-center p-[10px] shrink-0 w-full cursor-pointer hover:bg-[#f0f0f0] transition-colors">
         <div className="flex gap-[2px] items-center">
           <div className="bg-[rgba(223,169,234,0.6)] flex h-[32px] items-center justify-center px-[8px] py-[4px]">
             <span className="font-['Monomakh',sans-serif] text-[24px] text-black leading-normal">I'm here</span>
@@ -43,7 +44,7 @@ function Header() {
           <span className="font-['Monomakh',sans-serif] text-[24px] text-black px-[6px]">→</span>
           <span className="font-['Inter:Regular',sans-serif] font-normal italic text-[16px] text-black whitespace-nowrap">(For free, this is not a sales pitch)</span>
         </div>
-      </div>
+      </button>
     </div>
   );
 }
@@ -72,6 +73,7 @@ function OtherNoteCard({ post }: { post: typeof posts[0] }) {
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
   const post = posts.find((p) => p.slug === slug);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   if (!post) {
     return (
@@ -92,7 +94,8 @@ export default function BlogPost() {
 
   return (
     <div className="bg-white min-h-screen flex flex-col">
-      <Header />
+      <Header onBannerClick={() => setIsDrawerOpen(true)} />
+      <ContactDrawer isOpen={isDrawerOpen} onClose={() => setIsDrawerOpen(false)} />
       <div className="h-[136px] shrink-0" />
 
       {/* Hero image */}
