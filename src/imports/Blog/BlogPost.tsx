@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router";
 import { posts } from "./posts";
-import imgBannerBlog from "./Bannerblog.png";
+import imgBannerBlog from "./banner1.png";
 
 const imgSpeechBalloon = "https://www.figma.com/api/mcp/asset/3498e7d1-cf65-4c99-8b2c-54172ccb0d44";
 
