@@ -1,7 +1,6 @@
 import { Link } from "react-router";
 import FadeIn from "../../app/components/FadeIn";
 import svgPaths from "./svg-pw6w0vxexd";
-import imgWireframe1 from "./483d2b5fb9135af80493b63eb9d11b5a20e88c06.png";
 import imgCollage from "./collage.png";
 
 function Frame31() {
@@ -136,64 +135,10 @@ function Frame6() {
   );
 }
 
-function Group35() {
-  return (
-    <div className="absolute inset-[0.99%_3.07%_3.08%_0.99%]" data-name="Group">
-      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 23.0248 23.0218">
-        <g id="Group">
-          <path d={svgPaths.p10482c70} fill="var(--fill-0, #FFECB3)" id="Vector" />
-          <path d={svgPaths.p931ce00} fill="var(--fill-0, #616161)" id="Vector_4" />
-          <path d={svgPaths.p3be89600} fill="var(--fill-0, #EF5350)" id="Vector_5" />
-          <path d={svgPaths.p1dd3c900} fill="var(--fill-0, #FFC107)" id="Vector_6" />
-          <path d={svgPaths.p25892900} fill="var(--fill-0, #FFA000)" id="Vector_7" />
-          <path d={svgPaths.p14926380} fill="var(--fill-0, #FDD835)" id="Vector_8" />
-          <path d={svgPaths.pe372b80} fill="var(--fill-0, #D1762C)" id="Vector_9" />
-          <path d={svgPaths.p9a0df00} fill="var(--fill-0, #F19534)" id="Vector_10" />
-          <path d={svgPaths.pd831e00} fill="var(--fill-0, #4E342E)" id="Vector_11" opacity="0.2" />
-          <path d={svgPaths.p1fe27c00} fill="var(--fill-0, #94D1E0)" id="Vector_12" />
-          <path d={svgPaths.pc4ff00} fill="var(--fill-0, #FF8383)" id="Vector_13" />
-          <path d={svgPaths.pb558880} fill="var(--fill-0, #B9E4EA)" id="Vector_14" />
-          <path d={svgPaths.p3694f500} fill="var(--fill-0, #B9E4EA)" id="Vector_15" />
-        </g>
-      </svg>
-    </div>
-  );
-}
-
-function Pencil() {
-  return (
-    <div className="overflow-clip relative shrink-0 size-[24px]" data-name="pencil2">
-      <Group35 />
-    </div>
-  );
-}
-
-function Frame25() {
-  return (
-    <div className="bg-[#ebfaaa] drop-shadow-[0px_4px_2px_rgba(159,159,159,0.25)] h-[49px] relative shrink-0 w-full">
-      <div className="flex flex-row items-center justify-center size-full">
-        <div className="content-stretch flex gap-[10px] items-center justify-center p-[10px] relative size-full">
-          <p className="font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[0px] text-black whitespace-nowrap">
-            <span className="leading-[normal] text-[16px]">{` A`}</span>
-            <span className="leading-[normal] text-[20px]">{` `}</span>
-            <span className="font-['Monomakh',sans-serif] leading-[normal] text-[24px]">designer passionate</span>
-            <span className="leading-[normal] text-[20px]">{` `}</span>
-            <span className="leading-[normal] text-[16px]">about creating beautiful</span>
-            <span className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] text-[20px]">{` `}</span>
-            <span className="font-['Monomakh',sans-serif] leading-[normal] text-[24px]">user friendly products</span>
-          </p>
-          <Pencil />
-        </div>
-      </div>
-    </div>
-  );
-}
-
 function Frame26() {
   return (
     <div className="bg-white content-stretch fixed flex flex-col items-start left-0 top-0 w-full z-50">
       <Frame6 />
-      <Frame25 />
     </div>
   );
 }
@@ -210,12 +155,12 @@ export default function AboutMe() {
       <Footer />
 
       <FadeIn>
-        <div className="flex items-center gap-[40px] mt-[140px] px-[48px] w-full 2xl:max-w-[1186px] 2xl:mx-auto 2xl:px-0">
+        <div className="flex items-center gap-[40px] mt-[160px] pl-0 pr-[48px] w-full 2xl:max-w-[1186px] 2xl:mx-auto 2xl:pr-0">
           {/* Left: collage */}
           <img src={imgCollage} alt="About me collage" className="w-[680px] object-contain shrink-0" />
 
           {/* Right: text content */}
-          <div className="flex flex-col items-start py-[10px] relative flex-1">
+          <div className="flex flex-col items-start pl-[40px] pr-[80px] py-[10px] relative w-[520px] shrink-0">
             <FadeIn delay={0.2}>
               <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0">
                 <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full">
