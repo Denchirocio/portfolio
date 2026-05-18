@@ -17,7 +17,7 @@ function Group2() {
     <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0">
       <div className="bg-[#e9f7ba] col-1 ml-0 mt-0 relative rounded-[14px] row-1 size-[64px]" />
       <div className="col-1 ml-[12px] mt-[12px] relative row-1 size-[40px]" data-name="accesibility 1">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgAccesibility1} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgAccesibility1} />
       </div>
     </div>
   );
@@ -28,7 +28,7 @@ function Group3() {
     <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0">
       <div className="bg-[#c7d4fd] col-1 ml-0 mt-0 relative rounded-[14px] row-1 size-[64px]" />
       <div className="col-1 ml-[12px] mt-[12px] relative row-1 size-[40px]" data-name="heart (1) 1">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgHeart11} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgHeart11} />
       </div>
     </div>
   );
@@ -39,7 +39,7 @@ function Group4() {
     <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0">
       <div className="bg-[#eecdff] col-1 ml-0 mt-0 relative rounded-[14px] row-1 size-[64px]" />
       <div className="col-1 ml-[12px] mt-[12px] relative row-1 size-[40px]" data-name="joystick 1">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgJoystick1} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgJoystick1} />
       </div>
     </div>
   );
@@ -92,7 +92,7 @@ function Frame22() {
     >
       <div style={wave(0)}>
         <div className="relative shrink-0 size-[64px]" data-name="wireframe 1">
-          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgWireframe1} />
+          <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgWireframe1} />
         </div>
       </div>
       <div style={wave(1)}><Group2 /></div>
@@ -262,7 +262,7 @@ function Group6() {
     <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-[28.2px] place-items-start relative row-1">
       <div className="border-[0.762px] border-black border-solid col-1 h-[198.176px] ml-[15.24px] mt-0 relative rounded-tl-[6.098px] rounded-tr-[6.098px] row-1 w-[304.886px]" />
       <div className="col-1 h-[182.169px] ml-[22.87px] mt-[7.62px] pointer-events-none relative rounded-tl-[6.098px] rounded-tr-[6.098px] row-1 w-[288.879px]">
-        <img alt="" className="absolute inset-0 max-w-none object-cover rounded-tl-[6.098px] rounded-tr-[6.098px] size-full" src={imgRectangle2} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover rounded-tl-[6.098px] rounded-tr-[6.098px] size-full" src={imgRectangle2} />
         <div aria-hidden="true" className="absolute border-[0.762px] border-black border-solid inset-0 rounded-tl-[6.098px] rounded-tr-[6.098px]" />
       </div>
       <div className="border-[0.762px] border-black border-solid col-1 h-[12.195px] ml-0 mt-[197.41px] relative row-1 w-[335.375px]" />
@@ -362,7 +362,7 @@ function Group8() {
     <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-[28.2px] place-items-start relative row-1">
       <div className="border-[0.762px] border-black border-solid col-1 h-[198.176px] ml-[15.24px] mt-0 relative rounded-tl-[6.098px] rounded-tr-[6.098px] row-1 w-[304.886px]" />
       <div className="col-1 h-[182.169px] ml-[22.87px] mt-[7.62px] pointer-events-none relative rounded-tl-[6.098px] rounded-tr-[6.098px] row-1 w-[288.879px]">
-        <img alt="" className="absolute inset-0 max-w-none object-cover rounded-tl-[6.098px] rounded-tr-[6.098px] size-full" src={imgRectangle3} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover rounded-tl-[6.098px] rounded-tr-[6.098px] size-full" src={imgRectangle3} />
         <div aria-hidden="true" className="absolute border-[0.762px] border-black border-solid inset-0 rounded-tl-[6.098px] rounded-tr-[6.098px]" />
       </div>
       <div className="border-[0.762px] border-black border-solid col-1 h-[12.195px] ml-0 mt-[197.41px] relative row-1 w-[335.375px]" />
@@ -454,7 +454,7 @@ function Group9() {
     <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-[28.2px] place-items-start relative row-1">
       <div className="border-[0.762px] border-black border-solid col-1 h-[198.176px] ml-[15.24px] mt-0 relative rounded-tl-[6.098px] rounded-tr-[6.098px] row-1 w-[304.886px]" />
       <div className="col-1 h-[182.169px] ml-[22.87px] mt-[7.62px] pointer-events-none relative rounded-tl-[6.098px] rounded-tr-[6.098px] row-1 w-[288.879px]">
-        <img alt="" className="absolute inset-0 max-w-none object-cover rounded-tl-[6.098px] rounded-tr-[6.098px] size-full" src={imgRectangle4} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover rounded-tl-[6.098px] rounded-tr-[6.098px] size-full" src={imgRectangle4} />
         <div aria-hidden="true" className="absolute border-[0.762px] border-black border-solid inset-0 rounded-tl-[6.098px] rounded-tr-[6.098px]" />
       </div>
       <div className="border-[0.762px] border-black border-solid col-1 h-[12.195px] ml-0 mt-[197.41px] relative row-1 w-[335.375px]" />
@@ -603,7 +603,7 @@ function Group1() {
   return (
     <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-[109.69px] mt-0 place-items-start relative row-1">
       <div className="col-1 h-[202.288px] ml-[5.52px] mt-[7.36px] pointer-events-none relative rounded-[14.712px] row-1 w-[103.903px]">
-        <img alt="" className="absolute inset-0 max-w-none object-cover rounded-[14.712px] size-full" src={imgRectangle6} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover rounded-[14.712px] size-full" src={imgRectangle6} />
         <div aria-hidden="true" className="absolute border-[0.919px] border-black border-solid inset-0 rounded-[14.712px]" />
       </div>
       <div className="border-[0.919px] border-black border-solid col-1 h-[217px] ml-0 mt-0 relative rounded-[14.712px] row-1 w-[115.856px]" />
@@ -1296,6 +1296,8 @@ function Banner() {
     <img
       src={imgBanner}
       alt="Banner"
+      fetchPriority="high"
+      decoding="async"
       className="rounded-[16px] shrink-0 w-full object-cover"
       style={{ maxWidth: "1186px" }}
     />

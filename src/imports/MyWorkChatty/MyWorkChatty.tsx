@@ -163,7 +163,7 @@ function Group2() {
     <div className="absolute contents left-0 top-0">
       <div className="absolute border border-black border-solid h-[260px] left-[20px] rounded-tl-[8px] rounded-tr-[8px] top-0 w-[400px]" />
       <div className="absolute h-[239px] left-[30px] pointer-events-none rounded-tl-[8px] rounded-tr-[8px] top-[10px] w-[379px]">
-        <img alt="" className="absolute inset-0 max-w-none object-cover rounded-tl-[8px] rounded-tr-[8px] size-full" src={imgRectangle2} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover rounded-tl-[8px] rounded-tr-[8px] size-full" src={imgRectangle2} />
         <div aria-hidden="true" className="absolute border border-black border-solid inset-0 rounded-tl-[8px] rounded-tr-[8px]" />
       </div>
       <div className="absolute border border-black border-solid h-[16px] left-0 top-[259px] w-[440px]" />
@@ -896,7 +896,7 @@ function Frame218() {
     <div className="content-stretch flex flex-col items-start px-[12px] py-[4px] relative rounded-[8px] shrink-0">
       <div aria-hidden="true" className="absolute border border-[#bdbdbd] border-solid inset-0 pointer-events-none rounded-[8px]" />
       <div className="h-[269px] relative rounded-[8px] shrink-0 w-[503px]">
-        <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none rounded-[8px] size-full" src={imgRectangle31} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none rounded-[8px] size-full" src={imgRectangle31} />
       </div>
     </div>
   );
@@ -924,7 +924,7 @@ function Frame219() {
     <div className="content-stretch flex flex-col items-start p-[12px] relative rounded-[8px] shrink-0">
       <div aria-hidden="true" className="absolute border border-[#bdbdbd] border-solid inset-0 pointer-events-none rounded-[8px]" />
       <div className="h-[314px] relative shrink-0 w-[503px]">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle2} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle2} />
       </div>
     </div>
   );
@@ -1050,7 +1050,7 @@ function Frame220() {
     <div className="content-stretch flex flex-col items-start px-[12px] py-[8px] relative rounded-[8px] shrink-0">
       <div aria-hidden="true" className="absolute border border-[#bdbdbd] border-solid inset-0 pointer-events-none rounded-[8px]" />
       <div className="h-[269px] relative rounded-[8px] shrink-0 w-[503px]">
-        <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none rounded-[8px] size-full" src={imgRectangle32} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none rounded-[8px] size-full" src={imgRectangle32} />
       </div>
     </div>
   );
@@ -1078,7 +1078,7 @@ function Frame221() {
     <div className="content-stretch flex flex-col items-start p-[12px] relative rounded-[8px] shrink-0">
       <div aria-hidden="true" className="absolute border border-[#bdbdbd] border-solid inset-0 pointer-events-none rounded-[8px]" />
       <div className="h-[314px] relative shrink-0 w-[503px]">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle33} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle33} />
       </div>
     </div>
   );
@@ -1200,7 +1200,7 @@ function Frame224() {
     <div className="content-stretch flex flex-col items-start px-[12px] py-[8px] relative rounded-[8px] shrink-0">
       <div aria-hidden="true" className="absolute border border-[#bdbdbd] border-solid inset-0 pointer-events-none rounded-[8px]" />
       <div className="h-[269px] relative rounded-[8px] shrink-0 w-[503px]">
-        <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none rounded-[8px] size-full" src={imgRectangle34} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none rounded-[8px] size-full" src={imgRectangle34} />
       </div>
     </div>
   );
@@ -1228,7 +1228,7 @@ function Frame226() {
     <div className="content-stretch flex flex-col items-start p-[12px] relative rounded-[8px] shrink-0">
       <div aria-hidden="true" className="absolute border border-[#bdbdbd] border-solid inset-0 pointer-events-none rounded-[8px]" />
       <div className="h-[314px] relative shrink-0 w-[503px]">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle35} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle35} />
       </div>
     </div>
   );
@@ -1463,10 +1463,10 @@ function Frame193() {
   return (
     <div className="content-stretch flex items-start justify-between relative shrink-0 w-full">
       <div className="h-[608px] relative rounded-[8px] shrink-0 w-[560px]" data-name="Colores 1">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgColores1} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgColores1} />
       </div>
       <div className="h-[614px] relative rounded-[8px] shrink-0 w-[560px]" data-name="Fonts 1">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgFonts1} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgFonts1} />
       </div>
     </div>
   );
@@ -2702,7 +2702,7 @@ function Frame186() {
           </svg>
         </div>
         <div className="absolute inset-[27.7%_44.45%_53.37%_35.55%]" data-name="Intersect">
-          <img alt="" className="absolute block inset-0 max-w-none size-full" height="21.201" src={imgIntersect} width="22.8" />
+          <img loading="lazy" decoding="async" alt="" className="absolute block inset-0 max-w-none size-full" height="21.201" src={imgIntersect} width="22.8" />
         </div>
         <div className="absolute inset-[36.7%_37.72%_0.13%_7.28%]">
           <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 62.693 70.746">
@@ -2782,7 +2782,7 @@ function Frame228() {
   return (
     <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full">
       <div className="aspect-[1560/938] relative shrink-0 w-full" data-name="Captura de pantalla 2026-02-09 a las 3.54.25 p. m. 1">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgCapturaDePantalla20260209ALas35425PM1} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgCapturaDePantalla20260209ALas35425PM1} />
       </div>
       <Frame229 />
     </div>
@@ -2909,7 +2909,7 @@ function Frame203() {
     <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0">
       <Frame19 />
       <div className="h-[338px] relative rounded-[8px] shrink-0 w-[540px]" data-name="Vista de chats (2) 1">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgRectangle2} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgRectangle2} />
       </div>
     </div>
   );
@@ -2930,7 +2930,7 @@ function Frame231() {
         <Frame10 />
       </div>
       <div className="h-[331px] relative rounded-[8px] shrink-0 w-[530px]" data-name="Lista (5) 1">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgRectangle33} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgRectangle33} />
       </div>
     </div>
   );
@@ -2960,7 +2960,7 @@ function Frame238() {
         <Frame11 />
       </div>
       <div className="h-[338px] relative rounded-[9px] shrink-0 w-[540px]" data-name="9. (2) 1">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[9px] size-full" src={img921} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[9px] size-full" src={img921} />
       </div>
     </div>
   );
@@ -2981,7 +2981,7 @@ function Frame239() {
         <Frame12 />
       </div>
       <div className="h-[337px] relative shrink-0 w-[540px]" data-name="8. (3) 1">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img831} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img831} />
       </div>
     </div>
   );
@@ -3019,7 +3019,7 @@ function Frame241() {
     <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0">
       <Frame20 />
       <div className="h-[338px] relative shrink-0 w-[540px]" data-name="Vista de chats (4) 1">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgVistaDeChats41} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgVistaDeChats41} />
       </div>
     </div>
   );
@@ -3048,7 +3048,7 @@ function Frame242() {
     <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0">
       <Frame22 />
       <div className="h-[338px] relative rounded-[8px] shrink-0 w-[540px]" data-name="Lista (6) 1">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgLista61} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgLista61} />
       </div>
     </div>
   );
@@ -3078,7 +3078,7 @@ function Frame244() {
         <Frame25 />
       </div>
       <div className="h-[338px] relative shrink-0 w-[540px]" data-name="Lista (7) 1">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle35} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle35} />
       </div>
     </div>
   );
@@ -3107,7 +3107,7 @@ function Frame245() {
     <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0">
       <Frame26 />
       <div className="h-[338px] relative shrink-0 w-[540px]" data-name="Lista (8) 1">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgLista81} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgLista81} />
       </div>
     </div>
   );
@@ -3323,7 +3323,7 @@ function Group3() {
     <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-[28.2px] place-items-start relative row-1">
       <div className="border-[0.762px] border-black border-solid col-1 h-[198.176px] ml-[15.24px] mt-0 relative rounded-tl-[6.098px] rounded-tr-[6.098px] row-1 w-[304.886px]" />
       <div className="col-1 h-[182.169px] ml-[22.87px] mt-[7.62px] pointer-events-none relative rounded-tl-[6.098px] rounded-tr-[6.098px] row-1 w-[288.879px]">
-        <img alt="" className="absolute inset-0 max-w-none object-cover rounded-tl-[6.098px] rounded-tr-[6.098px] size-full" src={imgRectangle3} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover rounded-tl-[6.098px] rounded-tr-[6.098px] size-full" src={imgRectangle3} />
         <div aria-hidden="true" className="absolute border-[0.762px] border-black border-solid inset-0 rounded-tl-[6.098px] rounded-tr-[6.098px]" />
       </div>
       <div className="border-[0.762px] border-black border-solid col-1 h-[12.195px] ml-0 mt-[197.41px] relative row-1 w-[335.375px]" />
@@ -3423,7 +3423,7 @@ function Group4() {
     <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-[28.2px] place-items-start relative row-1">
       <div className="border-[0.762px] border-black border-solid col-1 h-[198.176px] ml-[15.24px] mt-0 relative rounded-tl-[6.098px] rounded-tr-[6.098px] row-1 w-[304.886px]" />
       <div className="col-1 h-[182.169px] ml-[22.87px] mt-[7.62px] pointer-events-none relative rounded-tl-[6.098px] rounded-tr-[6.098px] row-1 w-[288.879px]">
-        <img alt="" className="absolute inset-0 max-w-none object-cover rounded-tl-[6.098px] rounded-tr-[6.098px] size-full" src={imgRectangle4} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover rounded-tl-[6.098px] rounded-tr-[6.098px] size-full" src={imgRectangle4} />
         <div aria-hidden="true" className="absolute border-[0.762px] border-black border-solid inset-0 rounded-tl-[6.098px] rounded-tr-[6.098px]" />
       </div>
       <div className="border-[0.762px] border-black border-solid col-1 h-[12.195px] ml-0 mt-[197.41px] relative row-1 w-[335.375px]" />
@@ -3519,7 +3519,7 @@ function Group1() {
   return (
     <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-[109.69px] mt-0 place-items-start relative row-1">
       <div className="col-1 h-[202.288px] ml-[5.52px] mt-[7.36px] pointer-events-none relative rounded-[14.712px] row-1 w-[103.903px]">
-        <img alt="" className="absolute inset-0 max-w-none object-cover rounded-[14.712px] size-full" src={imgRectangle6} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover rounded-[14.712px] size-full" src={imgRectangle6} />
         <div aria-hidden="true" className="absolute border-[0.919px] border-black border-solid inset-0 rounded-[14.712px]" />
       </div>
       <div className="border-[0.919px] border-black border-solid col-1 h-[217px] ml-0 mt-0 relative rounded-[14.712px] row-1 w-[115.856px]" />

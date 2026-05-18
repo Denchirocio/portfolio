@@ -99,7 +99,7 @@ export default function AboutMe() {
 
       <div className="flex items-center pt-[160px] w-full flex-1">
         <div className="shrink-0 w-[55%]">
-          <img src={imgCollage} alt="About me collage" className="w-full object-contain" />
+          <img src={imgCollage} alt="About me collage" fetchPriority="high" decoding="async" className="w-full object-contain" />
         </div>
         <div className="flex flex-col gap-[24px] items-start pl-[60px] pr-[80px] shrink-0 flex-1">
           <div className="flex flex-col gap-[16px] w-full">

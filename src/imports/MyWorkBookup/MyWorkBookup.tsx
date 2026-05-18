@@ -163,7 +163,7 @@ function Group3() {
       <div className="absolute border border-black border-solid h-[260px] left-[20px] rounded-tl-[8px] rounded-tr-[8px] top-0 w-[400px]" />
       <div className="absolute h-[239px] left-[30px] pointer-events-none rounded-tl-[8px] rounded-tr-[8px] top-[10px] w-[379px]">
         <div className="absolute inset-0 overflow-hidden rounded-tl-[8px] rounded-tr-[8px]">
-          <img alt="" className="absolute h-[275.31%] left-0 max-w-none top-[-0.19%] w-full" src={imgRectangle2} />
+          <img loading="lazy" decoding="async" alt="" className="absolute h-[275.31%] left-0 max-w-none top-[-0.19%] w-full" src={imgRectangle2} />
         </div>
         <div aria-hidden="true" className="absolute border border-black border-solid inset-0 rounded-tl-[8px] rounded-tr-[8px]" />
       </div>
@@ -723,7 +723,7 @@ function Group4() {
       <div className="border border-black border-solid col-1 h-[546.219px] ml-[42.02px] mt-0 relative rounded-tl-[8px] rounded-tr-[8px] row-1 w-[840.336px]" />
       <div className="col-1 h-[502.101px] ml-[63.03px] mt-[21.01px] pointer-events-none relative rounded-tl-[8px] rounded-tr-[8px] row-1 w-[800.975px]">
         <div className="absolute inset-0 overflow-hidden rounded-tl-[8px] rounded-tr-[8px]">
-          <img alt="" className="absolute h-[191.83%] left-[0.32%] max-w-none top-[0.05%] w-[99.41%]" src={imgRectangle3} />
+          <img loading="lazy" decoding="async" alt="" className="absolute h-[191.83%] left-[0.32%] max-w-none top-[0.05%] w-[99.41%]" src={imgRectangle3} />
         </div>
         <div aria-hidden="true" className="absolute border border-black border-solid inset-0 rounded-tl-[8px] rounded-tr-[8px]" />
       </div>
@@ -744,7 +744,7 @@ function Group2() {
       <div className="absolute border border-black border-solid h-[546.219px] left-[42.02px] rounded-tl-[8px] rounded-tr-[8px] top-0 w-[840.336px]" />
       <div className="absolute h-[502.101px] left-[63.03px] pointer-events-none rounded-tl-[8px] rounded-tr-[8px] top-[21.01px] w-[800.975px]">
         <div className="absolute inset-0 overflow-hidden rounded-tl-[8px] rounded-tr-[8px]">
-          <img alt="" className="absolute h-[191.83%] left-[0.32%] max-w-none top-[0.05%] w-[99.41%]" src={imgRectangle3} />
+          <img loading="lazy" decoding="async" alt="" className="absolute h-[191.83%] left-[0.32%] max-w-none top-[0.05%] w-[99.41%]" src={imgRectangle3} />
         </div>
         <div aria-hidden="true" className="absolute border border-black border-solid inset-0 rounded-tl-[8px] rounded-tr-[8px]" />
       </div>
@@ -773,7 +773,7 @@ function Group5() {
       <div className="border border-black border-solid col-1 h-[546.219px] ml-[42.02px] mt-0 relative rounded-tl-[8px] rounded-tr-[8px] row-1 w-[840.336px]" />
       <div className="col-1 h-[502.101px] ml-[63.03px] mt-[21.01px] pointer-events-none relative rounded-tl-[8px] rounded-tr-[8px] row-1 w-[800.975px]">
         <div className="absolute inset-0 overflow-hidden rounded-tl-[8px] rounded-tr-[8px]">
-          <img alt="" className="absolute h-[191.83%] left-[0.08%] max-w-none top-[-70.25%] w-[99.41%]" src={imgRectangle3} />
+          <img loading="lazy" decoding="async" alt="" className="absolute h-[191.83%] left-[0.08%] max-w-none top-[-70.25%] w-[99.41%]" src={imgRectangle3} />
         </div>
         <div aria-hidden="true" className="absolute border border-black border-solid inset-0 rounded-tl-[8px] rounded-tr-[8px]" />
       </div>
@@ -936,17 +936,17 @@ function Frame62() {
     <div className="content-stretch flex gap-[49px] items-center relative shrink-0 w-full">
       <div className="h-[319px] relative rounded-[8px] shrink-0 w-[400px]" data-name="HOME 1">
         <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[8px]">
-          <img alt="" className="absolute h-[148.5%] left-0 max-w-none top-[-0.03%] w-full" src={imgHome1} />
+          <img loading="lazy" decoding="async" alt="" className="absolute h-[148.5%] left-0 max-w-none top-[-0.03%] w-full" src={imgHome1} />
         </div>
       </div>
       <div className="h-[319px] relative rounded-[8px] shrink-0 w-[400px]" data-name="Ebook 1">
         <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[8px]">
-          <img alt="" className="absolute h-[139.32%] left-0 max-w-none top-[-0.07%] w-full" src={imgEbook1} />
+          <img loading="lazy" decoding="async" alt="" className="absolute h-[139.32%] left-0 max-w-none top-[-0.07%] w-full" src={imgEbook1} />
         </div>
       </div>
       <div className="h-[319px] relative rounded-[8px] shrink-0 w-[400px]" data-name="Debolsillo 1">
         <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[8px]">
-          <img alt="" className="absolute h-[113.2%] left-0 max-w-none top-[-0.02%] w-full" src={imgDebolsillo1} />
+          <img loading="lazy" decoding="async" alt="" className="absolute h-[113.2%] left-0 max-w-none top-[-0.02%] w-full" src={imgDebolsillo1} />
         </div>
       </div>
     </div>
@@ -957,13 +957,13 @@ function Frame61() {
   return (
     <div className="content-stretch flex gap-[49px] items-start relative shrink-0 w-full">
       <div className="h-[319px] relative rounded-[8px] shrink-0 w-[400px]" data-name="Procede al pago (B) 1">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgProcedeAlPagoB1} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgProcedeAlPagoB1} />
       </div>
       <div className="h-[319px] relative rounded-[8px] shrink-0 w-[400px]" data-name="Frame 868 1">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgFrame8681} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgFrame8681} />
       </div>
       <div className="h-[250px] relative rounded-[8px] shrink-0 w-[400px]" data-name="Orden confirmada 1">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgOrdenConfirmada1} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgOrdenConfirmada1} />
       </div>
     </div>
   );
@@ -992,13 +992,13 @@ function Frame68() {
   return (
     <div className="content-stretch flex flex-col gap-[48px] items-start relative shrink-0 w-[400px]">
       <div className="aspect-[1440/2360] relative rounded-[8px] shrink-0 w-full" data-name="Home">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgHome} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgHome} />
       </div>
       <div className="aspect-[1440/1406] relative rounded-[8px] shrink-0 w-full" data-name="Mi Perfil - Mis pedidos">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgMiPerfilMisPedidos} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgMiPerfilMisPedidos} />
       </div>
       <div className="aspect-[1448/908] relative rounded-[8px] shrink-0 w-full" data-name="Detalle libro bolsillo - comprimido-1">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgDetalleLibroBolsilloComprimido1} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgDetalleLibroBolsilloComprimido1} />
       </div>
     </div>
   );
@@ -1008,13 +1008,13 @@ function Frame69() {
   return (
     <div className="content-stretch flex flex-col gap-[48px] items-start relative shrink-0 w-[400px]">
       <div className="aspect-[1440/1658] relative rounded-[8px] shrink-0 w-full" data-name="De Bolsillo 1">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgDeBolsillo1} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgDeBolsillo1} />
       </div>
       <div className="aspect-[1440/1600] relative rounded-[8px] shrink-0 w-full" data-name="Procede al pago - 1 (B) Feedback positivo">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgProcedeAlPago1BFeedbackPositivo} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgProcedeAlPago1BFeedbackPositivo} />
       </div>
       <div className="aspect-[1440/1742] relative rounded-[8px] shrink-0 w-full" data-name="Detalle libro bolsillo - comprimido">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgDetalleLibroBolsilloComprimido} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgDetalleLibroBolsilloComprimido} />
       </div>
     </div>
   );
@@ -1024,13 +1024,13 @@ function Frame70() {
   return (
     <div className="content-stretch flex flex-col gap-[48px] items-start relative shrink-0 w-[400px]">
       <div className="aspect-[1440/2323] relative rounded-[8px] shrink-0 w-full" data-name="Busqueda Harry_ebook">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgBusquedaHarryEbook} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgBusquedaHarryEbook} />
       </div>
       <div className="aspect-[1440/900] relative rounded-[8px] shrink-0 w-full" data-name="Galería deluxe - foto 8">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgGaleriaDeluxeFoto8} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgGaleriaDeluxeFoto8} />
       </div>
       <div className="aspect-[1440/1041] relative rounded-[8px] shrink-0 w-full" data-name="Pago realizado con éxito">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgPagoRealizadoConExito} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgPagoRealizadoConExito} />
       </div>
     </div>
   );
@@ -1418,7 +1418,7 @@ function Group6() {
     <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-[28.2px] place-items-start relative row-1">
       <div className="border-[0.762px] border-black border-solid col-1 h-[198.176px] ml-[15.24px] mt-0 relative rounded-tl-[6.098px] rounded-tr-[6.098px] row-1 w-[304.886px]" />
       <div className="col-1 h-[182.169px] ml-[22.87px] mt-[7.62px] pointer-events-none relative rounded-tl-[6.098px] rounded-tr-[6.098px] row-1 w-[288.879px]">
-        <img alt="" className="absolute inset-0 max-w-none object-cover rounded-tl-[6.098px] rounded-tr-[6.098px] size-full" src={imgRectangle4} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover rounded-tl-[6.098px] rounded-tr-[6.098px] size-full" src={imgRectangle4} />
         <div aria-hidden="true" className="absolute border-[0.762px] border-black border-solid inset-0 rounded-tl-[6.098px] rounded-tr-[6.098px]" />
       </div>
       <div className="border-[0.762px] border-black border-solid col-1 h-[12.195px] ml-0 mt-[197.41px] relative row-1 w-[335.375px]" />
@@ -1518,7 +1518,7 @@ function Group7() {
     <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-[28.2px] place-items-start relative row-1">
       <div className="border-[0.762px] border-black border-solid col-1 h-[198.176px] ml-[15.24px] mt-0 relative rounded-tl-[6.098px] rounded-tr-[6.098px] row-1 w-[304.886px]" />
       <div className="col-1 h-[182.169px] ml-[22.87px] mt-[7.62px] pointer-events-none relative rounded-tl-[6.098px] rounded-tr-[6.098px] row-1 w-[288.879px]">
-        <img alt="" className="absolute inset-0 max-w-none object-cover rounded-tl-[6.098px] rounded-tr-[6.098px] size-full" src={imgRectangle5} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover rounded-tl-[6.098px] rounded-tr-[6.098px] size-full" src={imgRectangle5} />
         <div aria-hidden="true" className="absolute border-[0.762px] border-black border-solid inset-0 rounded-tl-[6.098px] rounded-tr-[6.098px]" />
       </div>
       <div className="border-[0.762px] border-black border-solid col-1 h-[12.195px] ml-0 mt-[197.41px] relative row-1 w-[335.375px]" />
@@ -1609,7 +1609,7 @@ function Group1() {
   return (
     <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-[109.69px] mt-0 place-items-start relative row-1">
       <div className="col-1 h-[202.288px] ml-[5.52px] mt-[7.36px] pointer-events-none relative rounded-[14.712px] row-1 w-[103.903px]">
-        <img alt="" className="absolute inset-0 max-w-none object-cover rounded-[14.712px] size-full" src={imgRectangle6} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover rounded-[14.712px] size-full" src={imgRectangle6} />
         <div aria-hidden="true" className="absolute border-[0.919px] border-black border-solid inset-0 rounded-[14.712px]" />
       </div>
       <div className="border-[0.919px] border-black border-solid col-1 h-[217px] ml-0 mt-0 relative rounded-[14.712px] row-1 w-[115.856px]" />

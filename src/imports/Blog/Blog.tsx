@@ -124,7 +124,7 @@ export default function Blog() {
       <div className="h-[136px] shrink-0" />
 
       {/* Hero banner */}
-      <img src={imgBannerBlog} alt="Blog banner" className="w-full object-cover shrink-0" />
+      <img src={imgBannerBlog} alt="Blog banner" fetchPriority="high" decoding="async" className="w-full object-cover shrink-0" />
 
       {/* Blog posts grid */}
       <div className="flex-1 flex items-start justify-center gap-0 px-[80px] py-[60px]">
