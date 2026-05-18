@@ -118,7 +118,7 @@ function Header({ onBannerClick }: { onBannerClick: () => void }) {
 export default function Blog() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   return (
-    <div className="bg-[#f8f8f8] min-h-screen flex flex-col">
+    <div className="bg-white min-h-screen flex flex-col">
       <Header onBannerClick={() => setIsDrawerOpen(true)} />
       <ContactDrawer isOpen={isDrawerOpen} onClose={() => setIsDrawerOpen(false)} />
       {/* Space for fixed header (80px nav + 56px banner) */}
@@ -139,6 +139,19 @@ export default function Blog() {
             )}
           </div>
         ))}
+      </div>
+
+      {/* Footer */}
+      <div className="bg-white flex h-[80px] items-center justify-between px-[32px] w-full border-t border-[#ebebeb]">
+        <div className="flex gap-[3px] items-center p-[8px]">
+          <span className="font-['Kimochi:Regular',sans-serif] leading-normal text-[20px] text-black whitespace-nowrap">Denchi</span>
+          <svg fill="none" viewBox="0 0 34 22" className="w-[34px] h-[22px]">
+            <path d="M34 2.47042C20.0898 7.79276 17.9004 7.54971 11.7118 0C13.7777 9.61712 12.6273 11.5368 0 19.5296C13.9102 14.2072 16.0996 14.4503 22.2882 22C20.2223 12.3829 21.3727 10.4632 34 2.47042Z" fill="#FF6465" />
+          </svg>
+        </div>
+        <a href="mailto:dn.chiapin@gmail.com?subject=Contact%20from%20your%20portfolio" target="_blank" className="font-['Inter:Regular',sans-serif] font-normal text-[16px] text-black underline decoration-solid leading-normal">
+          Get in touch -
+        </a>
       </div>
     </div>
   );
