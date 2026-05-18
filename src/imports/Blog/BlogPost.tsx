@@ -88,17 +88,7 @@ export default function BlogPost() {
       <div className="h-[136px] shrink-0" />
 
       {/* Hero image */}
-      <div className="relative w-full overflow-hidden shrink-0" style={{ maxHeight: 260 }}>
-        <img src={imgBannerBlog} alt={post.title} className="w-full object-cover" />
-        {/* Centered title overlay */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="bg-white border border-black px-[48px] py-[24px] text-center">
-            <p className="font-['Inter:Regular',sans-serif] text-[32px] text-black leading-normal">
-              Yes, that's also <span className="font-['Monomakh',sans-serif] text-[48px]">UX.</span>
-            </p>
-          </div>
-        </div>
-      </div>
+      <img src={imgBannerBlog} alt={post.title} className="w-full object-cover shrink-0" />
 
       {/* Article */}
       <div className="max-w-[780px] mx-auto px-[40px] py-[64px] flex flex-col gap-[24px] flex-1">
