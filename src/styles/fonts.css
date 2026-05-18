@@ -16,3 +16,17 @@
   font-style: normal;
 }
 
+@keyframes wave-icon {
+  0%, 100% { transform: translateY(0); }
+  40%       { transform: translateY(-14px); }
+}
+
+@keyframes star-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.logo-link:hover .logo-star {
+  animation: star-spin 0.6s ease-in-out forwards;
+}
+

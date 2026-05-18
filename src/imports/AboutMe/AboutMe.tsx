@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+﻿import { Link } from "react-router";
 import svgPaths from "./svg-pw6w0vxexd";
 import imgCollage from "./collage.png";
 
@@ -12,8 +12,8 @@ function Header() {
     <div className="bg-white fixed flex flex-col items-start left-0 top-0 w-full z-50">
       {/* Nav row */}
       <div className="bg-white flex h-[80px] items-center justify-between px-[48px] shrink-0 w-full">
-        <Link to="/" className="flex gap-[8px] items-center no-underline">
-          <svg fill="none" viewBox="0 0 34 22" className="h-[22px] shrink-0 w-[34px]">
+        <Link to="/" className="flex gap-[8px] items-center no-underline logo-link">
+          <svg fill="none" viewBox="0 0 34 22" className="h-[22px] shrink-0 w-[34px] logo-star">
             <path d="M34 2.47042C20.0898 7.79276 17.9004 7.54971 11.7118 0C13.7777 9.61712 12.6273 11.5368 0 19.5296C13.9102 14.2072 16.0996 14.4503 22.2882 22C20.2223 12.3829 21.3727 10.4632 34 2.47042Z" fill="#FF6465" />
           </svg>
           <span className="font-['Kimochi:Regular',sans-serif] text-[20px] text-black whitespace-nowrap">My portfolio</span>
@@ -25,11 +25,12 @@ function Header() {
             <a
               href="/CV- Denise Chiapin EN - Classic.pdf"
               download
-              className="border border-black font-['Inter:Regular',sans-serif] font-normal text-[20px] text-black px-[16px] py-[6px] rounded-[100px] whitespace-nowrap hover:bg-black hover:text-white transition-colors no-underline"
+              className="font-['Inter:Regular',sans-serif] font-normal text-[20px] text-black border border-black px-[16px] h-[44px] flex items-center rounded-[100px] whitespace-nowrap hover:bg-black hover:text-white transition-colors no-underline"
             >
               My CV
             </a>
-            <div className="bg-black border border-black flex gap-[10px] items-center justify-center px-[16px] py-[10px] rounded-[100px] hover:bg-[#333] transition-colors cursor-pointer">
+            <div className="bg-black content-stretch flex gap-[10px] items-center justify-center px-[16px] py-[10px] relative rounded-[100px] shrink-0 hover:bg-[#333333] transition-colors cursor-pointer">
+              <div aria-hidden="true" className="absolute border border-black border-solid inset-0 pointer-events-none rounded-[100px]" />
               <div className="relative shrink-0 size-[24px]">
                 <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24 24">
                   <path d={svgPaths.p20986480} fill="white" stroke="white" strokeLinejoin="round" strokeMiterlimit="10" />
@@ -38,8 +39,8 @@ function Header() {
                   <path d={svgPaths.p1e1ea9b0} fill="#54646D" />
                 </svg>
               </div>
-              <a href="https://www.linkedin.com/in/denisechiapin/?skipRedirect=true" target="_blank" className="font-['Inter:Regular',sans-serif] font-normal text-[20px] text-white whitespace-nowrap no-underline">
-                See my profile!
+              <a href="https://www.linkedin.com/in/denisechiapin/?skipRedirect=true" target="_blank" className="block font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[20px] text-white whitespace-nowrap no-underline">
+                <p className="cursor-pointer leading-[normal]">See my profile!</p>
               </a>
             </div>
           </div>
@@ -71,7 +72,7 @@ function Footer() {
   return (
     <div className="bg-white flex h-[80px] items-center justify-between px-[32px] w-full mt-[24px]">
       <div className="flex flex-col items-start p-[8px] w-[133px]">
-        <div className="flex gap-[3px] items-end w-full">
+        <div className="flex gap-[3px] items-center w-full">
           <span className="font-['Kimochi:Regular',sans-serif] leading-normal text-[20px] text-black whitespace-nowrap">Denchi</span>
           <div className="h-[22px] relative shrink-0 w-[34px]">
             <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 34 22">

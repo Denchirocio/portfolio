@@ -1,3 +1,4 @@
+﻿import { useState } from "react";
 import { Link } from "react-router";
 import imgBanner from "./Banner.png";
 import FadeIn from "../../app/components/FadeIn";
@@ -73,16 +74,32 @@ function Group5() {
 }
 
 function Frame22() {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const wave = (i: number) => ({
+    animation: isHovered
+      ? `wave-icon 0.7s ease-in-out ${i * 110}ms infinite`
+      : 'none',
+    display: 'inline-flex' as const,
+    alignItems: 'center' as const,
+  });
+
   return (
-    <div className="content-stretch flex gap-[16px] items-center relative shrink-0">
-      <div className="relative shrink-0 size-[64px]" data-name="wireframe 1">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgWireframe1} />
+    <div
+      className="content-stretch flex gap-[16px] items-center relative shrink-0"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <div style={wave(0)}>
+        <div className="relative shrink-0 size-[64px]" data-name="wireframe 1">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgWireframe1} />
+        </div>
       </div>
-      <Group2 />
-      <Group3 />
-      <Group4 />
-      <Group7 />
-      <Group5 />
+      <div style={wave(1)}><Group2 /></div>
+      <div style={wave(2)}><Group3 /></div>
+      <div style={wave(3)}><Group4 /></div>
+      <div style={wave(4)}><Group7 /></div>
+      <div style={wave(5)}><Group5 /></div>
     </div>
   );
 }
@@ -1296,7 +1313,7 @@ function Frame56() {
 
 function Frame61() {
   return (
-    <div className="content-stretch flex flex-col gap-[80px] items-start relative shrink-0 w-full">
+    <div className="content-stretch flex flex-col gap-[120px] items-start relative shrink-0 w-full">
       <FadeIn>
         <Frame23 />
       </FadeIn>
@@ -1322,12 +1339,12 @@ function Frame41() {
 
 function Frame44() {
   return (
-    <div className="content-stretch flex gap-[8px] items-center relative shrink-0 w-[668.5px]">
-      <svg fill="none" viewBox="0 0 34 22" className="w-[34px] h-[22px] shrink-0">
+    <Link to="/" className="content-stretch flex gap-[8px] items-center relative shrink-0 no-underline logo-link">
+      <svg fill="none" viewBox="0 0 34 22" className="w-[34px] h-[22px] shrink-0 logo-star">
         <path d="M34 2.47042C20.0898 7.79276 17.9004 7.54971 11.7118 0C13.7777 9.61712 12.6273 11.5368 0 19.5296C13.9102 14.2072 16.0996 14.4503 22.2882 22C20.2223 12.3829 21.3727 10.4632 34 2.47042Z" fill="#FF6465" />
       </svg>
       <p className="font-['Kimochi:Regular',sans-serif] leading-[normal] not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap">My portfolio</p>
-    </div>
+    </Link>
   );
 }
 
@@ -1353,9 +1370,9 @@ function Frame52() {
     <div className="bg-black content-stretch flex gap-[10px] items-center justify-center px-[16px] py-[10px] relative rounded-[100px] shrink-0 hover:bg-[#333333] transition-colors cursor-pointer">
       <div aria-hidden="true" className="absolute border border-black border-solid inset-0 pointer-events-none rounded-[100px]" />
       <SpeechBalloon1 />
-      <Link to="/about" className="block font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[20px] text-white whitespace-nowrap no-underline">
+      <a href="https://www.linkedin.com/in/denisechiapin/?skipRedirect=true" target="_blank" className="block font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[20px] text-white whitespace-nowrap no-underline">
         <p className="cursor-pointer leading-[normal]">See my profile!</p>
-      </Link>
+      </a>
     </div>
   );
 }
@@ -1377,7 +1394,7 @@ function Frame45() {
         <a
           href="/CV- Denise Chiapin EN - Classic.pdf"
           download
-          className="font-['Inter:Regular',sans-serif] font-normal text-[20px] text-black border border-black px-[16px] py-[6px] rounded-[100px] whitespace-nowrap hover:bg-black hover:text-white transition-colors"
+          className="font-['Inter:Regular',sans-serif] font-normal text-[20px] text-black border border-black px-[16px] h-[44px] flex items-center rounded-[100px] whitespace-nowrap hover:bg-black hover:text-white transition-colors"
         >
           My CV
         </a>

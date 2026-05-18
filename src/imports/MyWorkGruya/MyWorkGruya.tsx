@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+﻿import { Link } from "react-router";
 import imgGetInTouch from "./Get in touch.png";
 import svgPaths from "./svg-j5cw8d68e2";
 import imgRectangle2 from "./5dd93516c380ad462196f9ce0902f8ffd05cf779.png";
@@ -3759,7 +3759,7 @@ function Frame63() {
 
 function Frame74() {
   return (
-    <div className="content-stretch flex gap-[3px] items-end relative shrink-0 w-full">
+    <div className="content-stretch flex gap-[3px] items-center relative shrink-0 w-full">
       <p className="font-['Kimochi:Regular',sans-serif] leading-[normal] not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap">Denchi</p>
       <div className="h-[22px] relative shrink-0 w-[34px]" data-name="Vector">
         <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 34 22">
@@ -3804,12 +3804,12 @@ function Footer() {
 
 function Frame28() {
   return (
-    <div className="content-stretch flex gap-[8px] items-center relative shrink-0 w-[668.5px]">
-      <svg fill="none" viewBox="0 0 34 22" className="w-[34px] h-[22px] shrink-0">
+    <Link to="/" className="content-stretch flex gap-[8px] items-center relative shrink-0 no-underline logo-link">
+      <svg fill="none" viewBox="0 0 34 22" className="w-[34px] h-[22px] shrink-0 logo-star">
         <path d="M34 2.47042C20.0898 7.79276 17.9004 7.54971 11.7118 0C13.7777 9.61712 12.6273 11.5368 0 19.5296C13.9102 14.2072 16.0996 14.4503 22.2882 22C20.2223 12.3829 21.3727 10.4632 34 2.47042Z" fill="#FF6465" />
       </svg>
       <p className="font-['Kimochi:Regular',sans-serif] leading-[normal] not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap">My portfolio</p>
-    </div>
+    </Link>
   );
 }
 
@@ -3855,8 +3855,10 @@ function Frame29() {
     <div className="content-stretch flex gap-[24px] items-center relative shrink-0">
       <Link to="/" className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] no-underline not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap hover:opacity-70 transition-opacity">Home</Link>
       <Link to="/about" className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] no-underline not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap hover:opacity-70 transition-opacity">About me</Link>
-      <a href="/CV- Denise Chiapin EN - Classic.pdf" download className="font-['Inter:Regular',sans-serif] font-normal text-[20px] text-black border border-black px-[16px] py-[6px] rounded-[100px] whitespace-nowrap hover:bg-black hover:text-white transition-colors">My CV</a>
+      <div className="flex items-center gap-[8px]">
+        <a href="/CV- Denise Chiapin EN - Classic.pdf" download className="font-['Inter:Regular',sans-serif] font-normal text-[20px] text-black border border-black px-[16px] h-[44px] flex items-center rounded-[100px] whitespace-nowrap hover:bg-black hover:text-white transition-colors">My CV</a>
       <Frame30 />
+      </div>
     </div>
   );
 }

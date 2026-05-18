@@ -13,8 +13,8 @@ export default function Layout() {
       {!isAbout && <header className="sticky top-0 z-50 bg-white border-b border-[#EBEBEB]">
         <div className="max-w-[1440px] mx-auto px-[80px] py-[24px]">
           <nav className="flex items-center justify-between">
-            <Link to="/" className="flex items-center gap-[8px]">
-              <svg fill="none" viewBox="0 0 34 22" className="w-[34px] h-[22px]">
+            <Link to="/" className="flex items-center gap-[8px] logo-link">
+              <svg fill="none" viewBox="0 0 34 22" className="w-[34px] h-[22px] logo-star">
                 <path d="M34 2.47042C20.0898 7.79276 17.9004 7.54971 11.7118 0C13.7777 9.61712 12.6273 11.5368 0 19.5296C13.9102 14.2072 16.0996 14.4503 22.2882 22C20.2223 12.3829 21.3727 10.4632 34 2.47042Z" fill="#FF6465" />
               </svg>
               <span className="font-['Monomakh',sans-serif] font-bold text-[16px] text-black">
