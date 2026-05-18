@@ -221,7 +221,7 @@ function ContactDrawer({ isOpen, onClose }: { isOpen: boolean; onClose: () => vo
         {!success && status !== "error" && (
           <>
             {/* Header */}
-            <div className="px-[40px] pt-[40px] pb-[24px] shrink-0">
+            <div className="px-[40px] pt-[24px] pb-[16px] shrink-0">
               <div className="flex gap-[8px] items-center mb-[8px]">
                 <span className="bg-[rgba(223,169,234,0.6)] font-['Monomakh',sans-serif] text-[32px] text-black px-[10px] py-[2px] leading-normal">
                   Complete
@@ -232,7 +232,7 @@ function ContactDrawer({ isOpen, onClose }: { isOpen: boolean; onClose: () => vo
               </div>
               <div className="flex gap-[8px] items-center">
                 <span className="font-['Inter:Regular',sans-serif] font-normal text-[24px] text-black">
-                  so I can Contact you!...
+                  so I can contact you!...
                 </span>
                 <span className="bg-[#ebfaaa] font-['Monomakh',sans-serif] text-[28px] text-black px-[10px] py-[2px] leading-normal whitespace-nowrap">
                   Let's talk
@@ -241,7 +241,7 @@ function ContactDrawer({ isOpen, onClose }: { isOpen: boolean; onClose: () => vo
             </div>
 
             {/* Form fields */}
-            <div className="flex-1 overflow-y-auto px-[40px] flex flex-col gap-[12px]">
+            <div className="flex-1 overflow-y-auto px-[40px] py-[8px] flex flex-col gap-[8px]">
               {[
                 { name: "name",     placeholder: "Name & surname *" },
                 { name: "email",    placeholder: "E-mail *" },
@@ -320,18 +320,18 @@ function ContactDrawer({ isOpen, onClose }: { isOpen: boolean; onClose: () => vo
             </div>
 
             {/* Footer */}
-            <div className="px-[40px] py-[24px] shrink-0 border-t border-[#ebebeb]">
+            <div className="px-[40px] py-[12px] shrink-0 border-t border-[#ebebeb]">
               <div className="flex justify-end gap-[12px]">
                 <button
                   onClick={handleClose}
-                  className="font-['Inter:Regular',sans-serif] font-normal text-[18px] text-black border border-black px-[24px] py-[12px] rounded-[100px] hover:bg-black hover:text-white transition-colors cursor-pointer bg-transparent"
+                  className="font-['Inter:Regular',sans-serif] font-normal text-[20px] text-black border border-black px-[16px] h-[44px] flex items-center rounded-[100px] hover:bg-black hover:text-white transition-colors cursor-pointer bg-transparent whitespace-nowrap"
                 >
                   Cancel
                 </button>
                 <button
                   onClick={handleSubmit}
                   disabled={status === "loading"}
-                  className="font-['Inter:Regular',sans-serif] font-normal text-[18px] text-white bg-black px-[24px] py-[12px] rounded-[100px] hover:bg-[#333] transition-colors cursor-pointer border-none disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="font-['Inter:Regular',sans-serif] font-normal text-[20px] text-white bg-black px-[16px] h-[44px] flex items-center rounded-[100px] hover:bg-[#333] transition-colors cursor-pointer border-none whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {status === "loading" ? "Sending..." : "Send response"}
                 </button>
