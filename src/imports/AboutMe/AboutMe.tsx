@@ -266,12 +266,12 @@ function ContactDrawer({ isOpen, onClose }: { isOpen: boolean; onClose: () => vo
               ))}
 
               {[
-                { name: "role",             placeholder: "Role *",                                            options: ["Product Designer", "UX/UI Designer", "UX Designer", "Developer", "QA", "Other"] },
-                { name: "currentlyWorking", placeholder: "Are you currently working?",                        options: ["Yes, full-time", "Yes, freelancing", "No, I'm looking", "No, studying"] },
-                { name: "topic",            placeholder: "What would you like to talk about?",                options: ["UX / Product Design", "Career advice", "Collaboration on a project", "Mentorship", "Just chatting", "Other"] },
-                { name: "linkedinContact",  placeholder: "Are you comfortable being contacted via LinkedIn?", options: ["Yes, go ahead!", "I prefer email", "Either works for me"] },
-                { name: "schedule",         placeholder: "What time works best for you?",                     options: ["Morning (9am – 12pm)", "Afternoon (12pm – 5pm)", "Evening (5pm – 8pm)", "Flexible"] },
-                { name: "timezone", placeholder: "What's your time zone?", options: [
+                { name: "role",             placeholder: "Role *",                                              options: ["Product Designer", "UX/UI Designer", "UX Designer", "Developer", "QA", "Other"] },
+                { name: "currentlyWorking", placeholder: "Are you currently working? *",                      options: ["Yes, full-time", "Yes, freelancing", "No, I'm looking", "No, studying"] },
+                { name: "topic",            placeholder: "What would you like to talk about? *",              options: ["UX / Product Design", "Career advice", "Collaboration on a project", "Mentorship", "Just chatting", "Other"] },
+                { name: "linkedinContact",  placeholder: "Are you comfortable being contacted via LinkedIn? *", options: ["Yes, go ahead!", "I prefer email", "Either works for me"] },
+                { name: "schedule",         placeholder: "What time works best for you? *",                   options: ["Morning (9am – 12pm)", "Afternoon (12pm – 5pm)", "Evening (5pm – 8pm)", "Flexible"] },
+                { name: "timezone", placeholder: "What's your time zone? *", options: [
                   "GMT-12 (Baker Island)",
                   "GMT-11 (Samoa, Niue)",
                   "GMT-10 (Hawaii)",
