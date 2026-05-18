@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+
 import { Link } from "react-router";
 import svgPaths from "./svg-pw6w0vxexd";
 import imgCollage from "./collage.png";
@@ -167,10 +168,10 @@ function ContactDrawer({ isOpen, onClose }: { isOpen: boolean; onClose: () => vo
   return (
     <>
       {/* Backdrop */}
-      <div className="fixed inset-0 bg-black/30 z-[60]" onClick={handleClose} />
+      <div className="fixed inset-0 bg-black/60 z-[60] backdrop-enter" onClick={handleClose} />
 
       {/* Drawer panel */}
-      <div className="fixed top-0 right-0 h-full w-[560px] bg-white z-[70] flex flex-col shadow-2xl">
+      <div className="fixed top-0 right-0 h-full w-[560px] bg-white z-[70] flex flex-col shadow-2xl drawer-enter">
 
         {/* Close button */}
         <button
