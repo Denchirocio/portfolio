@@ -3816,11 +3816,9 @@ function Footer() {
 function Frame81() {
   return (
     <div className="content-stretch flex gap-[8px] items-center relative shrink-0 w-[668.5px]">
-      <div className="relative shrink-0 size-[32px]" data-name="Component 8">
-        <div className="absolute left-0 size-[32px] top-0" data-name="wireframe 1">
-          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgWireframe1} />
-        </div>
-      </div>
+      <svg fill="none" viewBox="0 0 34 22" className="w-[34px] h-[22px] shrink-0">
+        <path d="M34 2.47042C20.0898 7.79276 17.9004 7.54971 11.7118 0C13.7777 9.61712 12.6273 11.5368 0 19.5296C13.9102 14.2072 16.0996 14.4503 22.2882 22C20.2223 12.3829 21.3727 10.4632 34 2.47042Z" fill="#FF6465" />
+      </svg>
       <p className="font-['Kimochi:Regular',sans-serif] leading-[normal] not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap">My portfolio</p>
     </div>
   );
