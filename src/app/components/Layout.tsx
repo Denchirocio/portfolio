@@ -6,11 +6,12 @@ export default function Layout() {
   const location = useLocation();
   const isHome = location.pathname === "/";
   const isAbout = location.pathname === "/about";
+  const isBlog = location.pathname === "/blog";
 
   return (
     <div className="min-h-screen bg-white">
       <ScrollToTop />
-      {!isAbout && <header className="sticky top-0 z-50 bg-white border-b border-[#EBEBEB]">
+      {!isAbout && !isBlog && <header className="sticky top-0 z-50 bg-white border-b border-[#EBEBEB]">
         <div className="max-w-[1440px] mx-auto px-[80px] py-[24px]">
           <nav className="flex items-center justify-between">
             <Link to="/" className="flex items-center gap-[8px] logo-link">
@@ -63,7 +64,7 @@ export default function Layout() {
         <Outlet />
       </main>
 
-      {!isAbout && <AppFooter />}
+      {!isAbout && !isBlog && <AppFooter />}
     </div>
   );
 }

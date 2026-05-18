@@ -1,3 +1,6 @@
+import { Link } from "react-router";
+
+const imgSpeechBalloon = "https://www.figma.com/api/mcp/asset/3498e7d1-cf65-4c99-8b2c-54172ccb0d44";
 const imgCode     = "https://www.figma.com/api/mcp/asset/031012d6-90c1-450d-87eb-f108e54f58db";
 const imgFigma    = "https://www.figma.com/api/mcp/asset/384df90a-5f9e-4439-b17c-ceeb5daf863b";
 const imgOverload = "https://www.figma.com/api/mcp/asset/e4c4483c-7c70-4126-a6d8-bf4f5cc07fce";
@@ -83,13 +86,39 @@ function BlogCard({ post, isFirst }: { post: typeof posts[0]; isFirst: boolean }
   );
 }
 
-export default function Blog() {
+function Header() {
   return (
-    <div className="bg-[#f8f8f8] min-h-screen flex flex-col">
-      {/* Space for fixed Layout header (80px) + banner (56px) */}
-      <div className="h-[80px] shrink-0" />
-
-      {/* "I'm here" banner */}
+    <div className="bg-white fixed flex flex-col items-start left-0 top-0 w-full z-50">
+      {/* Nav */}
+      <div className="bg-white flex h-[80px] items-center justify-between px-[48px] shrink-0 w-full">
+        <Link to="/" className="flex gap-[8px] items-center no-underline logo-link">
+          <svg fill="none" viewBox="0 0 34 22" className="h-[22px] shrink-0 w-[34px] logo-star">
+            <path d="M34 2.47042C20.0898 7.79276 17.9004 7.54971 11.7118 0C13.7777 9.61712 12.6273 11.5368 0 19.5296C13.9102 14.2072 16.0996 14.4503 22.2882 22C20.2223 12.3829 21.3727 10.4632 34 2.47042Z" fill="#FF6465" />
+          </svg>
+          <span className="font-['Kimochi:Regular',sans-serif] text-[20px] text-black whitespace-nowrap">My portfolio</span>
+        </Link>
+        <div className="flex gap-[24px] items-center">
+          <Link to="/" className="font-['Inter:Regular',sans-serif] font-normal text-[20px] text-black no-underline hover:opacity-70 transition-opacity whitespace-nowrap">Home</Link>
+          <Link to="/about" className="font-['Inter:Regular',sans-serif] font-normal text-[20px] text-black no-underline hover:opacity-70 transition-opacity whitespace-nowrap">About me</Link>
+          <span className="font-['Inter:Bold',sans-serif] font-bold text-[20px] text-black whitespace-nowrap">Blog</span>
+          <div className="flex gap-[8px] items-center">
+            <a
+              href="/CV- Denise Chiapin EN - Classic.pdf"
+              download
+              className="font-['Inter:Regular',sans-serif] font-normal text-[20px] text-black border border-black px-[16px] h-[44px] flex items-center rounded-[100px] whitespace-nowrap hover:bg-black hover:text-white transition-colors no-underline"
+            >
+              My CV
+            </a>
+            <div className="bg-black flex gap-[10px] items-center justify-center px-[16px] py-[10px] rounded-[100px] hover:bg-[#333333] transition-colors cursor-pointer">
+              <img alt="" className="shrink-0 size-[24px]" src={imgSpeechBalloon} />
+              <a href="https://www.linkedin.com/in/denisechiapin/?skipRedirect=true" target="_blank" className="font-['Inter:Regular',sans-serif] font-normal text-[20px] text-white whitespace-nowrap no-underline">
+                See my profile!
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Banner */}
       <div className="bg-[#f8f8f8] border-t border-b border-[#d6d1d1] flex h-[56px] items-center justify-center p-[10px] shrink-0 w-full">
         <div className="flex gap-[2px] items-center">
           <div className="bg-[rgba(223,169,234,0.6)] flex h-[32px] items-center justify-center px-[8px] py-[4px]">
@@ -107,6 +136,16 @@ export default function Blog() {
           </span>
         </div>
       </div>
+    </div>
+  );
+}
+
+export default function Blog() {
+  return (
+    <div className="bg-[#f8f8f8] min-h-screen flex flex-col">
+      <Header />
+      {/* Space for fixed header (80px nav + 56px banner) */}
+      <div className="h-[136px] shrink-0" />
 
       {/* Hero black banner */}
       <div className="relative bg-black w-full h-[206px] shrink-0 overflow-hidden">
