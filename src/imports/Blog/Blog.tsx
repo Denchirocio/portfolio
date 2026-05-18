@@ -1,13 +1,8 @@
 import { Link } from "react-router";
+import imgBannerBlog from "./Bannerblog.png";
 
 const imgSpeechBalloon = "https://www.figma.com/api/mcp/asset/3498e7d1-cf65-4c99-8b2c-54172ccb0d44";
-const imgCode     = "https://www.figma.com/api/mcp/asset/031012d6-90c1-450d-87eb-f108e54f58db";
-const imgFigma    = "https://www.figma.com/api/mcp/asset/384df90a-5f9e-4439-b17c-ceeb5daf863b";
-const imgOverload = "https://www.figma.com/api/mcp/asset/e4c4483c-7c70-4126-a6d8-bf4f5cc07fce";
-const imgThumbsUp = "https://www.figma.com/api/mcp/asset/469a0aa4-32f5-4faf-a0cf-3bc38b7a40a6";
-const imgPencil   = "https://www.figma.com/api/mcp/asset/53cb5f17-5374-4fa5-a627-18c7daf1a32f";
-const imgImportant= "https://www.figma.com/api/mcp/asset/63aaa799-71ef-44c6-9127-b36a0a0a4eb7";
-const imgPost1    = "https://www.figma.com/api/mcp/asset/74940caa-8a8d-43e9-8a99-5d28b420a4e1";
+const imgPost1 = "https://www.figma.com/api/mcp/asset/74940caa-8a8d-43e9-8a99-5d28b420a4e1";
 
 const posts = [
   {
@@ -147,50 +142,8 @@ export default function Blog() {
       {/* Space for fixed header (80px nav + 56px banner) */}
       <div className="h-[136px] shrink-0" />
 
-      {/* Hero black banner */}
-      <div className="relative bg-black w-full h-[206px] shrink-0 overflow-hidden">
-        {/* Floating stickers */}
-        <img src={imgImportant} alt="" className="absolute left-[86px] top-[60px] h-[74px] w-[76px] rotate-[-19deg] object-contain" />
-        <img src={imgCode}      alt="" className="absolute left-[205px] top-[40px] h-[53px] w-[69px] rotate-[22deg] object-contain" />
-        <img src={imgFigma}     alt="" className="absolute left-[344px] top-[56px] h-[64px] w-[63px] rotate-[-15deg] object-contain" />
-        <img src={imgOverload}  alt="" className="absolute left-[973px] top-[35px] h-[67px] w-[67px] rotate-[15deg] object-contain" />
-        <img src={imgThumbsUp}  alt="" className="absolute left-[1127px] top-[60px] h-[61px] w-[49px] rotate-[-25deg] object-contain" />
-        <img src={imgPencil}    alt="" className="absolute left-[1280px] top-[40px] h-[49px] w-[49px] object-contain" />
-
-        {/* Badges */}
-        <div className="absolute left-[246px] top-[100px] bg-[#ffabe7] px-[16px] py-[6px] rounded-[24px]">
-          <span className="font-['Inter:Regular',sans-serif] font-semibold text-[14px] text-black">UX/UI</span>
-        </div>
-        <div className="absolute left-[996px] top-[108px] bg-[#c8e793] px-[16px] py-[6px] rounded-[24px]">
-          <span className="font-['Inter:Regular',sans-serif] font-semibold text-[14px] text-black">PRODUCT</span>
-        </div>
-        <div className="absolute left-[1303px] top-[113px] bg-[#796ff1] px-[16px] py-[6px] rounded-[24px]">
-          <span className="font-['Inter:Regular',sans-serif] font-semibold text-[14px] text-white">IA</span>
-        </div>
-
-        {/* Center text box with corner markers */}
-        <div className="absolute left-1/2 -translate-x-1/2 top-[28px] w-[430px] h-[150px]">
-          {/* Corner squares */}
-          <div className="absolute -left-[6px] -top-[6px] size-[12px] bg-black border border-white" />
-          <div className="absolute -right-[6px] -top-[6px] size-[12px] bg-black border border-white" />
-          <div className="absolute -left-[6px] -bottom-[6px] size-[12px] bg-black border border-white" />
-          <div className="absolute -right-[6px] -bottom-[6px] size-[12px] bg-black border border-white" />
-          {/* Top & bottom lines */}
-          <div className="absolute top-0 left-0 right-0 h-px bg-white" />
-          <div className="absolute bottom-0 left-0 right-0 h-px bg-white" />
-          {/* Left & right lines */}
-          <div className="absolute top-0 bottom-0 left-0 w-px bg-white" />
-          <div className="absolute top-0 bottom-0 right-0 w-px bg-white" />
-          {/* Text */}
-          <div className="flex items-center justify-center h-full px-[24px]">
-            <p className="font-['IBM_Plex_Mono',monospace] text-[22px] text-center leading-snug">
-              <span className="text-[#ebfaaa]">Let's talk about some</span>
-              <br />
-              <span className="text-[#ebfaaa] font-bold">things togheter!</span>
-            </p>
-          </div>
-        </div>
-      </div>
+      {/* Hero banner */}
+      <img src={imgBannerBlog} alt="Blog banner" className="w-full object-cover shrink-0" />
 
       {/* Blog posts grid */}
       <div className="flex-1 flex items-start justify-center gap-0 px-[80px] py-[60px]">
