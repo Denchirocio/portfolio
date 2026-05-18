@@ -69,7 +69,7 @@ function Header() {
 /* ─────────────────────────────────────────────── Footer */
 function Footer() {
   return (
-    <div className="bg-white flex h-[80px] items-center justify-between px-[32px] w-full mt-[80px]">
+    <div className="bg-white flex h-[80px] items-center justify-between px-[32px] w-full mt-[24px]">
       <div className="flex flex-col items-start p-[8px] w-[133px]">
         <div className="flex gap-[3px] items-end w-full">
           <span className="font-['Kimochi:Regular',sans-serif] leading-normal text-[20px] text-black whitespace-nowrap">Denchi</span>
@@ -94,11 +94,11 @@ function Footer() {
 /* ─────────────────────────────────────────────── Page */
 export default function AboutMe() {
   return (
-    <div className="bg-white relative min-h-screen" data-name="About me">
+    <div className="bg-white flex flex-col min-h-screen" data-name="About me">
       <Header />
 
       {/* Main content — starts below fixed header (80px nav + 49px banner = 129px) */}
-      <div className="flex items-center justify-between left-0 pt-[160px] w-full">
+      <div className="flex items-center justify-between pt-[160px] w-full max-w-[1440px] mx-auto flex-1">
         {/* Left: collage */}
         <div className="shrink-0 w-[50%] max-w-[700px]">
           <img
