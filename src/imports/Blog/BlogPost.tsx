@@ -55,20 +55,30 @@ function Header({ onBannerClick }: { onBannerClick: () => void }) {
 
 function OtherNoteCard({ post }: { post: typeof posts[0] }) {
   return (
-    <div className="flex flex-col gap-[16px] items-start shrink-0 w-[360px]">
+    <div className="flex flex-col gap-[13px] items-start shrink-0 w-[300px]">
+      {/* Image + date row */}
       <div className="flex items-start justify-between w-full">
-        <div className="flex h-[200px] items-center justify-center w-[19px] shrink-0">
+        {/* Rotated date */}
+        <div className="flex h-[248px] items-center justify-center w-[16px] shrink-0">
           <div className="-rotate-90 flex-none">
-            <p className="font-['Inter:Regular',sans-serif] font-semibold text-[14px] text-black whitespace-nowrap">{post.date || "DD.MM.AAAA"}</p>
+            <p className="font-['Inter:Regular',sans-serif] font-semibold text-[13px] text-black whitespace-nowrap">{post.date || "DD.MM.AAAA"}</p>
           </div>
         </div>
-        <div className="relative shrink-0 border border-black overflow-hidden" style={{ width: 300, height: 200 }}>
-          {post.image && <img alt="" className="absolute inset-0 w-full h-full object-cover opacity-80" src={post.image} />}
+        {/* Thumbnail */}
+        <div className={`relative shrink-0 size-[248px] border overflow-hidden ${post.overlay ? "border-[#dfa9ea]" : "border-black"}`}>
+          {post.image && <img loading="lazy" decoding="async" alt="" className="absolute inset-0 w-full h-full object-cover opacity-80" src={post.image} />}
+          {post.overlay && (
+            <div className="absolute bg-white border border-black left-[68px] top-[41px] w-[165px] h-[165px] flex flex-col justify-center p-[12px]">
+              <p className="font-['Inter:Regular',sans-serif] text-[15px] text-black leading-normal mb-[6px]">Yes, that's also</p>
+              <p className="font-['Monomakh',sans-serif] text-[48px] text-black leading-none">UX.</p>
+            </div>
+          )}
         </div>
       </div>
-      <div className="flex flex-col gap-[8px] w-full">
-        <h3 className="font-['Inter:Bold',sans-serif] font-bold text-[20px] text-black leading-normal">{post.title || "Coming soon"}</h3>
-        <p className="font-['Inter:Regular',sans-serif] font-normal text-[14px] text-[#7a7a7a] leading-normal">{post.description}</p>
+      {/* Text */}
+      <div className="flex flex-col gap-[13px] w-full">
+        <h3 className="font-['Inter:Bold',sans-serif] font-bold text-[20px] text-black leading-normal">{post.title}</h3>
+        <p className="font-['Inter:Regular',sans-serif] font-normal text-[13px] text-[#7a7a7a] leading-normal">{post.description}</p>
       </div>
     </div>
   );
@@ -150,17 +160,19 @@ export default function BlogPost() {
 
       {/* Other notes */}
       {otherPosts.length > 0 && (
-        <div className="bg-[#f8f8f8] px-[80px] py-[60px]">
-          <h2 className="font-['Monomakh',sans-serif] text-[32px] text-black mb-[40px]">Other notes</h2>
-          <div className="flex gap-0 items-start">
-            {otherPosts.map((p, i) => (
-              <div key={p.id} className="flex items-stretch">
-                <Link to={`/blog/${p.slug}`} className="no-underline">
-                  <OtherNoteCard post={p} />
-                </Link>
-                {i < otherPosts.length - 1 && <div className="w-px bg-black mx-[16px] self-stretch" />}
-              </div>
-            ))}
+        <div className="bg-[#f8f8f8] py-[60px]">
+          <div className="max-w-[1186px] mx-auto px-[80px]">
+            <h2 className="font-['Monomakh',sans-serif] text-[40px] text-black mb-[32px]">Other notes</h2>
+            <div className="flex gap-0 items-start">
+              {otherPosts.map((p, i) => (
+                <div key={p.id} className="flex items-stretch">
+                  <Link to={`/blog/${p.slug}`} className="no-underline">
+                    <OtherNoteCard post={p} />
+                  </Link>
+                  {i < otherPosts.length - 1 && <div className="w-px bg-black mx-[16px] self-stretch" />}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       )}
