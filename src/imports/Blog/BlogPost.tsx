@@ -159,7 +159,7 @@ export default function BlogPost() {
                   ? <Link to={`/blog/${p.slug}`} className="no-underline"><OtherNoteCard post={p} /></Link>
                   : <div className="w-[360px] h-[300px] invisible" />
                 }
-                {i < 2 && <div className="w-px bg-black mx-[16px] self-stretch" />}
+                {i < 2 && otherPosts[i + 1] && <div className="w-px bg-black mx-[16px] self-stretch" />}
               </div>
             ))}
           </div>
