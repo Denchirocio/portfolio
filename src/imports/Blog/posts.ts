@@ -1,4 +1,5 @@
 import imgPost2 from "./banner2.png";
+import imgGame from "./game.png";
 import imgBanner1 from "./banner1.png";
 
 const imgPost1 = "https://www.figma.com/api/mcp/asset/74940caa-8a8d-43e9-8a99-5d28b420a4e1";
@@ -31,7 +32,7 @@ export const posts = [
     id: 2,
     slug: "ux-video-games",
     date: "18.05.2026",
-    image: imgPost2,
+    image: imgGame,
     banner: imgPost2,
     overlay: false,
     title: "What UX designers can learn from video games",
