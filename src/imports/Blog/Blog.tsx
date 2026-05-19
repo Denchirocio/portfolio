@@ -25,7 +25,7 @@ function BlogCard({ post, isFirst }: { post: typeof posts[0]; isFirst: boolean }
           {post.image && (
             <img
               alt=""
-              className="absolute inset-0 w-full h-full object-cover opacity-80"
+              className="absolute inset-0 w-full h-full object-cover opacity-80 transition-transform duration-500 group-hover:scale-110"
               src={post.image}
             />
           )}
@@ -56,7 +56,7 @@ function BlogCard({ post, isFirst }: { post: typeof posts[0]; isFirst: boolean }
   );
 
   return post.slug
-    ? <Link to={`/blog/${post.slug}`} className="no-underline">{inner}</Link>
+    ? <Link to={`/blog/${post.slug}`} className="no-underline group">{inner}</Link>
     : inner;
 }
 

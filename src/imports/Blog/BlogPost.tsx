@@ -66,7 +66,7 @@ function OtherNoteCard({ post }: { post: typeof posts[0] }) {
         </div>
         {/* Thumbnail */}
         <div className={`relative shrink-0 size-[248px] border overflow-hidden ${post.overlay ? "border-[#dfa9ea]" : "border-black"}`}>
-          {post.image && <img loading="lazy" decoding="async" alt="" className="absolute inset-0 w-full h-full object-cover opacity-80" src={post.image} />}
+          {post.image && <img loading="lazy" decoding="async" alt="" className="absolute inset-0 w-full h-full object-cover opacity-80 transition-transform duration-500 group-hover:scale-110" src={post.image} />}
           {post.overlay && (
             <div className="absolute bg-white border border-black left-[68px] top-[41px] w-[165px] h-[165px] flex flex-col justify-center p-[12px]">
               <p className="font-['Inter:Regular',sans-serif] text-[15px] text-black leading-normal mb-[6px]">Yes, that's also</p>
@@ -166,7 +166,7 @@ export default function BlogPost() {
             <div className="flex gap-0 items-start">
               {otherPosts.map((p, i) => (
                 <div key={p.id} className="flex items-stretch">
-                  <Link to={`/blog/${p.slug}`} className="no-underline">
+                  <Link to={`/blog/${p.slug}`} className="no-underline group">
                     <OtherNoteCard post={p} />
                   </Link>
                   {i < otherPosts.length - 1 && <div className="w-px bg-black mx-[16px] self-stretch" />}
