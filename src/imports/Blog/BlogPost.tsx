@@ -2,7 +2,6 @@
 import { useState } from "react";
 import { ContactDrawer } from "../shared/ContactDrawer";
 import { posts } from "./posts";
-import imgBannerBlog from "./banner1.png";
 import imgFirma from "./firma.png";
 
 const imgSpeechBalloon = "https://www.figma.com/api/mcp/asset/3498e7d1-cf65-4c99-8b2c-54172ccb0d44";
@@ -104,7 +103,7 @@ export default function BlogPost() {
       <div className="h-[136px] shrink-0" />
 
       {/* Hero image */}
-      <img src={imgBannerBlog} alt={post.title} fetchPriority="high" decoding="async" className="w-full object-cover shrink-0" />
+      {post.banner && <img src={post.banner} alt={post.title} fetchPriority="high" decoding="async" className="w-full object-cover shrink-0" />}
 
       {/* Breadcrumb */}
       <div className="max-w-[780px] mx-auto px-[40px] pt-[32px] w-full flex items-center gap-[8px]">

@@ -1,3 +1,6 @@
+import imgPost2 from "./banner2.png";
+import imgBanner1 from "./banner1.png";
+
 const imgPost1 = "https://www.figma.com/api/mcp/asset/74940caa-8a8d-43e9-8a99-5d28b420a4e1";
 
 export const posts = [
@@ -6,6 +9,7 @@ export const posts = [
     slug: "ux-design-asia",
     date: "17.05.2026",
     image: imgPost1,
+    banner: imgBanner1,
     overlay: true,
     title: "UX Design in Asia. Why is it so different?",
     description: "From Japan to the West, a look into why some interfaces that feel chaotic to us can represent innovation, efficiency and a completely natural experience for others.",
@@ -23,6 +27,27 @@ export const posts = [
       "And what do you think?",
     ],
   },
-  { id: 2, slug: "", date: "", image: null, overlay: false, title: "", description: "", hidden: true, body: [] },
-  { id: 3, slug: "", date: "", image: null, overlay: false, title: "", description: "", hidden: true, body: [] },
+  {
+    id: 2,
+    slug: "ux-video-games",
+    date: "18.05.2026",
+    image: imgPost2,
+    banner: imgPost2,
+    overlay: false,
+    title: "What UX designers can learn from video games",
+    description: "For a very long time, saying you played video games was almost the same as saying you were wasting your time.",
+    hidden: false,
+    body: [
+      "For a very long time, saying you played video games was almost the same as saying you were wasting your time. And even though the gaming industry now makes more money than movies and music combined, there's still this idea that gaming doesn't really contribute to someone's professional or personal growth. As if spending hours in front of a console was nothing more than empty entertainment and there was absolutely nothing else behind it.",
+      "But honestly, I think video games teach far more than people imagine. And I'm not only talking about fast reflexes or memory, I'm talking about skills we constantly use in our professional lives without even realizing it. Problem solving, adapting quickly, recognizing patterns, making decisions under pressure, teamwork, resource management, handling frustration, understanding complex systems, prioritizing, insisting even after failing twenty times in a row. All of that has existed inside video games for years.",
+      "What's most interesting is that we learn these skills in a completely natural way. Nobody forces you to sit down and study an 80-page manual before you start playing. Video games teach you through experimentation. You fail, try again, understand how something works, optimize a strategy, change your approach and eventually improve. And even if it sounds dramatic, a huge part of professional work functions exactly the same way.",
+      "In fact, I think video games train something that is extremely important today and that very few people actually know how to handle well: frustration tolerance. Losing, making mistakes, trying again and continuing even when things go wrong. Entire games are built around that idea. And even if from the outside it just looks like someone 'trying to beat a level', underneath there's a person learning how to persist even when results don't appear immediately.",
+      "I also find it really interesting how video games understand something that many digital products still don't: people learn better by interacting than by reading endless instructions. Games make you discover things. They create curiosity. They reward exploration. They teach you without making you feel like someone is teaching you. And honestly, I think product design still has a lot to learn from that.",
+      "But maybe the most important part has nothing to do with productivity or efficiency. It has to do with creativity.",
+      "Video games constantly expose us to different worlds, different ways of communicating, music, interfaces, narratives, characters, visual decisions and emotional experiences that end up shaping the way we think without us even noticing it. Many of the things that inspire the way I design today don't come from other applications, they come from games I played years ago. They come from atmospheres, menus, sounds, feelings or experiences I still remember after a very long time.",
+      "Because in the end, video games don't only entertain us. They also build sensitivity.",
+      "And maybe that's why every time I hear someone say that playing video games is 'useless', I feel like they probably never understood everything they were learning while they were playing.",
+    ],
+  },
+  { id: 3, slug: "", date: "", image: null, banner: null, overlay: false, title: "", description: "", hidden: true, body: [] },
 ];
