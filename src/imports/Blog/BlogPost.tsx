@@ -152,7 +152,7 @@ export default function BlogPost() {
       {otherPosts.length > 0 && (
         <div className="bg-[#f8f8f8] px-[80px] py-[60px]">
           <h2 className="font-['Monomakh',sans-serif] text-[32px] text-black mb-[40px]">Other notes</h2>
-          <div className="flex gap-0 items-start">
+          <div className="flex gap-0 items-start justify-center">
             {[...otherPosts, ...Array(Math.max(0, 3 - otherPosts.length)).fill(null)].map((p, i) => (
               <div key={i} className="flex items-stretch">
                 {p
