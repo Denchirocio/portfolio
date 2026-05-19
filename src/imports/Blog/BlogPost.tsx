@@ -152,14 +152,13 @@ export default function BlogPost() {
       {otherPosts.length > 0 && (
         <div className="bg-[#f8f8f8] px-[80px] py-[60px]">
           <h2 className="font-['Monomakh',sans-serif] text-[32px] text-black mb-[40px]">Other notes</h2>
-          <div className="flex gap-0 items-start justify-center">
-            {[...otherPosts, ...Array(Math.max(0, 3 - otherPosts.length)).fill(null)].map((p, i) => (
-              <div key={i} className="flex items-stretch">
-                {p
-                  ? <Link to={`/blog/${p.slug}`} className="no-underline"><OtherNoteCard post={p} /></Link>
-                  : <div className="w-[360px] h-[300px] invisible" />
-                }
-                {i < 2 && otherPosts[i + 1] && <div className="w-px bg-black mx-[16px] self-stretch" />}
+          <div className="flex gap-0 items-start">
+            {otherPosts.map((p, i) => (
+              <div key={p.id} className="flex items-stretch">
+                <Link to={`/blog/${p.slug}`} className="no-underline">
+                  <OtherNoteCard post={p} />
+                </Link>
+                {i < otherPosts.length - 1 && <div className="w-px bg-black mx-[16px] self-stretch" />}
               </div>
             ))}
           </div>
