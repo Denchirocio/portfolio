@@ -1,6 +1,8 @@
 import imgPost2 from "./banner2.png";
 import imgGame from "./game.png";
 import imgBanner1 from "./banner1.png";
+import imgPost3 from "./90its.png";
+import imgBanner3 from "./90.png";
 
 const imgPost1 = "https://www.figma.com/api/mcp/asset/74940caa-8a8d-43e9-8a99-5d28b420a4e1";
 
@@ -50,5 +52,27 @@ export const posts = [
       "And maybe that's why every time I hear someone say that playing video games is 'useless', I feel like they probably never understood everything they were learning while they were playing.",
     ],
   },
-  { id: 3, slug: "", date: "", image: null, banner: null, overlay: false, title: "", description: "", hidden: true, body: [] },
+  {
+    id: 3,
+    slug: "return-of-90s",
+    date: "19.05.2026",
+    image: imgPost3,
+    banner: imgBanner3,
+    overlay: false,
+    title: "The Return of the 90's Internet... in 2026?",
+    description: "For years, the internet tried to convince us that the future of design was becoming cleaner and cleaner. More white space. More minimalism. More silence.",
+    hidden: false,
+    body: [
+      "For years, the internet tried to convince us that the future of design was becoming cleaner and cleaner. More white space. More minimalism. More silence. And for a long time, it worked. Interfaces became more intuitive, faster and much easier to use. But while everything was being optimized, something strange also started happening: the internet slowly began losing its personality.",
+      "And I think that's exactly why aesthetics are coming back.",
+      "Because after years of seeing perfectly aligned products with the same typography, the same layouts and the same visual decisions, people started getting tired of feeling like everything looked the same. Today, you open five different apps and they often feel like part of the exact same emotional operating system. Everything is correct, polished and efficient... but also extremely forgettable.",
+      "So people started looking backwards.",
+      "PS1-inspired interfaces came back. Glow effects, textures, exaggerated gradients, webcore, weird cursors, brutalism, anime-inspired visuals, Y2K references, uncomfortable layouts, oversized typography, unnecessary visual effects and all those aesthetics the internet spent years calling 'bad design'.",
+      "But the truth is, aesthetics didn't come back only because of nostalgia.",
+      "They came back because people miss feeling something when they use an interface.",
+      "And that's interesting, because for a very long time UX tried to remove anything that felt 'unnecessary'. Everything needed a functional reason to exist. Everything had to justify itself through usability or efficiency. But aesthetics work differently. Many times they don't exist to optimize a task. They exist to create identity, emotion, atmosphere or simply make an experience feel different. And honestly, I think that has enormous value.",
+      "Because people don't only remember useful products. They remember products with personality. That's why we still remember old video game menus, console startup sounds, Windows XP interfaces, old websites or tiny visual details that were completely unnecessary but somehow stayed in our memory for years.",
+      "And maybe that's what the internet is trying to recover right now. Not necessarily a worse or more chaotic design era, but an escape from this modern obsession where everything needs to look corporate, silent and hyper-optimized. Because maybe the problem was never 'too much aesthetic'. Maybe the real problem was losing it completely.",
+    ],
+  },
 ];
