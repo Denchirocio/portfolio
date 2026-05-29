@@ -896,9 +896,8 @@ export default function MyWorkDenchi() {
 
   return (
     <div className="bg-white flex flex-col relative overflow-x-hidden" style={{ minHeight: minH || undefined }} data-name="My work / Denchi">
-      <FixedHeader />
       <div ref={wrapRef}>
-        <div className="-translate-x-1/2 absolute content-stretch flex flex-col gap-[120px] items-center justify-center left-1/2 pb-[120px] top-[160px]">
+        <div className="-translate-x-1/2 absolute content-stretch flex flex-col gap-[120px] items-center justify-center left-1/2 pb-[120px] top-[0px]">
           <Hero />
           <FadeIn><Overview /></FadeIn>
           <FadeIn><ProblemAndRole /></FadeIn>
