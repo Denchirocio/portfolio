@@ -2045,7 +2045,7 @@ function Frame31() {
 
 function Frame43() {
   return (
-    <div className="hidden">
+    <div className="bg-white content-stretch fixed flex flex-col items-start left-0 top-0 w-full z-50">
       <Frame11 />
       <Frame31 />
     </div>
@@ -2056,9 +2056,9 @@ export default function MyWorkBookup() {
   return (
     <div className="bg-white flex flex-col relative" data-name="My work/ Bookup">
       <Frame43 />
-      <div>
+      <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}>
         <Frame46 />
-      </div>
+      </motion.div>
     </div>
   );
 }

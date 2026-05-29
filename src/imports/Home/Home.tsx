@@ -1405,7 +1405,7 @@ function Frame61() {
 
 function Frame41() {
   return (
-    <div className="content-stretch flex flex-col items-center justify-center mx-auto mt-[48px] mb-[80px] relative w-[1186px]">
+    <div className="content-stretch flex flex-col items-center justify-center mx-auto mt-[88px] mb-[80px] relative w-[1186px]">
       <Frame61 />
     </div>
   );
@@ -1569,7 +1569,7 @@ function Frame53() {
 
 function Frame42() {
   return (
-    <div className="hidden">
+    <div className="bg-white content-stretch fixed flex flex-col items-start left-0 top-0 w-full z-50">
       <Frame40 />
       <Frame53 />
     </div>
@@ -1579,6 +1579,7 @@ function Frame42() {
 export default function Home() {
   return (
     <div className="bg-white flex flex-col relative" data-name="Home">
+      <Frame42 />
       <Frame41 />
     </div>
   );

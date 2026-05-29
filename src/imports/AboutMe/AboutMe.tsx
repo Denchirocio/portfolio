@@ -10,7 +10,7 @@ const imgSpeech = "https://www.figma.com/api/mcp/asset/a645b18b-8179-4bc9-8a36-7
 /* ─────────────────────────────────────────────── Header */
 function Header({ onBannerClick }: { onBannerClick: () => void }) {
   return (
-    <div className="bg-white fixed flex flex-col items-start left-0 top-0 w-full z-40">
+    <div className="bg-white fixed flex flex-col items-start left-0 top-0 w-full z-50">
       <div className="bg-white flex h-[80px] items-center justify-between px-[48px] shrink-0 w-full">
         <Link to="/" className="flex gap-[8px] items-center no-underline logo-link">
           <svg fill="none" viewBox="0 0 34 22" className="h-[22px] shrink-0 w-[34px] logo-star">

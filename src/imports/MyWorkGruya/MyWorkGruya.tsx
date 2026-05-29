@@ -3950,7 +3950,7 @@ function Frame32() {
 
 function Frame61() {
   return (
-    <div className="hidden">
+    <div className="bg-white content-stretch fixed flex flex-col items-start left-0 top-0 w-full z-50">
       <Frame12 />
       <Frame32 />
     </div>
@@ -3961,9 +3961,9 @@ export default function MyWorkGruya() {
   return (
     <div className="bg-white flex flex-col relative" data-name="My work/ Gruya">
       <Frame61 />
-      <div>
+      <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}>
         <Frame63 />
-      </div>
+      </motion.div>
     </div>
   );
 }

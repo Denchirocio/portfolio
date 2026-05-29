@@ -3748,7 +3748,7 @@ function BannerFinal() {
 
 function Frame97() {
   return (
-    <div className="-translate-x-1/2 absolute content-stretch flex flex-col gap-[120px] items-center justify-center left-1/2 pb-[120px] top-[0px]">
+    <div className="-translate-x-1/2 absolute content-stretch flex flex-col gap-[120px] items-center justify-center left-1/2 pb-[120px] top-[160px]">
       <Frame41 />
       <Frame59 />
       <Frame189 />
@@ -3961,7 +3961,7 @@ function Frame85() {
 
 function Frame78() {
   return (
-    <div className="hidden">
+    <div className="bg-white content-stretch fixed flex flex-col items-start left-0 top-0 w-full z-50">
       <Frame79 />
       <Frame85 />
     </div>
@@ -3982,9 +3982,9 @@ export default function MyWorkChatty() {
   return (
     <div className="bg-white flex flex-col relative" style={{ minHeight: minH || undefined }} data-name="My work/ Chatty">
       <Frame78 />
-      <div ref={wrapRef}>
+      <motion.div ref={wrapRef} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}>
         <Frame97 />
-      </div>
+      </motion.div>
     </div>
   );
 }

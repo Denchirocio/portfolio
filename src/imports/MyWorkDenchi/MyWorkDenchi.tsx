@@ -162,7 +162,7 @@ function GreenBanner() {
 
 function FixedHeader() {
   return (
-    <div className="hidden">
+    <div className="bg-white content-stretch fixed flex flex-col items-start left-0 top-0 w-full z-50">
       <NavBar />
       <GreenBanner />
     </div>
@@ -896,8 +896,9 @@ export default function MyWorkDenchi() {
 
   return (
     <div className="bg-white flex flex-col relative overflow-x-hidden" style={{ minHeight: minH || undefined }} data-name="My work / Denchi">
+      <FixedHeader />
       <div ref={wrapRef}>
-        <div className="-translate-x-1/2 absolute content-stretch flex flex-col gap-[120px] items-center justify-center left-1/2 pb-[120px] top-[0px]">
+        <div className="-translate-x-1/2 absolute content-stretch flex flex-col gap-[120px] items-center justify-center left-1/2 pb-[120px] top-[160px]">
           <Hero />
           <FadeIn><Overview /></FadeIn>
           <FadeIn><ProblemAndRole /></FadeIn>

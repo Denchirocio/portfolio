@@ -2814,7 +2814,7 @@ function BannerFinal() {
 
 function Frame63() {
   return (
-    <div className="-translate-x-1/2 absolute content-stretch flex flex-col gap-[120px] items-center justify-center left-1/2 pb-[120px] top-[0px]">
+    <div className="-translate-x-1/2 absolute content-stretch flex flex-col gap-[120px] items-center justify-center left-1/2 pb-[120px] top-[160px]">
       <Frame41 />
       <Frame46 />
       <Frame57 />
@@ -3020,7 +3020,7 @@ function Frame56() {
 
 function Frame52() {
   return (
-    <div className="hidden">
+    <div className="bg-white content-stretch fixed flex flex-col items-start left-0 top-0 w-full z-50">
       <Frame38 />
       <Frame56 />
     </div>
@@ -3041,9 +3041,9 @@ export default function MyWorkPayana() {
   return (
     <div className="bg-white flex flex-col relative" style={{ minHeight: minH || undefined }} data-name="My work/ Payana">
       <Frame52 />
-      <div ref={wrapRef}>
+      <motion.div ref={wrapRef} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}>
         <Frame63 />
-      </div>
+      </motion.div>
       <div className="absolute h-0 left-[696px] top-[7898px] w-[47px]">
         <div className="absolute inset-[-3.68px_-1.06%_-3.68px_-5.67%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 50.1667 7.36396">
