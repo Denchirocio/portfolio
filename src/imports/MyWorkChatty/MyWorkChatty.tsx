@@ -3982,9 +3982,9 @@ export default function MyWorkChatty() {
   return (
     <div className="bg-white flex flex-col relative" style={{ minHeight: minH || undefined }} data-name="My work/ Chatty">
       <Frame78 />
-      <motion.div ref={wrapRef} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}>
+      <div ref={wrapRef}>
         <Frame97 />
-      </motion.div>
+      </div>
     </div>
   );
 }

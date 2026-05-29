@@ -3041,9 +3041,9 @@ export default function MyWorkPayana() {
   return (
     <div className="bg-white flex flex-col relative" style={{ minHeight: minH || undefined }} data-name="My work/ Payana">
       <Frame52 />
-      <motion.div ref={wrapRef} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}>
+      <div ref={wrapRef}>
         <Frame63 />
-      </motion.div>
+      </div>
       <div className="absolute h-0 left-[696px] top-[7898px] w-[47px]">
         <div className="absolute inset-[-3.68px_-1.06%_-3.68px_-5.67%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 50.1667 7.36396">
