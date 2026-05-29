@@ -2,6 +2,9 @@
 import { Link } from "react-router";
 
 // Section icons (from public folder)
+// Hero images
+import imgHeroDesktop from "./hero-desktop.png";
+import imgHeroPhone from "./hero-mobile.png";
 // App screenshots
 import imgSc1 from "./sc1-bg.png";
 import imgSc2 from "./sc2-bg.png";
@@ -247,7 +250,24 @@ function Hero() {
         </p>
       </div>
       <div className="h-[307px] relative shrink-0 w-[476px]">
-        <img loading="lazy" decoding="async" alt="Denchi app" className="absolute inset-0 max-w-none object-contain size-full" src="/Pantalla Denchi.png" />
+        <div className="absolute contents left-0 top-0">
+          <div className="absolute border border-black border-solid h-[260px] left-[20px] rounded-tl-[8px] rounded-tr-[8px] top-0 w-[400px]" />
+          <div className="absolute border border-black border-solid h-[239px] left-[30px] rounded-tl-[8px] rounded-tr-[8px] top-[10px] w-[379px]">
+            <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-tl-[8px] rounded-tr-[8px] size-full" src={imgHeroDesktop} />
+          </div>
+          <div className="absolute border border-black border-solid h-[16px] left-0 top-[259px] w-[440px]" />
+          <div className="absolute h-[6px] left-0 top-[274px] w-[440px]">
+            <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 440 6">
+              <path d="M436.5 0.380859L417.125 4.19238H28.7344L8.40625 0.380859H436.5Z" stroke="black" strokeWidth="0.762215" />
+            </svg>
+          </div>
+          <div className="absolute border border-black border-solid h-[7px] left-[190px] rounded-bl-[200px] rounded-br-[200px] top-[259px] w-[60px]" />
+        </div>
+        <div className="absolute bg-white content-stretch drop-shadow-[0px_0.794px_0.397px_rgba(216,216,216,0.25)] flex h-[253px] items-center left-[339px] p-[3.175px] rounded-[12.702px] top-[71px] w-[125.623px]">
+          <div className="h-[246.649px] relative rounded-[12.702px] shadow-[0px_0.794px_0.794px_0px_rgba(189,189,189,0.5)] shrink-0 w-[119.272px]">
+            <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[12.702px] size-full" src={imgHeroPhone} />
+          </div>
+        </div>
       </div>
     </div>
   );
