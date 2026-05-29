@@ -1,4 +1,5 @@
 ﻿import { Link } from "react-router";
+import { motion } from "motion/react";
 import imgGetInTouch from "./Get in touch.png";
 import svgPaths from "./svg-fwravnrvpr";
 import imgRectangle2 from "./cc6f984a02b5fc60ca969da6e4b8952f039ea1e4.png";
@@ -2055,7 +2056,9 @@ export default function MyWorkBookup() {
   return (
     <div className="bg-white flex flex-col relative" data-name="My work/ Bookup">
       <Frame43 />
-      <Frame46 />
+      <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}>
+        <Frame46 />
+      </motion.div>
     </div>
   );
 }

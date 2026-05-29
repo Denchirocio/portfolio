@@ -1,5 +1,6 @@
 ﻿import { useRef, useEffect, useState } from "react";
 import { Link } from "react-router";
+import { motion } from "motion/react";
 import imgGetInTouch from "./Get in touch.png";
 import svgPaths from "./svg-fhin9emy9v";
 import imgRectangle2 from "./3c02e76a688120a3f55c7c6d42881902b6c378ed.png";
@@ -3981,9 +3982,9 @@ export default function MyWorkChatty() {
   return (
     <div className="bg-white flex flex-col relative" style={{ minHeight: minH || undefined }} data-name="My work/ Chatty">
       <Frame78 />
-      <div ref={wrapRef}>
+      <motion.div ref={wrapRef} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}>
         <Frame97 />
-      </div>
+      </motion.div>
     </div>
   );
 }

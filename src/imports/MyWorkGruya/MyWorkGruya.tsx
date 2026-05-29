@@ -1,4 +1,5 @@
 ﻿import { Link } from "react-router";
+import { motion } from "motion/react";
 import imgGetInTouch from "./Get in touch.png";
 import svgPaths from "./svg-j5cw8d68e2";
 import imgRectangle2 from "./5dd93516c380ad462196f9ce0902f8ffd05cf779.png";
@@ -3960,7 +3961,9 @@ export default function MyWorkGruya() {
   return (
     <div className="bg-white flex flex-col relative" data-name="My work/ Gruya">
       <Frame61 />
-      <Frame63 />
+      <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}>
+        <Frame63 />
+      </motion.div>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 ﻿import { useRef, useEffect, useState } from "react";
 import { Link } from "react-router";
+import FadeIn from "../../app/components/FadeIn";
 
 // Section icons (from public folder)
 // Hero images
@@ -904,22 +905,22 @@ export default function MyWorkDenchi() {
       <div ref={wrapRef}>
         <div className="-translate-x-1/2 absolute content-stretch flex flex-col gap-[120px] items-center justify-center left-1/2 pb-[120px] top-[160px]">
           <Hero />
-          <Overview />
-          <ProblemAndRole />
-          <Carrusel />
-          <OurProcess />
-          <OurUsers />
-          <UserStories />
-          <Features />
-          <ClaudeSection />
-          <Tools />
-          <WorkingTogether />
-          <FinalDesigns />
-          <Testing />
-          <PlayStore />
-          <WantToExplore />
-          <Conclusions />
-          <OtherProjects />
+          <FadeIn><Overview /></FadeIn>
+          <FadeIn><ProblemAndRole /></FadeIn>
+          <FadeIn><Carrusel /></FadeIn>
+          <FadeIn><OurProcess /></FadeIn>
+          <FadeIn><OurUsers /></FadeIn>
+          <FadeIn><UserStories /></FadeIn>
+          <FadeIn><Features /></FadeIn>
+          <FadeIn><ClaudeSection /></FadeIn>
+          <FadeIn><Tools /></FadeIn>
+          <FadeIn><WorkingTogether /></FadeIn>
+          <FadeIn><FinalDesigns /></FadeIn>
+          <FadeIn><Testing /></FadeIn>
+          <FadeIn><PlayStore /></FadeIn>
+          <FadeIn><WantToExplore /></FadeIn>
+          <FadeIn><Conclusions /></FadeIn>
+          <FadeIn><OtherProjects /></FadeIn>
           <BannerFinal />
         </div>
       </div>
