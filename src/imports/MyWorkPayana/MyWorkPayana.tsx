@@ -261,7 +261,7 @@ function Frame46() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
         <p className="leading-[normal]">What’s Payana?</p>
       </div>
       <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[20px] text-black w-[750px]">Payana is a cloud-native financial automation platform powered by artificial intelligence that helps companies streamline and optimize their accounting and financial operations. It integrates bank data, ERP systems, tax authorities, and communication channels into a single centralized system, automating tasks like invoice processing, payments, reconciliations, and approvals to reduce manual work, cut errors, and improve real-time financial visibility and control.</p>
@@ -566,7 +566,7 @@ function Frame139() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-[544px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-[544px]">
         <p className="leading-[normal]">Problem</p>
       </div>
     </div>
@@ -667,7 +667,7 @@ function Frame140() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-[544px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-[544px]">
         <p className="leading-[normal]">My Role</p>
       </div>
     </div>
@@ -716,7 +716,7 @@ function Group14() {
 function Frame67() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[24px] h-full items-center min-w-px not-italic relative text-black">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] relative shrink-0 text-[40px] whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] relative shrink-0 text-[40px] whitespace-nowrap">
         <p className="leading-[normal]">Solution</p>
       </div>
       <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-full relative shrink-0 text-[20px] w-[min-content]">Achieve the unification of both platforms into a single product that enables scaling in both countries while also improving the user experience.</p>
@@ -735,7 +735,7 @@ function Frame65() {
 function Frame68() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[24px] h-full items-center leading-[0] min-w-px not-italic relative text-black">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end relative shrink-0 text-[40px] whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end relative shrink-0 text-[40px] whitespace-nowrap">
         <p className="leading-[normal]">{`Roadmap & Goals`}</p>
       </div>
       <ul className="block font-['Inter:Regular',sans-serif] font-normal min-w-full relative shrink-0 text-[20px] w-[min-content]">
@@ -772,7 +772,7 @@ function Frame66() {
 function Frame69() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-center not-italic relative self-stretch shrink-0 text-black w-[700px]">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] relative shrink-0 text-[40px] whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] relative shrink-0 text-[40px] whitespace-nowrap">
         <p className="leading-[normal]">Our first hypothesis (and why it failed)</p>
       </div>
       <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-full relative shrink-0 text-[20px] w-[min-content]">We assumed that a minimal interface based on familiar table structures and direct access to information would improve usability, reduce the learning curve, and make financial tasks easier for users across both countries.</p>
@@ -971,7 +971,7 @@ function Frame128() {
 function Frame70() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[24px] items-center min-w-px relative self-stretch">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black whitespace-nowrap">
         <p className="leading-[normal]">Risks</p>
       </div>
       <Frame113 />
@@ -993,7 +993,7 @@ function Frame83() {
 function Frame73() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-center leading-[0] not-italic relative self-stretch shrink-0 text-black w-[900px]">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end relative shrink-0 text-[40px] whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end relative shrink-0 text-[40px] whitespace-nowrap">
         <p className="leading-[normal]">The original product</p>
       </div>
       <div className="font-['Inter:Regular',sans-serif] font-normal min-w-full relative shrink-0 text-[20px] w-[min-content]">
@@ -1069,7 +1069,7 @@ function Frame149() {
 function Frame74() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-center not-italic relative self-stretch shrink-0 text-black w-[700px]">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] relative shrink-0 text-[40px] whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] relative shrink-0 text-[40px] whitespace-nowrap">
         <p className="leading-[normal]">ideation</p>
       </div>
       <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-full relative shrink-0 text-[20px] w-[min-content]">First, we evaluated the existing product design and identified the changes needed to achieve our objective.</p>
@@ -1088,7 +1088,7 @@ function Frame147() {
 function Frame75() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-center not-italic relative self-stretch shrink-0 text-black w-[700px]">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] relative shrink-0 text-[40px] whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] relative shrink-0 text-[40px] whitespace-nowrap">
         <p className="leading-[normal]">Our first hypothesis (and why it failed)</p>
       </div>
       <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-full relative shrink-0 text-[20px] w-[min-content]">We assumed that a minimal interface based on familiar table structures and direct access to information would improve usability, reduce the learning curve, and make financial tasks easier for users across both countries.</p>
@@ -1237,7 +1237,7 @@ function Frame103() {
 function Frame104() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black whitespace-nowrap">
         <p className="leading-[normal]">What were our clients saying?</p>
       </div>
       <Frame103 />
@@ -1622,7 +1622,7 @@ function Frame64() {
       <Frame84 />
       <Frame83 />
       <Frame71 />
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black whitespace-nowrap">
         <p className="leading-[normal]">Our second design started to look like this.</p>
       </div>
       <Frame80 />
@@ -1700,7 +1700,7 @@ function Frame106() {
 function Frame108() {
   return (
     <div className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[922px]">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black whitespace-nowrap">
         <p className="leading-[normal]">Key design decisions</p>
       </div>
       <Frame107 />
@@ -1776,7 +1776,7 @@ function Frame58() {
         </div>
         <Group14 />
       </div>
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
         <p className="leading-[normal]">Process</p>
       </div>
       <Frame109 />
@@ -1894,7 +1894,7 @@ function Frame59() {
           </svg>
         </div>
       </div>
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
         <p className="leading-[normal]">Final Design</p>
       </div>
       <p className="font-['Inter:Regular',sans-serif] font-normal leading-[0] min-w-full not-italic relative shrink-0 text-[20px] text-black w-[min-content]">
@@ -2088,7 +2088,7 @@ function Frame21() {
 function Frame133() {
   return (
     <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-full">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-full">
         <p className="leading-[normal]">Impact</p>
       </div>
       <Frame21 />
@@ -2321,7 +2321,7 @@ function Group12() {
 function Frame61() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-center not-italic relative shrink-0 text-black w-[700px]">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] min-w-full relative shrink-0 text-[40px] text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full relative shrink-0 text-[40px] text-center w-[min-content]">
         <p className="leading-[normal]">Conclusions</p>
       </div>
       <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] relative shrink-0 text-[20px] w-[700px]">This redesign was not only about unifying two platforms into a single product, but about rethinking how users understood and interacted with financial information. Through research, iteration, and learning from our own mistakes, we were able to create a more intuitive, scalable, and user-centered experience that aligned both business goals and user needs.</p>
@@ -2694,16 +2694,16 @@ function Title2() {
 function Frame25() {
   return (
     <div className="content-stretch flex gap-[42px] items-center relative shrink-0 w-full">
-      <Link to="/chatty" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col items-center relative shrink-0 w-[366px]" data-name="Component 6">
+      <Link to="/chatty" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col items-center relative shrink-0 w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 6">
         <ProjectCard />
       </Link>
-      <Link to="/bookup" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[366px]" data-name="Component 7">
+      <Link to="/bookup" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 7">
         <Group8 />
         <Title1 />
         <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[16px] w-[365px]">Designed an accessibility-focused experience for an online bookstore, improving navigation and usability for diverse users.</p>
         <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[14px] text-black w-[365px]">UTN Project · 2022</p>
       </Link>
-      <Link to="/gruya" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[366px]" data-name="Component 9">
+      <Link to="/gruya" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 9">
         <Group9 />
         <Title2 />
         <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[16px] w-[365px]">Designed Gruya, a meeting room booking app for a challenge, creating intuitive flows and a seamless user experience.</p>
@@ -2724,7 +2724,7 @@ function Frame23() {
 function Frame98() {
   return (
     <div className="content-stretch flex flex-col gap-[32px] items-start justify-center relative shrink-0 w-[1186px]">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black whitespace-nowrap">
         <p className="leading-[normal]">Other projects</p>
       </div>
       <Frame23 />
@@ -3003,12 +3003,12 @@ function Frame56() {
           <p className="font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[0px] text-black whitespace-nowrap">
             <span className="leading-[normal] text-[16px]">{` A`}</span>
             <span className="leading-[normal] text-[20px]">{` `}</span>
-            <span className="font-['Monomakh',sans-serif] leading-[normal] text-[24px]">designer passionate</span>
+            <span className="font-['EB_Garamond',serif] leading-[normal] text-[24px]">designer passionate</span>
             <span className="leading-[normal] text-[20px]">{` `}</span>
             <span className="leading-[normal] text-[16px]">about creating beautifu</span>
             <span className="leading-[normal] text-[20px]">l</span>
             <span className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] text-[20px]">{` `}</span>
-            <span className="font-['Monomakh',sans-serif] leading-[normal] text-[24px]">user friendly products</span>
+            <span className="font-['EB_Garamond',serif] leading-[normal] text-[24px]">user friendly products</span>
           </p>
           <Pencil />
         </div>

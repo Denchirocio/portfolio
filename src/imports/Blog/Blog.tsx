@@ -35,7 +35,7 @@ function BlogCard({ post, isFirst }: { post: typeof posts[0]; isFirst: boolean }
               <p className="font-['Inter:Regular',sans-serif] text-[20px] text-black leading-normal mb-[8px]">
                 Yes, that's also
               </p>
-              <p className="font-['Monomakh',sans-serif] text-[56px] text-black leading-none">
+              <p className="font-['EB_Garamond',serif] text-[56px] text-black leading-none">
                 UX.
               </p>
             </div>
@@ -97,15 +97,15 @@ function Header({ onBannerClick }: { onBannerClick: () => void }) {
       <button onClick={onBannerClick} className="bg-[#f8f8f8] border-t border-b border-[#d6d1d1] flex h-[56px] items-center justify-center p-[10px] shrink-0 w-full cursor-pointer hover:bg-[#f0f0f0] transition-colors">
         <div className="flex gap-[2px] items-center">
           <div className="bg-[rgba(223,169,234,0.6)] flex h-[32px] items-center justify-center px-[8px] py-[4px]">
-            <span className="font-['Monomakh',sans-serif] text-[24px] text-black leading-normal">I'm here</span>
+            <span className="font-['EB_Garamond',serif] text-[24px] text-black leading-normal">I'm here</span>
           </div>
           <span className="font-['Inter:Regular',sans-serif] font-normal text-[16px] text-black whitespace-nowrap">
-            {` if you want to talk `}<span className="font-['Monomakh',sans-serif] text-[24px]">about UX...</span>
+            {` if you want to talk `}<span className="font-['EB_Garamond',serif] text-[24px]">about UX...</span>
           </span>
           <div className="bg-[#ebfaaa] flex h-[32px] items-center justify-center px-[8px] py-[4px]">
-            <span className="font-['Monomakh',sans-serif] text-[24px] text-black leading-normal whitespace-nowrap">Let's talk</span>
+            <span className="font-['EB_Garamond',serif] text-[24px] text-black leading-normal whitespace-nowrap">Let's talk</span>
           </div>
-          <span className="font-['Monomakh',sans-serif] text-[24px] text-black px-[6px]">→</span>
+          <span className="font-['EB_Garamond',serif] text-[24px] text-black px-[6px]">→</span>
           <span className="font-['Inter:Regular',sans-serif] font-normal italic text-[16px] text-black whitespace-nowrap">
             (For free, this is not a sales pitch)
           </span>

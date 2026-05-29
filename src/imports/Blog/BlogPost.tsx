@@ -37,15 +37,15 @@ function Header({ onBannerClick }: { onBannerClick: () => void }) {
       <button onClick={onBannerClick} className="bg-[#f8f8f8] border-t border-b border-[#d6d1d1] flex h-[56px] items-center justify-center p-[10px] shrink-0 w-full cursor-pointer hover:bg-[#f0f0f0] transition-colors">
         <div className="flex gap-[2px] items-center">
           <div className="bg-[rgba(223,169,234,0.6)] flex h-[32px] items-center justify-center px-[8px] py-[4px]">
-            <span className="font-['Monomakh',sans-serif] text-[24px] text-black leading-normal">I'm here</span>
+            <span className="font-['EB_Garamond',serif] text-[24px] text-black leading-normal">I'm here</span>
           </div>
           <span className="font-['Inter:Regular',sans-serif] font-normal text-[16px] text-black whitespace-nowrap">
-            {` if you want to talk `}<span className="font-['Monomakh',sans-serif] text-[24px]">about UX...</span>
+            {` if you want to talk `}<span className="font-['EB_Garamond',serif] text-[24px]">about UX...</span>
           </span>
           <div className="bg-[#ebfaaa] flex h-[32px] items-center justify-center px-[8px] py-[4px]">
-            <span className="font-['Monomakh',sans-serif] text-[24px] text-black leading-normal whitespace-nowrap">Let's talk</span>
+            <span className="font-['EB_Garamond',serif] text-[24px] text-black leading-normal whitespace-nowrap">Let's talk</span>
           </div>
-          <span className="font-['Monomakh',sans-serif] text-[24px] text-black px-[6px]">→</span>
+          <span className="font-['EB_Garamond',serif] text-[24px] text-black px-[6px]">→</span>
           <span className="font-['Inter:Regular',sans-serif] font-normal italic text-[16px] text-black whitespace-nowrap">(For free, this is not a sales pitch)</span>
         </div>
       </button>
@@ -70,7 +70,7 @@ function OtherNoteCard({ post }: { post: typeof posts[0] }) {
           {post.overlay && (
             <div className="absolute bg-white border border-black left-[68px] top-[41px] w-[165px] h-[165px] flex flex-col justify-center p-[12px]">
               <p className="font-['Inter:Regular',sans-serif] text-[15px] text-black leading-normal mb-[6px]">Yes, that's also</p>
-              <p className="font-['Monomakh',sans-serif] text-[48px] text-black leading-none">UX.</p>
+              <p className="font-['EB_Garamond',serif] text-[48px] text-black leading-none">UX.</p>
             </div>
           )}
         </div>
@@ -162,7 +162,7 @@ export default function BlogPost() {
       {otherPosts.length > 0 && (
         <div className="bg-[#f8f8f8] py-[60px]">
           <div className="max-w-[1186px] mx-auto px-[80px]">
-            <h2 className="font-['Monomakh',sans-serif] text-[40px] text-black mb-[32px]">Other notes</h2>
+            <h2 className="font-['EB_Garamond',serif] text-[40px] text-black mb-[32px]">Other notes</h2>
             <div className="flex gap-0 items-start">
               {otherPosts.map((p, i) => (
                 <div key={p.id} className="flex items-stretch">

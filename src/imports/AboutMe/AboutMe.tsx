@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { Link } from "react-router";
 import { ContactDrawer } from "../shared/ContactDrawer";
 import svgPaths from "./svg-pw6w0vxexd";
@@ -49,15 +49,15 @@ function Header({ onBannerClick }: { onBannerClick: () => void }) {
       >
         <div className="flex gap-[2px] items-center">
           <div className="bg-[rgba(223,169,234,0.6)] flex h-[32px] items-center justify-center px-[8px] py-[4px]">
-            <span className="font-['Monomakh',sans-serif] text-[24px] text-black leading-normal">I'm here</span>
+            <span className="font-['EB_Garamond',serif] text-[24px] text-black leading-normal">I'm here</span>
           </div>
           <span className="font-['Inter:Regular',sans-serif] font-normal text-[16px] text-black whitespace-nowrap">
-            {` if you want to talk `}<span className="font-['Monomakh',sans-serif] text-[24px]">about UX...</span>
+            {` if you want to talk `}<span className="font-['EB_Garamond',serif] text-[24px]">about UX...</span>
           </span>
           <div className="bg-[#ebfaaa] flex h-[32px] items-center justify-center px-[8px] py-[4px]">
-            <span className="font-['Monomakh',sans-serif] text-[24px] text-black leading-normal whitespace-nowrap">Let's talk</span>
+            <span className="font-['EB_Garamond',serif] text-[24px] text-black leading-normal whitespace-nowrap">Let's talk</span>
           </div>
-          <span className="font-['Monomakh',sans-serif] text-[24px] text-black px-[6px]">→</span>
+          <span className="font-['EB_Garamond',serif] text-[24px] text-black px-[6px]">→</span>
           <span className="font-['Inter:Regular',sans-serif] font-normal italic text-[16px] text-black whitespace-nowrap">
             (For free, this is not a sales pitch)
           </span>
@@ -114,7 +114,7 @@ export default function AboutMe() {
                   <img alt="" className="block max-w-none size-full" src={imgArrow} />
                 </div>
               </div>
-              <div className="font-['Monomakh',sans-serif] leading-[normal] text-[40px] text-black whitespace-nowrap">Denchi</div>
+              <div className="font-['EB_Garamond',serif] leading-[normal] text-[40px] text-black whitespace-nowrap">Denchi</div>
             </div>
           </div>
 

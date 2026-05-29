@@ -11,6 +11,8 @@ import imgRectangle2 from "./a59a754abc17170c3439ff7dc85a16e5503ddb80.png";
 import imgRectangle3 from "./3c02e76a688120a3f55c7c6d42881902b6c378ed.png";
 import imgRectangle4 from "./d5ed68bd0967246ce849d44538ce6c3524e9ddde.png";
 import imgRectangle6 from "./4fdfe813fda517a1ae897d9aee28c140791d9525.png";
+import imgDenchiLaptop from "./denchi/laptop-screen.png";
+import imgDenchiPhone from "./denchi/phone-screen.png";
 
 function Group2() {
   return (
@@ -549,7 +551,29 @@ function Title2() {
 function Frame13() {
   return (
     <div className="content-stretch flex gap-[42px] items-center relative shrink-0 w-full">
+      {/* 1. Denchi */}
       <FadeIn delay={0} className="shrink-0 w-[366px]">
+        <Link to="/denchi" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] h-[406.58px] items-center relative shrink-0 w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Denchi">
+          <DenchiMockup />
+          <div className="content-stretch flex gap-[12px] items-center relative shrink-0 w-full" data-name="Title">
+            <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[24px] text-black whitespace-nowrap">DenchiNoNihongo</p>
+            <div className="content-stretch flex items-center relative shrink-0">
+              <div className="bg-[#688cf8] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
+                <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap">CLAUDE</p>
+              </div>
+            </div>
+            <div className="content-stretch flex items-center relative shrink-0">
+              <div className="bg-[#c8e793] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
+                <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-black whitespace-nowrap">IA</p>
+              </div>
+            </div>
+          </div>
+          <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[16px] w-[365px]">Designed and developed DenchiNoNihongo, a mobile-first Japanese learning PWA.</p>
+          <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[14px] text-black w-[365px]">Real project · 2026</p>
+        </Link>
+      </FadeIn>
+      {/* 2. Payana */}
+      <FadeIn delay={0.15} className="shrink-0 w-[366px]">
         <Link to="/payana" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative w-full no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 6">
           <Group11 />
           <Title />
@@ -557,18 +581,11 @@ function Frame13() {
           <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[14px] text-black w-[365px]">Client Project · 2025</p>
         </Link>
       </FadeIn>
-      <FadeIn delay={0.15} className="shrink-0 w-[366px]">
+      {/* 3. Chatty */}
+      <FadeIn delay={0.3} className="shrink-0 w-[366px]">
         <div className="content-stretch flex flex-col items-center relative w-full" data-name="Component 6">
           <ProjectCard />
         </div>
-      </FadeIn>
-      <FadeIn delay={0.3} className="shrink-0 w-[366px]">
-        <Link to="/bookup" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative w-full no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 7">
-          <Group13 />
-          <Title2 />
-          <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[16px] w-[365px]">Designed an accessibility-focused experience for an online bookstore, improving navigation and usability for diverse users.</p>
-          <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[14px] text-black w-[365px]">UTN Project · 2022</p>
-        </Link>
       </FadeIn>
     </div>
   );
@@ -593,7 +610,7 @@ function Frame46() {
 function Frame60() {
   return (
     <div className="content-stretch flex flex-col gap-[32px] items-start relative shrink-0 w-full">
-      <p className="font-['Monomakh',sans-serif] leading-[normal] not-italic relative shrink-0 text-[40px] text-black whitespace-nowrap">Featured projects</p>
+      <p className="font-['EB_Garamond',serif] leading-[normal] not-italic relative shrink-0 text-[40px] text-black whitespace-nowrap">Featured projects</p>
       <Frame46 />
     </div>
   );
@@ -706,9 +723,65 @@ function Title3() {
   );
 }
 
+function DenchiLaptopContent() {
+  return (
+    <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-[18px] place-items-start relative row-1">
+      <div className="border-[0.762px] border-black border-solid col-1 h-[198.176px] ml-[15.24px] mt-[10.2px] relative rounded-tl-[6.098px] rounded-tr-[6.098px] row-1 w-[304.886px]" />
+      <div className="border-[0.762px] border-black border-solid col-1 h-[182.169px] ml-[22.87px] mt-[17.82px] relative rounded-tl-[6.098px] rounded-tr-[6.098px] row-1 w-[288.879px]">
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-tl-[6.098px] rounded-tr-[6.098px] size-full" src={imgDenchiLaptop} />
+      </div>
+      <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-[109.69px] mt-0 place-items-start relative row-1">
+        <div className="border-[0.919px] border-black border-solid col-1 h-[202.288px] ml-[5.52px] mt-[7.36px] relative rounded-[14.712px] row-1 w-[103.903px]">
+          <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[14.712px] size-full" src={imgDenchiPhone} />
+        </div>
+        <div className="border-[0.919px] border-black border-solid col-1 h-[217px] ml-0 mt-0 relative rounded-[14.712px] row-1 w-[115.856px]" />
+      </div>
+      <div className="border-[0.762px] border-black border-solid col-1 h-[12.195px] ml-0 mt-[207.62px] relative row-1 w-[335.375px]" />
+      <div className="col-1 h-[4.573px] ml-0 mt-[219.05px] relative row-1 w-[335.375px]">
+        <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 335.375 4.57329">
+          <path d={svgPaths.p3fa02f00} id="Rectangle 5" stroke="var(--stroke-0, black)" strokeWidth="0.762215" />
+        </svg>
+      </div>
+      <div className="border-[0.762px] border-black border-solid col-1 h-[5.336px] ml-[144.82px] mt-[207.62px] relative rounded-bl-[152.443px] rounded-br-[152.443px] row-1 w-[45.733px]" />
+    </div>
+  );
+}
+
+function DenchiMockup() {
+  return (
+    <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0">
+      <div className="col-1 h-[254.58px] ml-[3.81px] mt-0 relative row-1 w-[326.228px]">
+        <div className="absolute inset-[-8.98%_-7.01%]">
+          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 371.961 300.313">
+            <g filter="url(#filter_denchi_home)">
+              <ellipse cx="185.98" cy="150.156" fill="white" fillOpacity="0.3" rx="163.114" ry="127.29" />
+            </g>
+            <defs>
+              <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="300.313" id="filter_denchi_home" width="371.961" x="0" y="0">
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape" />
+                <feGaussianBlur result="effect1_foregroundBlur_denchi_home" stdDeviation="11.4332" />
+              </filter>
+            </defs>
+          </svg>
+        </div>
+      </div>
+      <DenchiLaptopContent />
+    </div>
+  );
+}
+
 function Frame28() {
   return (
-    <div className="content-stretch flex items-center relative shrink-0 w-full">
+    <div className="content-stretch flex gap-[42px] items-start relative shrink-0 w-full">
+      {/* 4. Bookup */}
+      <Link to="/bookup" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 7">
+        <Group13 />
+        <Title2 />
+        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[16px] w-[365px]">Designed an accessibility-focused experience for an online bookstore, improving navigation and usability for diverse users.</p>
+        <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[14px] text-black w-[365px]">UTN Project · 2022</p>
+      </Link>
+      {/* 5. Gruya */}
       <Link to="/gruya" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 9">
         <Group14 />
         <Title3 />
@@ -1476,12 +1549,12 @@ function Frame53() {
           <p className="font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[0px] text-black whitespace-nowrap">
             <span className="leading-[normal] text-[16px]">{` A`}</span>
             <span className="leading-[normal] text-[20px]">{` `}</span>
-            <span className="font-['Monomakh',sans-serif] leading-[normal] text-[24px]">designer passionate</span>
+            <span className="font-['EB_Garamond',serif] leading-[normal] text-[24px]">designer passionate</span>
             <span className="leading-[normal] text-[20px]">{` `}</span>
             <span className="leading-[normal] text-[16px]">about creating beautifu</span>
             <span className="leading-[normal] text-[20px]">l</span>
             <span className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] text-[20px]">{` `}</span>
-            <span className="font-['Monomakh',sans-serif] leading-[normal] text-[24px]">user friendly products</span>
+            <span className="font-['EB_Garamond',serif] leading-[normal] text-[24px]">user friendly products</span>
           </p>
           <Pencil />
         </div>

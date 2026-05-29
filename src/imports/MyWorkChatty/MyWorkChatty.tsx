@@ -265,7 +265,7 @@ function Frame48() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
         <p className="leading-[normal]">What’s Chatty?</p>
       </div>
       <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[20px] text-black w-[700px]">
@@ -467,7 +467,7 @@ function Frame233() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-[544px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-[544px]">
         <p className="leading-[normal]">My role</p>
       </div>
     </div>
@@ -545,7 +545,7 @@ function Frame51() {
           </svg>
         </div>
       </div>
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-[544px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-[544px]">
         <p className="leading-[normal]">Responsabilities</p>
       </div>
     </div>
@@ -661,7 +661,7 @@ function Frame189() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
         <p className="leading-[normal]">{`Design Goals & UI Challenges`}</p>
       </div>
       <Frame98 />
@@ -672,7 +672,7 @@ function Frame189() {
 function Frame52() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-[570px]">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end relative shrink-0 text-[40px] text-center w-[544px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end relative shrink-0 text-[40px] text-center w-[544px]">
         <p className="leading-[normal]">Key UI problems</p>
       </div>
       <ul className="block font-['Inter:Regular',sans-serif] font-normal list-disc relative shrink-0 text-[16px] w-[544px]">
@@ -699,7 +699,7 @@ function Frame52() {
 function Frame53() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-[570px]">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end relative shrink-0 text-[40px] text-center w-[544px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end relative shrink-0 text-[40px] text-center w-[544px]">
         <p className="leading-[normal]">UI Goals</p>
       </div>
       <ul className="block font-['Inter:Regular',sans-serif] font-normal list-disc relative shrink-0 text-[16px] w-[544px]">
@@ -759,7 +759,7 @@ function Frame99() {
 function Frame113() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-full">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-full">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-full">
         <p className="leading-[normal]">Hypothesis</p>
       </div>
       <Frame99 />
@@ -812,7 +812,7 @@ function Frame100() {
 function Frame60() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-full">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-full">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-full">
         <p className="leading-[normal]">Ideation</p>
       </div>
       <Frame100 />
@@ -823,7 +823,7 @@ function Frame60() {
 function Frame110() {
   return (
     <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-[600px]">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] relative shrink-0 text-[32px] whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] relative shrink-0 text-[32px] whitespace-nowrap">
         <p className="leading-[normal]">Problem</p>
       </div>
       <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-full relative shrink-0 text-[20px] w-[min-content]">Managing high-volume conversations made it difficult to quickly identify messages, users, and conversation status.</p>
@@ -834,7 +834,7 @@ function Frame110() {
 function Frame111() {
   return (
     <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-[600px]">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] relative shrink-0 text-[32px] whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] relative shrink-0 text-[32px] whitespace-nowrap">
         <p className="leading-[normal]">Solution</p>
       </div>
       <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-full relative shrink-0 text-[20px] w-[min-content]">The chat interface was redesigned with a clear visual hierarchy using spacing, typography, and color contrast to separate messages, users, and system states.</p>
@@ -845,7 +845,7 @@ function Frame111() {
 function Frame112() {
   return (
     <div className="content-stretch flex flex-col gap-[8px] items-start leading-[0] relative shrink-0 w-[600px]">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end relative shrink-0 text-[32px] whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end relative shrink-0 text-[32px] whitespace-nowrap">
         <p className="leading-[normal]">Results</p>
       </div>
       <ul className="block font-['Inter:Regular',sans-serif] font-normal list-disc min-w-full relative shrink-0 text-[20px] w-[min-content]">
@@ -962,9 +962,9 @@ function Frame101() {
 function Frame209() {
   return (
     <div className="content-stretch flex flex-col gap-[64px] items-start relative shrink-0 w-full">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-full">
-        <ol className="list-decimal" start="1">
-          <li className="ms-[60px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-full">
+        <ol className="list-decimal list-inside" start="1">
+          <li>
             <span className="leading-[normal]">{`Chat Interface & Message Hierarchy`}</span>
           </li>
         </ol>
@@ -977,7 +977,7 @@ function Frame209() {
 function Frame114() {
   return (
     <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-[600px]">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] relative shrink-0 text-[32px] whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] relative shrink-0 text-[32px] whitespace-nowrap">
         <p className="leading-[normal]">Problem</p>
       </div>
       <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-full relative shrink-0 text-[20px] w-[min-content]">Switching between multiple conversations was inefficient and visually overwhelming.</p>
@@ -988,7 +988,7 @@ function Frame114() {
 function Frame115() {
   return (
     <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-[600px]">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] relative shrink-0 text-[32px] whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] relative shrink-0 text-[32px] whitespace-nowrap">
         <p className="leading-[normal]">Solution</p>
       </div>
       <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-full relative shrink-0 text-[20px] w-[min-content]">A structured layout with clear navigation patterns was introduced, allowing users to quickly move between conversations without losing context.</p>
@@ -999,7 +999,7 @@ function Frame115() {
 function Frame116() {
   return (
     <div className="content-stretch flex flex-col gap-[8px] items-start leading-[0] relative shrink-0 w-[600px]">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end relative shrink-0 text-[32px] whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end relative shrink-0 text-[32px] whitespace-nowrap">
         <p className="leading-[normal]">Results</p>
       </div>
       <ul className="block font-['Inter:Regular',sans-serif] font-normal list-disc min-w-full relative shrink-0 text-[20px] w-[min-content]">
@@ -1116,7 +1116,7 @@ function Frame191() {
 function Frame210() {
   return (
     <div className="content-stretch flex flex-col gap-[64px] items-start relative shrink-0 w-full">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-full">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-full">
         <p className="leading-[normal]">{`2. Conversation Management & Navigation`}</p>
       </div>
       <Frame191 />
@@ -1127,7 +1127,7 @@ function Frame210() {
 function Frame117() {
   return (
     <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-[600px]">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] relative shrink-0 text-[32px] whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] relative shrink-0 text-[32px] whitespace-nowrap">
         <p className="leading-[normal]">Problem</p>
       </div>
       <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-full relative shrink-0 text-[20px] w-[min-content]">Data-heavy views lacked hierarchy and were difficult to scan quickly.</p>
@@ -1138,7 +1138,7 @@ function Frame117() {
 function Frame118() {
   return (
     <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-[600px]">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] relative shrink-0 text-[32px] whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] relative shrink-0 text-[32px] whitespace-nowrap">
         <p className="leading-[normal]">Solution</p>
       </div>
       <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-full relative shrink-0 text-[20px] w-[min-content]">Tables were redesigned with improved spacing, alignment, and contrast, making key information easier to identify at a glance.</p>
@@ -1149,7 +1149,7 @@ function Frame118() {
 function Frame119() {
   return (
     <div className="content-stretch flex flex-col gap-[8px] items-start leading-[0] relative shrink-0 w-[600px]">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end relative shrink-0 text-[32px] whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end relative shrink-0 text-[32px] whitespace-nowrap">
         <p className="leading-[normal]">Results</p>
       </div>
       <ul className="block font-['Inter:Regular',sans-serif] font-normal list-disc min-w-full relative shrink-0 text-[20px] w-[min-content]">
@@ -1266,7 +1266,7 @@ function Frame192() {
 function Frame215() {
   return (
     <div className="content-stretch flex flex-col gap-[64px] items-start relative shrink-0 w-full">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-full">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-full">
         <p className="leading-[normal]">{`3. Tables & Data-Dense Views`}</p>
       </div>
       <Frame192 />
@@ -1378,7 +1378,7 @@ function Frame120() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
         <p className="leading-[normal]">{`Design System & UI Components`}</p>
       </div>
       <Frame102 />
@@ -2751,7 +2751,7 @@ function Frame186() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-[1180px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-[1180px]">
         <p className="leading-[normal]">Components</p>
       </div>
       <Frame132 />
@@ -2863,7 +2863,7 @@ function Frame136() {
 function Frame230() {
   return (
     <div className="content-stretch flex flex-col gap-[8px] items-center justify-center relative shrink-0 w-full">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-[1180px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-[1180px]">
         <p className="leading-[normal]">{`Hi-fi Wireframes `}</p>
       </div>
       <Frame136 />
@@ -3240,7 +3240,7 @@ function Group12() {
 function Frame71() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-center not-italic relative shrink-0 text-black w-full">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] min-w-full relative shrink-0 text-[40px] text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full relative shrink-0 text-[40px] text-center w-[min-content]">
         <p className="leading-[normal]">Conclusion</p>
       </div>
       <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] relative shrink-0 text-[20px] w-[700px] whitespace-pre-wrap">
@@ -3625,19 +3625,19 @@ function Title2() {
 function Frame29() {
   return (
     <div className="content-stretch flex gap-[42px] items-center relative shrink-0 w-full">
-      <Link to="/payana" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[366px]" data-name="Component 6">
+      <Link to="/payana" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 6">
         <Group7 />
         <Title />
         <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[16px] w-[365px]">Led the redesign of the Payana app, optimizing core user flows to simplify financial management and improve usability.</p>
         <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[14px] text-black w-[365px]">Client Project · 2025</p>
       </Link>
-      <Link to="/bookup" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[366px]" data-name="Component 7">
+      <Link to="/bookup" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 7">
         <Group8 />
         <Title1 />
         <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[16px] w-[365px]">Designed an accessibility-focused experience for an online bookstore, improving navigation and usability for diverse users.</p>
         <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[14px] text-black w-[365px]">UTN Project · 2022</p>
       </Link>
-      <Link to="/gruya" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[366px]" data-name="Component 9">
+      <Link to="/gruya" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 9">
         <Group9 />
         <Title2 />
         <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[16px] w-[365px]">Designed Gruya, a meeting room booking app for a challenge, creating intuitive flows and a seamless user experience.</p>
@@ -3658,7 +3658,7 @@ function Frame28() {
 function Frame72() {
   return (
     <div className="content-stretch flex flex-col gap-[32px] items-start justify-center relative shrink-0 w-[1186px]">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black whitespace-nowrap">
         <p className="leading-[normal]">Other projects</p>
       </div>
       <Frame28 />
@@ -3944,12 +3944,12 @@ function Frame85() {
           <p className="font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[0px] text-black whitespace-nowrap">
             <span className="leading-[normal] text-[16px]">{` A`}</span>
             <span className="leading-[normal] text-[20px]">{` `}</span>
-            <span className="font-['Monomakh',sans-serif] leading-[normal] text-[24px]">designer passionate</span>
+            <span className="font-['EB_Garamond',serif] leading-[normal] text-[24px]">designer passionate</span>
             <span className="leading-[normal] text-[20px]">{` `}</span>
             <span className="leading-[normal] text-[16px]">about creating beautifu</span>
             <span className="leading-[normal] text-[20px]">l</span>
             <span className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] text-[20px]">{` `}</span>
-            <span className="font-['Monomakh',sans-serif] leading-[normal] text-[24px]">user friendly products</span>
+            <span className="font-['EB_Garamond',serif] leading-[normal] text-[24px]">user friendly products</span>
           </p>
           <Pencil />
         </div>

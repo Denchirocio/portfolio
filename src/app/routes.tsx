@@ -5,6 +5,7 @@ import MyWorkPayana from "./pages/MyWorkPayana";
 import MyWorkChatty from "./pages/MyWorkChatty";
 import MyWorkGruya from "./pages/MyWorkGruya";
 import MyWorkBookup from "./pages/MyWorkBookup";
+import MyWorkDenchi from "./pages/MyWorkDenchi";
 import AboutMe from "./pages/AboutMe";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
@@ -18,6 +19,7 @@ export const router = createBrowserRouter([
       { path: "/chatty", Component: MyWorkChatty },
       { path: "/gruya", Component: MyWorkGruya },
       { path: "/bookup", Component: MyWorkBookup },
+      { path: "/denchi", Component: MyWorkDenchi },
       { path: "/about", Component: AboutMe },
       { path: "/blog", Component: Blog },
       { path: "/blog/:slug", Component: BlogPost },

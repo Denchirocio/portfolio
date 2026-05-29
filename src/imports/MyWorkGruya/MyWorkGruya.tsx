@@ -307,7 +307,7 @@ function Frame40() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
         <p className="leading-[normal]">What’s Gruya?</p>
       </div>
       <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[20px] text-black w-[700px]">Gruya is a conceptual mobile app designed to simplify the process of booking coworking spaces. The project explores how users can easily discover, reserve, and manage meeting rooms in shared work environments through an intuitive and user-centered experience.</p>
@@ -389,7 +389,7 @@ function Frame41() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
         <p className="leading-[normal]">Project Context</p>
       </div>
       <div className="font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[20px] text-black w-[700px]">
@@ -528,7 +528,7 @@ function Group() {
 function Frame42() {
   return (
     <div className="content-stretch flex flex-col gap-[8px] items-center not-italic relative shrink-0 text-black text-center w-full">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] relative shrink-0 text-[32px] whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] relative shrink-0 text-[32px] whitespace-nowrap">
         <p className="leading-[normal]">
           01
           <br aria-hidden="true" />
@@ -566,7 +566,7 @@ function Frame126() {
 function Frame43() {
   return (
     <div className="content-stretch flex flex-col gap-[8px] items-center not-italic relative shrink-0 text-black text-center">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] relative shrink-0 text-[32px] whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] relative shrink-0 text-[32px] whitespace-nowrap">
         <p className="leading-[normal]">
           02
           <br aria-hidden="true" />
@@ -604,7 +604,7 @@ function Frame125() {
 function Frame44() {
   return (
     <div className="content-stretch flex flex-col gap-[8px] items-center not-italic relative shrink-0 text-black text-center w-full">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] relative shrink-0 text-[32px] whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] relative shrink-0 text-[32px] whitespace-nowrap">
         <p className="leading-[normal]">
           03
           <br aria-hidden="true" />
@@ -642,7 +642,7 @@ function Frame124() {
 function Frame45() {
   return (
     <div className="content-stretch flex flex-col gap-[8px] items-center not-italic relative shrink-0 text-black text-center w-[210px]">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] relative shrink-0 text-[32px] whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] relative shrink-0 text-[32px] whitespace-nowrap">
         <p className="leading-[normal]">
           04
           <br aria-hidden="true" />
@@ -680,7 +680,7 @@ function Frame127() {
 function Frame46() {
   return (
     <div className="content-stretch flex flex-col gap-[8px] items-center not-italic relative shrink-0 text-black text-center w-full">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] relative shrink-0 text-[32px] whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] relative shrink-0 text-[32px] whitespace-nowrap">
         <p className="leading-[normal]">
           05
           <br aria-hidden="true" />
@@ -714,7 +714,7 @@ function Frame128() {
 function Frame47() {
   return (
     <div className="content-stretch flex flex-col gap-[8px] items-center not-italic relative shrink-0 text-black text-center w-[210px]">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] relative shrink-0 text-[32px] whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] relative shrink-0 text-[32px] whitespace-nowrap">
         <p className="leading-[normal]">
           06
           <br aria-hidden="true" />
@@ -827,7 +827,7 @@ function Frame70() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
         <p className="leading-[normal]">Methodology</p>
       </div>
       <Group29 />
@@ -1217,7 +1217,7 @@ function Frame48() {
       <div className="flex flex-col items-center size-full">
         <div className="content-stretch flex flex-col gap-[24px] items-center p-[24px] relative size-full">
           <Frame77 />
-          <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-[544px]">
+          <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-[544px]">
             <p className="leading-[normal]">Goals</p>
           </div>
           <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-full not-italic relative shrink-0 text-[16px] text-black w-[min-content]">Help optimize room reservations and usage by improving organization and clearly communicating which spaces are actually available.</p>
@@ -1533,7 +1533,7 @@ function Frame49() {
     <div className="content-stretch flex flex-col gap-[24px] items-center p-[24px] relative rounded-[8px] shrink-0 w-[360px]">
       <div aria-hidden="true" className="absolute border border-[#b9b9b9] border-solid inset-0 pointer-events-none rounded-[8px]" />
       <Frame76 />
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
         <p className="leading-[normal]">Problem</p>
       </div>
       <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-full not-italic relative shrink-0 text-[16px] text-black w-[min-content]">The current experience prevents users from booking the rooms they actually need, leading to frustration and a poor user experience. In many cases, rooms appear as reserved but remain unused.</p>
@@ -1713,7 +1713,7 @@ function Frame50() {
       <div className="flex flex-col items-center size-full">
         <div className="content-stretch flex flex-col gap-[24px] items-center p-[24px] relative size-full">
           <Frame78 />
-          <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
+          <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
             <p className="leading-[normal]">Solution</p>
           </div>
           <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-full not-italic relative shrink-0 text-[16px] text-black w-[min-content]">Design a platform that improves room booking and availability, preventing unnecessary reservations and reducing unused spaces.</p>
@@ -1744,7 +1744,7 @@ function Frame71() {
 function Frame51() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[24px] items-center leading-[0] min-w-px not-italic relative text-black">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end relative shrink-0 text-[40px] text-center w-[544px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end relative shrink-0 text-[40px] text-center w-[544px]">
         <p className="leading-[normal]">Insigths</p>
       </div>
       <div className="font-['Inter:Regular',sans-serif] font-normal min-w-full relative shrink-0 text-[20px] w-[min-content]">
@@ -2147,7 +2147,7 @@ function Frame81() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-[544px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-[544px]">
         <p className="leading-[normal]">Our users</p>
       </div>
       <Frame82 />
@@ -2158,7 +2158,7 @@ function Frame81() {
 function Frame84() {
   return (
     <div className="content-stretch flex flex-col gap-[16px] items-center not-italic relative shrink-0 text-black w-full">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] relative shrink-0 text-[40px] text-center w-[544px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] relative shrink-0 text-[40px] text-center w-[544px]">
         <p className="leading-[normal]">Competitor Analysis</p>
       </div>
       <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-full relative shrink-0 text-[20px] w-[min-content]">Our main competitors are digital platforms that offer meeting room and workspace booking solutions within co-working environments. These tools focus on availability management, scheduling, and resource optimization.</p>
@@ -2238,7 +2238,7 @@ function Frame91() {
       <div className="relative rounded-[10px] shadow-[0px_4px_4px_0px_rgba(126,126,126,0.25)] shrink-0 size-[75px]">
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[10px] size-full" src={imgRectangle131} />
       </div>
-      <div className="flex flex-col font-['Monomakh',sans-serif] h-[48px] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] h-[48px] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black w-[min-content]">
         <p className="leading-[normal]">What’s?</p>
       </div>
       <Frame90 />
@@ -2318,7 +2318,7 @@ function Frame94() {
       <div className="relative rounded-[10px] shadow-[0px_4px_4px_0px_rgba(126,126,126,0.25)] shrink-0 size-[75px]">
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[10px] size-full" src={imgRectangle182} />
       </div>
-      <div className="flex flex-col font-['Monomakh',sans-serif] h-[48px] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] h-[48px] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black w-[min-content]">
         <p className="leading-[normal]">What’s?</p>
       </div>
       <Frame95 />
@@ -2424,7 +2424,7 @@ function Frame99() {
       <div className="relative rounded-[10px] shadow-[0px_4px_4px_0px_rgba(126,126,126,0.25)] shrink-0 size-[75px]">
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[10px] size-full" src={imgRectangle107} />
       </div>
-      <div className="flex flex-col font-['Monomakh',sans-serif] h-[48px] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] h-[48px] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black w-[min-content]">
         <p className="leading-[normal]">What’s?</p>
       </div>
       <Frame100 />
@@ -2518,7 +2518,7 @@ function Frame105() {
           </svg>
         </div>
       </div>
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] not-italic relative shrink-0 text-[48px] text-black whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[48px] text-black whitespace-nowrap">
         <p className="leading-[normal]">Home</p>
       </div>
     </div>
@@ -2565,7 +2565,7 @@ function Frame110() {
           </svg>
         </div>
       </div>
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] not-italic relative shrink-0 text-[48px] text-black whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[48px] text-black whitespace-nowrap">
         <p className="leading-[normal]">Rooms</p>
       </div>
     </div>
@@ -2596,7 +2596,7 @@ function Frame112() {
           </svg>
         </div>
       </div>
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] not-italic relative shrink-0 text-[48px] text-black whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[48px] text-black whitespace-nowrap">
         <p className="leading-[normal]">Booking</p>
       </div>
     </div>
@@ -2627,7 +2627,7 @@ function Frame114() {
           </svg>
         </div>
       </div>
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] not-italic relative shrink-0 text-[48px] text-black whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[48px] text-black whitespace-nowrap">
         <p className="leading-[normal]">Check out</p>
       </div>
     </div>
@@ -2653,7 +2653,7 @@ function Group30() {
     <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0">
       <Frame106 />
       <Frame104 />
-      <div className="col-1 flex flex-col font-['Monomakh',sans-serif] justify-end ml-0 mt-0 not-italic relative row-1 text-[48px] text-black w-[1042px]">
+      <div className="col-1 flex flex-col font-['EB_Garamond',serif] justify-end ml-0 mt-0 not-italic relative row-1 text-[48px] text-black w-[1042px]">
         <p className="leading-[normal]">Wireframes</p>
       </div>
       <div className="col-1 flex h-[2841.148px] items-center justify-center ml-[61.5px] mt-[57.93px] relative row-1 w-0" style={{ "--transform-inner-width": "1200", "--transform-inner-height": "19" } as React.CSSProperties}>
@@ -2705,7 +2705,7 @@ function Group13() {
 function Frame55() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-center not-italic relative shrink-0 text-black w-full">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] min-w-full relative shrink-0 text-[40px] text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full relative shrink-0 text-[40px] text-center w-[min-content]">
         <p className="leading-[normal]">Moodboard</p>
       </div>
       <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] relative shrink-0 text-[20px] w-[700px]">This project reinforced the value of approaching UI design as a system rather than a collection of individual screens.</p>
@@ -2920,7 +2920,7 @@ function Group21() {
 function Frame56() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-center not-italic relative shrink-0 text-black w-full">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] min-w-full relative shrink-0 text-[40px] text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full relative shrink-0 text-[40px] text-center w-[min-content]">
         <p className="leading-[normal]">UI Kit</p>
       </div>
       <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] relative shrink-0 text-[20px] w-[700px]">This project reinforced the value of approaching UI design as a system rather than a collection of individual screens.</p>
@@ -2950,7 +2950,7 @@ function Frame131() {
 function Frame52() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-center leading-[0] not-italic relative shrink-0 text-black text-center w-[400px]">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end relative shrink-0 text-[40px] w-full">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end relative shrink-0 text-[40px] w-full">
         <p className="leading-[normal]">{`Grids & layouts`}</p>
       </div>
       <ul className="block font-['Inter:Regular',sans-serif] font-normal list-disc relative shrink-0 text-[24px] w-full">
@@ -2979,7 +2979,7 @@ function Group15() {
     <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid place-items-start relative shrink-0">
       <div className="bg-white col-1 h-[138.405px] ml-0 mt-0 relative rounded-[12.582px] row-1 shadow-[0px_2.516px_2.516px_0px_rgba(196,196,196,0.4)] w-[106.95px]" />
       <div className="bg-white border-[#b5b5b5] border-[0.629px] border-solid col-1 h-[88.705px] ml-[5.03px] mt-[5.66px] relative rounded-[12.582px] row-1 w-[96.884px]" />
-      <p className="col-1 font-['National_2_Compressed:Regular',sans-serif] leading-[normal] ml-[26.42px] mt-[102.55px] not-italic relative row-1 text-[25.165px] text-black whitespace-nowrap">#FFFFFF</p>
+      <p className="col-1 font-['National_2_Compressed:Regular',sans-serif] leading-[normal] ml-[26.42px] mt-[102.55px] not-italic relative row-1 text-[14px] text-black whitespace-nowrap">#FFFFFF</p>
     </div>
   );
 }
@@ -2989,7 +2989,7 @@ function Group16() {
     <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid place-items-start relative shrink-0">
       <div className="bg-white col-1 h-[138.405px] ml-0 mt-0 relative rounded-[12.582px] row-1 shadow-[0px_2.516px_2.516px_0px_rgba(196,196,196,0.4)] w-[106.95px]" />
       <div className="bg-[#f4f5fd] border-[#b5b5b5] border-[0.629px] border-solid col-1 h-[88.705px] ml-[5.03px] mt-[5.66px] relative rounded-[12.582px] row-1 w-[96.884px]" />
-      <p className="col-1 font-['National_2_Compressed:Regular',sans-serif] leading-[normal] ml-[24.54px] mt-[102.55px] not-italic relative row-1 text-[25.165px] text-black whitespace-nowrap">#F4F5FD</p>
+      <p className="col-1 font-['National_2_Compressed:Regular',sans-serif] leading-[normal] ml-[24.54px] mt-[102.55px] not-italic relative row-1 text-[14px] text-black whitespace-nowrap">#F4F5FD</p>
     </div>
   );
 }
@@ -2999,7 +2999,7 @@ function Group17() {
     <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid place-items-start relative shrink-0">
       <div className="bg-white col-1 h-[138.405px] ml-0 mt-0 relative rounded-[12.582px] row-1 shadow-[0px_2.516px_2.516px_0px_rgba(196,196,196,0.4)] w-[106.95px]" />
       <div className="bg-[#f1edfc] border-[#b5b5b5] border-[0.629px] border-solid col-1 h-[88.705px] ml-[5.03px] mt-[5.66px] relative rounded-[12.582px] row-1 w-[96.884px]" />
-      <p className="col-1 font-['National_2_Compressed:Regular',sans-serif] leading-[normal] ml-[24.54px] mt-[102.55px] not-italic relative row-1 text-[25.165px] text-black whitespace-nowrap">#F1EDFC</p>
+      <p className="col-1 font-['National_2_Compressed:Regular',sans-serif] leading-[normal] ml-[24.54px] mt-[102.55px] not-italic relative row-1 text-[14px] text-black whitespace-nowrap">#F1EDFC</p>
     </div>
   );
 }
@@ -3019,7 +3019,7 @@ function Group31() {
     <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid place-items-start relative shrink-0">
       <div className="bg-white col-1 h-[138.405px] ml-0 mt-0 relative rounded-[12.582px] row-1 shadow-[0px_2.516px_2.516px_0px_rgba(196,196,196,0.4)] w-[106.95px]" />
       <div className="bg-[#703cff] border-[#b5b5b5] border-[0.629px] border-solid col-1 h-[88.705px] ml-[5.03px] mt-[5.66px] relative rounded-[12.582px] row-1 w-[96.884px]" />
-      <p className="col-1 font-['National_2_Compressed:Regular',sans-serif] leading-[normal] ml-[25.79px] mt-[102.55px] not-italic relative row-1 text-[25.165px] text-black whitespace-nowrap">#703CFF</p>
+      <p className="col-1 font-['National_2_Compressed:Regular',sans-serif] leading-[normal] ml-[25.79px] mt-[102.55px] not-italic relative row-1 text-[14px] text-black whitespace-nowrap">#703CFF</p>
     </div>
   );
 }
@@ -3029,7 +3029,7 @@ function Group32() {
     <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid place-items-start relative shrink-0">
       <div className="bg-white col-1 h-[138.405px] ml-0 mt-0 relative rounded-[12.582px] row-1 shadow-[0px_2.516px_2.516px_0px_rgba(196,196,196,0.4)] w-[106.95px]" />
       <div className="bg-[#6c52b6] border-[#b5b5b5] border-[0.629px] border-solid col-1 h-[88.705px] ml-[5.03px] mt-[5.66px] relative rounded-[12.582px] row-1 w-[96.884px]" />
-      <p className="col-1 font-['National_2_Compressed:Regular',sans-serif] leading-[normal] ml-[24.54px] mt-[102.55px] not-italic relative row-1 text-[25.165px] text-black whitespace-nowrap">#6C52B6</p>
+      <p className="col-1 font-['National_2_Compressed:Regular',sans-serif] leading-[normal] ml-[24.54px] mt-[102.55px] not-italic relative row-1 text-[14px] text-black whitespace-nowrap">#6C52B6</p>
     </div>
   );
 }
@@ -3055,7 +3055,7 @@ function Frame135() {
 function Frame53() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-center leading-[0] relative shrink-0 w-[400px]">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end not-italic relative shrink-0 text-[40px] text-black text-center w-[544px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end not-italic relative shrink-0 text-[40px] text-black text-center w-[544px]">
         <p className="leading-[normal]">Colors</p>
       </div>
       <Frame135 />
@@ -3111,7 +3111,7 @@ function Frame138() {
 function Frame54() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-[400px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-[400px]">
         <p className="leading-[normal]">Fonts</p>
       </div>
       <Frame138 />
@@ -3255,7 +3255,7 @@ function Group20() {
 function Frame57() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-center not-italic relative shrink-0 text-black w-full">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] min-w-full relative shrink-0 text-[40px] text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full relative shrink-0 text-[40px] text-center w-[min-content]">
         <p className="leading-[normal]">Learnings</p>
       </div>
       <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] relative shrink-0 text-[20px] w-[700px]">This challenge was a great opportunity to explore designing a meeting room booking app from scratch. I learned how to prioritize user flows and create an intuitive interface with minimal guidance.</p>
@@ -3621,16 +3621,16 @@ function Title2() {
 function Frame19() {
   return (
     <div className="content-stretch flex gap-[42px] items-center relative shrink-0 w-full">
-      <Link to="/chatty" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col items-center relative shrink-0 w-[366px]" data-name="Component 8">
+      <Link to="/chatty" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col items-center relative shrink-0 w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 8">
         <ProjectCard />
       </Link>
-      <Link to="/payana" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[366px]" data-name="Component 6">
+      <Link to="/payana" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 6">
         <Group9 />
         <Title1 />
         <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[16px] w-[365px]">Led the redesign of the Payana app, optimizing core user flows to simplify financial management and improve usability.</p>
         <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[14px] text-black w-[365px]">Client Project · 2025</p>
       </Link>
-      <Link to="/bookup" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[366px]" data-name="Component 7">
+      <Link to="/bookup" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 7">
         <Group10 />
         <Title2 />
         <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[16px] w-[365px]">Designed an accessibility-focused experience for an online bookstore, improving navigation and usability for diverse users.</p>
@@ -3651,7 +3651,7 @@ function Frame21() {
 function Frame58() {
   return (
     <div className="content-stretch flex flex-col gap-[32px] items-start justify-center relative shrink-0 w-[1186px]">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black whitespace-nowrap">
         <p className="leading-[normal]">Other projects</p>
       </div>
       <Frame21 />
@@ -3933,12 +3933,12 @@ function Frame32() {
           <p className="font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[0px] text-black whitespace-nowrap">
             <span className="leading-[normal] text-[16px]">{` A`}</span>
             <span className="leading-[normal] text-[20px]">{` `}</span>
-            <span className="font-['Monomakh',sans-serif] leading-[normal] text-[24px]">designer passionate</span>
+            <span className="font-['EB_Garamond',serif] leading-[normal] text-[24px]">designer passionate</span>
             <span className="leading-[normal] text-[20px]">{` `}</span>
             <span className="leading-[normal] text-[16px]">about creating beautifu</span>
             <span className="leading-[normal] text-[20px]">l</span>
             <span className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] text-[20px]">{` `}</span>
-            <span className="font-['Monomakh',sans-serif] leading-[normal] text-[24px]">user friendly products</span>
+            <span className="font-['EB_Garamond',serif] leading-[normal] text-[24px]">user friendly products</span>
           </p>
           <Pencil />
         </div>

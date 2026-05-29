@@ -274,7 +274,7 @@ function Frame36() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
         <p className="leading-[normal]">Overview</p>
       </div>
       <p className="font-['Inter:Regular',sans-serif] font-normal leading-[0] min-w-full not-italic relative shrink-0 text-[20px] text-black w-[min-content]">
@@ -585,7 +585,7 @@ function Frame85() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-[544px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-[544px]">
         <p className="leading-[normal]">Problem</p>
       </div>
     </div>
@@ -685,7 +685,7 @@ function Frame86() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-[544px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-[544px]">
         <p className="leading-[normal]">My role</p>
       </div>
     </div>
@@ -801,7 +801,7 @@ function Frame44() {
 function Frame47() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-center leading-[0] not-italic relative shrink-0 text-black w-[700px]">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end min-w-full relative shrink-0 text-[48px] text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end min-w-full relative shrink-0 text-[48px] text-center w-[min-content]">
         <p className="leading-[normal]">Discovery</p>
       </div>
       <p className="font-['Inter:Regular',sans-serif] font-normal relative shrink-0 text-[20px] w-[700px]">
@@ -818,7 +818,7 @@ function Frame47() {
 function Frame48() {
   return (
     <div className="content-stretch flex gap-[24px] items-start justify-center leading-[0] relative shrink-0 w-full">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-center relative self-stretch shrink-0 text-[40px] w-[220px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-center relative self-stretch shrink-0 text-[40px] w-[220px]">
         <p className="leading-[normal]">Hypothesis</p>
       </div>
       <p className="flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal min-w-px relative text-[20px]">
@@ -835,7 +835,7 @@ function Frame48() {
 function Frame49() {
   return (
     <div className="content-stretch flex gap-[24px] items-start justify-center relative shrink-0 w-full">
-      <div className="flex flex-col font-['Monomakh',sans-serif] h-[64px] justify-center leading-[0] relative shrink-0 text-[40px] w-[220px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] h-[64px] justify-center leading-[0] relative shrink-0 text-[40px] w-[220px]">
         <p className="leading-[normal]">Iteration 01</p>
       </div>
       <p className="flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-px relative text-[20px]">Interviews were conducted with 10 real book buyers to determine if our hypothesis is correct and to gather new insights.</p>
@@ -846,7 +846,7 @@ function Frame49() {
 function Frame51() {
   return (
     <div className="content-stretch flex gap-[24px] items-start justify-center relative shrink-0 w-full">
-      <div className="flex flex-col font-['Monomakh',sans-serif] h-[64px] justify-center leading-[0] relative shrink-0 text-[40px] w-[220px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] h-[64px] justify-center leading-[0] relative shrink-0 text-[40px] w-[220px]">
         <p className="leading-[normal]">Iteration 02</p>
       </div>
       <p className="flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-px relative text-[20px]">Interviews were conducted with 15 real book buyers to determine if our hypothesis is correct and to gather new insights.</p>
@@ -857,7 +857,7 @@ function Frame51() {
 function Frame52() {
   return (
     <div className="content-stretch flex gap-[24px] items-start justify-center relative shrink-0 w-full">
-      <div className="flex flex-col font-['Monomakh',sans-serif] h-[64px] justify-center leading-[0] relative shrink-0 text-[40px] w-[220px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] h-[64px] justify-center leading-[0] relative shrink-0 text-[40px] w-[220px]">
         <p className="leading-[normal]">Iteration 03</p>
       </div>
       <p className="flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-px relative text-[20px]">Interviews were conducted with 15 real book buyers to determine if our hypothesis is correct and to gather new insights.</p>
@@ -868,7 +868,7 @@ function Frame52() {
 function Frame53() {
   return (
     <div className="content-stretch flex gap-[24px] items-start justify-center relative shrink-0 w-full">
-      <div className="flex flex-col font-['Monomakh',sans-serif] h-[64px] justify-center leading-[0] relative shrink-0 text-[40px] w-[220px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] h-[64px] justify-center leading-[0] relative shrink-0 text-[40px] w-[220px]">
         <p className="leading-[normal]">Conclusión</p>
       </div>
       <p className="flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-px relative text-[20px]">Our users need to purchase books through e-commerce platforms, but they often find the product selection and payment processes unclear. Creating a more user-friendly selection experience and ensuring transparency in the final cost could be key to building a robust e-commerce solution.</p>
@@ -879,7 +879,7 @@ function Frame53() {
 function Frame54() {
   return (
     <div className="content-stretch flex gap-[24px] items-start justify-center leading-[0] relative shrink-0 w-full">
-      <div className="flex flex-col font-['Monomakh',sans-serif] h-[64px] justify-center relative shrink-0 text-[40px] w-[220px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] h-[64px] justify-center relative shrink-0 text-[40px] w-[220px]">
         <p className="leading-[normal]">Our MVP</p>
       </div>
       <ul className="block flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal list-disc min-w-px relative text-[20px]">
@@ -913,7 +913,7 @@ function Frame50() {
 function Frame55() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-center not-italic relative shrink-0 text-black w-full">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] min-w-full relative shrink-0 text-[48px] text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full relative shrink-0 text-[48px] text-center w-[min-content]">
         <p className="leading-[normal]">Design</p>
       </div>
       <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] relative shrink-0 text-[20px] w-[700px]">We started by creating low-fidelity designs for the platform, based on user feedback and the key insights gathered from their responses.</p>
@@ -924,7 +924,7 @@ function Frame55() {
 function Frame64() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[40px] text-black whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-center leading-[0] not-italic relative shrink-0 text-[40px] text-black whitespace-nowrap">
         <p className="leading-[normal]">Low-fi wireframes</p>
       </div>
     </div>
@@ -981,7 +981,7 @@ function Frame63() {
 function Frame66() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[40px] text-black whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-center leading-[0] not-italic relative shrink-0 text-[40px] text-black whitespace-nowrap">
         <p className="leading-[normal]">Hi-fi wireframes</p>
       </div>
     </div>
@@ -1060,7 +1060,7 @@ function Frame65() {
 function Frame73() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-full">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] min-w-full relative shrink-0 text-[48px] text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full relative shrink-0 text-[48px] text-center w-[min-content]">
         <p className="leading-[normal]">Usability Test</p>
       </div>
       <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] relative shrink-0 text-[20px] w-[700px]">Usability testing was conducted with 10 users, including two participants with visual impairments such as blindness and low vision.</p>
@@ -1087,7 +1087,7 @@ function Frame75() {
 function Frame56() {
   return (
     <div className="content-stretch flex gap-[24px] items-start justify-center relative shrink-0 w-full">
-      <div className="flex flex-col font-['Monomakh',sans-serif] h-[64px] justify-center leading-[0] relative shrink-0 text-[40px] w-[220px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] h-[64px] justify-center leading-[0] relative shrink-0 text-[40px] w-[220px]">
         <p className="leading-[normal]">Task 1</p>
       </div>
       <Frame75 />
@@ -1114,7 +1114,7 @@ function Frame76() {
 function Frame57() {
   return (
     <div className="content-stretch flex gap-[24px] items-start justify-center relative shrink-0 w-full">
-      <div className="flex flex-col font-['Monomakh',sans-serif] h-[64px] justify-center leading-[0] relative shrink-0 text-[40px] w-[220px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] h-[64px] justify-center leading-[0] relative shrink-0 text-[40px] w-[220px]">
         <p className="leading-[normal]">Task 2</p>
       </div>
       <Frame76 />
@@ -1141,7 +1141,7 @@ function Frame77() {
 function Frame58() {
   return (
     <div className="content-stretch flex gap-[24px] items-start justify-center relative shrink-0 w-full">
-      <div className="flex flex-col font-['Monomakh',sans-serif] h-[64px] justify-center leading-[0] relative shrink-0 text-[40px] w-[220px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] h-[64px] justify-center leading-[0] relative shrink-0 text-[40px] w-[220px]">
         <p className="leading-[normal]">Task 3</p>
       </div>
       <Frame77 />
@@ -1152,7 +1152,7 @@ function Frame58() {
 function Frame59() {
   return (
     <div className="content-stretch flex gap-[24px] items-center justify-center leading-[0] relative shrink-0 w-full">
-      <div className="flex flex-col font-['Monomakh',sans-serif] h-[64px] justify-center relative shrink-0 text-[40px] w-[220px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] h-[64px] justify-center relative shrink-0 text-[40px] w-[220px]">
         <p className="leading-[normal]">Results</p>
       </div>
       <p className="flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal min-w-px relative text-[0px]">
@@ -1236,7 +1236,7 @@ function Frame84() {
 function Frame78() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-[700px]">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[48px] text-black text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[48px] text-black text-center w-[min-content]">
         <p className="leading-[normal]">Usability Test - Voice Over</p>
       </div>
       <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-full not-italic relative shrink-0 text-[20px] text-black w-[min-content]">The platform was thoroughly tested using accessibility tools. Below is a video demonstrating a VoiceOver test conducted on macOS.</p>
@@ -1343,7 +1343,7 @@ function Group13() {
 function Frame60() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-center not-italic relative shrink-0 text-black w-full">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] min-w-full relative shrink-0 text-[40px] text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full relative shrink-0 text-[40px] text-center w-[min-content]">
         <p className="leading-[normal]">Conclusions</p>
       </div>
       <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] relative shrink-0 text-[20px] w-[700px]">This project highlighted the importance of accessibility as a fundamental part of the design process. Through usability testing and VoiceOver evaluation, I improved the platform’s clarity and inclusiveness while strengthening my approach to accessible and user-centered design.</p>
@@ -1715,16 +1715,16 @@ function Title3() {
 function Frame20() {
   return (
     <div className="content-stretch flex gap-[42px] items-center relative shrink-0 w-full">
-      <Link to="/payana" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[366px]" data-name="Component 6">
+      <Link to="/payana" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 6">
         <Group10 />
         <Title1 />
         <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[16px] w-[365px]">Led the redesign of the Payana app, optimizing core user flows to simplify financial management and improve usability.</p>
         <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[14px] text-black w-[365px]">Client Project · 2025</p>
       </Link>
-      <Link to="/chatty" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col items-center relative shrink-0 w-[366px]" data-name="Component 6">
+      <Link to="/chatty" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col items-center relative shrink-0 w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 6">
         <ProjectCard />
       </Link>
-      <Link to="/gruya" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[366px]" data-name="Component 9">
+      <Link to="/gruya" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 9">
         <Group12 />
         <Title3 />
         <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[16px] w-[365px]">Designed Gruya, a meeting room booking app for a challenge, creating intuitive flows and a seamless user experience.</p>
@@ -1745,7 +1745,7 @@ function Frame21() {
 function Frame39() {
   return (
     <div className="content-stretch flex flex-col gap-[32px] items-start justify-center relative shrink-0 w-[1186px]">
-      <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black whitespace-nowrap">
         <p className="leading-[normal]">Other projects</p>
       </div>
       <Frame21 />
@@ -2028,12 +2028,12 @@ function Frame31() {
           <p className="font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[0px] text-black whitespace-nowrap">
             <span className="leading-[normal] text-[16px]">{` A`}</span>
             <span className="leading-[normal] text-[20px]">{` `}</span>
-            <span className="font-['Monomakh',sans-serif] leading-[normal] text-[24px]">designer passionate</span>
+            <span className="font-['EB_Garamond',serif] leading-[normal] text-[24px]">designer passionate</span>
             <span className="leading-[normal] text-[20px]">{` `}</span>
             <span className="leading-[normal] text-[16px]">about creating beautifu</span>
             <span className="leading-[normal] text-[20px]">l</span>
             <span className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] text-[20px]">{` `}</span>
-            <span className="font-['Monomakh',sans-serif] leading-[normal] text-[24px]">user friendly products</span>
+            <span className="font-['EB_Garamond',serif] leading-[normal] text-[24px]">user friendly products</span>
           </p>
           <Pencil />
         </div>
