@@ -383,37 +383,39 @@ function OurUsers() {
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-contain size-full" src="/our users.png" />
       </div>
       <SectionTitle>Our users</SectionTitle>
-      <div className="content-stretch flex gap-[54px] items-start relative shrink-0">
-        {[
-          {
-            emoji: "💁🏻‍♀️",
-            quote: '"I\'ve tried so many Japanese apps, but I always end up switching between five different tools just to study for the JLPT N5."',
-            context: "Lucas works full-time as a developer and studies Japanese during short breaks throughout the day. He values flexibility and wants quick study sessions he can complete from his phone without losing progress.",
-            motivations: ["Practicing Japanese in short, daily sessions", "Improving listening and vocabulary for the JLPT N5 exam", "Using gamified exercises that make studying feel lighter"],
-            frustrations: ["Most apps locking useful content behind subscriptions", "Not finding enough writing and kana practice", "Feeling like many apps focus more on aesthetics than actual learning"],
-          },
-          {
-            emoji: "👨🏻‍💼",
-            quote: '"I want learning Japanese to feel motivating and interactive, not like I\'m reading the same grammar book over and over again."',
-            context: "Sofia is a university student who started learning Japanese because of anime and music culture. She studies mostly at night after classes and looks for simple, visual, and interactive ways to stay consistent without feeling overwhelmed.",
-            motivations: ["Learning Japanese at her own pace without depending on expensive courses", "Having all study material centralized in one app", "Tracking her progress and feeling motivated through small achievements"],
-            frustrations: ["Needing to switch between multiple apps to practice different skills", "Feeling bored with repetitive grammar exercises", "Forgetting vocabulary easily after studying"],
-          },
-        ].map(({ emoji, quote, context, motivations, frustrations }) => (
-          <div key={emoji} className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-[563px]">
-            <div className="bg-white border-l-[3px] border-black border-solid content-stretch drop-shadow-[0px_4px_2px_rgba(117,117,117,0.25)] flex gap-[10px] items-center p-[24px] relative rounded-br-[8px] rounded-tr-[8px] shrink-0 w-full">
-              <p className="font-['Inter:Regular',sans-serif] font-normal relative shrink-0 whitespace-nowrap text-[20px]">{emoji}</p>
-              <p className="flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold min-w-px relative text-[20px] text-black leading-[32px]">{quote}</p>
-            </div>
-            <div className="border border-[#b9b9b9] border-solid content-stretch flex flex-col items-start px-[24px] py-[32px] relative rounded-[8px] shrink-0 w-full">
-              <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[20px] text-black w-full mb-[16px]">{context}</p>
-              <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[32px] not-italic relative shrink-0 text-[20px] text-black w-full">Motivations</p>
-              {motivations.map((m) => <p key={m} className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[20px] text-black w-full">{m}</p>)}
-              <p className="font-['Inter:Bold',sans-serif] font-bold leading-[32px] not-italic relative shrink-0 text-[20px] text-black w-full mt-[16px]">Frustrations</p>
-              {frustrations.map((f) => <p key={f} className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[20px] text-black w-full">{f}</p>)}
+      <div className="content-stretch flex gap-[80px] items-start relative shrink-0">
+        {/* Lucas */}
+        <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-[563px]">
+          <div className="[word-break:break-word] bg-white border-black border-l-[3px] border-solid content-stretch drop-shadow-[0px_4px_2px_rgba(117,117,117,0.25)] flex gap-[10px] items-center leading-[32px] not-italic p-[24px] relative rounded-br-[8px] rounded-tr-[8px] shrink-0 text-[20px] text-black w-full">
+            <p className="font-['Inter:Regular',sans-serif] font-normal relative shrink-0 whitespace-nowrap">💁🏻‍♀️</p>
+            <p className="flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold min-w-px relative">"I've tried so many Japanese apps, but I always end up switching between five different tools just to study for the JLPT N5."</p>
+          </div>
+          <div className="border border-[#b9b9b9] border-solid content-stretch flex flex-col items-start px-[24px] py-[32px] relative rounded-[8px] shrink-0 w-full">
+            <div className="content-stretch flex items-center justify-center relative shrink-0 w-full">
+              <div className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[0] min-w-px not-italic relative text-[20px] text-black whitespace-pre-wrap">
+                <p className="leading-[32px] mb-0">{"Lucas works full-time as a developer and studies Japanese during short breaks throughout the day. He values flexibility and wants quick study sessions he can complete from his phone without losing progress.\n\n"}</p>
+                <p className="mb-0"><span className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[32px]">Motivations</span><span className="leading-[32px]">{"\nPracticing Japanese in short, daily sessions\nImproving listening and vocabulary for the JLPT N5 exam\nUsing gamified exercises that make studying feel lighter\n\n"}</span></p>
+                <p><span className="font-['Inter:Bold',sans-serif] font-bold leading-[32px]">Frustrations</span><span className="leading-[32px]">{"\nMost apps locking useful content behind subscriptions\nNot finding enough writing and kana practice\nFeeling like many apps focus more on aesthetics than actual learning"}</span></p>
+              </div>
             </div>
           </div>
-        ))}
+        </div>
+        {/* Sofia */}
+        <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-[563px]">
+          <div className="[word-break:break-word] bg-white border-black border-l-[3px] border-solid content-stretch drop-shadow-[0px_4px_2px_rgba(117,117,117,0.25)] flex gap-[10px] h-[144px] items-center leading-[32px] not-italic p-[24px] relative rounded-br-[8px] rounded-tr-[8px] shrink-0 text-[20px] text-black w-full">
+            <p className="font-['Inter:Regular',sans-serif] font-normal relative shrink-0 whitespace-nowrap">👨🏻‍💼</p>
+            <p className="flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold min-w-px relative">"I want learning Japanese to feel motivating and interactive, not like I'm reading the same grammar book over and over again."</p>
+          </div>
+          <div className="border border-[#b9b9b9] border-solid content-stretch flex flex-col items-start px-[24px] py-[32px] relative rounded-[8px] shrink-0 w-full">
+            <div className="content-stretch flex items-center justify-center relative shrink-0 w-full">
+              <div className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[0] min-w-px not-italic relative text-[20px] text-black whitespace-pre-wrap">
+                <p className="leading-[32px] mb-0">{"Sofia is a university student who started learning Japanese because of anime and music culture. She studies mostly at night after classes and looks for simple, visual, and interactive ways to stay consistent without feeling overwhelmed.\n\n"}</p>
+                <p className="mb-0"><span className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[32px]">Motivations</span><span className="leading-[32px]">{"\nLearning Japanese at her own pace without depending on expensive courses\nHaving all study material centralized in one app\nTracking her progress and feeling motivated through small achievements\n\n"}</span></p>
+                <p><span className="font-['Inter:Bold',sans-serif] font-bold leading-[32px]">Frustrations</span><span className="leading-[32px]">{"\nNeeding to switch between multiple apps to practice different skills\nFeeling bored with repetitive grammar exercises\nForgetting vocabulary easily after studying"}</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
