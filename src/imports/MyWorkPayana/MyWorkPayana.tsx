@@ -3020,7 +3020,7 @@ function Frame56() {
 
 function Frame52() {
   return (
-    <div className="bg-white content-stretch fixed flex flex-col items-start left-0 top-0 w-full z-50">
+    <div className="hidden">
       <Frame38 />
       <Frame56 />
     </div>
