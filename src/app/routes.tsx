@@ -9,6 +9,7 @@ import MyWorkDenchi from "./pages/MyWorkDenchi";
 import AboutMe from "./pages/AboutMe";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
+import NotFound from "./pages/NotFound";
 
 export const router = createBrowserRouter([
   {
@@ -23,6 +24,7 @@ export const router = createBrowserRouter([
       { path: "/about", Component: AboutMe },
       { path: "/blog", Component: Blog },
       { path: "/blog/:slug", Component: BlogPost },
+      { path: "*", Component: NotFound },
     ],
   },
 ]);
