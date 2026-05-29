@@ -659,12 +659,7 @@ function WantToExplore() {
         <p className="leading-[normal]">Want to explore Denchi.app?</p>
       </div>
       <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[20px] text-black w-full">
-        Take a closer look at how the app was imagined to feel, look, and behave as a real product experience — from the first interaction to the way users would discover it on the Play Store.
-      </p>
-      <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[20px] text-black text-center w-full">
-        <span className="leading-[32px]">Be kind...</span>
-        <span className="font-['Inter:Bold',sans-serif] font-bold leading-[32px]">{` it's still a beta`}</span>
-        <span className="leading-[32px]">. Don't forget that 💛</span>
+        Take a closer look at how the app was imagined to feel, look, and behave as a real product experience — from the first interaction to the way users would discover it on the Play Store. Be kind...<span className="font-['Inter:Bold',sans-serif] font-bold">{` it's still a beta`}</span>. Don't forget that 💛
       </p>
       {/* Phone mockup with video */}
       <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0">
