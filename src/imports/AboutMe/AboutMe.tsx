@@ -4,7 +4,7 @@ import { ContactDrawer } from "../shared/ContactDrawer";
 import svgPaths from "./svg-pw6w0vxexd";
 import imgCollage from "./collage.png";
 
-const imgArrow  = "https://www.figma.com/api/mcp/asset/2d213072-a8b7-4020-8479-3c4520263fc9";
+const imgArrow  = "/Arrow 1.png";
 const imgSpeech = "https://www.figma.com/api/mcp/asset/a645b18b-8179-4bc9-8a36-7ecf5437f76d";
 
 /* ─────────────────────────────────────────────── Header */
