@@ -1,6 +1,8 @@
+﻿import { useSEO } from "../hooks/useSEO";
 import { Link } from "react-router";
 
 export default function NotFound() {
+  useSEO({ title: "Page not found", description: "The page you're looking for doesn't exist." });
   return (
     <div className="flex flex-col items-center justify-center min-h-[70vh] px-[24px] text-center">
       <p className="font-['EB_Garamond',serif] text-[120px] leading-none text-black font-normal">

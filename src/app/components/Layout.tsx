@@ -50,7 +50,9 @@ export default function Layout() {
                 My CV
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/denisechiapin/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-black text-white px-[24px] py-[12px] rounded-[100px] font-['Inter:Regular',sans-serif] font-normal text-[16px] hover:bg-[#333] transition-colors"
               >
                 See my profile!
