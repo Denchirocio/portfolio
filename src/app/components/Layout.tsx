@@ -3,9 +3,6 @@ import { AnimatePresence, motion } from "motion/react";
 import AppFooter from "./AppFooter";
 import ScrollToTop from "./ScrollToTop";
 
-// Exit duration must match content exit duration (0.15s)
-const EXIT_DURATION = 0.15;
-
 export default function Layout() {
   const location = useLocation();
   const isAbout = location.pathname === "/about";
@@ -19,9 +16,10 @@ export default function Layout() {
           <motion.header
             key="layout-header"
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1, transition: { duration: 0.25, delay: EXIT_DURATION, ease: "easeInOut" } }}
-            exit={{ opacity: 0, transition: { duration: EXIT_DURATION, ease: "easeInOut" } }}
-            className="sticky top-0 z-50 bg-white border-b border-[#EBEBEB]"
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.25, ease: "easeInOut" }}
+            className="sticky top-0 z-[100] bg-white border-b border-[#EBEBEB]"
           >
             <div className="max-w-[1440px] mx-auto px-[80px] py-[24px]">
               <nav className="flex items-center justify-between">
@@ -47,17 +45,14 @@ export default function Layout() {
       </AnimatePresence>
 
       <main>
-        <AnimatePresence mode="wait" initial={false}>
-          <motion.div
-            key={location.pathname}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.15, ease: "easeInOut" }}
-          >
-            <Outlet />
-          </motion.div>
-        </AnimatePresence>
+        <motion.div
+          key={location.pathname}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
+        >
+          <Outlet />
+        </motion.div>
       </main>
 
       <AnimatePresence>
@@ -65,8 +60,9 @@ export default function Layout() {
           <motion.div
             key="layout-footer"
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1, transition: { duration: 0.25, delay: EXIT_DURATION, ease: "easeInOut" } }}
-            exit={{ opacity: 0, transition: { duration: EXIT_DURATION, ease: "easeInOut" } }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.25, ease: "easeInOut" }}
           >
             <AppFooter />
           </motion.div>
