@@ -655,13 +655,13 @@ function PlayStore() {
 function WantToExplore() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-full">
-      <div className="[word-break:break-word] flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[48px] text-black text-center w-[min-content]">
+      <div className="[word-break:break-word] flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[48px] text-black text-center w-full">
         <p className="leading-[normal]">Want to explore Denchi.app?</p>
       </div>
-      <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-full not-italic relative shrink-0 text-[20px] text-black w-[min-content]">
+      <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[20px] text-black w-full">
         Take a closer look at how the app was imagined to feel, look, and behave as a real product experience — from the first interaction to the way users would discover it on the Play Store.
       </p>
-      <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[0] min-w-full not-italic relative shrink-0 text-[20px] text-black text-center w-[min-content]">
+      <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[20px] text-black text-center w-full">
         <span className="leading-[32px]">Be kind...</span>
         <span className="font-['Inter:Bold',sans-serif] font-bold leading-[32px]">{` it's still a beta`}</span>
         <span className="leading-[32px]">. Don't forget that 💛</span>
