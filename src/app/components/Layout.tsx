@@ -3,16 +3,11 @@ import { AnimatePresence, motion } from "motion/react";
 import AppFooter from "./AppFooter";
 import ScrollToTop from "./ScrollToTop";
 
-const headerVariants = {
-  initial: { opacity: 0 },
-  animate: { opacity: 1 },
-  exit:    { opacity: 0 },
-};
-const transition = { duration: 0.25, ease: "easeInOut" };
+// Exit duration must match content exit duration (0.15s)
+const EXIT_DURATION = 0.15;
 
 export default function Layout() {
   const location = useLocation();
-  const isHome = location.pathname === "/";
   const isAbout = location.pathname === "/about";
   const isBlog = location.pathname.startsWith("/blog");
 
@@ -23,11 +18,9 @@ export default function Layout() {
         {!isAbout && !isBlog && (
           <motion.header
             key="layout-header"
-            variants={headerVariants}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-            transition={transition}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { duration: 0.25, delay: EXIT_DURATION, ease: "easeInOut" } }}
+            exit={{ opacity: 0, transition: { duration: EXIT_DURATION, ease: "easeInOut" } }}
             className="sticky top-0 z-50 bg-white border-b border-[#EBEBEB]"
           >
             <div className="max-w-[1440px] mx-auto px-[80px] py-[24px]">
@@ -69,7 +62,12 @@ export default function Layout() {
 
       <AnimatePresence>
         {!isAbout && !isBlog && (
-          <motion.div key="layout-footer" variants={headerVariants} initial="initial" animate="animate" exit="exit" transition={transition}>
+          <motion.div
+            key="layout-footer"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { duration: 0.25, delay: EXIT_DURATION, ease: "easeInOut" } }}
+            exit={{ opacity: 0, transition: { duration: EXIT_DURATION, ease: "easeInOut" } }}
+          >
             <AppFooter />
           </motion.div>
         )}
