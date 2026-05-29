@@ -553,7 +553,7 @@ function Frame13() {
     <div className="content-stretch flex gap-[42px] items-center relative shrink-0 w-full">
       {/* 1. Denchi */}
       <FadeIn delay={0} className="shrink-0 w-[366px]">
-        <Link to="/denchi" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] h-[406.58px] items-center relative shrink-0 w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Denchi">
+        <Link to="/denchi" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative w-full no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Denchi">
           <DenchiMockup />
           <div className="content-stretch flex gap-[12px] items-center relative shrink-0 w-full" data-name="Title">
             <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[24px] text-black whitespace-nowrap">DenchiNoNihongo</p>
@@ -725,24 +725,19 @@ function Title3() {
 
 function DenchiLaptopContent() {
   return (
-    <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-[18px] place-items-start relative row-1">
-      <div className="border-[0.762px] border-black border-solid col-1 h-[198.176px] ml-[15.24px] mt-[10.2px] relative rounded-tl-[6.098px] rounded-tr-[6.098px] row-1 w-[304.886px]" />
-      <div className="border-[0.762px] border-black border-solid col-1 h-[182.169px] ml-[22.87px] mt-[17.82px] relative rounded-tl-[6.098px] rounded-tr-[6.098px] row-1 w-[288.879px]">
-        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-tl-[6.098px] rounded-tr-[6.098px] size-full" src={imgDenchiLaptop} />
+    <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-[28.2px] place-items-start relative row-1">
+      <div className="border-[0.762px] border-black border-solid col-1 h-[198.176px] ml-[15.24px] mt-0 relative rounded-tl-[6.098px] rounded-tr-[6.098px] row-1 w-[304.886px]" />
+      <div className="col-1 h-[182.169px] ml-[22.87px] mt-[7.62px] pointer-events-none relative rounded-tl-[6.098px] rounded-tr-[6.098px] row-1 w-[288.879px]">
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover rounded-tl-[6.098px] rounded-tr-[6.098px] size-full" src={imgDenchiLaptop} />
+        <div aria-hidden="true" className="absolute border-[0.762px] border-black border-solid inset-0 rounded-tl-[6.098px] rounded-tr-[6.098px]" />
       </div>
-      <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-[109.69px] mt-0 place-items-start relative row-1">
-        <div className="border-[0.919px] border-black border-solid col-1 h-[202.288px] ml-[5.52px] mt-[7.36px] relative rounded-[14.712px] row-1 w-[103.903px]">
-          <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[14.712px] size-full" src={imgDenchiPhone} />
-        </div>
-        <div className="border-[0.919px] border-black border-solid col-1 h-[217px] ml-0 mt-0 relative rounded-[14.712px] row-1 w-[115.856px]" />
-      </div>
-      <div className="border-[0.762px] border-black border-solid col-1 h-[12.195px] ml-0 mt-[207.62px] relative row-1 w-[335.375px]" />
-      <div className="col-1 h-[4.573px] ml-0 mt-[219.05px] relative row-1 w-[335.375px]">
+      <div className="border-[0.762px] border-black border-solid col-1 h-[12.195px] ml-0 mt-[197.41px] relative row-1 w-[335.375px]" />
+      <div className="col-1 h-[4.573px] ml-0 mt-[208.85px] relative row-1 w-[335.375px]">
         <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 335.375 4.57329">
           <path d={svgPaths.p3fa02f00} id="Rectangle 5" stroke="var(--stroke-0, black)" strokeWidth="0.762215" />
         </svg>
       </div>
-      <div className="border-[0.762px] border-black border-solid col-1 h-[5.336px] ml-[144.82px] mt-[207.62px] relative rounded-bl-[152.443px] rounded-br-[152.443px] row-1 w-[45.733px]" />
+      <div className="border-[0.762px] border-black border-solid col-1 h-[5.336px] ml-[144.82px] mt-[197.41px] relative rounded-bl-[152.443px] rounded-br-[152.443px] row-1 w-[45.733px]" />
     </div>
   );
 }
