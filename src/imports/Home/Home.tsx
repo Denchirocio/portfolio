@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+﻿import { useState, type ReactNode } from "react";
 import { Link } from "react-router";
 import imgBanner from "./Banner.png";
 import FadeIn from "../../app/components/FadeIn";
@@ -17,8 +17,8 @@ import imgDenchiPhone from "./denchi/phone-screen.png";
 function Group2() {
   return (
     <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0">
-      <div className="bg-[#e9f7ba] col-1 ml-0 mt-0 relative rounded-[14px] row-1 size-[64px]" />
-      <div className="col-1 ml-[12px] mt-[12px] relative row-1 size-[40px]" data-name="accesibility 1">
+      <div className="bg-[#e9f7ba] col-1 ml-0 mt-0 relative rounded-[14px] row-1 size-[36px] sm:size-[64px]" />
+      <div className="col-1 ml-[6px] mt-[6px] sm:ml-[12px] sm:mt-[12px] relative row-1 size-[24px] sm:size-[40px]" data-name="accesibility 1">
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgAccesibility1} />
       </div>
     </div>
@@ -28,8 +28,8 @@ function Group2() {
 function Group3() {
   return (
     <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0">
-      <div className="bg-[#c7d4fd] col-1 ml-0 mt-0 relative rounded-[14px] row-1 size-[64px]" />
-      <div className="col-1 ml-[12px] mt-[12px] relative row-1 size-[40px]" data-name="heart (1) 1">
+      <div className="bg-[#c7d4fd] col-1 ml-0 mt-0 relative rounded-[14px] row-1 size-[36px] sm:size-[64px]" />
+      <div className="col-1 ml-[6px] mt-[6px] sm:ml-[12px] sm:mt-[12px] relative row-1 size-[24px] sm:size-[40px]" data-name="heart (1) 1">
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgHeart11} />
       </div>
     </div>
@@ -39,8 +39,8 @@ function Group3() {
 function Group4() {
   return (
     <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0">
-      <div className="bg-[#eecdff] col-1 ml-0 mt-0 relative rounded-[14px] row-1 size-[64px]" />
-      <div className="col-1 ml-[12px] mt-[12px] relative row-1 size-[40px]" data-name="joystick 1">
+      <div className="bg-[#eecdff] col-1 ml-0 mt-0 relative rounded-[14px] row-1 size-[36px] sm:size-[64px]" />
+      <div className="col-1 ml-[6px] mt-[6px] sm:ml-[12px] sm:mt-[12px] relative row-1 size-[24px] sm:size-[40px]" data-name="joystick 1">
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgJoystick1} />
       </div>
     </div>
@@ -49,7 +49,7 @@ function Group4() {
 
 function Group7() {
   return (
-    <div className="relative shrink-0 size-[64px]">
+    <div className="relative shrink-0 size-[36px] sm:size-[64px]">
       <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 64 64">
         <g id="Group 8">
           <rect fill="var(--fill-0, white)" height="64" id="Rectangle 7" rx="14" width="64" x="8.90344e-06" />
@@ -64,7 +64,7 @@ function Group7() {
 
 function Group5() {
   return (
-    <div className="relative shrink-0 size-[64px]">
+    <div className="relative shrink-0 size-[36px] sm:size-[64px]">
       <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 64 64">
         <g id="Group 6">
           <rect fill="var(--fill-0, white)" height="63" id="Rectangle 7" rx="13.5" stroke="var(--stroke-0, #EBEBEB)" width="63" x="0.5" y="0.5" />
@@ -88,12 +88,12 @@ function Frame22() {
 
   return (
     <div
-      className="content-stretch flex gap-[16px] items-center relative shrink-0"
+      className="content-stretch flex flex-nowrap gap-[8px] sm:gap-[16px] items-center justify-center sm:justify-start relative shrink-0 w-full"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <div style={wave(0)}>
-        <div className="relative shrink-0 size-[64px]" data-name="wireframe 1">
+        <div className="relative shrink-0 size-[36px] sm:size-[64px]" data-name="wireframe 1">
           <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgWireframe1} />
         </div>
       </div>
@@ -108,51 +108,51 @@ function Frame22() {
 
 function Frame9() {
   return (
-    <div className="content-stretch flex flex-col items-start relative shrink-0 w-[541px]">
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-black w-full text-[60px]">I’m Denise, hello !</p>
+    <div className="content-stretch flex flex-col items-center sm:items-start relative shrink-0 w-full md:w-[541px]">
+      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-black w-full text-[28px] sm:text-[60px] text-center sm:text-left">I’m Denise, hello !</p>
     </div>
   );
 }
 
 function Frame() {
   return (
-    <div className="content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
+    <div className="content-stretch flex h-[26px] sm:h-[30px] items-center justify-center px-[12px] sm:px-[16px] py-[6px] sm:py-[10px] relative rounded-[24px] shrink-0">
       <div aria-hidden="true" className="absolute border border-[#595959] border-solid inset-0 pointer-events-none rounded-[24px]" />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#595959] text-[14px] whitespace-nowrap">PRODUCT DESIGNER</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#595959] text-[12px] sm:text-[14px] whitespace-nowrap">PRODUCT DESIGNER</p>
     </div>
   );
 }
 
 function Frame1() {
   return (
-    <div className="content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
+    <div className="content-stretch flex h-[26px] sm:h-[30px] items-center justify-center px-[12px] sm:px-[16px] py-[6px] sm:py-[10px] relative rounded-[24px] shrink-0">
       <div aria-hidden="true" className="absolute border border-[#595959] border-solid inset-0 pointer-events-none rounded-[24px]" />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#595959] text-[14px] whitespace-nowrap">ACCESIBILITY</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#595959] text-[12px] sm:text-[14px] whitespace-nowrap">ACCESSIBILITY</p>
     </div>
   );
 }
 
 function Frame2() {
   return (
-    <div className="content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
+    <div className="content-stretch flex h-[26px] sm:h-[30px] items-center justify-center px-[12px] sm:px-[16px] py-[6px] sm:py-[10px] relative rounded-[24px] shrink-0">
       <div aria-hidden="true" className="absolute border border-[#595959] border-solid inset-0 pointer-events-none rounded-[24px]" />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#595959] text-[14px] whitespace-nowrap">UX RESEARCH</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#595959] text-[12px] sm:text-[14px] whitespace-nowrap">UX RESEARCH</p>
     </div>
   );
 }
 
 function Frame4() {
   return (
-    <div className="content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
+    <div className="content-stretch flex h-[26px] sm:h-[30px] items-center justify-center px-[12px] sm:px-[16px] py-[6px] sm:py-[10px] relative rounded-[24px] shrink-0">
       <div aria-hidden="true" className="absolute border border-[#595959] border-solid inset-0 pointer-events-none rounded-[24px]" />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#595959] text-[14px] whitespace-nowrap">GAMER</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#595959] text-[12px] sm:text-[14px] whitespace-nowrap">GAMER</p>
     </div>
   );
 }
 
 function Frame3() {
   return (
-    <div className="content-stretch flex gap-[8px] items-center relative shrink-0">
+    <div className="content-stretch flex flex-wrap gap-[8px] items-center justify-center sm:justify-start relative shrink-0 w-full">
       <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
         <Frame />
       </div>
@@ -171,16 +171,16 @@ function Frame3() {
 
 function Frame6() {
   return (
-    <div className="content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
+    <div className="content-stretch flex h-[26px] sm:h-[30px] items-center justify-center px-[12px] sm:px-[16px] py-[6px] sm:py-[10px] relative rounded-[24px] shrink-0">
       <div aria-hidden="true" className="absolute border border-[#595959] border-solid inset-0 pointer-events-none rounded-[24px]" />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#595959] text-[14px] whitespace-nowrap">日本語を勉強しています</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#595959] text-[12px] sm:text-[14px] whitespace-nowrap">日本語を勉強しています</p>
     </div>
   );
 }
 
 function Frame5() {
   return (
-    <div className="content-stretch flex items-center relative shrink-0">
+    <div className="content-stretch flex items-center justify-center sm:justify-start relative shrink-0 w-full">
       <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
         <Frame6 />
       </div>
@@ -190,7 +190,7 @@ function Frame5() {
 
 function Frame20() {
   return (
-    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0">
+    <div className="content-stretch flex flex-col gap-[8px] items-center sm:items-start relative shrink-0 w-full">
       <Frame3 />
       <Frame5 />
     </div>
@@ -199,7 +199,7 @@ function Frame20() {
 
 function Frame57() {
   return (
-    <div className="content-stretch flex flex-col gap-[16px] items-start justify-center relative shrink-0">
+    <div className="content-stretch flex flex-col gap-[16px] items-center sm:items-start justify-center relative shrink-0 w-full">
       <Frame9 />
       <Frame20 />
     </div>
@@ -209,14 +209,14 @@ function Frame57() {
 function Frame10() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col h-full items-start min-w-px relative">
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[16px] text-black w-full">My name is Denise, but my friends call me Denchi. I’m a Sr. Product Designer with strong experience in research and user experience. Over the past six years, I’ve focused on understanding products, users, and how they interact—helping organizations align user needs with business goals through thoughtful design.</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[14px] sm:text-[16px] text-black w-full">My name is Denise, but my friends call me Denchi. I’m a Sr. Product Designer with strong experience in research and user experience. Over the past six years, I’ve focused on understanding products, users, and how they interact—helping organizations align user needs with business goals through thoughtful design.</p>
     </div>
   );
 }
 
 function Frame11() {
   return (
-    <div className="content-stretch flex h-[95px] items-center relative shrink-0 w-full">
+    <div className="content-stretch flex min-h-[95px] items-center relative shrink-0 w-full">
       <div className="flex flex-[1_0_0] flex-row items-center self-stretch">
         <Frame10 />
       </div>
@@ -234,7 +234,7 @@ function Frame58() {
 
 function Frame59() {
   return (
-    <div className="content-stretch flex flex-col items-start p-[16px] relative rounded-[8px] shrink-0 w-[541px]">
+    <div className="content-stretch flex flex-col items-start p-[16px] relative rounded-[8px] shrink-0 w-full md:w-[541px]">
       <div aria-hidden="true" className="absolute border border-[#c9c9c9] border-solid inset-0 pointer-events-none rounded-[8px]" />
       <Frame58 />
     </div>
@@ -243,7 +243,7 @@ function Frame59() {
 
 function Frame12() {
   return (
-    <div className="content-stretch flex items-center justify-between gap-[80px] relative shrink-0 w-full">
+    <div className="content-stretch flex flex-col md:flex-row md:items-center justify-between gap-[24px] md:gap-[80px] relative shrink-0 w-full">
       <Frame57 />
       <Frame59 />
     </div>
@@ -252,7 +252,7 @@ function Frame12() {
 
 function Frame23() {
   return (
-    <div className="content-stretch flex flex-col gap-[24px] items-start mt-[72px] relative shrink-0 w-full">
+    <div className="content-stretch flex flex-col gap-[16px] sm:gap-[24px] items-start mt-[32px] sm:mt-[72px] relative shrink-0 w-full">
       <Frame22 />
       <Frame12 />
     </div>
@@ -304,8 +304,8 @@ function Group11() {
 
 function Frame7() {
   return (
-    <div className="bg-[#c8e793] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-black whitespace-nowrap">FINANCE</p>
+    <div className="bg-[#c8e793] content-stretch flex h-[26px] sm:h-[30px] items-center justify-center px-[12px] sm:px-[16px] py-[6px] sm:py-[10px] relative rounded-[24px] shrink-0">
+      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-black whitespace-nowrap">FINANCE</p>
     </div>
   );
 }
@@ -322,16 +322,16 @@ function Frame14() {
 
 function Frame8() {
   return (
-    <div className="bg-[#796ff1] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap">IA</p>
+    <div className="bg-[#796ff1] content-stretch flex h-[26px] sm:h-[30px] items-center justify-center px-[12px] sm:px-[16px] py-[6px] sm:py-[10px] relative rounded-[24px] shrink-0">
+      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-white whitespace-nowrap">IA</p>
     </div>
   );
 }
 
 function Frame15() {
   return (
-    <div className="bg-[#688cf8] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap">UX/UI</p>
+    <div className="bg-[#688cf8] content-stretch flex h-[26px] sm:h-[30px] items-center justify-center px-[12px] sm:px-[16px] py-[6px] sm:py-[10px] relative rounded-[24px] shrink-0">
+      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-white whitespace-nowrap">UX/UI</p>
     </div>
   );
 }
@@ -353,7 +353,7 @@ function Frame48() {
 function Title() {
   return (
     <div className="content-stretch flex gap-[12px] items-center relative shrink-0 w-full" data-name="Title">
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[24px] text-black whitespace-nowrap">Payana</p>
+      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[20px] sm:text-[24px] text-black whitespace-nowrap">Payana</p>
       <Frame48 />
     </div>
   );
@@ -404,16 +404,16 @@ function Group12() {
 
 function Frame16() {
   return (
-    <div className="bg-[#796ff1] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap">IA</p>
+    <div className="bg-[#796ff1] content-stretch flex h-[26px] sm:h-[30px] items-center justify-center px-[12px] sm:px-[16px] py-[6px] sm:py-[10px] relative rounded-[24px] shrink-0">
+      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-white whitespace-nowrap">IA</p>
     </div>
   );
 }
 
 function Frame17() {
   return (
-    <div className="bg-[#688cf8] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap">UX/UI</p>
+    <div className="bg-[#688cf8] content-stretch flex h-[26px] sm:h-[30px] items-center justify-center px-[12px] sm:px-[16px] py-[6px] sm:py-[10px] relative rounded-[24px] shrink-0">
+      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-white whitespace-nowrap">UX/UI</p>
     </div>
   );
 }
@@ -434,19 +434,29 @@ function Frame47() {
 function Title1() {
   return (
     <div className="content-stretch flex gap-[12px] items-center relative shrink-0 w-full" data-name="Title">
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[24px] text-black whitespace-nowrap">Chatty</p>
+      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[20px] sm:text-[24px] text-black whitespace-nowrap">Chatty</p>
       <Frame47 />
+    </div>
+  );
+}
+
+function MockupScale({ children }: { children: ReactNode }) {
+  return (
+    <div className="relative w-[280px] h-[227px] overflow-hidden sm:w-auto sm:h-auto sm:overflow-visible">
+      <div className="absolute top-0 left-0 origin-top-left scale-[0.755] sm:static sm:scale-100">
+        {children}
+      </div>
     </div>
   );
 }
 
 function ProjectCard() {
   return (
-    <Link to="/chatty" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center justify-center relative shrink-0 w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Project card">
-      <Group12 />
+    <Link to="/chatty" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center justify-center relative shrink-0 w-full max-w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Project card">
+      <MockupScale><Group12 /></MockupScale>
       <Title1 />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[16px] w-[365px]">Improved Chatty through a user-centered redesign, focusing on usability, clarity, and seamless interactions.</p>
-      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[14px] text-black w-[365px]">Freelance · 2025</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[14px] sm:text-[16px] w-full">Improved Chatty through a user-centered redesign, focusing on usability, clarity, and seamless interactions.</p>
+      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-black w-full">Freelance · 2025</p>
     </Link>
   );
 }
@@ -496,8 +506,8 @@ function Group13() {
 
 function Frame19() {
   return (
-    <div className="bg-[#ffabe7] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-black whitespace-nowrap">CASE STUDY</p>
+    <div className="bg-[#ffabe7] content-stretch flex h-[26px] sm:h-[30px] items-center justify-center px-[12px] sm:px-[16px] py-[6px] sm:py-[10px] relative rounded-[24px] shrink-0">
+      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-black whitespace-nowrap">CASE STUDY</p>
     </div>
   );
 }
@@ -514,8 +524,8 @@ function Frame18() {
 
 function Frame26() {
   return (
-    <div className="bg-[#688cf8] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap">Accessibility</p>
+    <div className="bg-[#688cf8] content-stretch flex h-[26px] sm:h-[30px] items-center justify-center px-[12px] sm:px-[16px] py-[6px] sm:py-[10px] relative rounded-[24px] shrink-0">
+      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-white whitespace-nowrap">Accessibility</p>
     </div>
   );
 }
@@ -541,7 +551,7 @@ function Frame24() {
 function Title2() {
   return (
     <div className="content-stretch flex gap-[12px] items-center relative shrink-0 w-full" data-name="Title">
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[24px] text-black whitespace-nowrap">Bookup</p>
+      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[20px] sm:text-[24px] text-black whitespace-nowrap">Bookup</p>
       <Frame18 />
       <Frame24 />
     </div>
@@ -550,42 +560,60 @@ function Title2() {
 
 function Frame13() {
   return (
-    <div className="content-stretch flex gap-[42px] items-center relative shrink-0 w-full">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[32px] sm:gap-[42px] items-start relative shrink-0 w-full">
       {/* 1. Denchi */}
-      <FadeIn delay={0} className="shrink-0 w-[366px]">
-        <Link to="/denchi" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] h-[406.58px] items-center relative shrink-0 w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Denchi">
-          <DenchiMockup />
+      <FadeIn delay={0} className="shrink-0 w-full max-w-[366px]">
+        <Link to="/denchi" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-full max-w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Denchi">
+          <MockupScale><DenchiMockup /></MockupScale>
           <div className="content-stretch flex gap-[12px] items-center relative shrink-0 w-full" data-name="Title">
-            <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[24px] text-black whitespace-nowrap">DenchiNoNihongo</p>
+            <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[20px] sm:text-[24px] text-black whitespace-nowrap">DenchiNoNihongo</p>
             <div className="content-stretch flex items-center relative shrink-0">
-              <div className="bg-[#688cf8] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-                <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap">CLAUDE</p>
+              <div className="bg-[#688cf8] content-stretch flex h-[26px] sm:h-[30px] items-center justify-center px-[12px] sm:px-[16px] py-[6px] sm:py-[10px] relative rounded-[24px] shrink-0">
+                <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-white whitespace-nowrap">CLAUDE</p>
               </div>
             </div>
             <div className="content-stretch flex items-center relative shrink-0">
-              <div className="bg-[#c8e793] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-                <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-black whitespace-nowrap">IA</p>
+              <div className="bg-[#c8e793] content-stretch flex h-[26px] sm:h-[30px] items-center justify-center px-[12px] sm:px-[16px] py-[6px] sm:py-[10px] relative rounded-[24px] shrink-0">
+                <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-black whitespace-nowrap">IA</p>
               </div>
             </div>
           </div>
-          <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[16px] w-[365px]">Designed and developed DenchiNoNihongo, a mobile-first Japanese learning PWA.</p>
-          <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[14px] text-black w-[365px]">Real project · 2026</p>
+          <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[14px] sm:text-[16px] w-full">Designed and developed DenchiNoNihongo, a mobile-first Japanese learning PWA.</p>
+          <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-black w-full">Real project · 2026</p>
         </Link>
       </FadeIn>
       {/* 2. Payana */}
-      <FadeIn delay={0.15} className="shrink-0 w-[366px]">
+      <FadeIn delay={0.15} className="shrink-0 w-full max-w-[366px]">
         <Link to="/payana" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative w-full no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 6">
-          <Group11 />
+          <MockupScale><Group11 /></MockupScale>
           <Title />
-          <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[16px] w-[365px]">Led the redesign of the Payana app, optimizing core user flows to simplify financial management and improve usability.</p>
-          <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[14px] text-black w-[365px]">Client Project · 2025</p>
+          <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[14px] sm:text-[16px] w-full">Led the redesign of the Payana app, optimizing core user flows to simplify financial management and improve usability.</p>
+          <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-black w-full">Client Project · 2025</p>
         </Link>
       </FadeIn>
       {/* 3. Chatty */}
-      <FadeIn delay={0.3} className="shrink-0 w-[366px]">
+      <FadeIn delay={0.3} className="shrink-0 w-full max-w-[366px]">
         <div className="content-stretch flex flex-col items-center relative w-full" data-name="Component 6">
           <ProjectCard />
         </div>
+      </FadeIn>
+      {/* 4. Bookup */}
+      <FadeIn delay={0.45} className="shrink-0 w-full max-w-[366px]">
+        <Link to="/bookup" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative w-full no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 7">
+          <MockupScale><Group13 /></MockupScale>
+          <Title2 />
+          <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[14px] sm:text-[16px] w-full">Designed an accessibility-focused experience for an online bookstore, improving navigation and usability for diverse users.</p>
+          <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-black w-full">UTN Project · 2022</p>
+        </Link>
+      </FadeIn>
+      {/* 5. Gruya */}
+      <FadeIn delay={0.6} className="shrink-0 w-full max-w-[366px]">
+        <Link to="/gruya" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative w-full no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 9">
+          <MockupScale><Group14 /></MockupScale>
+          <Title3 />
+          <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[14px] sm:text-[16px] w-full">Designed Gruya, a meeting room booking app for a challenge, creating intuitive flows and a seamless user experience.</p>
+          <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-black w-full">Case Study · 2022</p>
+        </Link>
       </FadeIn>
     </div>
   );
@@ -610,7 +638,7 @@ function Frame46() {
 function Frame60() {
   return (
     <div className="content-stretch flex flex-col gap-[32px] items-start relative shrink-0 w-full">
-      <p className="font-['EB_Garamond',serif] leading-[normal] not-italic relative shrink-0 text-[40px] text-black whitespace-nowrap">Featured projects</p>
+      <p className="font-['EB_Garamond',serif] leading-[normal] not-italic relative shrink-0 text-[28px] sm:text-[40px] text-black whitespace-nowrap">Featured projects</p>
       <Frame46 />
     </div>
   );
@@ -671,8 +699,8 @@ function Group14() {
 
 function Frame30() {
   return (
-    <div className="bg-[#ffabe7] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-black whitespace-nowrap">CASE STUDY</p>
+    <div className="bg-[#ffabe7] content-stretch flex h-[26px] sm:h-[30px] items-center justify-center px-[12px] sm:px-[16px] py-[6px] sm:py-[10px] relative rounded-[24px] shrink-0">
+      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-black whitespace-nowrap">CASE STUDY</p>
     </div>
   );
 }
@@ -689,8 +717,8 @@ function Frame29() {
 
 function Frame32() {
   return (
-    <div className="bg-[#796ff1] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap">PERSONAL</p>
+    <div className="bg-[#796ff1] content-stretch flex h-[26px] sm:h-[30px] items-center justify-center px-[12px] sm:px-[16px] py-[6px] sm:py-[10px] relative rounded-[24px] shrink-0">
+      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-white whitespace-nowrap">PERSONAL</p>
     </div>
   );
 }
@@ -717,7 +745,7 @@ function Frame50() {
 function Title3() {
   return (
     <div className="content-stretch flex gap-[12px] items-center relative shrink-0 w-full" data-name="Title">
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[24px] text-black whitespace-nowrap">Gruya</p>
+      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[20px] sm:text-[24px] text-black whitespace-nowrap">Gruya</p>
       <Frame50 />
     </div>
   );
@@ -771,60 +799,10 @@ function DenchiMockup() {
   );
 }
 
-function Frame28() {
-  return (
-    <div className="content-stretch flex gap-[42px] items-start relative shrink-0 w-full">
-      {/* 4. Bookup */}
-      <FadeIn delay={0} className="shrink-0 w-[366px]">
-      <Link to="/bookup" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative w-full no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 7">
-        <Group13 />
-        <Title2 />
-        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[16px] w-[365px]">Designed an accessibility-focused experience for an online bookstore, improving navigation and usability for diverse users.</p>
-        <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[14px] text-black w-[365px]">UTN Project · 2022</p>
-      </Link>
-      </FadeIn>
-      {/* 5. Gruya */}
-      <FadeIn delay={0.15} className="shrink-0 w-[366px]">
-      <Link to="/gruya" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative w-full no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 9">
-        <Group14 />
-        <Title3 />
-        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[16px] w-[365px]">Designed Gruya, a meeting room booking app for a challenge, creating intuitive flows and a seamless user experience.</p>
-        <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[14px] text-black w-[365px]">Case Study · 2022</p>
-      </Link>
-      </FadeIn>
-    </div>
-  );
-}
-
-function Frame27() {
-  return (
-    <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
-      <Frame28 />
-    </div>
-  );
-}
-
-function Frame49() {
-  return (
-    <div className="content-stretch flex flex-col items-center justify-center relative shrink-0 w-full">
-      <Frame27 />
-    </div>
-  );
-}
-
-function Frame62() {
-  return (
-    <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
-      <Frame49 />
-    </div>
-  );
-}
-
 function Frame65() {
   return (
     <div className="content-stretch flex flex-col gap-[60px] items-start relative shrink-0 w-full">
       <Frame60 />
-      <Frame62 />
     </div>
   );
 }
@@ -906,24 +884,24 @@ function Pills() {
 
 function Frame33() {
   return (
-    <div className="bg-[#ffabe7] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-black whitespace-nowrap">PRODUCT DESIGNER</p>
+    <div className="bg-[#ffabe7] content-stretch flex h-[26px] sm:h-[30px] items-center justify-center px-[12px] sm:px-[16px] py-[6px] sm:py-[10px] relative rounded-[24px] shrink-0">
+      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-black whitespace-nowrap">PRODUCT DESIGNER</p>
     </div>
   );
 }
 
 function Frame34() {
   return (
-    <div className="bg-[#c8e793] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-black whitespace-nowrap">ACCESIBILITY</p>
+    <div className="bg-[#c8e793] content-stretch flex h-[26px] sm:h-[30px] items-center justify-center px-[12px] sm:px-[16px] py-[6px] sm:py-[10px] relative rounded-[24px] shrink-0">
+      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-black whitespace-nowrap">ACCESSIBILITY</p>
     </div>
   );
 }
 
 function Frame35() {
   return (
-    <div className="bg-[#ff9564] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-black whitespace-nowrap">UX RESEARCH</p>
+    <div className="bg-[#ff9564] content-stretch flex h-[26px] sm:h-[30px] items-center justify-center px-[12px] sm:px-[16px] py-[6px] sm:py-[10px] relative rounded-[24px] shrink-0">
+      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-black whitespace-nowrap">UX RESEARCH</p>
     </div>
   );
 }
@@ -1114,8 +1092,8 @@ function Frame36() {
 
 function Frame38() {
   return (
-    <div className="bg-[#796ff1] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap">UX/UI</p>
+    <div className="bg-[#796ff1] content-stretch flex h-[26px] sm:h-[30px] items-center justify-center px-[12px] sm:px-[16px] py-[6px] sm:py-[10px] relative rounded-[24px] shrink-0">
+      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-white whitespace-nowrap">UX/UI</p>
     </div>
   );
 }
@@ -1375,7 +1353,7 @@ function Banner() {
       alt="Banner"
       fetchPriority="high"
       decoding="async"
-      className="rounded-[16px] shrink-0 w-full object-cover"
+      className="hidden sm:block rounded-[16px] shrink-0 w-full object-cover"
       style={{ maxWidth: "1186px" }}
     />
   );
@@ -1383,7 +1361,7 @@ function Banner() {
 
 function Frame56() {
   return (
-    <div className="content-stretch flex flex-col gap-[120px] items-start relative shrink-0 w-full">
+    <div className="content-stretch flex flex-col gap-[56px] sm:gap-[120px] items-start relative shrink-0 w-full">
       <Frame65 />
       <Banner />
     </div>
@@ -1392,7 +1370,7 @@ function Frame56() {
 
 function Frame61() {
   return (
-    <div className="content-stretch flex flex-col gap-[120px] items-start relative shrink-0 w-full">
+    <div className="content-stretch flex flex-col gap-[56px] sm:gap-[120px] items-start relative shrink-0 w-full">
       <FadeIn>
         <Frame23 />
       </FadeIn>
@@ -1405,7 +1383,7 @@ function Frame61() {
 
 function Frame41() {
   return (
-    <div className="content-stretch flex flex-col items-center justify-center mx-auto mt-[88px] mb-[80px] relative w-[1186px]">
+    <div className="content-stretch flex flex-col items-center justify-center mx-auto mt-[24px] sm:mt-[40px] mb-[48px] sm:mb-[80px] relative w-full max-w-[1186px] px-[16px] sm:px-[24px] lg:px-0">
       <Frame61 />
     </div>
   );
@@ -1579,7 +1557,6 @@ function Frame42() {
 export default function Home() {
   return (
     <div className="bg-white flex flex-col relative" data-name="Home">
-      <Frame42 />
       <Frame41 />
     </div>
   );

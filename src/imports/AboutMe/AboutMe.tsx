@@ -1,6 +1,4 @@
-﻿import { useState } from "react";
-import { Link } from "react-router";
-import { ContactDrawer } from "../shared/ContactDrawer";
+﻿import { Link } from "react-router";
 import svgPaths from "./svg-pw6w0vxexd";
 import imgCollage from "./collage.png";
 
@@ -90,35 +88,30 @@ function Footer() {
 
 /* ─────────────────────────────────────────────── Page */
 export default function AboutMe() {
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-
   return (
     <div className="bg-white flex flex-col min-h-screen" data-name="About me">
-      <Header onBannerClick={() => setIsDrawerOpen(true)} />
-      <ContactDrawer isOpen={isDrawerOpen} onClose={() => setIsDrawerOpen(false)} />
-
-      <div className="flex items-center pt-[160px] w-full flex-1">
-        <div className="shrink-0 w-[55%]">
+      <div className="flex flex-col md:flex-row items-center pt-[40px] w-full flex-1">
+        <div className="w-full md:w-[55%] shrink-0">
           <img src={imgCollage} alt="About me collage" fetchPriority="high" decoding="async" className="w-full object-contain" />
         </div>
-        <div className="flex flex-col gap-[24px] items-start pl-[60px] pr-[80px] shrink-0 flex-1">
+        <div className="flex flex-col gap-[24px] items-start px-[24px] md:pl-[60px] md:pr-[80px] shrink-0 flex-1">
           <div className="flex flex-col gap-[16px] w-full">
-            <div className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] text-[40px] text-black whitespace-nowrap">
+            <div className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] text-[26px] sm:text-[40px] text-black w-full">
               <span className="font-['Inter:Regular',sans-serif] font-normal">My name is</span>
               {` Denise Chiapin`}
             </div>
-            <div className="flex gap-[16px] items-center w-full">
-              <div className="font-['Inter:Regular',sans-serif] font-normal text-[24px] text-black whitespace-nowrap">But everybody calls me</div>
-              <div className="h-0 relative shrink-0 w-[100px]">
+            <div className="flex flex-wrap gap-[16px] items-center w-full">
+              <div className="font-['Inter:Regular',sans-serif] font-normal text-[16px] sm:text-[24px] text-black whitespace-nowrap">But everybody calls me</div>
+              <div className="h-0 relative shrink-0 w-[60px] sm:w-[100px]">
                 <div className="absolute inset-[-3.68px_-0.5%_-3.68px_-2.67%]">
                   <img alt="" className="block max-w-none size-full" src={imgArrow} />
                 </div>
               </div>
-              <div className="font-['EB_Garamond',serif] leading-[normal] text-[40px] text-black whitespace-nowrap">Denchi</div>
+              <div className="font-['EB_Garamond',serif] leading-[normal] text-[26px] sm:text-[40px] text-black whitespace-nowrap">Denchi</div>
             </div>
           </div>
 
-          <div className="font-['Inter:Light',sans-serif] font-light leading-[0] text-[16px] text-black w-[493px] whitespace-pre-wrap">
+          <div className="font-['Inter:Light',sans-serif] font-light leading-[0] text-[16px] text-black w-full md:w-[493px] whitespace-pre-wrap">
             <p className="leading-[28px] mb-0">
               {`I've been working as a Designer for the past 6 years, mostly across fintech, SaaS and B2B/B2C products.`}
               <br /><br />
@@ -144,8 +137,6 @@ export default function AboutMe() {
           </a>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 }

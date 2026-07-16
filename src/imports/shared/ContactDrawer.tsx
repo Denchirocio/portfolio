@@ -100,12 +100,12 @@ export function ContactDrawer({ isOpen, onClose }: { isOpen: boolean; onClose: (
   return (
     <>
       <div className="fixed inset-0 bg-black/60 z-[60] backdrop-enter" onClick={handleClose} />
-      <div className="fixed top-0 right-0 h-full w-[560px] bg-white z-[70] flex flex-col shadow-2xl drawer-enter">
+      <div className="fixed top-0 right-0 h-full w-full sm:w-[560px] bg-white z-[70] flex flex-col shadow-2xl drawer-enter">
         <button onClick={handleClose} className="absolute top-[20px] right-[24px] text-black text-[20px] leading-none cursor-pointer bg-transparent border-none z-10" aria-label="Close">✕</button>
 
         {/* ERROR */}
         {status === "error" && (
-          <div className="flex-1 flex flex-col items-center justify-center gap-[16px] px-[40px]">
+          <div className="flex-1 flex flex-col items-center justify-center gap-[16px] px-[24px] sm:px-[40px]">
             <p className="font-['Monomakh',sans-serif] text-[36px] text-black leading-normal bg-[#FFB3B3] px-[12px] py-[2px] text-center">Something went wrong</p>
             <p className="font-['Inter:Regular',sans-serif] font-normal text-[20px] text-black text-center">Don't get frustrated, we can do it!</p>
             <button onClick={() => setStatus("idle")} className="mt-[8px] bg-black text-white font-['Inter:Regular',sans-serif] font-normal text-[18px] px-[32px] py-[12px] rounded-[100px] hover:bg-[#333] transition-colors cursor-pointer border-none">Try again!</button>
@@ -114,7 +114,7 @@ export function ContactDrawer({ isOpen, onClose }: { isOpen: boolean; onClose: (
 
         {/* SUCCESS */}
         {success && (
-          <div className="flex-1 flex flex-col items-center justify-center gap-[16px] px-[40px]">
+          <div className="flex-1 flex flex-col items-center justify-center gap-[16px] px-[24px] sm:px-[40px]">
             <p className="font-['Monomakh',sans-serif] text-[36px] text-black leading-normal bg-[rgba(223,169,234,0.6)] px-[12px] py-[2px] text-center">You are all set!</p>
             <p className="font-['Inter:Regular',sans-serif] font-normal text-[20px] text-black text-center">I'll reach you soon. Talk to you!</p>
             <button onClick={handleClose} className="mt-[8px] bg-black text-white font-['Inter:Regular',sans-serif] font-normal text-[18px] px-[32px] py-[12px] rounded-[100px] hover:bg-[#333] transition-colors cursor-pointer border-none">Back to home</button>
@@ -124,7 +124,7 @@ export function ContactDrawer({ isOpen, onClose }: { isOpen: boolean; onClose: (
         {/* FORM */}
         {!success && status !== "error" && (
           <>
-            <div className="px-[40px] pt-[24px] pb-[16px] shrink-0">
+            <div className="px-[24px] sm:px-[40px] pt-[24px] pb-[16px] shrink-0">
               <div className="flex gap-[8px] items-center mb-[8px]">
                 <span className="bg-[rgba(223,169,234,0.6)] font-['Monomakh',sans-serif] text-[32px] text-black px-[10px] py-[2px] leading-normal">Complete</span>
                 <span className="font-['Inter:Regular',sans-serif] font-normal text-[28px] text-black">your info</span>
@@ -135,7 +135,7 @@ export function ContactDrawer({ isOpen, onClose }: { isOpen: boolean; onClose: (
               </div>
             </div>
 
-            <div className="flex-1 overflow-y-auto px-[40px] py-[8px] flex flex-col gap-[8px]">
+            <div className="flex-1 overflow-y-auto px-[24px] sm:px-[40px] py-[8px] flex flex-col gap-[8px]">
               {[
                 { name: "name", placeholder: "Name & surname *" },
                 { name: "email", placeholder: "E-mail *" },
@@ -168,7 +168,7 @@ export function ContactDrawer({ isOpen, onClose }: { isOpen: boolean; onClose: (
               ))}
             </div>
 
-            <div className="px-[40px] py-[12px] shrink-0 border-t border-[#ebebeb]">
+            <div className="px-[24px] sm:px-[40px] py-[12px] shrink-0 border-t border-[#ebebeb]">
               <div className="flex justify-end gap-[12px]">
                 <button onClick={handleClose} className="font-['Inter:Regular',sans-serif] font-normal text-[20px] text-black border border-black px-[16px] h-[44px] flex items-center rounded-[100px] hover:bg-black hover:text-white transition-colors cursor-pointer bg-transparent whitespace-nowrap">Cancel</button>
                 <button onClick={handleSubmit} disabled={status === "loading"} className="font-['Inter:Regular',sans-serif] font-normal text-[20px] text-white bg-black px-[16px] h-[44px] flex items-center rounded-[100px] hover:bg-[#333] transition-colors cursor-pointer border-none whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed">
