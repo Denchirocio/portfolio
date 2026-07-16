@@ -1,6 +1,7 @@
-﻿import { useRef, useEffect, useState } from "react";
-import { Link } from "react-router";
+﻿import { Link } from "react-router";
 import { motion } from "motion/react";
+import OtherProjectCard from "../../app/components/OtherProjectCard";
+import BeforeAfterPair from "../../app/components/BeforeAfterPair";
 import imgGetInTouch from "./Get in touch.png";
 import svgPaths from "./svg-fhin9emy9v";
 import imgRectangle2 from "./3c02e76a688120a3f55c7c6d42881902b6c378ed.png";
@@ -138,7 +139,7 @@ function Frame47() {
 function Frame24() {
   return (
     <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full">
-      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[64px] text-black w-[min-content]">
+      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] sm:text-[64px] text-black w-[min-content]">
         <p className="leading-[normal]">Chatty</p>
       </div>
       <Frame47 />
@@ -148,10 +149,10 @@ function Frame24() {
 
 function Frame13() {
   return (
-    <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-[572px]">
+    <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full lg:w-[572px]">
       <Frame174 />
       <Frame24 />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[20px] text-black w-full">
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[16px] sm:text-[20px] text-black w-full">
         <span className="leading-[32px]">{`A `}</span>
         <span className="font-['Inter:Bold',sans-serif] font-bold leading-[32px]">modern dark UI for real-time conversations</span>
       </p>
@@ -212,9 +213,11 @@ function PantallaVerde() {
 
 function Frame43() {
   return (
-    <div className="content-stretch flex gap-[127px] items-start relative shrink-0 w-full">
+    <div className="content-stretch flex flex-col lg:flex-row gap-[40px] lg:gap-[127px] items-start justify-center relative shrink-0 w-full px-[16px] sm:px-0">
       <Frame13 />
-      <PantallaVerde />
+      <div className="hidden lg:block">
+        <PantallaVerde />
+      </div>
     </div>
   );
 }
@@ -266,10 +269,10 @@ function Frame48() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[28px] sm:text-[40px] text-black text-center w-[min-content]">
         <p className="leading-[normal]">What’s Chatty?</p>
       </div>
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[20px] text-black w-[700px]">
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[16px] sm:text-[20px] text-black w-full max-w-[700px] px-[16px] sm:px-0">
         Chatty is a real-time messaging platform designed for Businesses that manage sales through WhatsApp
         <br aria-hidden="true" />
         The project focuses on creating a clean, scalable dark interface that supports long conversations, multiple states, and high information density without sacrificing readability.
@@ -298,7 +301,7 @@ function Frame162() {
 
 function Frame163() {
   return (
-    <div className="content-stretch flex flex-col items-start p-[16px] relative rounded-[8px] shrink-0 w-[280px]">
+    <div className="content-stretch flex flex-col items-start p-[16px] relative rounded-[8px] shrink-0 w-full sm:w-[280px]">
       <div aria-hidden="true" className="absolute border border-[#b9b9b9] border-solid inset-0 pointer-events-none rounded-[8px]" />
       <Frame162 />
     </div>
@@ -321,7 +324,7 @@ function Frame164() {
 
 function Frame166() {
   return (
-    <div className="content-stretch flex flex-col h-[128px] items-start p-[16px] relative rounded-[8px] shrink-0 w-[280px]">
+    <div className="content-stretch flex flex-col h-[128px] items-start p-[16px] relative rounded-[8px] shrink-0 w-full sm:w-[280px]">
       <div aria-hidden="true" className="absolute border border-[#b9b9b9] border-solid inset-0 pointer-events-none rounded-[8px]" />
       <Frame164 />
     </div>
@@ -348,7 +351,7 @@ function Frame165() {
 
 function Frame167() {
   return (
-    <div className="content-stretch flex flex-col h-[128px] items-start p-[16px] relative rounded-[8px] shrink-0 w-[280px]">
+    <div className="content-stretch flex flex-col h-[128px] items-start p-[16px] relative rounded-[8px] shrink-0 w-full sm:w-[280px]">
       <div aria-hidden="true" className="absolute border border-[#b9b9b9] border-solid inset-0 pointer-events-none rounded-[8px]" />
       <Frame165 />
     </div>
@@ -371,7 +374,7 @@ function Frame169() {
 
 function Frame168() {
   return (
-    <div className="content-stretch flex flex-col h-[128px] items-start p-[16px] relative rounded-[8px] shrink-0 w-[280px]">
+    <div className="content-stretch flex flex-col h-[128px] items-start p-[16px] relative rounded-[8px] shrink-0 w-full sm:w-[280px]">
       <div aria-hidden="true" className="absolute border border-[#b9b9b9] border-solid inset-0 pointer-events-none rounded-[8px]" />
       <Frame169 />
     </div>
@@ -380,7 +383,7 @@ function Frame168() {
 
 function Frame204() {
   return (
-    <div className="content-stretch flex gap-[24px] items-start relative shrink-0">
+    <div className="content-stretch flex flex-col sm:flex-row flex-wrap gap-[16px] sm:gap-[24px] items-start justify-center relative shrink-0 w-full px-[16px] sm:px-0">
       <Frame163 />
       <Frame166 />
       <Frame167 />
@@ -468,7 +471,7 @@ function Frame233() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-[544px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[28px] sm:text-[40px] text-black text-center w-full">
         <p className="leading-[normal]">My role</p>
       </div>
     </div>
@@ -477,9 +480,9 @@ function Frame233() {
 
 function Frame49() {
   return (
-    <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-[570px]">
+    <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-full lg:w-[570px]">
       <Frame233 />
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[0] not-italic relative shrink-0 text-[16px] text-black w-[544px]">
+      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[0] not-italic relative shrink-0 text-[16px] text-black w-full">
         <span className="leading-[32px]">{`UI Designer: `}</span>
         <span className="font-['Inter:Regular',sans-serif] font-normal leading-[32px]">As the UI Designer, I led the complete redesign of the product interface, improving usability, visual consistency, and scalability. I also contributed to key design decisions, focusing on creating a clear and efficient dark UI for high-volume chat workflows.</span>
       </p>
@@ -489,7 +492,7 @@ function Frame49() {
 
 function Frame51() {
   return (
-    <div className="content-stretch flex flex-col gap-[16px] h-[146px] items-center relative shrink-0 w-[570px]">
+    <div className="content-stretch flex flex-col gap-[16px] h-[146px] items-center relative shrink-0 w-full lg:w-[570px]">
       <div className="h-[86px] relative shrink-0 w-[80px]" data-name="shield">
         <div className="absolute bottom-0 flex items-center justify-center left-[57.25%] right-0 top-1/2" style={{ containerType: "size" }}>
           <div className="-scale-x-100 flex-none h-[100cqh] w-[100cqw]">
@@ -546,7 +549,7 @@ function Frame51() {
           </svg>
         </div>
       </div>
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-[544px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[28px] sm:text-[40px] text-black text-center w-full">
         <p className="leading-[normal]">Responsabilities</p>
       </div>
     </div>
@@ -555,9 +558,9 @@ function Frame51() {
 
 function Frame50() {
   return (
-    <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-[570px]">
+    <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-full lg:w-[570px]">
       <Frame51 />
-      <ul className="block font-['Inter:Regular',sans-serif] font-normal leading-[0] list-disc not-italic relative shrink-0 text-[16px] text-black w-[544px]">
+      <ul className="block font-['Inter:Regular',sans-serif] font-normal leading-[0] list-disc not-italic relative shrink-0 text-[16px] text-black w-full">
         <li className="mb-0 ms-[24px]">
           <span className="leading-[32px]">Redesigned the full product interface from the ground up.</span>
         </li>
@@ -580,7 +583,7 @@ function Frame50() {
 
 function Frame59() {
   return (
-    <div className="content-stretch flex gap-[40px] items-start relative shrink-0 w-full">
+    <div className="content-stretch flex flex-col lg:flex-row gap-[40px] items-start relative shrink-0 w-full px-[16px] sm:px-0">
       <Frame49 />
       <Frame50 />
     </div>
@@ -610,7 +613,7 @@ function Frame105() {
 
 function Frame104() {
   return (
-    <div className="content-stretch flex h-[128px] items-start justify-center relative shrink-0 w-full">
+    <div className="content-stretch flex items-start justify-center relative shrink-0 w-full">
       <Frame105 />
     </div>
   );
@@ -618,7 +621,7 @@ function Frame104() {
 
 function Frame98() {
   return (
-    <div className="content-stretch flex flex-col items-start justify-center relative shrink-0 w-[700px]">
+    <div className="content-stretch flex flex-col items-start justify-center relative shrink-0 w-full max-w-[700px] px-[16px] sm:px-0">
       <Frame104 />
     </div>
   );
@@ -662,7 +665,7 @@ function Frame189() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[28px] sm:text-[40px] text-black text-center w-[min-content]">
         <p className="leading-[normal]">{`Design Goals & UI Challenges`}</p>
       </div>
       <Frame98 />
@@ -672,11 +675,11 @@ function Frame189() {
 
 function Frame52() {
   return (
-    <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-[570px]">
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end relative shrink-0 text-[40px] text-center w-[544px]">
+    <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-full lg:w-[570px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end relative shrink-0 text-[28px] sm:text-[40px] text-center w-full">
         <p className="leading-[normal]">Key UI problems</p>
       </div>
-      <ul className="block font-['Inter:Regular',sans-serif] font-normal list-disc relative shrink-0 text-[16px] w-[544px]">
+      <ul className="block font-['Inter:Regular',sans-serif] font-normal list-disc relative shrink-0 text-[16px] w-full">
         <li className="mb-0 ms-[24px]">
           <span className="leading-[32px]">Inconsistent visual hierarchy across screens</span>
         </li>
@@ -699,11 +702,11 @@ function Frame52() {
 
 function Frame53() {
   return (
-    <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-[570px]">
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end relative shrink-0 text-[40px] text-center w-[544px]">
+    <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-full lg:w-[570px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end relative shrink-0 text-[28px] sm:text-[40px] text-center w-full">
         <p className="leading-[normal]">UI Goals</p>
       </div>
-      <ul className="block font-['Inter:Regular',sans-serif] font-normal list-disc relative shrink-0 text-[16px] w-[544px]">
+      <ul className="block font-['Inter:Regular',sans-serif] font-normal list-disc relative shrink-0 text-[16px] w-full">
         <li className="mb-0 ms-[24px]">
           <span className="leading-[32px]">Improve readability in high-density interfaces</span>
         </li>
@@ -726,7 +729,7 @@ function Frame53() {
 
 function Frame190() {
   return (
-    <div className="content-stretch flex gap-[40px] items-start leading-[0] not-italic relative shrink-0 text-black w-full">
+    <div className="content-stretch flex flex-col lg:flex-row gap-[40px] items-start leading-[0] not-italic relative shrink-0 text-black w-full px-[16px] sm:px-0">
       <Frame52 />
       <Frame53 />
     </div>
@@ -743,7 +746,7 @@ function Frame107() {
 
 function Frame106() {
   return (
-    <div className="content-stretch flex h-[64px] items-start justify-center relative shrink-0 w-full">
+    <div className="content-stretch flex items-start justify-center relative shrink-0 w-full">
       <Frame107 />
     </div>
   );
@@ -760,7 +763,7 @@ function Frame99() {
 function Frame113() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-full">
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-full">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[28px] sm:text-[40px] text-black text-center w-full">
         <p className="leading-[normal]">Hypothesis</p>
       </div>
       <Frame99 />
@@ -796,7 +799,7 @@ function Frame109() {
 
 function Frame108() {
   return (
-    <div className="content-stretch flex h-[160px] items-start justify-center relative shrink-0 w-full">
+    <div className="content-stretch flex items-start justify-center relative shrink-0 w-full">
       <Frame109 />
     </div>
   );
@@ -813,7 +816,7 @@ function Frame100() {
 function Frame60() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-full">
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-full">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[28px] sm:text-[40px] text-black text-center w-full">
         <p className="leading-[normal]">Ideation</p>
       </div>
       <Frame100 />
@@ -823,7 +826,7 @@ function Frame60() {
 
 function Frame110() {
   return (
-    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-[600px]">
+    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full lg:w-[600px]">
       <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] relative shrink-0 text-[32px] whitespace-nowrap">
         <p className="leading-[normal]">Problem</p>
       </div>
@@ -834,7 +837,7 @@ function Frame110() {
 
 function Frame111() {
   return (
-    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-[600px]">
+    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full lg:w-[600px]">
       <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] relative shrink-0 text-[32px] whitespace-nowrap">
         <p className="leading-[normal]">Solution</p>
       </div>
@@ -845,7 +848,7 @@ function Frame111() {
 
 function Frame112() {
   return (
-    <div className="content-stretch flex flex-col gap-[8px] items-start leading-[0] relative shrink-0 w-[600px]">
+    <div className="content-stretch flex flex-col gap-[8px] items-start leading-[0] relative shrink-0 w-full lg:w-[600px]">
       <div className="flex flex-col font-['EB_Garamond',serif] justify-end relative shrink-0 text-[32px] whitespace-nowrap">
         <p className="leading-[normal]">Results</p>
       </div>
@@ -894,9 +897,9 @@ function Frame16() {
 
 function Frame218() {
   return (
-    <div className="content-stretch flex flex-col items-start px-[12px] py-[4px] relative rounded-[8px] shrink-0">
+    <div className="content-stretch flex flex-col items-start px-[12px] py-[4px] relative rounded-[8px] shrink-0 w-full">
       <div aria-hidden="true" className="absolute border border-[#bdbdbd] border-solid inset-0 pointer-events-none rounded-[8px]" />
-      <div className="h-[269px] relative rounded-[8px] shrink-0 w-[503px]">
+      <div className="relative rounded-[8px] shrink-0 w-full aspect-[503/269]">
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none rounded-[8px] size-full" src={imgRectangle31} />
       </div>
     </div>
@@ -922,9 +925,9 @@ function Frame4() {
 
 function Frame219() {
   return (
-    <div className="content-stretch flex flex-col items-start p-[12px] relative rounded-[8px] shrink-0">
+    <div className="content-stretch flex flex-col items-start p-[12px] relative rounded-[8px] shrink-0 w-full">
       <div aria-hidden="true" className="absolute border border-[#bdbdbd] border-solid inset-0 pointer-events-none rounded-[8px]" />
-      <div className="h-[314px] relative shrink-0 w-[503px]">
+      <div className="relative shrink-0 w-full aspect-[503/314]">
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle2} />
       </div>
     </div>
@@ -944,7 +947,7 @@ function Frame208() {
 
 function Frame206() {
   return (
-    <div className="content-stretch flex flex-col gap-[16px] items-start justify-center relative shrink-0 w-[527px]">
+    <div className="content-stretch flex flex-col gap-[16px] items-start justify-center relative shrink-0 w-full lg:w-[527px]">
       <Frame207 />
       <Frame208 />
     </div>
@@ -953,7 +956,7 @@ function Frame206() {
 
 function Frame101() {
   return (
-    <div className="content-stretch flex items-start justify-between relative shrink-0 w-full">
+    <div className="content-stretch flex flex-col lg:flex-row items-start justify-between gap-[40px] relative shrink-0 w-full px-[16px] sm:px-0">
       <Frame205 />
       <Frame206 />
     </div>
@@ -963,7 +966,7 @@ function Frame101() {
 function Frame209() {
   return (
     <div className="content-stretch flex flex-col gap-[64px] items-start relative shrink-0 w-full">
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-full">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[28px] sm:text-[40px] text-black text-center w-full">
         <ol className="list-decimal list-inside" start="1">
           <li>
             <span className="leading-[normal]">{`Chat Interface & Message Hierarchy`}</span>
@@ -977,7 +980,7 @@ function Frame209() {
 
 function Frame114() {
   return (
-    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-[600px]">
+    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full lg:w-[600px]">
       <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] relative shrink-0 text-[32px] whitespace-nowrap">
         <p className="leading-[normal]">Problem</p>
       </div>
@@ -988,7 +991,7 @@ function Frame114() {
 
 function Frame115() {
   return (
-    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-[600px]">
+    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full lg:w-[600px]">
       <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] relative shrink-0 text-[32px] whitespace-nowrap">
         <p className="leading-[normal]">Solution</p>
       </div>
@@ -999,7 +1002,7 @@ function Frame115() {
 
 function Frame116() {
   return (
-    <div className="content-stretch flex flex-col gap-[8px] items-start leading-[0] relative shrink-0 w-[600px]">
+    <div className="content-stretch flex flex-col gap-[8px] items-start leading-[0] relative shrink-0 w-full lg:w-[600px]">
       <div className="flex flex-col font-['EB_Garamond',serif] justify-end relative shrink-0 text-[32px] whitespace-nowrap">
         <p className="leading-[normal]">Results</p>
       </div>
@@ -1048,9 +1051,9 @@ function Frame17() {
 
 function Frame220() {
   return (
-    <div className="content-stretch flex flex-col items-start px-[12px] py-[8px] relative rounded-[8px] shrink-0">
+    <div className="content-stretch flex flex-col items-start px-[12px] py-[8px] relative rounded-[8px] shrink-0 w-full">
       <div aria-hidden="true" className="absolute border border-[#bdbdbd] border-solid inset-0 pointer-events-none rounded-[8px]" />
-      <div className="h-[269px] relative rounded-[8px] shrink-0 w-[503px]">
+      <div className="relative rounded-[8px] shrink-0 w-full aspect-[503/269]">
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none rounded-[8px] size-full" src={imgRectangle32} />
       </div>
     </div>
@@ -1076,9 +1079,9 @@ function Frame6() {
 
 function Frame221() {
   return (
-    <div className="content-stretch flex flex-col items-start p-[12px] relative rounded-[8px] shrink-0">
+    <div className="content-stretch flex flex-col items-start p-[12px] relative rounded-[8px] shrink-0 w-full">
       <div aria-hidden="true" className="absolute border border-[#bdbdbd] border-solid inset-0 pointer-events-none rounded-[8px]" />
-      <div className="h-[314px] relative shrink-0 w-[503px]">
+      <div className="relative shrink-0 w-full aspect-[503/314]">
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle33} />
       </div>
     </div>
@@ -1098,7 +1101,7 @@ function Frame214() {
 
 function Frame212() {
   return (
-    <div className="content-stretch flex flex-col gap-[16px] items-start justify-center relative shrink-0 w-[527px]">
+    <div className="content-stretch flex flex-col gap-[16px] items-start justify-center relative shrink-0 w-full lg:w-[527px]">
       <Frame213 />
       <Frame214 />
     </div>
@@ -1107,7 +1110,7 @@ function Frame212() {
 
 function Frame191() {
   return (
-    <div className="content-stretch flex items-start justify-between relative shrink-0 w-full">
+    <div className="content-stretch flex flex-col lg:flex-row items-start justify-between gap-[40px] relative shrink-0 w-full px-[16px] sm:px-0">
       <Frame211 />
       <Frame212 />
     </div>
@@ -1117,7 +1120,7 @@ function Frame191() {
 function Frame210() {
   return (
     <div className="content-stretch flex flex-col gap-[64px] items-start relative shrink-0 w-full">
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-full">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[28px] sm:text-[40px] text-black text-center w-full">
         <p className="leading-[normal]">{`2. Conversation Management & Navigation`}</p>
       </div>
       <Frame191 />
@@ -1127,7 +1130,7 @@ function Frame210() {
 
 function Frame117() {
   return (
-    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-[600px]">
+    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full lg:w-[600px]">
       <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] relative shrink-0 text-[32px] whitespace-nowrap">
         <p className="leading-[normal]">Problem</p>
       </div>
@@ -1138,7 +1141,7 @@ function Frame117() {
 
 function Frame118() {
   return (
-    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-[600px]">
+    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full lg:w-[600px]">
       <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] relative shrink-0 text-[32px] whitespace-nowrap">
         <p className="leading-[normal]">Solution</p>
       </div>
@@ -1149,7 +1152,7 @@ function Frame118() {
 
 function Frame119() {
   return (
-    <div className="content-stretch flex flex-col gap-[8px] items-start leading-[0] relative shrink-0 w-[600px]">
+    <div className="content-stretch flex flex-col gap-[8px] items-start leading-[0] relative shrink-0 w-full lg:w-[600px]">
       <div className="flex flex-col font-['EB_Garamond',serif] justify-end relative shrink-0 text-[32px] whitespace-nowrap">
         <p className="leading-[normal]">Results</p>
       </div>
@@ -1198,9 +1201,9 @@ function Frame18() {
 
 function Frame224() {
   return (
-    <div className="content-stretch flex flex-col items-start px-[12px] py-[8px] relative rounded-[8px] shrink-0">
+    <div className="content-stretch flex flex-col items-start px-[12px] py-[8px] relative rounded-[8px] shrink-0 w-full">
       <div aria-hidden="true" className="absolute border border-[#bdbdbd] border-solid inset-0 pointer-events-none rounded-[8px]" />
-      <div className="h-[269px] relative rounded-[8px] shrink-0 w-[503px]">
+      <div className="relative rounded-[8px] shrink-0 w-full aspect-[503/269]">
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none rounded-[8px] size-full" src={imgRectangle34} />
       </div>
     </div>
@@ -1226,9 +1229,9 @@ function Frame8() {
 
 function Frame226() {
   return (
-    <div className="content-stretch flex flex-col items-start p-[12px] relative rounded-[8px] shrink-0">
+    <div className="content-stretch flex flex-col items-start p-[12px] relative rounded-[8px] shrink-0 w-full">
       <div aria-hidden="true" className="absolute border border-[#bdbdbd] border-solid inset-0 pointer-events-none rounded-[8px]" />
-      <div className="h-[314px] relative shrink-0 w-[503px]">
+      <div className="relative shrink-0 w-full aspect-[503/314]">
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle35} />
       </div>
     </div>
@@ -1248,7 +1251,7 @@ function Frame225() {
 
 function Frame222() {
   return (
-    <div className="content-stretch flex flex-col gap-[16px] items-start justify-center relative shrink-0 w-[527px]">
+    <div className="content-stretch flex flex-col gap-[16px] items-start justify-center relative shrink-0 w-full lg:w-[527px]">
       <Frame223 />
       <Frame225 />
     </div>
@@ -1257,7 +1260,7 @@ function Frame222() {
 
 function Frame192() {
   return (
-    <div className="content-stretch flex items-start justify-between relative shrink-0 w-full">
+    <div className="content-stretch flex flex-col lg:flex-row items-start justify-between gap-[40px] relative shrink-0 w-full px-[16px] sm:px-0">
       <Frame217 />
       <Frame222 />
     </div>
@@ -1267,7 +1270,7 @@ function Frame192() {
 function Frame215() {
   return (
     <div className="content-stretch flex flex-col gap-[64px] items-start relative shrink-0 w-full">
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-full">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[28px] sm:text-[40px] text-black text-center w-full">
         <p className="leading-[normal]">{`3. Tables & Data-Dense Views`}</p>
       </div>
       <Frame192 />
@@ -1285,7 +1288,7 @@ function Frame122() {
 
 function Frame121() {
   return (
-    <div className="content-stretch flex h-[128px] items-start justify-center relative shrink-0 w-full">
+    <div className="content-stretch flex items-start justify-center relative shrink-0 w-full">
       <Frame122 />
     </div>
   );
@@ -1293,7 +1296,7 @@ function Frame121() {
 
 function Frame102() {
   return (
-    <div className="content-stretch flex flex-col items-start justify-center relative shrink-0 w-[700px]">
+    <div className="content-stretch flex flex-col items-start justify-center relative shrink-0 w-full max-w-[700px] px-[16px] sm:px-0">
       <Frame121 />
     </div>
   );
@@ -1379,7 +1382,7 @@ function Frame120() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[28px] sm:text-[40px] text-black text-center w-[min-content]">
         <p className="leading-[normal]">{`Design System & UI Components`}</p>
       </div>
       <Frame102 />
@@ -1400,7 +1403,7 @@ function Frame125() {
 
 function Frame124() {
   return (
-    <div className="content-stretch flex h-[96px] items-start justify-center relative shrink-0 w-full">
+    <div className="content-stretch flex items-start justify-center relative shrink-0 w-full">
       <Frame125 />
     </div>
   );
@@ -1408,7 +1411,7 @@ function Frame124() {
 
 function Frame103() {
   return (
-    <div className="content-stretch flex flex-col items-start justify-center px-[16px] py-[8px] relative rounded-[8px] shrink-0 w-[560px]">
+    <div className="content-stretch flex flex-col items-start justify-center px-[16px] py-[8px] relative rounded-[8px] shrink-0 w-full lg:w-[560px]">
       <div aria-hidden="true" className="absolute border border-[#9c9c9c] border-solid inset-0 pointer-events-none rounded-[8px]" />
       <Frame124 />
     </div>
@@ -1428,7 +1431,7 @@ function Frame127() {
 
 function Frame126() {
   return (
-    <div className="content-stretch flex h-[96px] items-start justify-center relative shrink-0 w-full">
+    <div className="content-stretch flex items-start justify-center relative shrink-0 w-full">
       <Frame127 />
     </div>
   );
@@ -1436,7 +1439,7 @@ function Frame126() {
 
 function Frame194() {
   return (
-    <div className="content-stretch flex flex-col items-start justify-center px-[16px] py-[8px] relative rounded-[8px] shrink-0 w-[560px]">
+    <div className="content-stretch flex flex-col items-start justify-center px-[16px] py-[8px] relative rounded-[8px] shrink-0 w-full lg:w-[560px]">
       <div aria-hidden="true" className="absolute border border-[#9c9c9c] border-solid inset-0 pointer-events-none rounded-[8px]" />
       <Frame126 />
     </div>
@@ -1445,7 +1448,7 @@ function Frame194() {
 
 function Frame236() {
   return (
-    <div className="content-stretch flex items-start justify-between relative shrink-0 w-[1192px]">
+    <div className="content-stretch flex flex-col lg:flex-row gap-[24px] items-start justify-between relative shrink-0 w-full px-[16px] sm:px-0">
       <Frame103 />
       <Frame194 />
     </div>
@@ -1462,12 +1465,12 @@ function Frame195() {
 
 function Frame193() {
   return (
-    <div className="content-stretch flex items-start justify-between relative shrink-0 w-full">
-      <div className="h-[608px] relative rounded-[8px] shrink-0 w-[560px]" data-name="Colores 1">
-        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgColores1} />
+    <div className="content-stretch flex flex-col lg:flex-row gap-[24px] items-start justify-between relative shrink-0 w-full px-[16px] sm:px-0">
+      <div className="relative rounded-[8px] shrink-0 w-full lg:w-[560px] aspect-[560/608]" data-name="Colores 1">
+        <img loading="lazy" decoding="async" alt="Chatty color palette" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgColores1} />
       </div>
-      <div className="h-[614px] relative rounded-[8px] shrink-0 w-[560px]" data-name="Fonts 1">
-        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgFonts1} />
+      <div className="relative rounded-[8px] shrink-0 w-full lg:w-[560px] aspect-[560/614]" data-name="Fonts 1">
+        <img loading="lazy" decoding="async" alt="Chatty typography specimens" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgFonts1} />
       </div>
     </div>
   );
@@ -1486,7 +1489,7 @@ function Frame129() {
 
 function Frame128() {
   return (
-    <div className="content-stretch flex h-[96px] items-start justify-center relative shrink-0 w-full">
+    <div className="content-stretch flex items-start justify-center relative shrink-0 w-full">
       <Frame129 />
     </div>
   );
@@ -1494,7 +1497,7 @@ function Frame128() {
 
 function Frame235() {
   return (
-    <div className="content-stretch flex flex-col items-start px-[16px] py-[8px] relative rounded-[8px] shrink-0 w-[560px]">
+    <div className="content-stretch flex flex-col items-start px-[16px] py-[8px] relative rounded-[8px] shrink-0 w-full lg:w-[560px]">
       <div aria-hidden="true" className="absolute border border-[#9c9c9c] border-solid inset-0 pointer-events-none rounded-[8px]" />
       <Frame128 />
     </div>
@@ -1514,7 +1517,7 @@ function Frame130() {
 
 function Frame198() {
   return (
-    <div className="content-stretch flex h-[64px] items-start justify-center relative shrink-0 w-full">
+    <div className="content-stretch flex items-start justify-center relative shrink-0 w-full">
       <Frame130 />
     </div>
   );
@@ -1522,7 +1525,7 @@ function Frame198() {
 
 function Frame234() {
   return (
-    <div className="relative rounded-[8px] self-stretch shrink-0 w-[560px]">
+    <div className="relative rounded-[8px] self-stretch shrink-0 w-full lg:w-[560px]">
       <div aria-hidden="true" className="absolute border border-[#9c9c9c] border-solid inset-0 pointer-events-none rounded-[8px]" />
       <div className="content-stretch flex flex-col items-start px-[16px] py-[8px] relative size-full">
         <Frame198 />
@@ -1533,7 +1536,7 @@ function Frame234() {
 
 function Frame199() {
   return (
-    <div className="content-stretch flex items-start justify-between relative shrink-0 w-full">
+    <div className="content-stretch flex flex-col lg:flex-row gap-[24px] items-start justify-between relative shrink-0 w-full px-[16px] sm:px-0">
       <Frame235 />
       <Frame234 />
     </div>
@@ -1853,7 +1856,7 @@ function Frame86() {
 
 function Frame61() {
   return (
-    <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-[332px]">
+    <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full">
       <Frame62 />
       <Frame86 />
     </div>
@@ -2070,7 +2073,7 @@ function Frame94() {
 
 function Frame66() {
   return (
-    <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-[332px]">
+    <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full">
       <Frame67 />
       <Frame91 />
       <Frame94 />
@@ -2080,16 +2083,16 @@ function Frame66() {
 
 function Frame200() {
   return (
-    <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0">
-      <div className="content-stretch flex flex-col items-center justify-center px-[16px] py-[12px] relative rounded-[16px] shrink-0 w-[364px]" data-name="Chats">
+    <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full px-[16px] sm:px-0">
+      <div className="content-stretch flex flex-col items-center justify-center px-[16px] py-[12px] relative rounded-[16px] shrink-0 w-full max-w-[364px]" data-name="Chats">
         <div aria-hidden="true" className="absolute backdrop-blur-[27.028px] bg-[#6a6e7f] inset-0 mix-blend-overlay pointer-events-none rounded-[16px]" />
         <Frame54 />
       </div>
-      <div className="content-stretch flex flex-col items-center justify-center py-[12px] relative rounded-[16px] shrink-0 w-[364px]" data-name="Chats">
+      <div className="content-stretch flex flex-col items-center justify-center py-[12px] relative rounded-[16px] shrink-0 w-full max-w-[364px]" data-name="Chats">
         <div aria-hidden="true" className="absolute backdrop-blur-[27.028px] bg-[#6a6e7f] inset-0 mix-blend-overlay pointer-events-none rounded-[16px]" />
         <Frame61 />
       </div>
-      <div className="content-stretch flex flex-col items-center justify-center py-[12px] relative rounded-[16px] shrink-0 w-[364px]" data-name="Chats">
+      <div className="content-stretch flex flex-col items-center justify-center py-[12px] relative rounded-[16px] shrink-0 w-full max-w-[364px]" data-name="Chats">
         <div aria-hidden="true" className="absolute backdrop-blur-[27.028px] bg-[#6a6e7f] inset-0 mix-blend-overlay pointer-events-none rounded-[16px]" />
         <Frame66 />
       </div>
@@ -2099,7 +2102,7 @@ function Frame200() {
 
 function Frame176() {
   return (
-    <div className="content-stretch flex items-start relative shrink-0">
+    <div className="content-stretch flex items-start relative shrink-0 w-full">
       <Frame200 />
     </div>
   );
@@ -2107,7 +2110,7 @@ function Frame176() {
 
 function Frame196() {
   return (
-    <div className="bg-[#222944] relative rounded-[8px] self-stretch shrink-0 w-[560px]">
+    <div className="bg-[#222944] relative rounded-[8px] self-stretch shrink-0 w-full lg:w-[560px]">
       <div className="flex flex-col items-center size-full">
         <div className="content-stretch flex flex-col items-center py-[48px] relative size-full">
           <Frame176 />
@@ -2178,7 +2181,7 @@ function Frame144() {
 
 function Frame147() {
   return (
-    <div className="content-stretch flex flex-col items-start relative shrink-0 w-[507px]">
+    <div className="content-stretch flex flex-col items-start relative shrink-0 w-full max-w-[507px]">
       <Frame144 />
     </div>
   );
@@ -2255,7 +2258,7 @@ function Frame145() {
 
 function Frame148() {
   return (
-    <div className="content-stretch flex flex-col items-start relative shrink-0 w-[507px]">
+    <div className="content-stretch flex flex-col items-start relative shrink-0 w-full max-w-[507px]">
       <Frame145 />
     </div>
   );
@@ -2342,17 +2345,17 @@ function Mensaje2() {
 
 function Frame184() {
   return (
-    <div className="content-stretch flex flex-col gap-[10px] items-start relative shrink-0">
-      <div className="content-stretch flex items-center justify-end relative shrink-0 w-[500px]" data-name="Chats">
+    <div className="content-stretch flex flex-col gap-[10px] items-start relative shrink-0 w-full px-[16px] sm:px-[48px]">
+      <div className="content-stretch flex items-center justify-end relative shrink-0 w-full" data-name="Chats">
         <Mensaje />
       </div>
-      <div className="content-stretch flex flex-col gap-[4px] items-end justify-center relative shrink-0 w-[500px]" data-name="Chats">
+      <div className="content-stretch flex flex-col gap-[4px] items-end justify-center relative shrink-0 w-full" data-name="Chats">
         <Mensaje1 />
         <div className="flex flex-col font-['Inter:Italic',sans-serif] font-normal italic justify-center leading-[0] relative shrink-0 text-[#ff6767] text-[12px] text-right w-full">
           <p className="leading-[normal]">Error al enviar el mensaje</p>
         </div>
       </div>
-      <div className="content-stretch flex flex-col gap-[4px] items-end justify-center relative shrink-0 w-[500px]" data-name="Chats">
+      <div className="content-stretch flex flex-col gap-[4px] items-end justify-center relative shrink-0 w-full" data-name="Chats">
         <Mensaje2 />
         <div className="flex flex-col font-['Inter:Italic',sans-serif] font-normal italic justify-center leading-[0] relative shrink-0 text-[#ff6767] text-[12px] text-right w-full">
           <p className="leading-[normal]">Error al enviar el mensaje</p>
@@ -2364,7 +2367,7 @@ function Frame184() {
 
 function Frame185() {
   return (
-    <div className="content-stretch flex items-start justify-center relative shrink-0">
+    <div className="content-stretch flex items-start justify-center relative shrink-0 w-full">
       <Frame184 />
     </div>
   );
@@ -2372,7 +2375,7 @@ function Frame185() {
 
 function Frame178() {
   return (
-    <div className="content-stretch flex items-start relative shrink-0">
+    <div className="content-stretch flex items-start relative shrink-0 w-full">
       <Frame185 />
     </div>
   );
@@ -2380,7 +2383,7 @@ function Frame178() {
 
 function Frame177() {
   return (
-    <div className="bg-[#222944] content-stretch flex flex-col items-center py-[48px] relative rounded-[8px] shrink-0 w-[560px]">
+    <div className="bg-[#222944] content-stretch flex flex-col items-center py-[48px] relative rounded-[8px] shrink-0 w-full lg:w-[560px]">
       <Frame178 />
     </div>
   );
@@ -2388,7 +2391,7 @@ function Frame177() {
 
 function Frame197() {
   return (
-    <div className="content-stretch flex items-start justify-between relative shrink-0 w-full">
+    <div className="content-stretch flex flex-col lg:flex-row gap-[24px] items-start justify-between relative shrink-0 w-full px-[16px] sm:px-0">
       <Frame196 />
       <Frame177 />
     </div>
@@ -2408,7 +2411,7 @@ function Frame131() {
 
 function Frame179() {
   return (
-    <div className="content-stretch flex h-[64px] items-start justify-center relative shrink-0 w-full">
+    <div className="content-stretch flex items-start justify-center relative shrink-0 w-full">
       <Frame131 />
     </div>
   );
@@ -2427,15 +2430,15 @@ function Frame237() {
 
 function Texto() {
   return (
-    <div className="content-stretch flex flex-col items-start justify-center relative shrink-0" data-name="Texto">
-      <p className="font-['Poppins:Medium',sans-serif] leading-[normal] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap">Tienes información pendiente de revisión en el módulo de contextos. Para no perderla, recuerda guardar los cambios.</p>
+    <div className="content-stretch flex flex-col items-start justify-center relative shrink min-w-0" data-name="Texto">
+      <p className="font-['Poppins:Medium',sans-serif] leading-[normal] not-italic relative shrink-0 text-[14px] text-white whitespace-normal">Tienes información pendiente de revisión en el módulo de contextos. Para no perderla, recuerda guardar los cambios.</p>
     </div>
   );
 }
 
 function Frame181() {
   return (
-    <div className="content-stretch flex gap-[16px] items-center relative shrink-0">
+    <div className="content-stretch flex gap-[16px] items-center relative shrink min-w-0 flex-1">
       <div className="overflow-clip relative shrink-0 size-[24px]" data-name="Alert triangle">
         <div className="absolute inset-[12.07%_6.47%_12.5%_6.47%]" data-name="Icon">
           <div className="absolute inset-[-5.52%_-4.79%]">
@@ -2478,15 +2481,15 @@ function InfoBarInfobarInfo({ className }: { className?: string }) {
 
 function Texto1() {
   return (
-    <div className="content-stretch flex flex-col items-start justify-center relative shrink-0" data-name="Texto">
-      <p className="font-['Poppins:Medium',sans-serif] leading-[normal] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap">Tienes información pendiente de revisión en el módulo de contextos. Para no perderla, recuerda guardar los cambios.</p>
+    <div className="content-stretch flex flex-col items-start justify-center relative shrink min-w-0" data-name="Texto">
+      <p className="font-['Poppins:Medium',sans-serif] leading-[normal] not-italic relative shrink-0 text-[14px] text-white whitespace-normal">Tienes información pendiente de revisión en el módulo de contextos. Para no perderla, recuerda guardar los cambios.</p>
     </div>
   );
 }
 
 function Frame182() {
   return (
-    <div className="content-stretch flex gap-[16px] items-center relative shrink-0">
+    <div className="content-stretch flex gap-[16px] items-center relative shrink min-w-0 flex-1">
       <div className="overflow-clip relative shrink-0 size-[24px]" data-name="Alert octagon">
         <div className="absolute inset-[8.33%]" data-name="Icon">
           <div className="absolute inset-[-5%]">
@@ -2529,15 +2532,15 @@ function InfoBarInfobarAlerta({ className }: { className?: string }) {
 
 function Texto2() {
   return (
-    <div className="content-stretch flex flex-col items-start justify-center relative shrink-0" data-name="Texto">
-      <p className="font-['Poppins:Medium',sans-serif] leading-[normal] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap">Tienes información pendiente de revisión en el módulo de contextos. Para no perderla, recuerda guardar los cambios.</p>
+    <div className="content-stretch flex flex-col items-start justify-center relative shrink min-w-0" data-name="Texto">
+      <p className="font-['Poppins:Medium',sans-serif] leading-[normal] not-italic relative shrink-0 text-[14px] text-white whitespace-normal">Tienes información pendiente de revisión en el módulo de contextos. Para no perderla, recuerda guardar los cambios.</p>
     </div>
   );
 }
 
 function Frame183() {
   return (
-    <div className="content-stretch flex gap-[16px] items-center relative shrink-0">
+    <div className="content-stretch flex gap-[16px] items-center relative shrink min-w-0 flex-1">
       <div className="overflow-clip relative shrink-0 size-[24px]" data-name="Check circle">
         <div className="absolute inset-[8.31%_8.33%_8.36%_8.33%]" data-name="Icon">
           <div className="absolute inset-[-5%]">
@@ -2580,10 +2583,10 @@ function InfoBarInfobarExitoso({ className }: { className?: string }) {
 
 function Frame180() {
   return (
-    <div className="bg-[#222944] content-stretch flex flex-col gap-[10px] items-center py-[48px] relative shrink-0 w-full">
-      <InfoBarInfobarInfo />
-      <InfoBarInfobarAlerta />
-      <InfoBarInfobarExitoso />
+    <div className="bg-[#222944] content-stretch flex flex-col gap-[10px] items-center py-[48px] px-[16px] sm:px-[48px] relative shrink-0 w-full">
+      <InfoBarInfobarInfo className="bg-[rgba(255,213,138,0.2)] content-stretch flex flex-col items-start px-[16px] py-[12px] relative rounded-[8px] shrink-0 w-full max-w-[920px]" />
+      <InfoBarInfobarAlerta className="bg-[rgba(255,103,103,0.2)] content-stretch flex flex-col items-start px-[16px] py-[12px] relative rounded-[8px] shrink-0 w-full max-w-[920px]" />
+      <InfoBarInfobarExitoso className="bg-[rgba(32,202,180,0.2)] content-stretch flex flex-col items-start px-[16px] py-[12px] relative rounded-[8px] shrink-0 w-full max-w-[920px]" />
     </div>
   );
 }
@@ -2619,7 +2622,7 @@ function Frame134() {
 
 function Frame133() {
   return (
-    <div className="content-stretch flex h-[96px] items-start justify-center relative shrink-0 w-full">
+    <div className="content-stretch flex items-start justify-center relative shrink-0 w-full">
       <Frame134 />
     </div>
   );
@@ -2627,7 +2630,7 @@ function Frame133() {
 
 function Frame132() {
   return (
-    <div className="content-stretch flex flex-col items-start justify-center relative shrink-0 w-[700px]">
+    <div className="content-stretch flex flex-col items-start justify-center relative shrink-0 w-full max-w-[700px] px-[16px] sm:px-0">
       <Frame133 />
     </div>
   );
@@ -2635,7 +2638,7 @@ function Frame132() {
 
 function Frame186() {
   return (
-    <div className="content-stretch flex flex-col gap-[32px] items-center relative shrink-0">
+    <div className="content-stretch flex flex-col gap-[32px] items-center relative shrink-0 w-full">
       <div className="h-[112px] relative shrink-0 w-[114px]" data-name="shapes">
         <div className="absolute flex inset-[39.17%_-1.01%_-0.03%_43.67%] items-center justify-center" style={{ containerType: "size" }}>
           <div className="flex-none h-[hypot(12.3251cqw,88.8113cqh)] rotate-[-7.58deg] w-[hypot(87.6749cqw,-11.1887cqh)]">
@@ -2752,7 +2755,7 @@ function Frame186() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-[1180px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[28px] sm:text-[40px] text-black text-center w-full">
         <p className="leading-[normal]">Components</p>
       </div>
       <Frame132 />
@@ -2855,7 +2858,7 @@ function Frame137() {
 
 function Frame136() {
   return (
-    <div className="content-stretch flex flex-col items-start justify-center relative shrink-0 w-[700px]">
+    <div className="content-stretch flex flex-col items-start justify-center relative shrink-0 w-full max-w-[700px] px-[16px] sm:px-0">
       <Frame137 />
     </div>
   );
@@ -2864,7 +2867,7 @@ function Frame136() {
 function Frame230() {
   return (
     <div className="content-stretch flex flex-col gap-[8px] items-center justify-center relative shrink-0 w-full">
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-[1180px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[28px] sm:text-[40px] text-black text-center w-full">
         <p className="leading-[normal]">{`Hi-fi Wireframes `}</p>
       </div>
       <Frame136 />
@@ -2874,7 +2877,7 @@ function Frame230() {
 
 function Frame201() {
   return (
-    <div className="content-stretch flex flex-col gap-[32px] items-center relative shrink-0">
+    <div className="content-stretch flex flex-col gap-[32px] items-center relative shrink-0 w-full">
       <div className="h-[84px] relative shrink-0 w-[109px]" data-name="code">
         <div className="absolute bg-[#2f3237] inset-[8.33%_0_0_6.42%] rounded-[10px]" />
         <div className="absolute bg-[#2f3237] border-2 border-[#2de09e] border-solid inset-[0_6.42%_8.33%_0] rounded-[8px]" />
@@ -2907,9 +2910,9 @@ function Frame19() {
 
 function Frame203() {
   return (
-    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0">
+    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full">
       <Frame19 />
-      <div className="h-[338px] relative rounded-[8px] shrink-0 w-[540px]" data-name="Vista de chats (2) 1">
+      <div className="relative rounded-[8px] shrink-0 w-full max-w-[540px] aspect-[540/338]" data-name="Vista de chats (2) 1">
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgRectangle2} />
       </div>
     </div>
@@ -2926,11 +2929,11 @@ function Frame10() {
 
 function Frame231() {
   return (
-    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0">
+    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full">
       <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
         <Frame10 />
       </div>
-      <div className="h-[331px] relative rounded-[8px] shrink-0 w-[530px]" data-name="Lista (5) 1">
+      <div className="relative rounded-[8px] shrink-0 w-full max-w-[530px] aspect-[530/331]" data-name="Lista (5) 1">
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgRectangle33} />
       </div>
     </div>
@@ -2939,7 +2942,7 @@ function Frame231() {
 
 function Frame202() {
   return (
-    <div className="content-stretch flex gap-[80px] items-start justify-center relative shrink-0 w-full">
+    <div className="content-stretch flex flex-col sm:flex-row gap-[24px] sm:gap-[80px] items-center sm:items-start justify-center relative shrink-0 w-full px-[16px] sm:px-0">
       <Frame203 />
       <Frame231 />
     </div>
@@ -2956,11 +2959,11 @@ function Frame11() {
 
 function Frame238() {
   return (
-    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0">
+    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full">
       <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
         <Frame11 />
       </div>
-      <div className="h-[338px] relative rounded-[9px] shrink-0 w-[540px]" data-name="9. (2) 1">
+      <div className="relative rounded-[9px] shrink-0 w-full max-w-[540px] aspect-[540/338]" data-name="9. (2) 1">
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[9px] size-full" src={img921} />
       </div>
     </div>
@@ -2977,11 +2980,11 @@ function Frame12() {
 
 function Frame239() {
   return (
-    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0">
+    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full">
       <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
         <Frame12 />
       </div>
-      <div className="h-[337px] relative shrink-0 w-[540px]" data-name="8. (3) 1">
+      <div className="relative shrink-0 w-full max-w-[540px] aspect-[540/337]" data-name="8. (3) 1">
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img831} />
       </div>
     </div>
@@ -2990,7 +2993,7 @@ function Frame239() {
 
 function Frame232() {
   return (
-    <div className="content-stretch flex gap-[80px] items-start justify-center relative shrink-0 w-full">
+    <div className="content-stretch flex flex-col sm:flex-row gap-[24px] sm:gap-[80px] items-center sm:items-start justify-center relative shrink-0 w-full px-[16px] sm:px-0">
       <Frame238 />
       <Frame239 />
     </div>
@@ -3017,9 +3020,9 @@ function Frame20() {
 
 function Frame241() {
   return (
-    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0">
+    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full">
       <Frame20 />
-      <div className="h-[338px] relative shrink-0 w-[540px]" data-name="Vista de chats (4) 1">
+      <div className="relative shrink-0 w-full max-w-[540px] aspect-[540/338]" data-name="Vista de chats (4) 1">
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgVistaDeChats41} />
       </div>
     </div>
@@ -3046,9 +3049,9 @@ function Frame22() {
 
 function Frame242() {
   return (
-    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0">
+    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full">
       <Frame22 />
-      <div className="h-[338px] relative rounded-[8px] shrink-0 w-[540px]" data-name="Lista (6) 1">
+      <div className="relative rounded-[8px] shrink-0 w-full max-w-[540px] aspect-[540/338]" data-name="Lista (6) 1">
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[8px] size-full" src={imgLista61} />
       </div>
     </div>
@@ -3057,7 +3060,7 @@ function Frame242() {
 
 function Frame240() {
   return (
-    <div className="content-stretch flex gap-[80px] items-start justify-center relative shrink-0 w-full">
+    <div className="content-stretch flex flex-col sm:flex-row gap-[24px] sm:gap-[80px] items-center sm:items-start justify-center relative shrink-0 w-full px-[16px] sm:px-0">
       <Frame241 />
       <Frame242 />
     </div>
@@ -3074,11 +3077,11 @@ function Frame25() {
 
 function Frame244() {
   return (
-    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0">
+    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full">
       <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
         <Frame25 />
       </div>
-      <div className="h-[338px] relative shrink-0 w-[540px]" data-name="Lista (7) 1">
+      <div className="relative shrink-0 w-full max-w-[540px] aspect-[540/338]" data-name="Lista (7) 1">
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle35} />
       </div>
     </div>
@@ -3105,9 +3108,9 @@ function Frame26() {
 
 function Frame245() {
   return (
-    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0">
+    <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full">
       <Frame26 />
-      <div className="h-[338px] relative shrink-0 w-[540px]" data-name="Lista (8) 1">
+      <div className="relative shrink-0 w-full max-w-[540px] aspect-[540/338]" data-name="Lista (8) 1">
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgLista81} />
       </div>
     </div>
@@ -3116,7 +3119,7 @@ function Frame245() {
 
 function Frame243() {
   return (
-    <div className="content-stretch flex gap-[80px] items-start justify-center relative shrink-0 w-full">
+    <div className="content-stretch flex flex-col sm:flex-row gap-[24px] sm:gap-[80px] items-center sm:items-start justify-center relative shrink-0 w-full px-[16px] sm:px-0">
       <Frame244 />
       <Frame245 />
     </div>
@@ -3241,10 +3244,10 @@ function Group12() {
 function Frame71() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-center not-italic relative shrink-0 text-black w-full">
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full relative shrink-0 text-[40px] text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full relative shrink-0 text-[28px] sm:text-[40px] text-center w-[min-content]">
         <p className="leading-[normal]">Conclusion</p>
       </div>
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] relative shrink-0 text-[20px] w-[700px] whitespace-pre-wrap">
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] relative shrink-0 text-[16px] sm:text-[20px] w-full max-w-[700px] px-[16px] sm:px-0 whitespace-pre-wrap">
         This project reinforced the value of approaching UI design as a system rather than a collection of individual screens.
         <br aria-hidden="true" />
         {` By focusing on consistency, scalability, and clarity, the redesigned interface supports faster workflows and prepares the product for future AI-assisted interactions.`}
@@ -3362,63 +3365,6 @@ function Group7() {
   );
 }
 
-function Frame31() {
-  return (
-    <div className="bg-[#c8e793] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-black whitespace-nowrap">FINANCE</p>
-    </div>
-  );
-}
-
-function Frame30() {
-  return (
-    <div className="content-stretch flex items-center relative shrink-0">
-      <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
-        <Frame31 />
-      </div>
-    </div>
-  );
-}
-
-function Frame32() {
-  return (
-    <div className="bg-[#796ff1] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap">IA</p>
-    </div>
-  );
-}
-
-function Frame33() {
-  return (
-    <div className="bg-[#688cf8] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap">UX/UI</p>
-    </div>
-  );
-}
-
-function Frame73() {
-  return (
-    <div className="content-stretch flex gap-[8px] items-center relative shrink-0">
-      <Frame30 />
-      <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
-        <Frame32 />
-      </div>
-      <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
-        <Frame33 />
-      </div>
-    </div>
-  );
-}
-
-function Title() {
-  return (
-    <div className="content-stretch flex gap-[12px] items-center relative shrink-0 w-full" data-name="Title">
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[24px] text-black whitespace-nowrap">Payana</p>
-      <Frame73 />
-    </div>
-  );
-}
-
 function Group4() {
   return (
     <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-[28.2px] place-items-start relative row-1">
@@ -3462,60 +3408,6 @@ function Group8() {
   );
 }
 
-function Frame35() {
-  return (
-    <div className="bg-[#ffabe7] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-black whitespace-nowrap">CASE STUDY</p>
-    </div>
-  );
-}
-
-function Frame34() {
-  return (
-    <div className="content-stretch flex items-center relative shrink-0">
-      <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
-        <Frame35 />
-      </div>
-    </div>
-  );
-}
-
-function Frame38() {
-  return (
-    <div className="bg-[#688cf8] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap">Accessibility</p>
-    </div>
-  );
-}
-
-function Frame37() {
-  return (
-    <div className="content-stretch flex items-center relative shrink-0">
-      <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
-        <Frame38 />
-      </div>
-    </div>
-  );
-}
-
-function Frame36() {
-  return (
-    <div className="content-stretch flex items-center relative shrink-0">
-      <Frame37 />
-    </div>
-  );
-}
-
-function Title1() {
-  return (
-    <div className="content-stretch flex gap-[12px] items-center relative shrink-0 w-full" data-name="Title">
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[24px] text-black whitespace-nowrap">Bookup</p>
-      <Frame34 />
-      <Frame36 />
-    </div>
-  );
-}
-
 function Group1() {
   return (
     <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-[109.69px] mt-0 place-items-start relative row-1">
@@ -3551,14 +3443,14 @@ function Group9() {
       <div className="col-1 h-[254.58px] ml-[3.81px] mt-0 relative row-1 w-[326.228px]">
         <div className="absolute inset-[-8.98%_-7.01%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 371.961 300.313">
-            <g filter="url(#filter0_f_1_5421)" id="Ellipse 12">
+            <g filter="url(#filter0_f_1_5421_dup)" id="Ellipse 12">
               <ellipse cx="185.98" cy="150.156" fill="var(--fill-0, white)" fillOpacity="0.3" rx="163.114" ry="127.29" />
             </g>
             <defs>
-              <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="300.313" id="filter0_f_1_5421" width="371.961" x="0" y="0">
+              <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="300.313" id="filter0_f_1_5421_dup" width="371.961" x="0" y="0">
                 <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape" />
-                <feGaussianBlur result="effect1_foregroundBlur_1_5421" stdDeviation="11.4332" />
+                <feGaussianBlur result="effect1_foregroundBlur_1_5421_dup" stdDeviation="11.4332" />
               </filter>
             </defs>
           </svg>
@@ -3569,81 +3461,43 @@ function Group9() {
   );
 }
 
-function Frame40() {
-  return (
-    <div className="bg-[#ffabe7] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-black whitespace-nowrap">CASE STUDY</p>
-    </div>
-  );
-}
-
-function Frame39() {
-  return (
-    <div className="content-stretch flex items-center relative shrink-0">
-      <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
-        <Frame40 />
-      </div>
-    </div>
-  );
-}
-
-function Frame76() {
-  return (
-    <div className="bg-[#796ff1] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap">PERSONAL</p>
-    </div>
-  );
-}
-
-function Frame75() {
-  return (
-    <div className="content-stretch flex items-center relative shrink-0">
-      <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
-        <Frame76 />
-      </div>
-    </div>
-  );
-}
-
-function Frame74() {
-  return (
-    <div className="content-stretch flex gap-[8px] items-center relative shrink-0">
-      <Frame39 />
-      <Frame75 />
-    </div>
-  );
-}
-
-function Title2() {
-  return (
-    <div className="content-stretch flex gap-[12px] items-center relative shrink-0 w-full" data-name="Title">
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[24px] text-black whitespace-nowrap">Gruya</p>
-      <Frame74 />
-    </div>
-  );
-}
-
 function Frame29() {
   return (
-    <div className="content-stretch flex gap-[42px] items-center relative shrink-0 w-full">
-      <Link to="/payana" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 6">
-        <Group7 />
-        <Title />
-        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[16px] w-[365px]">Led the redesign of the Payana app, optimizing core user flows to simplify financial management and improve usability.</p>
-        <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[14px] text-black w-[365px]">Client Project · 2025</p>
-      </Link>
-      <Link to="/bookup" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 7">
-        <Group8 />
-        <Title1 />
-        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[16px] w-[365px]">Designed an accessibility-focused experience for an online bookstore, improving navigation and usability for diverse users.</p>
-        <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[14px] text-black w-[365px]">UTN Project · 2022</p>
-      </Link>
-      <Link to="/gruya" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 9">
-        <Group9 />
-        <Title2 />
-        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[16px] w-[365px]">Designed Gruya, a meeting room booking app for a challenge, creating intuitive flows and a seamless user experience.</p>
-        <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[14px] text-black w-[365px]">Case Study · 2022</p>
-      </Link>
+    <div className="content-stretch flex flex-col sm:flex-row flex-wrap gap-[24px] sm:gap-[42px] items-center sm:items-start relative shrink-0 w-full px-[16px] sm:px-0">
+      <OtherProjectCard
+        href="/payana"
+        mockup={<Group7 />}
+        title="Payana"
+        badges={[
+          { label: "FINANCE", bg: "#c8e793", color: "#000000" },
+          { label: "IA", bg: "#796ff1", color: "#ffffff" },
+          { label: "UX/UI", bg: "#688cf8", color: "#ffffff" },
+        ]}
+        description="Led the redesign of the Payana app, optimizing core user flows to simplify financial management and improve usability."
+        meta="Client Project · 2025"
+      />
+      <OtherProjectCard
+        href="/bookup"
+        mockup={<Group8 />}
+        title="Bookup"
+        badges={[
+          { label: "CASE STUDY", bg: "#ffabe7", color: "#000000" },
+          { label: "Accessibility", bg: "#688cf8", color: "#ffffff" },
+        ]}
+        description="Designed an accessibility-focused experience for an online bookstore, improving navigation and usability for diverse users."
+        meta="UTN Project · 2022"
+      />
+      <OtherProjectCard
+        href="/gruya"
+        mockup={<Group9 />}
+        title="Gruya"
+        badges={[
+          { label: "CASE STUDY", bg: "#ffabe7", color: "#000000" },
+          { label: "PERSONAL", bg: "#796ff1", color: "#ffffff" },
+        ]}
+        description="Designed Gruya, a meeting room booking app for a challenge, creating intuitive flows and a seamless user experience."
+        meta="Case Study · 2022"
+      />
     </div>
   );
 }
@@ -3658,8 +3512,8 @@ function Frame28() {
 
 function Frame72() {
   return (
-    <div className="content-stretch flex flex-col gap-[32px] items-start justify-center relative shrink-0 w-[1186px]">
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black whitespace-nowrap">
+    <div className="content-stretch flex flex-col gap-[32px] items-start justify-center relative shrink-0 w-full max-w-[1186px] px-[16px] sm:px-0">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[28px] sm:text-[40px] text-black whitespace-nowrap">
         <p className="leading-[normal]">Other projects</p>
       </div>
       <Frame28 />
@@ -3667,80 +3521,9 @@ function Frame72() {
   );
 }
 
-function Frame96() {
-  return (
-    <div className="absolute content-stretch flex flex-col gap-[9.96px] items-center left-[10px] top-[46.5px] w-[1166px]">
-      <a className="block font-['Serat:Ultra',sans-serif] leading-[0] not-italic relative shrink-0 text-[#c8e793] text-[48px] text-center w-[352px]" href="mailto:dn.chiapin@gmail.com?subject=Contact%20from%20your%20portfolio" target="_blank">
-        <p className="cursor-pointer leading-[normal]">Get in touch!</p>
-      </a>
-      <div className="absolute h-[18px] left-[804px] top-[-17.5px] w-[29px]" data-name="Vector">
-        <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 29 18">
-          <path d={svgPaths.p6f7b100} fill="var(--fill-0, #FDF2D6)" id="Vector" />
-        </svg>
-      </div>
-      <div className="absolute h-[18px] left-[272px] top-[72.5px] w-[29px]" data-name="Vector">
-        <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 29 18">
-          <path d={svgPaths.p6f7b100} fill="var(--fill-0, #C8E793)" id="Vector" />
-        </svg>
-      </div>
-      <div className="absolute h-[8px] left-[354px] top-[29.5px] w-[13px]" data-name="Vector">
-        <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 13 8">
-          <path d={svgPaths.p35e6c480} fill="var(--fill-0, #688CF8)" id="Vector" />
-        </svg>
-      </div>
-    </div>
-  );
-}
-
-function Group16() {
-  return (
-    <div className="-translate-x-1/2 absolute contents left-1/2 top-[-47.5px]">
-      <Frame96 />
-      <div className="-translate-x-1/2 absolute h-[95px] left-[calc(50%+12.5px)] top-[31px] w-[449px]">
-        <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 449 95">
-          <path d={svgPaths.p5c12f0} id="Ellipse 41" stroke="var(--stroke-0, #F3F3F3)" />
-        </svg>
-      </div>
-      <div className="-translate-x-1/2 absolute flex h-[268.377px] items-center justify-center left-[calc(50%+12.73px)] top-[-47.5px] w-[684.401px]" style={{ "--transform-inner-width": "1200", "--transform-inner-height": "19" } as React.CSSProperties}>
-        <div className="flex-none rotate-[7.86deg]">
-          <div className="h-[179px] relative w-[666.187px]">
-            <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 666.187 179">
-              <path d={svgPaths.pcd30c00} id="Ellipse 42" stroke="var(--stroke-0, #F3F3F3)" />
-            </svg>
-          </div>
-        </div>
-      </div>
-      <div className="-translate-x-1/2 absolute flex h-[249.635px] items-center justify-center left-[calc(50%-11.31px)] top-[-32px] w-[563.373px]" style={{ "--transform-inner-width": "1200", "--transform-inner-height": "19" } as React.CSSProperties}>
-        <div className="flex-none rotate-[-6.78deg]">
-          <div className="h-[186.537px] relative w-[545.154px]">
-            <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 545.154 186.537">
-              <path d={svgPaths.p9b20b00} id="Ellipse 43" stroke="var(--stroke-0, #F3F3F3)" />
-            </svg>
-          </div>
-        </div>
-      </div>
-      <div className="absolute h-[33px] left-[704px] top-[101px] w-[21px]" data-name="Vector">
-        <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 21 33">
-          <path d={svgPaths.p1f675c80} fill="var(--fill-0, #FF6465)" id="Vector" />
-        </svg>
-      </div>
-      <div className="absolute h-[10px] left-[756px] top-[5px] w-[6px]" data-name="Vector">
-        <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 6 10">
-          <path d={svgPaths.p3a21b9f0} fill="var(--fill-0, #F5F3EC)" id="Vector" />
-        </svg>
-      </div>
-      <div className="absolute h-[33px] left-[403px] top-[10px] w-[21px]" data-name="Vector">
-        <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 21 33">
-          <path d={svgPaths.p1f675c80} fill="var(--fill-0, #FDF2D6)" id="Vector" />
-        </svg>
-      </div>
-    </div>
-  );
-}
-
 function BannerFinal() {
   return (
-    <a href="mailto:dn.chiapin@gmail.com?subject=Contact%20from%20your%20portfolio" target="_blank">
+    <a href="mailto:dn.chiapin@gmail.com?subject=Contact%20from%20your%20portfolio" target="_blank" className="hidden sm:block">
       <img src={imgGetInTouch} alt="Get in touch" className="rounded-[8px] w-full object-cover cursor-pointer" />
     </a>
   );
@@ -3748,7 +3531,7 @@ function BannerFinal() {
 
 function Frame97() {
   return (
-    <div className="-translate-x-1/2 absolute content-stretch flex flex-col gap-[120px] items-center justify-center left-1/2 pb-[120px] top-[160px]">
+    <div className="content-stretch flex flex-col gap-[64px] sm:gap-[120px] items-center justify-center mx-auto pb-[64px] sm:pb-[120px] pt-[40px] w-full max-w-[1192px]">
       <Frame41 />
       <Frame59 />
       <Frame189 />
@@ -3969,20 +3752,9 @@ function Frame78() {
 }
 
 export default function MyWorkChatty() {
-  const wrapRef = useRef<HTMLDivElement>(null);
-  const [minH, setMinH] = useState(0);
-
-  useEffect(() => {
-    if (wrapRef.current) {
-      const child = wrapRef.current.children[0] as HTMLElement;
-      if (child) setMinH(child.offsetTop + child.offsetHeight + 80);
-    }
-  }, []);
-
   return (
-    <div className="bg-white flex flex-col relative" style={{ minHeight: minH || undefined }} data-name="My work/ Chatty">
-      <Frame78 />
-      <motion.div ref={wrapRef} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}>
+    <div className="bg-white flex flex-col relative overflow-x-hidden" data-name="My work/ Chatty">
+      <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}>
         <Frame97 />
       </motion.div>
     </div>

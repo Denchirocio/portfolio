@@ -1,16 +1,9 @@
-﻿import { useRef, useEffect, useState } from "react";
-import { Link } from "react-router";
+﻿import { Link } from "react-router";
 import FadeIn from "../../app/components/FadeIn";
+import OtherProjectCard from "../../app/components/OtherProjectCard";
 
-// Section icons (from public folder)
-// Hero images
-import imgHeroDesktop from "./hero-desktop.png";
-import imgHeroPhone from "./hero-mobile.png";
-// App screenshots
-import imgSc1 from "./sc1-bg.png";
-import imgSc2 from "./sc2-bg.png";
-import imgSc3 from "./sc3-bg.png";
-import imgSc4 from "./sc4-bg.png";
+// Hero mockup (captured screenshot of the laptop+phone collage)
+import imgHeroMockup from "./screenshots/hero-mockup.png";
 
 // Other projects thumbnails (from Payana folder — same images)
 import imgThumbChatty from "../MyWorkPayana/3c02e76a688120a3f55c7c6d42881902b6c378ed.png";
@@ -20,154 +13,6 @@ import imgGetInTouch  from "../MyWorkPayana/Get in touch.png";
 
 const CHEVRON = "M0.75 8.75L4.75 4.75L0.75 0.75";
 
-
-// ── Fixed Header — exact copy from MyWorkGruya ────────────────────────────────
-
-const svgPaths = {
-  p20986480: "M11.9344 1.51312C3.93562 1.55437 0.6975 5.72437 0.635625 10.9181C0.601875 13.8188 2.47125 16.3238 5.33625 17.8519C6.73312 18.84 5.07 22.0781 3.73875 22.905C3.73875 22.905 8.445 22.5844 9.7425 19.2675C10.4587 19.3725 11.1956 19.4269 11.9512 19.4269C18.1912 19.4269 23.2331 16.1119 23.2331 10.9181C23.2331 5.72437 20.01 1.47375 11.9344 1.51312Z",
-  p2a5f0180: "M6.1125 12.1875C6.94093 12.1875 7.6125 11.5159 7.6125 10.6875C7.6125 9.85907 6.94093 9.1875 6.1125 9.1875C5.28407 9.1875 4.6125 9.85907 4.6125 10.6875C4.6125 11.5159 5.28407 12.1875 6.1125 12.1875Z",
-  p29df600:  "M12.1125 12.1875C12.9409 12.1875 13.6125 11.5159 13.6125 10.6875C13.6125 9.85907 12.9409 9.1875 12.1125 9.1875C11.2841 9.1875 10.6125 9.85907 10.6125 10.6875C10.6125 11.5159 11.2841 12.1875 12.1125 12.1875Z",
-  p1e1ea9b0: "M17.8875 12.1875C18.7159 12.1875 19.3875 11.5159 19.3875 10.6875C19.3875 9.85907 18.7159 9.1875 17.8875 9.1875C17.0591 9.1875 16.3875 9.85907 16.3875 10.6875C16.3875 11.5159 17.0591 12.1875 17.8875 12.1875Z",
-  p10482c70: "M22.9869 22.0371L21.8282 18.9452L21.0313 16.8171C20.8513 16.2677 20.8176 16.0408 20.5119 15.7352L18.2957 13.5189L13.5219 18.2927L15.7401 20.5108C15.9219 20.6927 16.2707 20.8483 16.8201 21.0283L18.9482 21.8252L22.0401 22.9839C22.6232 23.1733 23.1763 22.6202 22.9869 22.0371Z",
-  p931ce00:  "M22.0401 22.9839L19.4788 22.0239C19.4788 22.0239 20.5363 21.9639 21.2507 21.2496C21.9651 20.5352 22.0269 19.4758 22.0269 19.4758L22.9869 22.0371C23.1763 22.6202 22.6232 23.1733 22.0401 22.9839Z",
-  p3be89600: "M7.85756 3.08268L6.84318 6.69956L3.08568 7.85456L0.963182 5.73393C0.378182 5.14893 0.100682 3.98268 1.65131 2.43206L2.58693 1.49643C3.92756 0.155808 5.15193 0.375183 5.73693 0.960183L7.85756 3.08268Z",
-  p1dd3c900: "M6.18693 8.13206L8.13131 6.18768L19.4244 17.4808C19.4244 17.4808 19.6551 18.4408 19.0682 19.0277C18.4813 19.6146 17.4801 19.4252 17.4801 19.4252L6.18693 8.13206Z",
-  p25892900: "M4.77318 9.54581L15.7569 20.5296C17.5307 20.9158 17.4538 19.3989 17.4538 19.3989L6.18693 8.13206L4.77318 9.54581Z",
-  p14926380: "M8.13318 6.18581L19.4001 17.4527C19.4001 17.4527 21.4288 17.4527 20.5007 15.7258L9.54693 4.77206L8.13318 6.18581Z",
-  pe372b80:  "M17.4369 19.6446L6.07256 8.28018L6.33693 8.01581L17.7744 19.4533L17.4801 19.4233L17.4369 19.6446Z",
-  p9a0df00:  "M19.4694 17.7902L7.28943 5.61018L7.55568 5.34581L19.6438 17.4339L19.4244 17.4789L19.4694 17.7902Z",
-  pd831e00:  "M9.54693 4.77206C9.54693 4.77206 8.52131 6.28893 7.67193 7.14768C6.04631 8.78643 4.77318 9.54581 4.77318 9.54581L5.10131 9.87393C5.56818 9.69206 6.76256 9.14643 7.95506 7.95581C9.15506 6.75581 9.72131 5.58393 9.91068 5.13581L9.54693 4.77206Z",
-  p1fe27c00: "M4.16568 9.49331C4.27068 9.59831 4.41881 9.64518 4.56506 9.62081C4.56506 9.62081 6.10068 9.15206 7.62693 7.62581C9.15318 6.09956 9.65756 4.61268 9.65756 4.61268C9.68193 4.46643 9.63506 4.31643 9.53006 4.21143L7.92131 2.60268C7.85381 2.53518 7.76006 2.49956 7.66631 2.51081C7.63443 2.51456 7.60256 2.51831 7.56881 2.52393C7.44131 2.54268 7.34006 2.63643 7.30443 2.76018C7.30443 2.76018 6.56943 4.18518 5.35818 5.39456C4.14693 6.60393 2.66943 7.30893 2.66943 7.30893C2.54568 7.34268 2.45006 7.44206 2.43131 7.56956C2.43131 7.57143 2.43131 7.57143 2.43131 7.57331C2.41631 7.67456 2.45006 7.77581 2.52131 7.84706L4.16568 9.49331Z",
-  pc4ff00:   "M3.17267 3.17267C4.2732 2.07213 4.90122 0.915827 4.57538 0.589986C4.24954 0.264146 3.09323 0.89216 1.9927 1.9927C0.89216 3.09323 0.264146 4.24954 0.589987 4.57538C0.915827 4.90122 2.07213 4.2732 3.17267 3.17267Z",
-  pb558880:  "M7.56318 3.83831C6.94631 5.01956 5.93193 5.98893 4.72443 6.54956C4.64568 6.58518 4.53506 6.61143 4.48818 6.54018C4.45256 6.48393 4.48443 6.41268 4.52006 6.35643C4.67756 6.11268 4.89506 5.91581 5.10506 5.71518C5.65256 5.19018 6.15506 4.62018 6.60693 4.01268C6.83756 3.70331 7.05318 3.38456 7.25568 3.05643C7.36818 2.87643 7.56881 2.49581 7.82568 2.76393C8.04881 2.99456 7.68131 3.61143 7.56318 3.83831Z",
-  p3694f500: "M6.86381 6.03768C6.81506 6.08831 6.76443 6.13893 6.74006 6.20456C6.71568 6.27018 6.72506 6.35456 6.78131 6.39581C6.82818 6.43143 6.89193 6.42768 6.95006 6.41831C7.27443 6.36768 7.56131 6.18393 7.81443 5.97768C8.36756 5.52956 8.83631 4.90706 8.88131 4.19643C8.88693 4.11206 8.88506 4.02393 8.84756 3.94893C8.60943 3.47831 8.10506 4.53018 8.00568 4.67831C7.67381 5.17143 7.27818 5.61393 6.86381 6.03768Z",
-};
-
-function NavLogo() {
-  return (
-    <Link to="/" className="content-stretch flex gap-[8px] items-center relative shrink-0 no-underline logo-link">
-      <svg fill="none" viewBox="0 0 34 22" className="w-[34px] h-[22px] shrink-0 logo-star">
-        <path d="M34 2.47042C20.0898 7.79276 17.9004 7.54971 11.7118 0C13.7777 9.61712 12.6273 11.5368 0 19.5296C13.9102 14.2072 16.0996 14.4503 22.2882 22C20.2223 12.3829 21.3727 10.4632 34 2.47042Z" fill="#FF6465" />
-      </svg>
-      <p className="font-['Kimochi:Regular',sans-serif] leading-[normal] not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap">My portfolio</p>
-    </Link>
-  );
-}
-
-function SpeechBalloon() {
-  return (
-    <div className="relative shrink-0 size-[24px]">
-      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24 24">
-        <g id="speech_balloon">
-          <path d={svgPaths.p20986480} fill="white" stroke="white" strokeLinejoin="round" strokeMiterlimit="10" />
-          <g id="Group">
-            <path d={svgPaths.p2a5f0180} fill="#54646D" />
-            <path d={svgPaths.p29df600} fill="#54646D" />
-            <path d={svgPaths.p1e1ea9b0} fill="#54646D" />
-          </g>
-        </g>
-      </svg>
-    </div>
-  );
-}
-
-function NavSeeProfile() {
-  return (
-    <div className="bg-black content-stretch flex gap-[10px] items-center justify-center px-[16px] py-[10px] relative rounded-[100px] shrink-0 hover:bg-[#333333] transition-colors cursor-pointer">
-      <div aria-hidden="true" className="absolute border border-black border-solid inset-0 pointer-events-none rounded-[100px]" />
-      <SpeechBalloon />
-      <a className="block font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[20px] text-white whitespace-nowrap no-underline" href="https://www.linkedin.com/in/denisechiapin/?skipRedirect=true" target="_blank" rel="noopener noreferrer">
-        <p className="cursor-pointer leading-[normal]">See my profile!</p>
-      </a>
-    </div>
-  );
-}
-
-function NavLinks() {
-  return (
-    <div className="content-stretch flex gap-[24px] items-center relative shrink-0">
-      <Link to="/" className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] no-underline not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap hover:opacity-70 transition-opacity">Home</Link>
-      <Link to="/about" className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] no-underline not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap hover:opacity-70 transition-opacity">About me</Link>
-      <Link to="/blog" className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] no-underline not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap hover:opacity-70 transition-opacity">Blog</Link>
-      <div className="flex items-center gap-[8px]">
-        <a href="/CV- Denise Chiapin EN - Classic.pdf" download className="font-['Inter:Regular',sans-serif] font-normal text-[20px] text-black border border-black px-[16px] h-[44px] flex items-center rounded-[100px] whitespace-nowrap no-underline hover:bg-black hover:text-white transition-colors">My CV</a>
-        <NavSeeProfile />
-      </div>
-    </div>
-  );
-}
-
-function NavBar() {
-  return (
-    <div className="bg-white h-[80px] relative shrink-0 w-full">
-      <div className="flex flex-col justify-center size-full">
-        <div className="content-stretch flex flex-col items-start justify-center px-[48px] py-[10px] relative size-full">
-          <div className="content-stretch flex items-center justify-between relative shrink-0 w-full">
-            <NavLogo />
-            <NavLinks />
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function PencilIcon() {
-  return (
-    <div className="overflow-clip relative shrink-0 size-[24px]">
-      <div className="absolute inset-[0.99%_3.07%_3.08%_0.99%]">
-        <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 23.0248 23.0218">
-          <g>
-            <path d={svgPaths.p10482c70} fill="#FFECB3" />
-            <path d={svgPaths.p931ce00} fill="#616161" />
-            <path d={svgPaths.p3be89600} fill="#EF5350" />
-            <path d={svgPaths.p1dd3c900} fill="#FFC107" />
-            <path d={svgPaths.p25892900} fill="#FFA000" />
-            <path d={svgPaths.p14926380} fill="#FDD835" />
-            <path d={svgPaths.pe372b80} fill="#D1762C" />
-            <path d={svgPaths.p9a0df00} fill="#F19534" />
-            <path d={svgPaths.pd831e00} fill="#4E342E" opacity="0.2" />
-            <path d={svgPaths.p1fe27c00} fill="#94D1E0" />
-            <path d={svgPaths.pc4ff00} fill="#FF8383" />
-            <path d={svgPaths.pb558880} fill="#B9E4EA" />
-            <path d={svgPaths.p3694f500} fill="#B9E4EA" />
-          </g>
-        </svg>
-      </div>
-    </div>
-  );
-}
-
-function GreenBanner() {
-  return (
-    <div className="bg-[#ebfaaa] drop-shadow-[0px_4px_2px_rgba(159,159,159,0.25)] h-[49px] relative shrink-0 w-full">
-      <div className="flex flex-row items-center justify-center size-full">
-        <div className="content-stretch flex gap-[10px] items-center justify-center p-[10px] relative size-full">
-          <p className="font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[0px] text-black whitespace-nowrap">
-            <span className="leading-[normal] text-[16px]">{` A`}</span>
-            <span className="leading-[normal] text-[20px]">{` `}</span>
-            <span className="font-['Monomakh',sans-serif] leading-[normal] text-[24px]">designer passionate</span>
-            <span className="leading-[normal] text-[20px]">{` `}</span>
-            <span className="leading-[normal] text-[16px]">about creating beautifu</span>
-            <span className="leading-[normal] text-[20px]">l</span>
-            <span className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] text-[20px]">{` `}</span>
-            <span className="font-['Monomakh',sans-serif] leading-[normal] text-[24px]">user friendly products</span>
-          </p>
-          <PencilIcon />
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function FixedHeader() {
-  return (
-    <div className="bg-white content-stretch fixed flex flex-col items-start left-0 top-0 w-full z-50">
-      <NavBar />
-      <GreenBanner />
-    </div>
-  );
-}
 
 // ── Shared ────────────────────────────────────────────────────────────────────
 
@@ -181,7 +26,7 @@ function SectionTitle({ children }: { children: React.ReactNode }) {
 
 function Body700({ children }: { children: React.ReactNode }) {
   return (
-    <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[20px] text-black w-[700px] text-center">{children}</p>
+    <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[16px] sm:text-[20px] text-black w-full max-w-[700px] text-center">{children}</p>
   );
 }
 
@@ -222,16 +67,16 @@ function Breadcrumb() {
 
 function Hero() {
   return (
-    <div className="content-stretch flex gap-[127px] items-start justify-center relative shrink-0 w-full">
-      <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-[572px]">
+    <div className="flex flex-col md:flex-row gap-[40px] md:gap-[80px] lg:gap-[127px] items-start justify-center relative shrink-0 w-full">
+      <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full md:w-[572px]">
         <div className="content-stretch flex items-center relative shrink-0 w-full">
           <Breadcrumb />
         </div>
         <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full">
-          <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[64px] text-black whitespace-nowrap">
+          <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-end leading-[normal] not-italic relative shrink-0 text-[32px] sm:text-[48px] lg:text-[64px] text-black w-full">
             <p className="leading-[normal]">Denchi No Nihongo</p>
           </div>
-          <div className="content-stretch flex gap-[8px] items-center relative shrink-0">
+          <div className="content-stretch flex flex-wrap gap-[8px] items-center relative shrink-0">
             <div className="bg-[#ffabe7] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
               <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-black whitespace-nowrap">PERSONAL PROJECT</p>
             </div>
@@ -243,33 +88,18 @@ function Hero() {
             </div>
           </div>
         </div>
-        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[20px] text-black w-full">
+        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[16px] sm:text-[20px] text-black w-full">
           <span className="leading-[32px]">An application designed </span>
           <span className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[32px]">to reinforce Japanese through a practical and interactive experience</span>
           <span className="leading-[32px]">, allowing users to study vocabulary, grammar, kana writing, and listening comprehension </span>
           <span className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[32px]">in one place.</span>
         </p>
       </div>
-      <div className="h-[307px] relative shrink-0 w-[476px]">
-        <div className="absolute contents left-0 top-0">
-          <div className="absolute border border-black border-solid h-[260px] left-[20px] rounded-tl-[8px] rounded-tr-[8px] top-0 w-[400px]" />
-          <div className="absolute border border-black border-solid h-[239px] left-[30px] rounded-tl-[8px] rounded-tr-[8px] top-[10px] w-[379px]">
-            <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-tl-[8px] rounded-tr-[8px] size-full" src={imgHeroDesktop} />
-          </div>
-          <div className="absolute border border-black border-solid h-[16px] left-0 top-[259px] w-[440px]" />
-          <div className="absolute h-[6px] left-0 top-[274px] w-[440px]">
-            <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 440 6">
-              <path d="M436.5 0.380859L417.125 4.19238H28.7344L8.40625 0.380859H436.5Z" stroke="black" strokeWidth="0.762215" />
-            </svg>
-          </div>
-          <div className="absolute border border-black border-solid h-[7px] left-[190px] rounded-bl-[200px] rounded-br-[200px] top-[259px] w-[60px]" />
-        </div>
-        <div className="absolute bg-white content-stretch drop-shadow-[0px_0.794px_0.397px_rgba(216,216,216,0.25)] flex h-[253px] items-center left-[339px] p-[3.175px] rounded-[12.702px] top-[71px] w-[125.623px]">
-          <div className="h-[246.649px] relative rounded-[12.702px] shadow-[0px_0.794px_0.794px_0px_rgba(189,189,189,0.5)] shrink-0 w-[119.272px]">
-            <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[12.702px] size-full" src={imgHeroPhone} />
-          </div>
-        </div>
-      </div>
+      <img
+        src={imgHeroMockup}
+        alt="Denchi No Nihongo shown on laptop and phone"
+        className="w-[220px] sm:w-full sm:max-w-[476px] h-auto shrink-0 mx-auto md:mx-0"
+      />
     </div>
   );
 }
@@ -294,44 +124,44 @@ function Overview() {
 
 function ProblemAndRole() {
   return (
-    <div className="content-stretch flex gap-[40px] items-start justify-center relative shrink-0 w-full">
+    <div className="flex flex-col md:flex-row gap-[40px] items-start justify-center relative shrink-0 w-full">
       {/* Problem */}
-      <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-[570px]">
+      <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-full md:w-[570px]">
         <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0">
           <div className="h-[74px] relative shrink-0 w-[80px]">
             <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-contain size-full" src="/Problem.png" />
           </div>
-          <div className="[word-break:break-word] flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-[544px]">
+          <div className="[word-break:break-word] flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-full">
             <p className="leading-[normal]">Problem</p>
           </div>
         </div>
-        <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[16px] text-black w-[544px]">Around 80% of Japanese study material is spread across different books and disconnected resources.</p>
-        <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[16px] text-black w-[544px]">Most Japanese learning apps fail to provide all the necessary content in a single place to properly prepare for the JLPT N5 exam.</p>
-        <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[16px] text-black w-[544px]">Only a small percentage of these apps are truly free, and even then, the learning experience often lacks enough depth and engagement to study consistently without getting bored.</p>
+        <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[16px] text-black w-full">Around 80% of Japanese study material is spread across different books and disconnected resources.</p>
+        <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[16px] text-black w-full">Most Japanese learning apps fail to provide all the necessary content in a single place to properly prepare for the JLPT N5 exam.</p>
+        <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[16px] text-black w-full">Only a small percentage of these apps are truly free, and even then, the learning experience often lacks enough depth and engagement to study consistently without getting bored.</p>
       </div>
       {/* My Role */}
-      <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-[570px]">
+      <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-full md:w-[570px]">
         <div className="content-stretch flex flex-col gap-[24px] h-[146px] items-center relative shrink-0">
           <div className="relative shrink-0 size-[80px]">
             <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-contain size-full" src="/My role.png" />
           </div>
-          <div className="[word-break:break-word] flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-[544px]">
+          <div className="[word-break:break-word] flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-full">
             <p className="leading-[normal]">My role</p>
           </div>
         </div>
-        <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[16px] text-black w-[544px]">
+        <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[16px] text-black w-full">
           <span className="font-['Inter:Bold',sans-serif] font-bold leading-[32px]">UX Researcher: </span>
           <span className="leading-[32px]">Analyze user behaviors, frustrations, and study habits to understand how students learn Japanese and identify opportunities to improve the overall learning experience.</span>
         </p>
-        <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[16px] text-black w-[544px]">
+        <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[16px] text-black w-full">
           <span className="font-['Inter:Bold',sans-serif] font-bold leading-[32px]">UX/UI Designer: </span>
           <span className="leading-[32px]">Design a simple, engaging, and mobile-first learning experience focused on accessibility, usability, and motivation for Japanese students.</span>
         </p>
-        <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[16px] text-black w-[544px]">
+        <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[16px] text-black w-full">
           <span className="font-['Inter:Bold',sans-serif] font-bold leading-[32px]">Developer: </span>
           <span className="leading-[32px]">Build a fast, scalable, and responsive PWA experience capable of supporting interactive lessons, progress tracking, and future mobile expansion.</span>
         </p>
-        <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[16px] text-black w-[544px]">
+        <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[16px] text-black w-full">
           <span className="font-['Inter:Bold',sans-serif] font-bold leading-[32px]">Tester: </span>
           <span className="leading-[32px]">Continuously validate flows, identify bugs, and test the product across web and mobile devices to ensure a smooth and reliable experience for users.</span>
         </p>
@@ -384,9 +214,9 @@ function OurUsers() {
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-contain size-full" src="/our users.png" />
       </div>
       <SectionTitle>Our users</SectionTitle>
-      <div className="content-stretch flex gap-[80px] items-start relative shrink-0">
+      <div className="flex flex-col md:flex-row gap-[40px] md:gap-[80px] items-start relative shrink-0 w-full">
         {/* Lucas */}
-        <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-[563px]">
+        <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full md:w-[563px]">
           <div className="[word-break:break-word] bg-white border-black border-l-[3px] border-solid content-stretch drop-shadow-[0px_4px_2px_rgba(117,117,117,0.25)] flex gap-[10px] items-center leading-[32px] not-italic p-[24px] relative rounded-br-[8px] rounded-tr-[8px] shrink-0 text-[20px] text-black w-full">
             <p className="font-['Inter:Regular',sans-serif] font-normal relative shrink-0 whitespace-nowrap">💁🏻‍♀️</p>
             <p className="flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold min-w-px relative">"I've tried so many Japanese apps, but I always end up switching between five different tools just to study for the JLPT N5."</p>
@@ -402,8 +232,8 @@ function OurUsers() {
           </div>
         </div>
         {/* Sofia */}
-        <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-[563px]">
-          <div className="[word-break:break-word] bg-white border-black border-l-[3px] border-solid content-stretch drop-shadow-[0px_4px_2px_rgba(117,117,117,0.25)] flex gap-[10px] h-[144px] items-center leading-[32px] not-italic p-[24px] relative rounded-br-[8px] rounded-tr-[8px] shrink-0 text-[20px] text-black w-full">
+        <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full md:w-[563px]">
+          <div className="[word-break:break-word] bg-white border-black border-l-[3px] border-solid content-stretch drop-shadow-[0px_4px_2px_rgba(117,117,117,0.25)] flex gap-[10px] min-h-[144px] items-center leading-[32px] not-italic p-[24px] relative rounded-br-[8px] rounded-tr-[8px] shrink-0 text-[20px] text-black w-full">
             <p className="font-['Inter:Regular',sans-serif] font-normal relative shrink-0 whitespace-nowrap">👨🏻‍💼</p>
             <p className="flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold min-w-px relative">"I want learning Japanese to feel motivating and interactive, not like I'm reading the same grammar book over and over again."</p>
           </div>
@@ -426,7 +256,7 @@ function OurUsers() {
 
 function StoryCard({ as_: as, want, soThat }: { as_: string; want: string; soThat: string }) {
   return (
-    <div className="bg-white border border-[#e8e8e8] content-stretch flex flex-col items-start p-[24px] relative rounded-[8px] shrink-0 w-[500px] drop-shadow-[0px_2px_8px_rgba(0,0,0,0.05)]">
+    <div className="bg-white border border-[#e8e8e8] content-stretch flex flex-col items-start p-[24px] relative rounded-[8px] shrink-0 w-full md:w-[500px] drop-shadow-[0px_2px_8px_rgba(0,0,0,0.05)]">
       <p className="[word-break:break-word] font-['Work_Sans',sans-serif] font-semibold leading-[0] relative shrink-0 text-[20px] text-black">
         <span className="leading-[32px]">As a </span>
         <span className="font-normal leading-[32px]">{as}</span>
@@ -474,9 +304,9 @@ function UserStories() {
           </p>
         </div>
       </div>
-      <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0">
+      <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full">
         {rows.map((row, i) => (
-          <div key={i} className="content-stretch flex gap-[24px] items-start relative shrink-0 w-full">
+          <div key={i} className="flex flex-col md:flex-row gap-[24px] items-start relative shrink-0 w-full">
             {row.map((s) => <StoryCard key={s.want} {...s} />)}
           </div>
         ))}
@@ -505,13 +335,13 @@ function Features() {
       <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full relative shrink-0 text-[48px] text-center w-[min-content]">
         <p className="leading-[normal]">Features</p>
       </div>
-      <div className="content-stretch flex flex-col gap-[48px] items-start relative shrink-0 w-[1100px]">
+      <div className="content-stretch flex flex-col gap-[48px] items-start relative shrink-0 w-full max-w-[1100px]">
         {features.map(({ name, desc }) => (
-          <div key={name} className="content-stretch flex gap-[24px] items-start justify-center relative shrink-0 w-full">
-            <div className="flex flex-col font-['EB_Garamond',serif] justify-center leading-[0] relative shrink-0 text-[40px] w-[304px]">
+          <div key={name} className="flex flex-col md:flex-row gap-[8px] md:gap-[24px] items-start justify-center relative shrink-0 w-full">
+            <div className="flex flex-col font-['EB_Garamond',serif] justify-center leading-[0] relative shrink-0 text-[28px] sm:text-[40px] w-full md:w-[304px]">
               <p className="leading-[normal]">{name}</p>
             </div>
-            <p className="flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-px relative text-[20px]">{desc}</p>
+            <p className="flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-px relative text-[16px] sm:text-[20px]">{desc}</p>
           </div>
         ))}
       </div>
@@ -555,12 +385,12 @@ function Tools() {
       </div>
       <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full">
         {tools.map(({ name, desc }) => (
-          <div key={name} className="border border-[#b9b9b9] border-solid content-stretch flex gap-[64px] items-center px-[24px] py-[16px] relative rounded-[8px] shrink-0 w-full">
-            <div className="[word-break:break-word] flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[48px] text-black w-[140px]">
+          <div key={name} className="border border-[#b9b9b9] border-solid flex flex-col md:flex-row gap-[16px] md:gap-[64px] items-start md:items-center px-[24px] py-[16px] relative rounded-[8px] shrink-0 w-full">
+            <div className="[word-break:break-word] flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[32px] sm:text-[48px] text-black w-full md:w-[140px]">
               <p className="leading-[normal]">{name}</p>
             </div>
             <div className="content-stretch flex flex-[1_0_0] items-center justify-center min-w-px relative">
-              <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-px not-italic relative text-[20px] text-black">{desc}</p>
+              <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-px not-italic relative text-[16px] sm:text-[20px] text-black">{desc}</p>
             </div>
           </div>
         ))}
@@ -655,16 +485,16 @@ function PlayStore() {
 function WantToExplore() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-full">
-      <div className="[word-break:break-word] flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[48px] text-black text-center w-full">
+      <div className="[word-break:break-word] flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[28px] sm:text-[48px] text-black text-center w-full">
         <p className="leading-[normal]">Want to explore Denchi.app?</p>
       </div>
-      <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[20px] text-black w-full">
+      <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[16px] sm:text-[20px] text-black w-full">
         Take a closer look at how the app was imagined to feel, look, and behave as a real product experience — from the first interaction to the way users would discover it on the Play Store. Be kind...<span className="font-['Inter:Bold',sans-serif] font-bold">{` it's still a beta`}</span>. Don't forget that 💛
       </p>
       {/* Phone mockup with video */}
-      <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0">
-        <div className="bg-white col-1 content-stretch drop-shadow-[0px_4px_2px_rgba(106,106,106,0.25)] flex items-center ml-0 mt-0 p-[10px] relative rounded-[32px] row-1">
-          <div className="h-[622.065px] relative rounded-[32px] shrink-0 w-[319.515px] overflow-hidden">
+      <div className="relative shrink-0">
+        <div className="bg-white content-stretch drop-shadow-[0px_4px_2px_rgba(106,106,106,0.25)] flex items-center p-[10px] relative rounded-[32px]">
+          <div className="w-[240px] sm:w-[319.515px] aspect-[319.515/622.065] relative rounded-[32px] shrink-0 overflow-hidden">
             <video
               src="/Video.mp4"
               autoPlay
@@ -700,7 +530,7 @@ function Conclusions() {
         <div className="flex flex-col font-['EB_Garamond',serif] justify-end min-w-full relative shrink-0 text-[40px] text-center w-[min-content]">
           <p className="leading-[normal]">Conclusions</p>
         </div>
-        <div className="font-['Inter:Regular',sans-serif] font-normal relative shrink-0 text-[20px] w-[700px] whitespace-pre-wrap">
+        <div className="font-['Inter:Regular',sans-serif] font-normal relative shrink-0 text-[16px] sm:text-[20px] w-full max-w-[700px] whitespace-pre-wrap">
           <p className="leading-[32px] mb-0">
             This application was born from a personal problem I wanted to solve for myself. What I never imagined was how many new things I would have to learn in order to make it real — from development and databases to new tools and workflows.{"\n\n"}
           </p>
@@ -808,54 +638,42 @@ function GruyaGroup() {
 
 function OtherProjects() {
   return (
-    <div className="content-stretch flex flex-col gap-[32px] items-start justify-center relative shrink-0 w-[1186px]">
+    <div className="content-stretch flex flex-col gap-[32px] items-start justify-center relative shrink-0 w-full max-w-[1186px]">
       <div className="flex flex-col font-['Monomakh',sans-serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black whitespace-nowrap">
         <p className="leading-[normal]">Other projects</p>
       </div>
       <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
-        <div className="content-stretch flex gap-[42px] items-center relative shrink-0 w-full">
-          {/* Chatty */}
-          <Link to="/chatty" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer">
-            <LaptopGroup img={imgThumbChatty} />
-            <div className="content-stretch flex gap-[8px] items-center relative shrink-0 w-full">
-              <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[24px] text-black whitespace-nowrap">Chatty</p>
-              <div className="bg-[#688cf8] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-                <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap">UX/UI</p>
-              </div>
-            </div>
-            <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[16px] w-[365px]">Improved Chatty through a user-centered redesign, focusing on usability, clarity, and seamless interactions.</p>
-            <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[14px] text-black w-[365px]">Freelance · 2025</p>
-          </Link>
-          {/* Bookup */}
-          <Link to="/bookup" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer">
-            <LaptopGroup img={imgThumbBookup} />
-            <div className="content-stretch flex gap-[8px] items-center relative shrink-0 w-full">
-              <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[24px] text-black whitespace-nowrap">Bookup</p>
-              <div className="bg-[#ffabe7] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-                <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-black whitespace-nowrap">CASE STUDY</p>
-              </div>
-              <div className="bg-[#688cf8] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-                <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap">Accessibility</p>
-              </div>
-            </div>
-            <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[16px] w-[365px]">Designed an accessibility-focused experience for an online bookstore, improving navigation and usability for diverse users.</p>
-            <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[14px] text-black w-[365px]">UTN Project · 2022</p>
-          </Link>
-          {/* Gruya */}
-          <Link to="/gruya" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer">
-            <GruyaGroup />
-            <div className="content-stretch flex gap-[8px] items-center relative shrink-0 w-full">
-              <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[24px] text-black whitespace-nowrap">Gruya</p>
-              <div className="bg-[#ffabe7] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-                <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-black whitespace-nowrap">CASE STUDY</p>
-              </div>
-              <div className="bg-[#796ff1] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-                <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap">PERSONAL</p>
-              </div>
-            </div>
-            <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[16px] w-[365px]">Designed Gruya, a meeting room booking app for a challenge, creating intuitive flows and a seamless user experience.</p>
-            <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[14px] text-black w-[365px]">Case Study · 2022</p>
-          </Link>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-[42px] items-start relative shrink-0 w-full">
+          <OtherProjectCard
+            href="/chatty"
+            mockup={<LaptopGroup img={imgThumbChatty} />}
+            title="Chatty"
+            badges={[{ label: "UX/UI", bg: "#688cf8", color: "#fff" }]}
+            description="Improved Chatty through a user-centered redesign, focusing on usability, clarity, and seamless interactions."
+            meta="Freelance · 2025"
+          />
+          <OtherProjectCard
+            href="/bookup"
+            mockup={<LaptopGroup img={imgThumbBookup} />}
+            title="Bookup"
+            badges={[
+              { label: "CASE STUDY", bg: "#ffabe7" },
+              { label: "Accessibility", bg: "#688cf8", color: "#fff" },
+            ]}
+            description="Designed an accessibility-focused experience for an online bookstore, improving navigation and usability for diverse users."
+            meta="UTN Project · 2022"
+          />
+          <OtherProjectCard
+            href="/gruya"
+            mockup={<GruyaGroup />}
+            title="Gruya"
+            badges={[
+              { label: "CASE STUDY", bg: "#ffabe7" },
+              { label: "PERSONAL", bg: "#796ff1", color: "#fff" },
+            ]}
+            description="Designed Gruya, a meeting room booking app for a challenge, creating intuitive flows and a seamless user experience."
+            meta="Case Study · 2022"
+          />
         </div>
       </div>
     </div>
@@ -864,7 +682,7 @@ function OtherProjects() {
 
 function BannerFinal() {
   return (
-    <a href="mailto:dn.chiapin@gmail.com?subject=Contact%20from%20your%20portfolio" target="_blank" rel="noopener noreferrer">
+    <a href="mailto:dn.chiapin@gmail.com?subject=Contact%20from%20your%20portfolio" target="_blank" rel="noopener noreferrer" className="hidden sm:block">
       <img src={imgGetInTouch} alt="Get in touch" className="rounded-[8px] w-full object-cover cursor-pointer" />
     </a>
   );
@@ -873,51 +691,27 @@ function BannerFinal() {
 // ── Root ──────────────────────────────────────────────────────────────────────
 
 export default function MyWorkDenchi() {
-  const wrapRef = useRef<HTMLDivElement>(null);
-  const [minH, setMinH] = useState(0);
-
-  useEffect(() => {
-    const updateHeight = () => {
-      if (wrapRef.current) {
-        const child = wrapRef.current.children[0] as HTMLElement;
-        if (child) setMinH(child.offsetTop + child.offsetHeight + 80);
-      }
-    };
-
-    updateHeight();
-
-    const child = wrapRef.current?.children[0] as HTMLElement | undefined;
-    if (!child) return;
-
-    const observer = new ResizeObserver(updateHeight);
-    observer.observe(child);
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <div className="bg-white flex flex-col relative overflow-x-hidden" style={{ minHeight: minH || undefined }} data-name="My work / Denchi">
-      <FixedHeader />
-      <div ref={wrapRef}>
-        <div className="-translate-x-1/2 absolute content-stretch flex flex-col gap-[120px] items-center justify-center left-1/2 pb-[120px] top-[160px]">
-          <Hero />
-          <FadeIn><Overview /></FadeIn>
-          <FadeIn><ProblemAndRole /></FadeIn>
-          <FadeIn><Carrusel /></FadeIn>
-          <FadeIn><OurProcess /></FadeIn>
-          <FadeIn><OurUsers /></FadeIn>
-          <FadeIn><UserStories /></FadeIn>
-          <FadeIn><Features /></FadeIn>
-          <FadeIn><ClaudeSection /></FadeIn>
-          <FadeIn><Tools /></FadeIn>
-          <FadeIn><WorkingTogether /></FadeIn>
-          <FadeIn><FinalDesigns /></FadeIn>
-          <FadeIn><Testing /></FadeIn>
-          <FadeIn><PlayStore /></FadeIn>
-          <FadeIn><WantToExplore /></FadeIn>
-          <FadeIn><Conclusions /></FadeIn>
-          <FadeIn><OtherProjects /></FadeIn>
-          <BannerFinal />
-        </div>
+    <div className="bg-white flex flex-col relative overflow-x-hidden" data-name="My work / Denchi">
+      <div className="flex flex-col items-center gap-[64px] sm:gap-[120px] pt-[40px] pb-[64px] sm:pb-[120px] px-[16px] sm:px-[24px] w-full max-w-[1186px] mx-auto">
+        <Hero />
+        <FadeIn><Overview /></FadeIn>
+        <FadeIn><ProblemAndRole /></FadeIn>
+        <FadeIn><Carrusel /></FadeIn>
+        <FadeIn><OurProcess /></FadeIn>
+        <FadeIn><OurUsers /></FadeIn>
+        <FadeIn><UserStories /></FadeIn>
+        <FadeIn><Features /></FadeIn>
+        <FadeIn><ClaudeSection /></FadeIn>
+        <FadeIn><Tools /></FadeIn>
+        <FadeIn><WorkingTogether /></FadeIn>
+        <FadeIn><FinalDesigns /></FadeIn>
+        <FadeIn><Testing /></FadeIn>
+        <FadeIn><PlayStore /></FadeIn>
+        <FadeIn><WantToExplore /></FadeIn>
+        <FadeIn><Conclusions /></FadeIn>
+        <FadeIn><OtherProjects /></FadeIn>
+        <BannerFinal />
       </div>
     </div>
   );

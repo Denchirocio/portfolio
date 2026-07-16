@@ -1,7 +1,10 @@
-﻿import { useRef, useEffect, useState } from "react";
-import { Link } from "react-router";
+﻿import { Link } from "react-router";
 import { motion } from "motion/react";
+import OtherProjectCard from "../../app/components/OtherProjectCard";
+import BeforeAfterPair from "../../app/components/BeforeAfterPair";
 import imgGetInTouch from "./Get in touch.png";
+import imgHeroMockup from "./screenshots/hero-mockup.png";
+import imgAnnotatedScreenshot from "./screenshots/annotated-screenshot.png";
 import svgPaths from "./svg-cusbvpsafu";
 import imgRectangle2 from "./a59a754abc17170c3439ff7dc85a16e5503ddb80.png";
 import imgCapturaDePantalla20240807ALaS083703121 from "./1cddc038409ac4b0baaf09609a162297d42aaf51.png";
@@ -145,7 +148,7 @@ function Frame48() {
 function Frame24() {
   return (
     <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full">
-      <a className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[64px] text-black w-[min-content]" href="https://www.payana.la/" target="_blank">
+      <a className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-end leading-[normal] min-w-full not-italic relative shrink-0 text-[32px] sm:text-[48px] lg:text-[64px] text-black w-full" href="https://www.payana.la/" target="_blank">
         <p className="cursor-pointer leading-[normal]">Payana</p>
       </a>
       <Frame48 />
@@ -155,10 +158,10 @@ function Frame24() {
 
 function Frame13() {
   return (
-    <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-[572px]">
+    <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full md:w-[572px]">
       <Frame123 />
       <Frame24 />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[20px] text-black w-full">I worked on the redesign of Payana’s main platform, creating scalable UX solutions that simplified complex financial workflows and improved clarity for business users</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[16px] sm:text-[20px] text-black w-full">I worked on the redesign of Payana’s main platform, creating scalable UX solutions that simplified complex financial workflows and improved clarity for business users</p>
     </div>
   );
 }
@@ -184,7 +187,7 @@ function Group2() {
 
 function Group6() {
   return (
-    <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0">
+    <div id="capture-hero-mockup" className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0">
       <div className="col-1 h-[361.327px] ml-[5.41px] mt-0 relative row-1 w-[463.018px]">
         <div className="absolute inset-[-6.33%_-4.94%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 508.751 407.06">
@@ -208,9 +211,9 @@ function Group6() {
 
 function Frame42() {
   return (
-    <div className="content-stretch flex gap-[127px] items-start relative shrink-0 w-full">
+    <div className="flex flex-col md:flex-row gap-[40px] md:gap-[80px] lg:gap-[127px] items-start relative shrink-0 w-full">
       <Frame13 />
-      <Group6 />
+      <img src={imgHeroMockup} alt="Payana shown on laptop" className="w-[220px] sm:w-full sm:max-w-[476px] h-auto shrink-0 mx-auto md:mx-0" />
     </div>
   );
 }
@@ -225,7 +228,7 @@ function Frame41() {
 
 function Frame46() {
   return (
-    <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-[750px]">
+    <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-full max-w-[750px]">
       <div className="h-[61px] relative shrink-0 w-[90px]" data-name="comment buble">
         <div className="absolute flex inset-[12.35%_0_0_8.33%] items-center justify-center" style={{ containerType: "size" }}>
           <div className="-scale-x-100 flex-none h-[100cqh] w-[100cqw]">
@@ -262,10 +265,10 @@ function Frame46() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[28px] sm:text-[40px] text-black text-center w-[min-content]">
         <p className="leading-[normal]">What’s Payana?</p>
       </div>
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[20px] text-black w-[750px]">Payana is a cloud-native financial automation platform powered by artificial intelligence that helps companies streamline and optimize their accounting and financial operations. It integrates bank data, ERP systems, tax authorities, and communication channels into a single centralized system, automating tasks like invoice processing, payments, reconciliations, and approvals to reduce manual work, cut errors, and improve real-time financial visibility and control.</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[16px] sm:text-[20px] text-black w-full max-w-[750px]">Payana is a cloud-native financial automation platform powered by artificial intelligence that helps companies streamline and optimize their accounting and financial operations. It integrates bank data, ERP systems, tax authorities, and communication channels into a single centralized system, automating tasks like invoice processing, payments, reconciliations, and approvals to reduce manual work, cut errors, and improve real-time financial visibility and control.</p>
     </div>
   );
 }
@@ -567,7 +570,7 @@ function Frame139() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-[544px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[28px] sm:text-[40px] text-black text-center w-full">
         <p className="leading-[normal]">Problem</p>
       </div>
     </div>
@@ -576,21 +579,21 @@ function Frame139() {
 
 function Frame47() {
   return (
-    <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-[570px]">
+    <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-full md:w-[570px]">
       <Frame139 />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[16px] text-black w-[544px]">
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[16px] text-black w-full">
         <span className="leading-[32px]">{`While operating in two countries, Payana had separate platforms for each one. This made it `}</span>
         <span className="font-['Inter:Bold',sans-serif] font-bold leading-[32px]">difficult to create synergy between markets</span>
         <span className="leading-[32px]">{` and `}</span>
         <span className="font-['Inter:Bold',sans-serif] font-bold leading-[32px]">unify the experience</span>
         <span className="leading-[32px]">{` into a single product.`}</span>
       </p>
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[16px] text-black w-[544px]">
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[16px] text-black w-full">
         <span className="leading-[32px]">{`The product had `}</span>
         <span className="font-['Inter:Bold',sans-serif] font-bold leading-[32px]">low scalability.</span>
         <span className="leading-[32px]">{` There were multiple limitations when developing new features that could be applied to both countries, which slowed down Payana’s growth.`}</span>
       </p>
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[16px] text-black w-[544px]">
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[16px] text-black w-full">
         <span className="leading-[32px]">{`70% of our clients were small and medium-sized businesses that did `}</span>
         <span className="font-['Inter:Bold',sans-serif] font-bold leading-[32px]">not fully use the platform because they perceived it as complex and difficult to understand.</span>
         <span className="leading-[32px]">{` They limited their use to the payments module, despite having access to additional modules they could adopt. Since the platform did not feel simple, they did not explore its full capabilities.`}</span>
@@ -668,7 +671,7 @@ function Frame140() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-[544px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[28px] sm:text-[40px] text-black text-center w-full">
         <p className="leading-[normal]">My Role</p>
       </div>
     </div>
@@ -677,13 +680,13 @@ function Frame140() {
 
 function Frame49() {
   return (
-    <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-[570px]">
+    <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-full md:w-[570px]">
       <Frame140 />
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[0] not-italic relative shrink-0 text-[16px] text-black w-[544px]">
+      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[0] not-italic relative shrink-0 text-[16px] text-black w-full">
         <span className="leading-[32px]">{`Product Designer: `}</span>
         <span className="font-['Inter:Regular',sans-serif] font-normal leading-[32px]">The project was carried out collaboratively by a team of nine people. I took ownership of the product, leading its development and ensuring its proper evolution at every stage.</span>
       </p>
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[0] not-italic relative shrink-0 text-[16px] text-black w-[544px]">
+      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[0] not-italic relative shrink-0 text-[16px] text-black w-full">
         <span className="leading-[32px]">{`QA Tester: `}</span>
         <span className="font-['Inter:Regular',sans-serif] font-normal leading-[32px]">Once the product was developed, the necessary testing was conducted to ensure proper functionality and prevent bugs from reaching users.</span>
       </p>
@@ -693,7 +696,7 @@ function Frame49() {
 
 function Frame57() {
   return (
-    <div className="content-stretch flex gap-[40px] items-start relative shrink-0 w-full">
+    <div className="flex flex-col md:flex-row gap-[40px] items-start relative shrink-0 w-full">
       <Frame47 />
       <Frame49 />
     </div>
@@ -717,10 +720,10 @@ function Group14() {
 function Frame67() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[24px] h-full items-center min-w-px not-italic relative text-black">
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] relative shrink-0 text-[40px] whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] relative shrink-0 text-[26px] sm:text-[40px] whitespace-nowrap">
         <p className="leading-[normal]">Solution</p>
       </div>
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-full relative shrink-0 text-[20px] w-[min-content]">Achieve the unification of both platforms into a single product that enables scaling in both countries while also improving the user experience.</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-full relative shrink-0 text-[16px] sm:text-[20px] w-full">Achieve the unification of both platforms into a single product that enables scaling in both countries while also improving the user experience.</p>
     </div>
   );
 }
@@ -736,15 +739,15 @@ function Frame65() {
 function Frame68() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[24px] h-full items-center leading-[0] min-w-px not-italic relative text-black">
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end relative shrink-0 text-[40px] whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end relative shrink-0 text-[26px] sm:text-[40px] whitespace-nowrap">
         <p className="leading-[normal]">{`Roadmap & Goals`}</p>
       </div>
-      <ul className="block font-['Inter:Regular',sans-serif] font-normal min-w-full relative shrink-0 text-[20px] w-[min-content]">
+      <ul className="block font-['Inter:Regular',sans-serif] font-normal min-w-full relative shrink-0 text-[16px] sm:text-[20px] w-full">
         <li className="list-disc ms-[30px]">
           <span className="leading-[32px]">We had a two-month timeframe to deliver the first major design change. We started by working on the Colombia platform, ensuring a shared foundation for both countries while accounting for the functional differences between them.</span>
         </li>
       </ul>
-      <ul className="block font-['Inter:Regular',sans-serif] font-normal min-w-full relative shrink-0 text-[20px] w-[min-content]">
+      <ul className="block font-['Inter:Regular',sans-serif] font-normal min-w-full relative shrink-0 text-[16px] sm:text-[20px] w-full">
         <li className="list-disc ms-[30px]">
           <span className="leading-[32px]">Our goal was to deliver a robust MVP that allowed users to continue their tasks while considering the learning curve required to feel comfortable with the new experience. The visual change could be significant and potentially generate resistance.</span>
         </li>
@@ -755,7 +758,7 @@ function Frame68() {
 
 function Frame143() {
   return (
-    <div className="content-stretch flex flex-[1_0_0] gap-[48px] h-[440px] items-start min-w-px relative">
+    <div className="flex flex-col md:flex-row flex-[1_0_0] gap-[24px] md:gap-[48px] items-start min-w-px relative w-full">
       <Frame65 />
       <Frame68 />
     </div>
@@ -772,18 +775,18 @@ function Frame66() {
 
 function Frame69() {
   return (
-    <div className="content-stretch flex flex-col gap-[24px] items-center not-italic relative self-stretch shrink-0 text-black w-[700px]">
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] relative shrink-0 text-[40px] whitespace-nowrap">
+    <div className="content-stretch flex flex-col gap-[24px] items-center not-italic relative self-stretch shrink-0 text-black w-full max-w-[700px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[normal] relative shrink-0 text-[26px] sm:text-[40px] text-center">
         <p className="leading-[normal]">Our first hypothesis (and why it failed)</p>
       </div>
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-full relative shrink-0 text-[20px] w-[min-content]">We assumed that a minimal interface based on familiar table structures and direct access to information would improve usability, reduce the learning curve, and make financial tasks easier for users across both countries.</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-full relative shrink-0 text-[16px] sm:text-[20px] w-full">We assumed that a minimal interface based on familiar table structures and direct access to information would improve usability, reduce the learning curve, and make financial tasks easier for users across both countries.</p>
     </div>
   );
 }
 
 function Frame84() {
   return (
-    <div className="content-stretch flex h-[200px] items-start justify-center relative shrink-0 w-full">
+    <div className="content-stretch flex items-start justify-center relative shrink-0 w-full">
       <Frame69 />
     </div>
   );
@@ -791,7 +794,7 @@ function Frame84() {
 
 function Frame110() {
   return (
-    <div className="content-stretch flex items-center justify-center relative shrink-0 w-[450px]">
+    <div className="content-stretch flex items-center justify-center relative shrink-0 w-full sm:w-[450px]">
       <p className="flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-px not-italic relative text-[20px] text-black">User resistance to change due to a significant visual and structural redesign.</p>
     </div>
   );
@@ -809,7 +812,7 @@ function Frame111() {
 
 function Frame114() {
   return (
-    <div className="content-stretch flex items-center justify-center relative shrink-0 w-[450px]">
+    <div className="content-stretch flex items-center justify-center relative shrink-0 w-full sm:w-[450px]">
       <p className="flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-px not-italic relative text-[20px] text-black">Learning curve impact, as users were already familiar with the previous platform’s logic.</p>
     </div>
   );
@@ -827,7 +830,7 @@ function Frame112() {
 
 function Frame113() {
   return (
-    <div className="content-stretch flex gap-[24px] items-start justify-center relative shrink-0 w-full">
+    <div className="flex flex-col sm:flex-row gap-[16px] sm:gap-[24px] items-start justify-center relative shrink-0 w-full">
       <Frame111 />
       <Frame112 />
     </div>
@@ -836,7 +839,7 @@ function Frame113() {
 
 function Frame117() {
   return (
-    <div className="content-stretch flex items-center justify-center relative shrink-0 w-[450px]">
+    <div className="content-stretch flex items-center justify-center relative shrink-0 w-full sm:w-[450px]">
       <p className="flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-px not-italic relative text-[20px] text-black">Loss of critical information during the unification of both platforms into a single system.</p>
     </div>
   );
@@ -854,7 +857,7 @@ function Frame116() {
 
 function Frame119() {
   return (
-    <div className="content-stretch flex items-center justify-center relative shrink-0 w-[450px]">
+    <div className="content-stretch flex items-center justify-center relative shrink-0 w-full sm:w-[450px]">
       <p className="flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-px not-italic relative text-[20px] text-black">Navigation confusion if users could not easily understand where they were within the platform.</p>
     </div>
   );
@@ -872,7 +875,7 @@ function Frame118() {
 
 function Frame115() {
   return (
-    <div className="content-stretch flex gap-[24px] items-start justify-center relative shrink-0 w-full">
+    <div className="flex flex-col sm:flex-row gap-[16px] sm:gap-[24px] items-start justify-center relative shrink-0 w-full">
       <Frame116 />
       <Frame118 />
     </div>
@@ -881,7 +884,7 @@ function Frame115() {
 
 function Frame122() {
   return (
-    <div className="content-stretch flex items-center justify-center relative shrink-0 w-[450px]">
+    <div className="content-stretch flex items-center justify-center relative shrink-0 w-full sm:w-[450px]">
       <p className="flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-px not-italic relative text-[20px] text-black">Inconsistencies between countries, as not all features applied equally to both markets.</p>
     </div>
   );
@@ -899,7 +902,7 @@ function Frame121() {
 
 function Frame127() {
   return (
-    <div className="content-stretch flex items-center justify-center relative shrink-0 w-[450px]">
+    <div className="content-stretch flex items-center justify-center relative shrink-0 w-full sm:w-[450px]">
       <p className="flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-px not-italic relative text-[20px] text-black">Decreased adoption of modules if the new structure did not clearly communicate value.</p>
     </div>
   );
@@ -917,7 +920,7 @@ function Frame126() {
 
 function Frame120() {
   return (
-    <div className="content-stretch flex gap-[24px] items-start justify-center relative shrink-0 w-full">
+    <div className="flex flex-col sm:flex-row gap-[16px] sm:gap-[24px] items-start justify-center relative shrink-0 w-full">
       <Frame121 />
       <Frame126 />
     </div>
@@ -926,7 +929,7 @@ function Frame120() {
 
 function Frame130() {
   return (
-    <div className="content-stretch flex items-center justify-center relative shrink-0 w-[450px]">
+    <div className="content-stretch flex items-center justify-center relative shrink-0 w-full sm:w-[450px]">
       <p className="flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-px not-italic relative text-[20px] text-black">Operational errors if users misinterpreted document status due to poor traceability.</p>
     </div>
   );
@@ -944,7 +947,7 @@ function Frame129() {
 
 function Frame132() {
   return (
-    <div className="content-stretch flex items-center justify-center relative shrink-0 w-[450px]">
+    <div className="content-stretch flex items-center justify-center relative shrink-0 w-full sm:w-[450px]">
       <p className="flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-px not-italic relative text-[20px] text-black">Development delays if design definitions were not delivered on time for parallel work.</p>
     </div>
   );
@@ -962,7 +965,7 @@ function Frame131() {
 
 function Frame128() {
   return (
-    <div className="content-stretch flex gap-[24px] items-start justify-center relative shrink-0 w-full">
+    <div className="flex flex-col sm:flex-row gap-[16px] sm:gap-[24px] items-start justify-center relative shrink-0 w-full">
       <Frame129 />
       <Frame131 />
     </div>
@@ -985,7 +988,7 @@ function Frame70() {
 
 function Frame83() {
   return (
-    <div className="content-stretch flex h-[560px] items-start justify-center relative shrink-0 w-full">
+    <div className="content-stretch flex items-start justify-center relative shrink-0 w-full">
       <Frame70 />
     </div>
   );
@@ -993,11 +996,11 @@ function Frame83() {
 
 function Frame73() {
   return (
-    <div className="content-stretch flex flex-col gap-[24px] items-center leading-[0] not-italic relative self-stretch shrink-0 text-black w-[900px]">
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end relative shrink-0 text-[40px] whitespace-nowrap">
+    <div className="content-stretch flex flex-col gap-[24px] items-center leading-[0] not-italic relative self-stretch shrink-0 text-black w-full max-w-[900px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end relative shrink-0 text-[26px] sm:text-[40px] text-center">
         <p className="leading-[normal]">The original product</p>
       </div>
-      <div className="font-['Inter:Regular',sans-serif] font-normal min-w-full relative shrink-0 text-[20px] w-[min-content]">
+      <div className="font-['Inter:Regular',sans-serif] font-normal min-w-full relative shrink-0 text-[16px] sm:text-[20px] w-full">
         <p className="leading-[32px] mb-0">Payana previously operated with two separate platforms: one for Colombia and another for Mexico. Beyond having completely different interfaces, the core difference between them was their financial infrastructure.</p>
         <p className="leading-[32px] mb-0">The Colombian platform operated through an interbanking system, while the Mexican platform functioned with its own internal balance model, similar to a digital wallet.</p>
         <p className="leading-[32px]">This structural difference directly impacted the user experience, product logic, and overall platform behavior in each market.</p>
@@ -1008,7 +1011,7 @@ function Frame73() {
 
 function Frame85() {
   return (
-    <div className="content-stretch flex h-[296px] items-start justify-center relative shrink-0 w-full">
+    <div className="content-stretch flex items-start justify-center relative shrink-0 w-full">
       <Frame73 />
     </div>
   );
@@ -1024,7 +1027,7 @@ function Frame3() {
 
 function Frame150() {
   return (
-    <div className="content-stretch flex flex-col gap-[10px] items-start p-[16px] relative rounded-[8px] shrink-0 w-[550px]">
+    <div className="content-stretch flex flex-col gap-[10px] items-start p-[16px] relative rounded-[8px] shrink-0 w-full md:w-[550px]">
       <div aria-hidden="true" className="absolute border border-[#9e9e9e] border-solid inset-0 pointer-events-none rounded-[8px]" />
       <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
         <Frame3 />
@@ -1046,7 +1049,7 @@ function Frame4() {
 
 function Frame151() {
   return (
-    <div className="content-stretch flex flex-col gap-[10px] items-start p-[16px] relative rounded-[8px] shrink-0 w-[550px]">
+    <div className="content-stretch flex flex-col gap-[10px] items-start p-[16px] relative rounded-[8px] shrink-0 w-full md:w-[550px]">
       <div aria-hidden="true" className="absolute border border-[#9e9e9e] border-solid inset-0 pointer-events-none rounded-[8px]" />
       <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
         <Frame4 />
@@ -1060,7 +1063,7 @@ function Frame151() {
 
 function Frame149() {
   return (
-    <div className="content-stretch flex items-start justify-between relative shrink-0 w-full">
+    <div className="flex flex-col md:flex-row items-start justify-between gap-[16px] relative shrink-0 w-full">
       <Frame150 />
       <Frame151 />
     </div>
@@ -1069,18 +1072,18 @@ function Frame149() {
 
 function Frame74() {
   return (
-    <div className="content-stretch flex flex-col gap-[24px] items-center not-italic relative self-stretch shrink-0 text-black w-[700px]">
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] relative shrink-0 text-[40px] whitespace-nowrap">
+    <div className="content-stretch flex flex-col gap-[24px] items-center not-italic relative self-stretch shrink-0 text-black w-full max-w-[700px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[normal] relative shrink-0 text-[26px] sm:text-[40px] text-center">
         <p className="leading-[normal]">ideation</p>
       </div>
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-full relative shrink-0 text-[20px] w-[min-content]">First, we evaluated the existing product design and identified the changes needed to achieve our objective.</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-full relative shrink-0 text-[16px] sm:text-[20px] w-full">First, we evaluated the existing product design and identified the changes needed to achieve our objective.</p>
     </div>
   );
 }
 
 function Frame147() {
   return (
-    <div className="content-stretch flex h-[136px] items-start justify-center relative shrink-0 w-full">
+    <div className="content-stretch flex items-start justify-center relative shrink-0 w-full">
       <Frame74 />
     </div>
   );
@@ -1088,61 +1091,37 @@ function Frame147() {
 
 function Frame75() {
   return (
-    <div className="content-stretch flex flex-col gap-[24px] items-center not-italic relative self-stretch shrink-0 text-black w-[700px]">
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] relative shrink-0 text-[40px] whitespace-nowrap">
+    <div className="content-stretch flex flex-col gap-[24px] items-center not-italic relative self-stretch shrink-0 text-black w-full max-w-[700px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[normal] relative shrink-0 text-[26px] sm:text-[40px] text-center">
         <p className="leading-[normal]">Our first hypothesis (and why it failed)</p>
       </div>
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-full relative shrink-0 text-[20px] w-[min-content]">We assumed that a minimal interface based on familiar table structures and direct access to information would improve usability, reduce the learning curve, and make financial tasks easier for users across both countries.</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-full relative shrink-0 text-[16px] sm:text-[20px] w-full">We assumed that a minimal interface based on familiar table structures and direct access to information would improve usability, reduce the learning curve, and make financial tasks easier for users across both countries.</p>
     </div>
   );
 }
 
 function Frame86() {
   return (
-    <div className="content-stretch flex h-[200px] items-start justify-center relative shrink-0 w-full">
+    <div className="content-stretch flex items-start justify-center relative shrink-0 w-full">
       <Frame75 />
-    </div>
-  );
-}
-
-function Frame79() {
-  return (
-    <div className="content-stretch flex items-start justify-between relative shrink-0 w-full">
-      <div className="h-[350px] relative shrink-0 w-[560px]" data-name="Cuentas por pagar (5) 1">
-        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgCuentasPorPagar51} />
-      </div>
-      <div className="h-[350px] relative shrink-0 w-[560px]" data-name="2 (9) 1">
-        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img291} />
-      </div>
-    </div>
-  );
-}
-
-function Frame78() {
-  return (
-    <div className="content-stretch flex items-center justify-between relative shrink-0 w-full">
-      <div className="h-[350px] relative shrink-0 w-[560px]" data-name="Check out (26) 1">
-        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgCheckOut261} />
-      </div>
-      <div className="h-[350px] relative shrink-0 w-[560px]" data-name="Completo 1">
-        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgCompleto1} />
-      </div>
     </div>
   );
 }
 
 function Frame77() {
   return (
-    <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full">
-      <Frame79 />
-      <Frame78 />
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-[16px] sm:gap-[24px] items-start relative shrink-0 w-full">
+      <img loading="lazy" decoding="async" alt="Payana ideation screen" className="w-full h-auto rounded-[4px]" src={imgCuentasPorPagar51} />
+      <img loading="lazy" decoding="async" alt="Payana ideation screen, alternate" className="w-full h-auto rounded-[4px]" src={img291} />
+      <img loading="lazy" decoding="async" alt="Payana ideation checkout screen" className="w-full h-auto rounded-[4px]" src={imgCheckOut261} />
+      <img loading="lazy" decoding="async" alt="Payana ideation checkout screen, complete" className="w-full h-auto rounded-[4px]" src={imgCompleto1} />
     </div>
   );
 }
 
 function Frame144() {
   return (
-    <div className="content-stretch flex flex-col font-['Inter:Regular',sans-serif] font-normal gap-[24px] items-start not-italic relative shrink-0 text-[20px] text-black w-full">
+    <div className="content-stretch flex flex-col font-['Inter:Regular',sans-serif] font-normal gap-[24px] items-start not-italic relative shrink-0 text-[16px] sm:text-[20px] text-black w-full">
       <p className="leading-[0] relative shrink-0 w-full">
         <span className="leading-[32px]">{`We had a broad benchmark, but we were particularly interested in following a dynamic similar to `}</span>
         <a className="cursor-pointer decoration-solid leading-[32px] underline" href="https://ramp.com/" target="_blank">
@@ -1160,9 +1139,9 @@ function Frame144() {
 
 function VitaFiltroLlena() {
   return (
-    <div className="bg-white content-stretch drop-shadow-[0px_4px_2px_rgba(117,117,117,0.25)] flex font-['Inter:Regular',sans-serif] font-normal gap-[10px] items-start leading-[32px] not-italic p-[24px] relative rounded-[8px] shrink-0 text-[20px] text-black whitespace-nowrap" data-name="Vita filtro llena">
-      <p className="relative shrink-0">💁🏻‍♀️</p>
-      <p className="relative shrink-0">“I don’t know where I am”</p>
+    <div className="bg-white content-stretch drop-shadow-[0px_4px_2px_rgba(117,117,117,0.25)] flex font-['Inter:Regular',sans-serif] font-normal gap-[10px] items-start leading-[32px] not-italic p-[16px] sm:p-[24px] relative rounded-[8px] shrink-0 text-[14px] sm:text-[20px] text-black max-w-full" data-name="Vita filtro llena">
+      <p className="relative shrink min-w-0">💁🏻‍♀️</p>
+      <p className="relative shrink min-w-0">“I don’t know where I am”</p>
     </div>
   );
 }
@@ -1179,9 +1158,9 @@ function Frame99() {
 
 function VitaFiltroLlena1() {
   return (
-    <div className="bg-white content-stretch drop-shadow-[0px_4px_2px_rgba(117,117,117,0.25)] flex font-['Inter:Regular',sans-serif] font-normal gap-[10px] items-start leading-[32px] not-italic p-[24px] relative rounded-[8px] shrink-0 text-[20px] text-black whitespace-nowrap" data-name="Vita filtro llena">
-      <p className="relative shrink-0">👨🏻‍💼</p>
-      <p className="relative shrink-0">“I just use payments because the rest is confusing”</p>
+    <div className="bg-white content-stretch drop-shadow-[0px_4px_2px_rgba(117,117,117,0.25)] flex font-['Inter:Regular',sans-serif] font-normal gap-[10px] items-start leading-[32px] not-italic p-[16px] sm:p-[24px] relative rounded-[8px] shrink-0 text-[14px] sm:text-[20px] text-black max-w-full" data-name="Vita filtro llena">
+      <p className="relative shrink min-w-0">👨🏻‍💼</p>
+      <p className="relative shrink min-w-0">“I just use payments because the rest is confusing”</p>
     </div>
   );
 }
@@ -1200,9 +1179,9 @@ function Frame100() {
 
 function VitaFiltroLlena2() {
   return (
-    <div className="bg-white content-stretch drop-shadow-[0px_4px_2px_rgba(117,117,117,0.25)] flex font-['Inter:Regular',sans-serif] font-normal gap-[10px] items-start leading-[32px] not-italic p-[24px] relative rounded-[8px] shrink-0 text-[20px] text-black whitespace-nowrap" data-name="Vita filtro llena">
-      <p className="relative shrink-0">🙍🏼‍♀️</p>
-      <p className="relative shrink-0">“I need to see the status of my documents from anywhere”</p>
+    <div className="bg-white content-stretch drop-shadow-[0px_4px_2px_rgba(117,117,117,0.25)] flex font-['Inter:Regular',sans-serif] font-normal gap-[10px] items-start leading-[32px] not-italic p-[16px] sm:p-[24px] relative rounded-[8px] shrink-0 text-[14px] sm:text-[20px] text-black max-w-full" data-name="Vita filtro llena">
+      <p className="relative shrink min-w-0">🙍🏼‍♀️</p>
+      <p className="relative shrink min-w-0">“I need to see the status of my documents from anywhere”</p>
     </div>
   );
 }
@@ -1219,7 +1198,7 @@ function Frame101() {
 
 function Frame102() {
   return (
-    <div className="content-stretch flex flex-col gap-[8px] items-center relative shrink-0 w-[773px]">
+    <div className="content-stretch flex flex-col gap-[8px] items-center relative shrink-0 w-full max-w-[773px]">
       <Frame99 />
       <Frame100 />
       <Frame101 />
@@ -1238,7 +1217,7 @@ function Frame103() {
 function Frame104() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0">
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[normal] not-italic relative shrink-0 text-[24px] sm:text-[40px] text-black text-center">
         <p className="leading-[normal]">What were our clients saying?</p>
       </div>
       <Frame103 />
@@ -1248,7 +1227,7 @@ function Frame104() {
 
 function Frame148() {
   return (
-    <div className="content-stretch flex flex-col items-center justify-center px-[48px] py-[16px] relative rounded-[16px] shrink-0">
+    <div className="content-stretch flex flex-col items-center justify-center px-[16px] sm:px-[48px] py-[16px] relative rounded-[16px] shrink-0 w-full">
       <div aria-hidden="true" className="absolute border border-[#b9b9b9] border-solid inset-0 pointer-events-none rounded-[16px]" />
       <Frame104 />
     </div>
@@ -1282,7 +1261,7 @@ function Frame146() {
   return (
     <div className="content-stretch flex flex-col gap-[40px] items-center relative shrink-0 w-full">
       <Frame86 />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-full not-italic relative shrink-0 text-[20px] text-black w-[min-content]">We started by designing a simple experience, based on a platform without a home screen, using Excel-like tables and a clear information layout. At first, it seemed like a great idea, as we believed it would make the user experience much clearer. However, over time we realized that the information became complex and confusing—even for us.</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-full not-italic relative shrink-0 text-[16px] sm:text-[20px] text-black w-full">We started by designing a simple experience, based on a platform without a home screen, using Excel-like tables and a clear information layout. At first, it seemed like a great idea, as we believed it would make the user experience much clearer. However, over time we realized that the information became complex and confusing—even for us.</p>
       <Frame77 />
       <Frame144 />
       <Frame148 />
@@ -1291,15 +1270,11 @@ function Frame146() {
   );
 }
 
-function Frame16() {
-  return <div className="absolute h-[44px] left-[943px] top-[192.67px] w-[221px]" />;
-}
-
 function Frame5() {
   return (
-    <div className="absolute bg-black content-stretch flex items-center justify-center left-[938px] px-[16px] py-[10px] rounded-[100px] top-[947.67px]">
+    <div className="bg-black content-stretch flex items-center justify-center px-[16px] py-[10px] relative rounded-[100px] shrink-0">
       <div aria-hidden="true" className="absolute border border-black border-solid inset-0 pointer-events-none rounded-[100px]" />
-      <a className="block font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[20px] text-white whitespace-nowrap" href="https://www.figma.com/design/GZP8uexFHg6mAwCkT5urHH/Payana-Challenge?node-id=0-1&p=f&t=vveQnbD1ko2wS4rT-0" target="_blank">
+      <a className="block font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[16px] sm:text-[20px] text-white whitespace-nowrap" href="https://www.figma.com/design/GZP8uexFHg6mAwCkT5urHH/Payana-Challenge?node-id=0-1&p=f&t=vveQnbD1ko2wS4rT-0" target="_blank">
         <p className="cursor-pointer leading-[normal]">Original design here</p>
       </a>
     </div>
@@ -1317,7 +1292,6 @@ function Frame72() {
         <div aria-hidden="true" className="absolute border border-[#b9b9b9] border-solid inset-0 rounded-[16px]" />
       </div>
       <Frame146 />
-      <Frame16 />
       <Frame5 />
     </div>
   );
@@ -1325,7 +1299,7 @@ function Frame72() {
 
 function Frame71() {
   return (
-    <div className="content-stretch flex h-[4173.049px] items-start justify-center relative shrink-0 w-full">
+    <div className="content-stretch flex items-start justify-center relative shrink-0 w-full">
       <Frame72 />
     </div>
   );
@@ -1383,10 +1357,12 @@ function Frame81() {
 
 function Frame80() {
   return (
-    <div className="content-stretch flex items-start justify-between relative shrink-0 w-[1190px]">
-      <Frame82 />
-      <Frame81 />
-    </div>
+    <BeforeAfterPair
+      beforeImg={imgCapturaDePantalla20240807ALaS083703111}
+      beforeAlt="Payana before redesign"
+      afterImg={imgRectangle2}
+      afterAlt="Payana after redesign"
+    />
   );
 }
 
@@ -1442,10 +1418,12 @@ function Frame89() {
 
 function Frame87() {
   return (
-    <div className="content-stretch flex items-start justify-between relative shrink-0 w-[1190px]">
-      <Frame88 />
-      <Frame89 />
-    </div>
+    <BeforeAfterPair
+      beforeImg={imgCapturaDePantalla20240807ALaS08474711}
+      beforeAlt="Payana before redesign, alternate view"
+      afterImg={imgFinal41}
+      afterAlt="Payana after redesign, alternate view"
+    />
   );
 }
 
@@ -1501,10 +1479,12 @@ function Frame92() {
 
 function Frame90() {
   return (
-    <div className="content-stretch flex items-start justify-between relative shrink-0 w-[1190px]">
-      <Frame91 />
-      <Frame92 />
-    </div>
+    <BeforeAfterPair
+      beforeImg={imgCapturaDePantalla20240807ALaS08382011}
+      beforeAlt="Payana before redesign, checkout flow"
+      afterImg={imgCheckOut271}
+      afterAlt="Payana after redesign, checkout flow"
+    />
   );
 }
 
@@ -1606,13 +1586,11 @@ function Frame95() {
 
 function Group20() {
   return (
-    <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0">
-      <div className="col-1 h-[500px] ml-[167px] mt-0 relative row-1 w-[800px]" data-name="Documentos (19) 1">
-        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgDocumentos191} />
-      </div>
-      <Frame93 />
-      <Frame95 />
-    </div>
+    <img
+      src={imgAnnotatedScreenshot}
+      alt="Annotated Payana documents screen showing the new sidebar and table actions"
+      className="w-full h-auto rounded-[8px] shrink-0"
+    />
   );
 }
 
@@ -1623,7 +1601,7 @@ function Frame64() {
       <Frame84 />
       <Frame83 />
       <Frame71 />
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black whitespace-nowrap">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[normal] not-italic relative shrink-0 text-[22px] sm:text-[40px] text-black text-center px-[16px]">
         <p className="leading-[normal]">Our second design started to look like this.</p>
       </div>
       <Frame80 />
@@ -1636,25 +1614,25 @@ function Frame64() {
 
 function VitaFiltroLlena3() {
   return (
-    <div className="content-stretch flex items-start px-[24px] py-[16px] relative rounded-[8px] shrink-0" data-name="Vita filtro llena">
+    <div className="content-stretch flex items-start px-[24px] py-[16px] relative rounded-[8px] shrink-0 w-full" data-name="Vita filtro llena">
       <div aria-hidden="true" className="absolute border border-[#d8d8d8] border-solid inset-0 pointer-events-none rounded-[8px]" />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap">Home as orientation point</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink min-w-0 text-[16px] sm:text-[20px] text-black">Home as orientation point</p>
     </div>
   );
 }
 
 function VitaFiltroLlena4() {
   return (
-    <div className="content-stretch flex items-start px-[24px] py-[16px] relative rounded-[8px] shrink-0" data-name="Vita filtro llena">
+    <div className="content-stretch flex items-start px-[24px] py-[16px] relative rounded-[8px] shrink-0 w-full" data-name="Vita filtro llena">
       <div aria-hidden="true" className="absolute border border-[#d8d8d8] border-solid inset-0 pointer-events-none rounded-[8px]" />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap">Side navigation for constant access</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink min-w-0 text-[16px] sm:text-[20px] text-black">Side navigation for constant access</p>
     </div>
   );
 }
 
 function Frame107() {
   return (
-    <div className="content-stretch flex gap-[24px] items-center relative shrink-0">
+    <div className="flex flex-col sm:flex-row gap-[16px] sm:gap-[24px] items-center relative shrink-0 w-full">
       <VitaFiltroLlena3 />
       <VitaFiltroLlena4 />
     </div>
@@ -1665,7 +1643,7 @@ function VitaFiltroLlena5() {
   return (
     <div className="relative rounded-[8px] shrink-0 w-full" data-name="Vita filtro llena">
       <div className="content-stretch flex items-start px-[24px] py-[16px] relative size-full">
-        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap">Information traceability across the platform</p>
+        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink min-w-0 text-[16px] sm:text-[20px] text-black">Information traceability across the platform</p>
       </div>
     </div>
   );
@@ -1673,7 +1651,7 @@ function VitaFiltroLlena5() {
 
 function Frame105() {
   return (
-    <div className="content-stretch flex flex-col items-start relative rounded-[8px] shrink-0 w-[456px]">
+    <div className="content-stretch flex flex-col items-start relative rounded-[8px] shrink-0 w-full sm:w-[456px]">
       <div aria-hidden="true" className="absolute border border-[#d8d8d8] border-solid inset-0 pointer-events-none rounded-[8px]" />
       <VitaFiltroLlena5 />
     </div>
@@ -1682,16 +1660,16 @@ function Frame105() {
 
 function VitaFiltroLlena6() {
   return (
-    <div className="content-stretch flex items-start px-[24px] py-[16px] relative rounded-[8px] shrink-0" data-name="Vita filtro llena">
+    <div className="content-stretch flex items-start px-[24px] py-[16px] relative rounded-[8px] shrink-0 w-full" data-name="Vita filtro llena">
       <div aria-hidden="true" className="absolute border border-[#d8d8d8] border-solid inset-0 pointer-events-none rounded-[8px]" />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap">Familiar patterns to reduce learning curve</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink min-w-0 text-[16px] sm:text-[20px] text-black">Familiar patterns to reduce learning curve</p>
     </div>
   );
 }
 
 function Frame106() {
   return (
-    <div className="content-stretch flex gap-[24px] items-center relative shrink-0 w-full">
+    <div className="flex flex-col sm:flex-row gap-[16px] sm:gap-[24px] items-center relative shrink-0 w-full">
       <Frame105 />
       <VitaFiltroLlena6 />
     </div>
@@ -1700,8 +1678,8 @@ function Frame106() {
 
 function Frame108() {
   return (
-    <div className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[922px]">
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black whitespace-nowrap">
+    <div className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-full max-w-[922px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[normal] not-italic relative shrink-0 text-[26px] sm:text-[40px] text-black text-center">
         <p className="leading-[normal]">Key design decisions</p>
       </div>
       <Frame107 />
@@ -1834,7 +1812,7 @@ function Frame20() {
 
 function Frame59() {
   return (
-    <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-[700px]">
+    <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-full max-w-[700px]">
       <div className="h-[101px] relative shrink-0 w-[80px]" data-name="magic wand">
         <div className="absolute inset-[14.25%_33.44%_43.63%_13.95%]">
           <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 42.0863 42.5393">
@@ -1895,10 +1873,10 @@ function Frame59() {
           </svg>
         </div>
       </div>
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[28px] sm:text-[40px] text-black text-center w-[min-content]">
         <p className="leading-[normal]">Final Design</p>
       </div>
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[0] min-w-full not-italic relative shrink-0 text-[20px] text-black w-[min-content]">
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[0] min-w-full not-italic relative shrink-0 text-[16px] sm:text-[20px] text-black w-full">
         <span className="leading-[32px]">{`The final design involved a `}</span>
         <span className="font-['Inter:Bold',sans-serif] font-bold leading-[32px]">{`complete redesign of the platform, `}</span>
         <span className="leading-[32px]">{`focused on enhancing `}</span>
@@ -1912,7 +1890,7 @@ function Frame59() {
 
 function Frame97() {
   return (
-    <div className="content-stretch flex flex-col items-center relative shrink-0 w-[700px]">
+    <div className="content-stretch flex flex-col items-center relative shrink-0 w-full max-w-[700px]">
       <Frame59 />
     </div>
   );
@@ -2081,7 +2059,7 @@ function Group11() {
 function Frame21() {
   return (
     <div className="content-stretch flex flex-col items-center relative shrink-0 w-full">
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#6e6e6e] text-[24px] text-center whitespace-nowrap">Estimated impact based on user feedback and PostHog analytics observations after the redesign.</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#6e6e6e] text-[16px] sm:text-[24px] text-center w-full">Estimated impact based on user feedback and PostHog analytics observations after the redesign.</p>
     </div>
   );
 }
@@ -2099,10 +2077,10 @@ function Frame133() {
 
 function VitaFiltroLlena7() {
   return (
-    <div className="content-stretch flex gap-[10px] items-start px-[24px] py-[16px] relative rounded-[8px] shrink-0" data-name="Vita filtro llena">
+    <div className="content-stretch flex gap-[10px] items-start px-[16px] sm:px-[24px] py-[16px] relative rounded-[8px] shrink-0 w-full" data-name="Vita filtro llena">
       <div aria-hidden="true" className="absolute border border-[#d8d8d8] border-solid inset-0 pointer-events-none rounded-[8px]" />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap">✅</p>
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap">Increased exploration of additional modules by 60% beyond the payments feature.</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink min-w-0 text-[16px] sm:text-[20px] text-black">✅</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink min-w-0 text-[16px] sm:text-[20px] text-black">Increased exploration of additional modules by 60% beyond the payments feature.</p>
     </div>
   );
 }
@@ -2117,10 +2095,10 @@ function Frame135() {
 
 function VitaFiltroLlena8() {
   return (
-    <div className="content-stretch flex gap-[10px] items-start px-[24px] py-[16px] relative rounded-[8px] shrink-0" data-name="Vita filtro llena">
+    <div className="content-stretch flex gap-[10px] items-start px-[16px] sm:px-[24px] py-[16px] relative rounded-[8px] shrink-0 w-full" data-name="Vita filtro llena">
       <div aria-hidden="true" className="absolute border border-[#d8d8d8] border-solid inset-0 pointer-events-none rounded-[8px]" />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap">✅</p>
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap">Decreased support inquiries related to document status and navigation by 40%.</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink min-w-0 text-[16px] sm:text-[20px] text-black">✅</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink min-w-0 text-[16px] sm:text-[20px] text-black">Decreased support inquiries related to document status and navigation by 40%.</p>
     </div>
   );
 }
@@ -2135,10 +2113,10 @@ function Frame136() {
 
 function VitaFiltroLlena9() {
   return (
-    <div className="content-stretch flex gap-[10px] items-start px-[24px] py-[16px] relative rounded-[8px] shrink-0" data-name="Vita filtro llena">
+    <div className="content-stretch flex gap-[10px] items-start px-[16px] sm:px-[24px] py-[16px] relative rounded-[8px] shrink-0 w-full" data-name="Vita filtro llena">
       <div aria-hidden="true" className="absolute border border-[#d8d8d8] border-solid inset-0 pointer-events-none rounded-[8px]" />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap">✅</p>
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap">Improved task completion time in key financial flows by 25%.</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink min-w-0 text-[16px] sm:text-[20px] text-black">✅</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink min-w-0 text-[16px] sm:text-[20px] text-black">Improved task completion time in key financial flows by 25%.</p>
     </div>
   );
 }
@@ -2153,10 +2131,10 @@ function Frame137() {
 
 function VitaFiltroLlena10() {
   return (
-    <div className="content-stretch flex gap-[10px] items-start px-[24px] py-[16px] relative rounded-[8px] shrink-0" data-name="Vita filtro llena">
+    <div className="content-stretch flex gap-[10px] items-start px-[16px] sm:px-[24px] py-[16px] relative rounded-[8px] shrink-0 w-full" data-name="Vita filtro llena">
       <div aria-hidden="true" className="absolute border border-[#d8d8d8] border-solid inset-0 pointer-events-none rounded-[8px]" />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap">✅</p>
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap">Improved clarity in document traceability, reflected in a 50% reduction in user-reported misunderstandings.</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink min-w-0 text-[16px] sm:text-[20px] text-black">✅</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink min-w-0 text-[16px] sm:text-[20px] text-black">Improved clarity in document traceability, reflected in a 50% reduction in user-reported misunderstandings.</p>
     </div>
   );
 }
@@ -2172,7 +2150,7 @@ function Frame138() {
 function Frame22() {
   return (
     <div className="content-stretch flex flex-col items-center relative shrink-0 w-full">
-      <p className="font-['Inter:Italic',sans-serif] font-normal italic leading-[normal] relative shrink-0 text-[#6e6e6e] text-[20px] text-center whitespace-nowrap">All this data was gathered through PostHog analytics.</p>
+      <p className="font-['Inter:Italic',sans-serif] font-normal italic leading-[normal] relative shrink-0 text-[#6e6e6e] text-[14px] sm:text-[20px] text-center w-full">All this data was gathered through PostHog analytics.</p>
     </div>
   );
 }
@@ -2321,11 +2299,11 @@ function Group12() {
 
 function Frame61() {
   return (
-    <div className="content-stretch flex flex-col gap-[24px] items-center not-italic relative shrink-0 text-black w-[700px]">
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full relative shrink-0 text-[40px] text-center w-[min-content]">
+    <div className="content-stretch flex flex-col gap-[24px] items-center not-italic relative shrink-0 text-black w-full max-w-[700px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full relative shrink-0 text-[28px] sm:text-[40px] text-center w-[min-content]">
         <p className="leading-[normal]">Conclusions</p>
       </div>
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] relative shrink-0 text-[20px] w-[700px]">This redesign was not only about unifying two platforms into a single product, but about rethinking how users understood and interacted with financial information. Through research, iteration, and learning from our own mistakes, we were able to create a more intuitive, scalable, and user-centered experience that aligned both business goals and user needs.</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] relative shrink-0 text-[16px] sm:text-[20px] w-full max-w-[700px]">This redesign was not only about unifying two platforms into a single product, but about rethinking how users understood and interacted with financial information. Through research, iteration, and learning from our own mistakes, we were able to create a more intuitive, scalable, and user-centered experience that aligned both business goals and user needs.</p>
     </div>
   );
 }
@@ -2334,7 +2312,7 @@ function Frame76() {
   return (
     <div className="relative rounded-[8px] shrink-0 w-full">
       <div className="flex flex-col items-center size-full">
-        <div className="content-stretch flex flex-col gap-[24px] items-center px-[32px] py-[16px] relative size-full">
+        <div className="content-stretch flex flex-col gap-[24px] items-center px-[16px] sm:px-[32px] py-[16px] relative size-full">
           <div className="h-[95px] overflow-clip relative shrink-0 w-[120px]" data-name="dialog">
             <div className="absolute inset-[3.72%_21.32%_27.44%_3.68%]" data-name="Vector">
               <div className="absolute inset-[-1.53%_-1.11%_-1.53%_-2.24%]">
@@ -2692,40 +2670,50 @@ function Title2() {
   );
 }
 
-function Frame25() {
-  return (
-    <div className="content-stretch flex gap-[42px] items-center relative shrink-0 w-full">
-      <Link to="/chatty" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col items-center relative shrink-0 w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 6">
-        <ProjectCard />
-      </Link>
-      <Link to="/bookup" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 7">
-        <Group8 />
-        <Title1 />
-        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[16px] w-[365px]">Designed an accessibility-focused experience for an online bookstore, improving navigation and usability for diverse users.</p>
-        <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[14px] text-black w-[365px]">UTN Project · 2022</p>
-      </Link>
-      <Link to="/gruya" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 9">
-        <Group9 />
-        <Title2 />
-        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[16px] w-[365px]">Designed Gruya, a meeting room booking app for a challenge, creating intuitive flows and a seamless user experience.</p>
-        <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[14px] text-black w-[365px]">Case Study · 2022</p>
-      </Link>
-    </div>
-  );
-}
-
 function Frame23() {
   return (
-    <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
-      <Frame25 />
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-[42px] items-start relative shrink-0 w-full">
+      <OtherProjectCard
+        href="/chatty"
+        mockup={<Group7 />}
+        title="Chatty"
+        badges={[
+          { label: "IA", bg: "#796ff1", color: "#fff" },
+          { label: "UX/UI", bg: "#688cf8", color: "#fff" },
+        ]}
+        description="Improved Chatty through a user-centered redesign, focusing on usability, clarity, and seamless interactions."
+        meta="Freelance · 2025"
+      />
+      <OtherProjectCard
+        href="/bookup"
+        mockup={<Group8 />}
+        title="Bookup"
+        badges={[
+          { label: "CASE STUDY", bg: "#ffabe7" },
+          { label: "Accessibility", bg: "#688cf8", color: "#fff" },
+        ]}
+        description="Designed an accessibility-focused experience for an online bookstore, improving navigation and usability for diverse users."
+        meta="UTN Project · 2022"
+      />
+      <OtherProjectCard
+        href="/gruya"
+        mockup={<Group9 />}
+        title="Gruya"
+        badges={[
+          { label: "CASE STUDY", bg: "#ffabe7" },
+          { label: "PERSONAL", bg: "#796ff1", color: "#fff" },
+        ]}
+        description="Designed Gruya, a meeting room booking app for a challenge, creating intuitive flows and a seamless user experience."
+        meta="Case Study · 2022"
+      />
     </div>
   );
 }
 
 function Frame98() {
   return (
-    <div className="content-stretch flex flex-col gap-[32px] items-start justify-center relative shrink-0 w-[1186px]">
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black whitespace-nowrap">
+    <div className="content-stretch flex flex-col gap-[32px] items-start justify-center relative shrink-0 w-full max-w-[1186px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[28px] sm:text-[40px] text-black whitespace-nowrap">
         <p className="leading-[normal]">Other projects</p>
       </div>
       <Frame23 />
@@ -2806,7 +2794,7 @@ function Group22() {
 
 function BannerFinal() {
   return (
-    <a href="mailto:dn.chiapin@gmail.com?subject=Contact%20from%20your%20portfolio" target="_blank">
+    <a href="mailto:dn.chiapin@gmail.com?subject=Contact%20from%20your%20portfolio" target="_blank" className="hidden sm:block">
       <img src={imgGetInTouch} alt="Get in touch" className="rounded-[8px] w-full object-cover cursor-pointer" />
     </a>
   );
@@ -2814,7 +2802,7 @@ function BannerFinal() {
 
 function Frame63() {
   return (
-    <div className="-translate-x-1/2 absolute content-stretch flex flex-col gap-[120px] items-center justify-center left-1/2 pb-[120px] top-[160px]">
+    <div className="content-stretch flex flex-col gap-[64px] sm:gap-[120px] items-center justify-center pt-[40px] pb-[64px] sm:pb-[120px] px-[16px] sm:px-[24px] w-full max-w-[1190px] mx-auto">
       <Frame41 />
       <Frame46 />
       <Frame57 />
@@ -3028,43 +3016,11 @@ function Frame52() {
 }
 
 export default function MyWorkPayana() {
-  const wrapRef = useRef<HTMLDivElement>(null);
-  const [minH, setMinH] = useState(0);
-
-  useEffect(() => {
-    if (wrapRef.current) {
-      const child = wrapRef.current.children[0] as HTMLElement;
-      if (child) setMinH(child.offsetTop + child.offsetHeight + 80);
-    }
-  }, []);
-
   return (
-    <div className="bg-white flex flex-col relative" style={{ minHeight: minH || undefined }} data-name="My work/ Payana">
-      <Frame52 />
-      <motion.div ref={wrapRef} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}>
+    <div className="bg-white flex flex-col relative" data-name="My work/ Payana">
+      <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}>
         <Frame63 />
       </motion.div>
-      <div className="absolute h-0 left-[696px] top-[7898px] w-[47px]">
-        <div className="absolute inset-[-3.68px_-1.06%_-3.68px_-5.67%]">
-          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 50.1667 7.36396">
-            <path d={svgPaths.p21cbc4c0} fill="var(--stroke-0, black)" id="Arrow 3" />
-          </svg>
-        </div>
-      </div>
-      <div className="absolute h-0 left-[696px] top-[8342px] w-[47px]">
-        <div className="absolute inset-[-3.68px_-1.06%_-3.68px_-5.67%]">
-          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 50.1667 7.36396">
-            <path d={svgPaths.p21cbc4c0} fill="var(--stroke-0, black)" id="Arrow 3" />
-          </svg>
-        </div>
-      </div>
-      <div className="absolute h-0 left-[696px] top-[8786px] w-[47px]">
-        <div className="absolute inset-[-3.68px_-1.06%_-3.68px_-5.67%]">
-          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 50.1667 7.36396">
-            <path d={svgPaths.p21cbc4c0} fill="var(--stroke-0, black)" id="Arrow 3" />
-          </svg>
-        </div>
-      </div>
     </div>
   );
 }

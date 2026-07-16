@@ -1,5 +1,6 @@
 ﻿import { Link } from "react-router";
 import { motion } from "motion/react";
+import OtherProjectCard from "../../app/components/OtherProjectCard";
 import imgGetInTouch from "./Get in touch.png";
 import svgPaths from "./svg-j5cw8d68e2";
 import imgRectangle2 from "./5dd93516c380ad462196f9ce0902f8ffd05cf779.png";
@@ -158,7 +159,7 @@ function Frame39() {
 function Frame24() {
   return (
     <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full">
-      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[64px] text-black w-[min-content]">
+      <div className="flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] sm:text-[64px] text-black w-[min-content]">
         <p className="leading-[normal]">Gruya</p>
       </div>
       <Frame39 />
@@ -168,10 +169,10 @@ function Frame24() {
 
 function Frame13() {
   return (
-    <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-[572px]">
+    <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full lg:w-[572px]">
       <Frame68 />
       <Frame24 />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[20px] text-black w-full">
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[16px] sm:text-[20px] text-black w-full">
         <span className="leading-[32px]">{`A concept project `}</span>
         <span className="font-['Inter:Bold',sans-serif] font-bold leading-[32px]">{`focused on creating an intuitive app `}</span>
         <span className="leading-[32px]">for reserving meeting rooms efficiently.</span>
@@ -254,9 +255,11 @@ function Gruya() {
 
 function Frame35() {
   return (
-    <div className="content-stretch flex gap-[127px] items-start justify-center relative shrink-0 w-full">
+    <div className="content-stretch flex flex-col lg:flex-row gap-[40px] lg:gap-[127px] items-start justify-center relative shrink-0 w-full px-[16px] sm:px-0">
       <Frame13 />
-      <Gruya />
+      <div className="hidden lg:block">
+        <Gruya />
+      </div>
     </div>
   );
 }
@@ -308,10 +311,10 @@ function Frame40() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[28px] sm:text-[40px] text-black text-center w-[min-content]">
         <p className="leading-[normal]">What’s Gruya?</p>
       </div>
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[20px] text-black w-[700px]">Gruya is a conceptual mobile app designed to simplify the process of booking coworking spaces. The project explores how users can easily discover, reserve, and manage meeting rooms in shared work environments through an intuitive and user-centered experience.</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] not-italic relative shrink-0 text-[16px] sm:text-[20px] text-black w-full max-w-[700px] px-[16px] sm:px-0">Gruya is a conceptual mobile app designed to simplify the process of booking coworking spaces. The project explores how users can easily discover, reserve, and manage meeting rooms in shared work environments through an intuitive and user-centered experience.</p>
     </div>
   );
 }
@@ -390,10 +393,10 @@ function Frame41() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[28px] sm:text-[40px] text-black text-center w-[min-content]">
         <p className="leading-[normal]">Project Context</p>
       </div>
-      <div className="font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[20px] text-black w-[700px]">
+      <div className="font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[16px] sm:text-[20px] text-black w-full max-w-[700px] px-[16px] sm:px-0">
         <p className="leading-[32px] mb-0 whitespace-pre-wrap">
           Our client is a coworking company based in Buenos Aires. The building consists of 10 floors, each offering 8 rooms available for both individual and group use, allowing clients to choose the space that best fits their needs.
           <br aria-hidden="true" />
@@ -828,10 +831,20 @@ function Frame70() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[28px] sm:text-[40px] text-black text-center w-[min-content]">
         <p className="leading-[normal]">Methodology</p>
       </div>
-      <Group29 />
+      <div className="hidden md:block overflow-x-auto max-w-full">
+        <Group29 />
+      </div>
+      <div className="flex md:hidden flex-col gap-[40px] items-center w-full px-[16px]">
+        <Frame42 />
+        <Frame43 />
+        <Frame44 />
+        <Frame45 />
+        <Frame46 />
+        <Frame47 />
+      </div>
     </div>
   );
 }
@@ -1213,12 +1226,12 @@ function Frame77() {
 
 function Frame48() {
   return (
-    <div className="relative rounded-[8px] self-stretch shrink-0 w-[360px]">
+    <div className="relative rounded-[8px] self-stretch shrink-0 w-full sm:w-[360px]">
       <div aria-hidden="true" className="absolute border border-[#b9b9b9] border-solid inset-0 pointer-events-none rounded-[8px]" />
       <div className="flex flex-col items-center size-full">
         <div className="content-stretch flex flex-col gap-[24px] items-center p-[24px] relative size-full">
           <Frame77 />
-          <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-[544px]">
+          <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[28px] sm:text-[40px] text-black text-center w-full">
             <p className="leading-[normal]">Goals</p>
           </div>
           <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-full not-italic relative shrink-0 text-[16px] text-black w-[min-content]">Help optimize room reservations and usage by improving organization and clearly communicating which spaces are actually available.</p>
@@ -1531,10 +1544,10 @@ function Frame76() {
 
 function Frame49() {
   return (
-    <div className="content-stretch flex flex-col gap-[24px] items-center p-[24px] relative rounded-[8px] shrink-0 w-[360px]">
+    <div className="content-stretch flex flex-col gap-[24px] items-center p-[24px] relative rounded-[8px] shrink-0 w-full sm:w-[360px]">
       <div aria-hidden="true" className="absolute border border-[#b9b9b9] border-solid inset-0 pointer-events-none rounded-[8px]" />
       <Frame76 />
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[28px] sm:text-[40px] text-black text-center w-[min-content]">
         <p className="leading-[normal]">Problem</p>
       </div>
       <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-full not-italic relative shrink-0 text-[16px] text-black w-[min-content]">The current experience prevents users from booking the rooms they actually need, leading to frustration and a poor user experience. In many cases, rooms appear as reserved but remain unused.</p>
@@ -1709,12 +1722,12 @@ function Frame78() {
 
 function Frame50() {
   return (
-    <div className="relative rounded-[8px] self-stretch shrink-0 w-[360px]">
+    <div className="relative rounded-[8px] self-stretch shrink-0 w-full sm:w-[360px]">
       <div aria-hidden="true" className="absolute border border-[#b9b9b9] border-solid inset-0 pointer-events-none rounded-[8px]" />
       <div className="flex flex-col items-center size-full">
         <div className="content-stretch flex flex-col gap-[24px] items-center p-[24px] relative size-full">
           <Frame78 />
-          <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[40px] text-black text-center w-[min-content]">
+          <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full not-italic relative shrink-0 text-[28px] sm:text-[40px] text-black text-center w-[min-content]">
             <p className="leading-[normal]">Solution</p>
           </div>
           <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-full not-italic relative shrink-0 text-[16px] text-black w-[min-content]">Design a platform that improves room booking and availability, preventing unnecessary reservations and reducing unused spaces.</p>
@@ -1726,7 +1739,7 @@ function Frame50() {
 
 function Frame122() {
   return (
-    <div className="content-stretch flex gap-[40px] items-start relative shrink-0">
+    <div className="content-stretch flex flex-col sm:flex-row gap-[24px] sm:gap-[40px] items-stretch relative shrink-0 w-full px-[16px] sm:px-0">
       <Frame48 />
       <Frame49 />
       <Frame50 />
@@ -1745,7 +1758,7 @@ function Frame71() {
 function Frame51() {
   return (
     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[24px] items-center leading-[0] min-w-px not-italic relative text-black">
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end relative shrink-0 text-[40px] text-center w-[544px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end relative shrink-0 text-[28px] sm:text-[40px] text-center w-full">
         <p className="leading-[normal]">Insigths</p>
       </div>
       <div className="font-['Inter:Regular',sans-serif] font-normal min-w-full relative shrink-0 text-[20px] w-[min-content]">
@@ -1792,7 +1805,7 @@ function Frame51() {
 
 function Frame73() {
   return (
-    <div className="content-stretch flex items-start justify-center relative shrink-0 w-[1100px]">
+    <div className="content-stretch flex items-start justify-center relative shrink-0 w-full max-w-[1100px] px-[16px] sm:px-0">
       <Frame51 />
     </div>
   );
@@ -2027,7 +2040,7 @@ function Frame65() {
 
 function Frame79() {
   return (
-    <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-[563px]">
+    <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full lg:w-[563px]">
       <VitaFiltroLlena />
       <Frame65 />
     </div>
@@ -2103,7 +2116,7 @@ function Frame66() {
 
 function Frame80() {
   return (
-    <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-[563px]">
+    <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full lg:w-[563px]">
       <VitaFiltroLlena1 />
       <Frame66 />
     </div>
@@ -2112,7 +2125,7 @@ function Frame80() {
 
 function Frame82() {
   return (
-    <div className="content-stretch flex gap-[80px] items-start relative shrink-0">
+    <div className="content-stretch flex flex-col lg:flex-row gap-[24px] lg:gap-[80px] items-start relative shrink-0 w-full px-[16px] sm:px-0">
       <Frame79 />
       <Frame80 />
     </div>
@@ -2148,7 +2161,7 @@ function Frame81() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-[544px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[28px] sm:text-[40px] text-black text-center w-full">
         <p className="leading-[normal]">Our users</p>
       </div>
       <Frame82 />
@@ -2159,7 +2172,7 @@ function Frame81() {
 function Frame84() {
   return (
     <div className="content-stretch flex flex-col gap-[16px] items-center not-italic relative shrink-0 text-black w-full">
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] relative shrink-0 text-[40px] text-center w-[544px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] relative shrink-0 text-[28px] sm:text-[40px] text-center w-full">
         <p className="leading-[normal]">Competitor Analysis</p>
       </div>
       <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] min-w-full relative shrink-0 text-[20px] w-[min-content]">Our main competitors are digital platforms that offer meeting room and workspace booking solutions within co-working environments. These tools focus on availability management, scheduling, and resource optimization.</p>
@@ -2169,9 +2182,9 @@ function Frame84() {
 
 function Frame87() {
   return (
-    <div className="content-stretch flex items-center p-[16px] relative rounded-[8px] shrink-0">
+    <div className="content-stretch flex items-center p-[16px] relative rounded-[8px] shrink-0 w-full">
       <div aria-hidden="true" className="absolute border border-black border-solid inset-0 pointer-events-none rounded-[8px]" />
-      <div className="h-[745.672px] relative shrink-0 w-[350px]" data-name="WhatsApp Image 2021-09-07 at 10.15 2">
+      <div className="relative shrink-0 w-full max-w-[350px] aspect-[350/745.672]" data-name="WhatsApp Image 2021-09-07 at 10.15 2">
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgWhatsAppImage20210907At10152} />
       </div>
     </div>
@@ -2205,7 +2218,7 @@ function Frame88() {
               </div>
             </div>
           </div>
-          <p className="font-['Nunito:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[20px] text-black w-[723px]">The office photos are displayed in an auto-scrolling carousel, preventing users from viewing important details. Additionally, the booking system is confusing for some users.</p>
+          <p className="font-['Nunito:Regular',sans-serif] font-normal leading-[normal] relative shrink min-w-0 text-[16px] sm:text-[20px] text-black flex-1">The office photos are displayed in an auto-scrolling carousel, preventing users from viewing important details. Additionally, the booking system is confusing for some users.</p>
         </div>
       </div>
     </div>
@@ -2226,7 +2239,7 @@ function Frame89() {
               </div>
             </div>
           </div>
-          <p className="font-['Nunito:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[20px] text-black w-[723px]">{`The app features a news feed where members share useful information. It provides detailed office information and a clean, intuitive design. `}</p>
+          <p className="font-['Nunito:Regular',sans-serif] font-normal leading-[normal] relative shrink min-w-0 text-[16px] sm:text-[20px] text-black flex-1">{`The app features a news feed where members share useful information. It provides detailed office information and a clean, intuitive design. `}</p>
         </div>
       </div>
     </div>
@@ -2235,7 +2248,7 @@ function Frame89() {
 
 function Frame91() {
   return (
-    <div className="content-stretch flex flex-col gap-[20px] items-start relative shrink-0 w-[823px]">
+    <div className="content-stretch flex flex-col gap-[20px] items-start relative shrink-0 w-full lg:w-[823px]">
       <div className="relative rounded-[10px] shadow-[0px_4px_4px_0px_rgba(126,126,126,0.25)] shrink-0 size-[75px]">
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[10px] size-full" src={imgRectangle131} />
       </div>
@@ -2251,7 +2264,7 @@ function Frame91() {
 
 function Frame92() {
   return (
-    <div className="content-stretch flex items-center justify-between relative shrink-0 w-full">
+    <div className="content-stretch flex flex-col lg:flex-row items-center lg:items-start justify-between gap-[24px] relative shrink-0 w-full px-[16px] sm:px-0">
       <Frame87 />
       <Frame91 />
     </div>
@@ -2285,7 +2298,7 @@ function Frame96() {
               </div>
             </div>
           </div>
-          <p className="font-['Nunito:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[20px] text-black w-[723px]">Registering within the app was very difficult and slow. Once logged in, users struggle to find nearby results, and location accuracy is poor.</p>
+          <p className="font-['Nunito:Regular',sans-serif] font-normal leading-[normal] relative shrink min-w-0 text-[16px] sm:text-[20px] text-black flex-1">Registering within the app was very difficult and slow. Once logged in, users struggle to find nearby results, and location accuracy is poor.</p>
         </div>
       </div>
     </div>
@@ -2306,7 +2319,7 @@ function Frame97() {
               </div>
             </div>
           </div>
-          <p className="font-['Nunito:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[20px] text-black w-[723px]">{`The app features short steps for users, with most of them using dropdown menus to streamline option selection."`}</p>
+          <p className="font-['Nunito:Regular',sans-serif] font-normal leading-[normal] relative shrink min-w-0 text-[16px] sm:text-[20px] text-black flex-1">{`The app features short steps for users, with most of them using dropdown menus to streamline option selection."`}</p>
         </div>
       </div>
     </div>
@@ -2315,7 +2328,7 @@ function Frame97() {
 
 function Frame94() {
   return (
-    <div className="content-stretch flex flex-col gap-[20px] items-start relative shrink-0 w-[823px]">
+    <div className="content-stretch flex flex-col gap-[20px] items-start relative shrink-0 w-full lg:w-[823px]">
       <div className="relative rounded-[10px] shadow-[0px_4px_4px_0px_rgba(126,126,126,0.25)] shrink-0 size-[75px]">
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[10px] size-full" src={imgRectangle182} />
       </div>
@@ -2331,9 +2344,9 @@ function Frame94() {
 
 function Frame85() {
   return (
-    <div className="content-stretch flex items-center p-[16px] relative rounded-[8px] shrink-0">
+    <div className="content-stretch flex items-center p-[16px] relative rounded-[8px] shrink-0 w-full">
       <div aria-hidden="true" className="absolute border border-black border-solid inset-0 pointer-events-none rounded-[8px]" />
-      <div className="h-[745.672px] relative shrink-0 w-[350px]" data-name="WhatsApp Image 2021-09-07 at 10.15 1">
+      <div className="relative shrink-0 w-full max-w-[350px] aspect-[350/745.672]" data-name="WhatsApp Image 2021-09-07 at 10.15 1">
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgWhatsAppImage20210907At10151} />
       </div>
     </div>
@@ -2342,7 +2355,7 @@ function Frame85() {
 
 function Frame93() {
   return (
-    <div className="content-stretch flex items-center justify-between relative shrink-0 w-full">
+    <div className="content-stretch flex flex-col lg:flex-row items-center lg:items-start justify-between gap-[24px] relative shrink-0 w-full px-[16px] sm:px-0">
       <Frame94 />
       <Frame85 />
     </div>
@@ -2355,7 +2368,7 @@ function Frame86() {
       <div aria-hidden="true" className="absolute border border-black border-solid inset-0 pointer-events-none rounded-[8px]" />
       <div className="flex flex-row items-center size-full">
         <div className="content-stretch flex items-center p-[16px] relative size-full">
-          <div className="h-[622px] relative shrink-0 w-[350px]">
+          <div className="relative shrink-0 w-full max-w-[350px] aspect-[350/622]">
             <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgRectangle123} />
           </div>
         </div>
@@ -2391,7 +2404,7 @@ function Frame101() {
               </div>
             </div>
           </div>
-          <p className="font-['Nunito:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[20px] text-black w-[723px]">The notification system doesn’t work as expected, and some messages may be received late by users. Selecting a time slot for a room is also not user-friendly and can be confusing.</p>
+          <p className="font-['Nunito:Regular',sans-serif] font-normal leading-[normal] relative shrink min-w-0 text-[16px] sm:text-[20px] text-black flex-1">The notification system doesn’t work as expected, and some messages may be received late by users. Selecting a time slot for a room is also not user-friendly and can be confusing.</p>
         </div>
       </div>
     </div>
@@ -2412,7 +2425,7 @@ function Frame102() {
               </div>
             </div>
           </div>
-          <p className="font-['Nunito:Regular',sans-serif] font-normal leading-[normal] relative shrink-0 text-[20px] text-black w-[723px]">It features a minimalist and clear design that allows users to quickly find what they are looking for.</p>
+          <p className="font-['Nunito:Regular',sans-serif] font-normal leading-[normal] relative shrink min-w-0 text-[16px] sm:text-[20px] text-black flex-1">It features a minimalist and clear design that allows users to quickly find what they are looking for.</p>
         </div>
       </div>
     </div>
@@ -2421,7 +2434,7 @@ function Frame102() {
 
 function Frame99() {
   return (
-    <div className="content-stretch flex flex-col gap-[20px] items-start relative shrink-0 w-[823px]">
+    <div className="content-stretch flex flex-col gap-[20px] items-start relative shrink-0 w-full lg:w-[823px]">
       <div className="relative rounded-[10px] shadow-[0px_4px_4px_0px_rgba(126,126,126,0.25)] shrink-0 size-[75px]">
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[10px] size-full" src={imgRectangle107} />
       </div>
@@ -2437,7 +2450,7 @@ function Frame99() {
 
 function Frame98() {
   return (
-    <div className="content-stretch flex items-center justify-between relative shrink-0 w-full">
+    <div className="content-stretch flex flex-col lg:flex-row items-center lg:items-start justify-between gap-[24px] relative shrink-0 w-full px-[16px] sm:px-0">
       <div className="flex flex-row items-center self-stretch">
         <Frame86 />
       </div>
@@ -2448,63 +2461,11 @@ function Frame98() {
 
 function Frame83() {
   return (
-    <div className="content-stretch flex flex-col gap-[64px] items-center relative shrink-0 w-[1260px]">
+    <div className="content-stretch flex flex-col gap-[64px] items-center relative shrink-0 w-full max-w-[1260px]">
       <Frame84 />
       <Frame92 />
       <Frame93 />
       <Frame98 />
-    </div>
-  );
-}
-
-function Frame3() {
-  return (
-    <div className="bg-[#688cf8] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap">MID - FI</p>
-    </div>
-  );
-}
-
-function Frame14() {
-  return (
-    <div className="content-stretch flex items-center relative shrink-0 w-full">
-      <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
-        <Frame3 />
-      </div>
-    </div>
-  );
-}
-
-function Frame106() {
-  return (
-    <div className="col-1 content-stretch flex flex-col items-start ml-[372px] mt-[224px] p-[10px] relative row-1 w-[105px]">
-      <Frame14 />
-    </div>
-  );
-}
-
-function Frame4() {
-  return (
-    <div className="bg-[#c8e793] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-black whitespace-nowrap">HI - FI</p>
-    </div>
-  );
-}
-
-function Frame18() {
-  return (
-    <div className="content-stretch flex items-center relative shrink-0 w-full">
-      <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
-        <Frame4 />
-      </div>
-    </div>
-  );
-}
-
-function Frame104() {
-  return (
-    <div className="col-1 content-stretch flex flex-col items-start ml-[712px] mt-[224px] p-[10px] relative row-1 w-[92px]">
-      <Frame18 />
     </div>
   );
 }
@@ -2526,36 +2487,6 @@ function Frame105() {
   );
 }
 
-function Frame107() {
-  return (
-    <div className="content-stretch flex items-center relative shrink-0">
-      <div className="h-[600.73px] relative rounded-[20px] shrink-0 w-[300px]" data-name="Media 1">
-        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[20px] size-full" src={imgMedia1} />
-      </div>
-    </div>
-  );
-}
-
-function Frame108() {
-  return (
-    <div className="content-stretch flex items-center relative shrink-0">
-      <div className="h-[600.73px] relative rounded-[20px] shrink-0 w-[300px]" data-name="Casa 1">
-        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[20px] size-full" src={imgCasa1} />
-      </div>
-    </div>
-  );
-}
-
-function Frame103() {
-  return (
-    <div className="col-1 content-stretch flex gap-[40px] items-center ml-[62px] mt-[276px] relative row-1">
-      <Frame105 />
-      <Frame107 />
-      <Frame108 />
-    </div>
-  );
-}
-
 function Frame110() {
   return (
     <div className="content-stretch flex gap-[16px] items-center relative shrink-0 w-[280px]">
@@ -2568,20 +2499,6 @@ function Frame110() {
       </div>
       <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[48px] text-black whitespace-nowrap">
         <p className="leading-[normal]">Rooms</p>
-      </div>
-    </div>
-  );
-}
-
-function Frame109() {
-  return (
-    <div className="col-1 content-stretch flex gap-[40px] items-center ml-[62px] mt-[913px] relative row-1">
-      <Frame110 />
-      <div className="h-[999.27px] relative rounded-[20px] shrink-0 w-[300px]" data-name="Detalle Sala media">
-        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[20px] size-full" src={imgDetalleSalaMedia} />
-      </div>
-      <div className="h-[999.27px] relative rounded-[20px] shrink-0 w-[300px]" data-name="Detalle Sala">
-        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[20px] size-full" src={imgDetalleSala} />
       </div>
     </div>
   );
@@ -2604,20 +2521,6 @@ function Frame112() {
   );
 }
 
-function Frame111() {
-  return (
-    <div className="col-1 content-stretch flex gap-[40px] items-center ml-[62px] mt-[1950px] relative row-1">
-      <Frame112 />
-      <div className="h-[600.73px] relative rounded-[20px] shrink-0 w-[300px]" data-name="Reserva media">
-        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[20px] size-full" src={imgReservaMedia} />
-      </div>
-      <div className="h-[600.73px] relative rounded-[20px] shrink-0 w-[300px]" data-name="Reserva">
-        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[20px] size-full" src={imgReserva} />
-      </div>
-    </div>
-  );
-}
-
 function Frame114() {
   return (
     <div className="content-stretch flex gap-[17px] items-center relative shrink-0 w-[280px]">
@@ -2635,43 +2538,34 @@ function Frame114() {
   );
 }
 
-function Frame113() {
-  return (
-    <div className="col-1 content-stretch flex gap-[40px] items-center ml-[62px] mt-[2599px] relative row-1">
-      <Frame114 />
-      <div className="h-[600.73px] relative rounded-[20px] shrink-0 w-[300px]" data-name="Pago">
-        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[20px] size-full" src={imgPago} />
-      </div>
-      <div className="h-[600.73px] relative rounded-[20px] shrink-0 w-[300px]" data-name="Pago alta">
-        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[20px] size-full" src={imgPagoAlta} />
-      </div>
-    </div>
-  );
-}
-
 function Group30() {
   return (
-    <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0">
-      <Frame106 />
-      <Frame104 />
-      <div className="col-1 flex flex-col font-['EB_Garamond',serif] justify-end ml-0 mt-0 not-italic relative row-1 text-[48px] text-black w-[1042px]">
+    <div className="flex flex-col gap-[48px] items-center relative shrink-0 w-full px-[16px] sm:px-0">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end not-italic relative shrink-0 text-[32px] sm:text-[48px] text-black text-center w-full">
         <p className="leading-[normal]">Wireframes</p>
       </div>
-      <div className="col-1 flex h-[2841.148px] items-center justify-center ml-[61.5px] mt-[57.93px] relative row-1 w-0" style={{ "--transform-inner-width": "1200", "--transform-inner-height": "19" } as React.CSSProperties}>
-        <div className="flex-none rotate-90">
-          <div className="h-0 relative w-[2841.148px]">
-            <div className="absolute inset-[-2px_0_0_0]">
-              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 2841.15 2">
-                <line id="Line 55" stroke="var(--stroke-0, black)" strokeWidth="2" x2="2841.15" y1="1" y2="1" />
-              </svg>
-            </div>
-          </div>
+      <div className="flex flex-col gap-[40px] items-center w-full">
+        <div className="flex flex-col sm:flex-row gap-[16px] sm:gap-[40px] items-center w-full justify-center">
+          <Frame105 />
+          <img loading="lazy" decoding="async" alt="Gruya Home screen" className="w-full max-w-[300px] h-auto rounded-[20px]" src={imgMedia1} />
+          <img loading="lazy" decoding="async" alt="Gruya Home screen detail" className="w-full max-w-[300px] h-auto rounded-[20px]" src={imgCasa1} />
+        </div>
+        <div className="flex flex-col sm:flex-row gap-[16px] sm:gap-[40px] items-center w-full justify-center">
+          <Frame110 />
+          <img loading="lazy" decoding="async" alt="Gruya Rooms screen" className="w-full max-w-[300px] h-auto rounded-[20px]" src={imgDetalleSalaMedia} />
+          <img loading="lazy" decoding="async" alt="Gruya Rooms screen detail" className="w-full max-w-[300px] h-auto rounded-[20px]" src={imgDetalleSala} />
+        </div>
+        <div className="flex flex-col sm:flex-row gap-[16px] sm:gap-[40px] items-center w-full justify-center">
+          <Frame112 />
+          <img loading="lazy" decoding="async" alt="Gruya Booking screen" className="w-full max-w-[300px] h-auto rounded-[20px]" src={imgReservaMedia} />
+          <img loading="lazy" decoding="async" alt="Gruya Booking screen detail" className="w-full max-w-[300px] h-auto rounded-[20px]" src={imgReserva} />
+        </div>
+        <div className="flex flex-col sm:flex-row gap-[16px] sm:gap-[40px] items-center w-full justify-center">
+          <Frame114 />
+          <img loading="lazy" decoding="async" alt="Gruya Checkout screen" className="w-full max-w-[300px] h-auto rounded-[20px]" src={imgPago} />
+          <img loading="lazy" decoding="async" alt="Gruya Checkout screen detail" className="w-full max-w-[300px] h-auto rounded-[20px]" src={imgPagoAlta} />
         </div>
       </div>
-      <Frame103 />
-      <Frame109 />
-      <Frame111 />
-      <Frame113 />
     </div>
   );
 }
@@ -2706,10 +2600,10 @@ function Group13() {
 function Frame55() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-center not-italic relative shrink-0 text-black w-full">
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full relative shrink-0 text-[40px] text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full relative shrink-0 text-[28px] sm:text-[40px] text-center w-[min-content]">
         <p className="leading-[normal]">Moodboard</p>
       </div>
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] relative shrink-0 text-[20px] w-[700px]">This project reinforced the value of approaching UI design as a system rather than a collection of individual screens.</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] relative shrink-0 text-[16px] sm:text-[20px] w-full max-w-[700px] px-[16px] sm:px-0 text-center">This project reinforced the value of approaching UI design as a system rather than a collection of individual screens.</p>
     </div>
   );
 }
@@ -2788,11 +2682,11 @@ function Frame116() {
 
 function Frame118() {
   return (
-    <div className="content-stretch flex flex-col gap-[20px] items-end relative shrink-0 w-[425px]">
-      <div className="h-[544px] relative rounded-[20px] shrink-0 w-[363px]" data-name="image 8">
+    <div className="content-stretch flex flex-col gap-[20px] items-end relative shrink-0 w-full md:w-[425px]">
+      <div className="relative rounded-[20px] shrink-0 w-full md:w-[363px] aspect-[363/544]" data-name="image 8">
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[20px] size-full" src={imgImage8} />
       </div>
-      <div className="h-[265px] relative rounded-[20px] shrink-0 w-full">
+      <div className="relative rounded-[20px] shrink-0 w-full aspect-[425/265]">
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[20px] size-full" src={imgRectangle165} />
       </div>
     </div>
@@ -2801,14 +2695,14 @@ function Frame118() {
 
 function Frame119() {
   return (
-    <div className="content-stretch flex flex-col gap-[17px] items-start relative shrink-0 w-[425px]">
-      <div className="h-[265px] relative rounded-[20px] shrink-0 w-full">
+    <div className="content-stretch flex flex-col gap-[17px] items-start relative shrink-0 w-full md:w-[425px]">
+      <div className="relative rounded-[20px] shrink-0 w-full aspect-[425/265]">
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[20px] size-full" src={imgRectangle162} />
       </div>
-      <div className="h-[265px] relative rounded-[20px] shrink-0 w-full">
+      <div className="relative rounded-[20px] shrink-0 w-full aspect-[425/265]">
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[20px] size-full" src={imgRectangle164} />
       </div>
-      <div className="h-[265px] relative rounded-[20px] shrink-0 w-full">
+      <div className="relative rounded-[20px] shrink-0 w-full aspect-[425/265]">
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[20px] size-full" src={imgRectangle166} />
       </div>
     </div>
@@ -2818,10 +2712,10 @@ function Frame119() {
 function Frame121() {
   return (
     <div className="content-stretch flex gap-[11px] items-center relative shrink-0 w-full">
-      <div className="h-[419px] relative rounded-[20px] shrink-0 w-[280px]" data-name="image 9">
+      <div className="relative rounded-[20px] shrink-0 flex-[2] aspect-[280/419]" data-name="image 9">
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[20px] size-full" src={imgImage9} />
       </div>
-      <div className="h-[412px] pointer-events-none relative rounded-[20px] shrink-0 w-[134px]">
+      <div className="pointer-events-none relative rounded-[20px] shrink-0 flex-[1] aspect-[134/412]">
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover rounded-[20px] size-full" src={imgRectangle181} />
         <div aria-hidden="true" className="absolute border border-[#d3d3d3] border-solid inset-0 rounded-[20px]" />
       </div>
@@ -2831,8 +2725,8 @@ function Frame121() {
 
 function Frame120() {
   return (
-    <div className="content-stretch flex flex-col gap-[17px] items-start relative shrink-0 w-[425px]">
-      <div className="h-[265px] relative rounded-[20px] shrink-0 w-full">
+    <div className="content-stretch flex flex-col gap-[17px] items-start relative shrink-0 w-full md:w-[425px]">
+      <div className="relative rounded-[20px] shrink-0 w-full aspect-[425/265]">
         <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[20px] size-full" src={imgRectangle168} />
       </div>
       <Frame121 />
@@ -2842,7 +2736,7 @@ function Frame120() {
 
 function Frame117() {
   return (
-    <div className="content-stretch flex gap-[16px] items-start relative shrink-0">
+    <div className="content-stretch flex flex-col md:flex-row gap-[16px] items-start relative shrink-0 w-full px-[16px] sm:px-0">
       <Frame118 />
       <Frame119 />
       <Frame120 />
@@ -2921,10 +2815,10 @@ function Group21() {
 function Frame56() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-center not-italic relative shrink-0 text-black w-full">
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full relative shrink-0 text-[40px] text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full relative shrink-0 text-[28px] sm:text-[40px] text-center w-[min-content]">
         <p className="leading-[normal]">UI Kit</p>
       </div>
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] relative shrink-0 text-[20px] w-[700px]">This project reinforced the value of approaching UI design as a system rather than a collection of individual screens.</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] relative shrink-0 text-[16px] sm:text-[20px] w-full max-w-[700px] px-[16px] sm:px-0 text-center">This project reinforced the value of approaching UI design as a system rather than a collection of individual screens.</p>
     </div>
   );
 }
@@ -2950,7 +2844,7 @@ function Frame131() {
 
 function Frame52() {
   return (
-    <div className="content-stretch flex flex-col gap-[24px] items-center leading-[0] not-italic relative shrink-0 text-black text-center w-[400px]">
+    <div className="content-stretch flex flex-col gap-[24px] items-center leading-[0] not-italic relative shrink-0 text-black text-center w-full max-w-[400px]">
       <div className="flex flex-col font-['EB_Garamond',serif] justify-end relative shrink-0 text-[40px] w-full">
         <p className="leading-[normal]">{`Grids & layouts`}</p>
       </div>
@@ -3055,8 +2949,8 @@ function Frame135() {
 
 function Frame53() {
   return (
-    <div className="content-stretch flex flex-col gap-[24px] items-center leading-[0] relative shrink-0 w-[400px]">
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end not-italic relative shrink-0 text-[40px] text-black text-center w-[544px]">
+    <div className="content-stretch flex flex-col gap-[24px] items-center leading-[0] relative shrink-0 w-full max-w-[400px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end not-italic relative shrink-0 text-[28px] sm:text-[40px] text-black text-center w-full">
         <p className="leading-[normal]">Colors</p>
       </div>
       <Frame135 />
@@ -3068,8 +2962,8 @@ function Frame139() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-center p-[16px] relative rounded-[8px] shrink-0">
       <div aria-hidden="true" className="absolute border border-black border-solid inset-0 pointer-events-none rounded-[8px]" />
-      <p className="font-['National_2_Compressed:Medium',sans-serif] leading-[normal] not-italic relative shrink-0 text-[46.314px] text-black whitespace-nowrap">National 2 Compressed</p>
-      <p className="font-['National_2_Compressed:Medium',sans-serif] leading-[0] not-italic relative shrink-0 text-[46.314px] text-black whitespace-nowrap">
+      <p className="font-['National_2_Compressed:Medium',sans-serif] leading-[normal] not-italic relative shrink-0 text-[24px] sm:text-[46.314px] text-black whitespace-nowrap">National 2 Compressed</p>
+      <p className="font-['National_2_Compressed:Medium',sans-serif] leading-[0] not-italic relative shrink-0 text-[24px] sm:text-[46.314px] text-black whitespace-nowrap">
         <span className="font-['National_2_Compressed:Regular',sans-serif] leading-[normal]">Regular</span>
         <span className="leading-[normal]">{` | `}</span>
         <span className="font-['National_2_Compressed:Bold',sans-serif] leading-[normal]">Bold</span>
@@ -3111,8 +3005,8 @@ function Frame138() {
 
 function Frame54() {
   return (
-    <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0">
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center w-[400px]">
+    <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-full max-w-[400px]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[28px] sm:text-[40px] text-black text-center w-full">
         <p className="leading-[normal]">Fonts</p>
       </div>
       <Frame138 />
@@ -3122,7 +3016,7 @@ function Frame54() {
 
 function Frame134() {
   return (
-    <div className="content-stretch flex gap-[40px] items-start relative shrink-0">
+    <div className="content-stretch flex flex-wrap gap-[40px] items-start justify-center relative shrink-0 w-full px-[16px] sm:px-0">
       <Frame52 />
       <Frame53 />
       <Frame54 />
@@ -3132,7 +3026,7 @@ function Frame134() {
 
 function Frame133() {
   return (
-    <div className="content-stretch flex flex-col items-start justify-center relative shrink-0">
+    <div className="content-stretch flex flex-col items-start justify-center relative shrink-0 w-full">
       <Frame134 />
     </div>
   );
@@ -3140,7 +3034,7 @@ function Frame133() {
 
 function Frame132() {
   return (
-    <div className="content-stretch flex items-start justify-center relative shrink-0 w-[1192px]">
+    <div className="content-stretch flex items-start justify-center relative shrink-0 w-full max-w-[1192px]">
       <Frame133 />
     </div>
   );
@@ -3150,8 +3044,8 @@ function Frame123() {
   return (
     <div className="content-stretch flex flex-col gap-[32px] items-center relative shrink-0 w-full">
       <Frame131 />
-      <div className="h-[907px] relative shrink-0 w-[1345px]" data-name="atomic 1">
-        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgAtomic1} />
+      <div className="relative shrink-0 w-[calc(100%-32px)] sm:w-full max-w-[1345px] aspect-[1345/907]" data-name="atomic 1">
+        <img loading="lazy" decoding="async" alt="Gruya UI kit atomic design system" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgAtomic1} />
       </div>
       <Frame132 />
     </div>
@@ -3256,10 +3150,10 @@ function Group20() {
 function Frame57() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-center not-italic relative shrink-0 text-black w-full">
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full relative shrink-0 text-[40px] text-center w-[min-content]">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] min-w-full relative shrink-0 text-[28px] sm:text-[40px] text-center w-[min-content]">
         <p className="leading-[normal]">Learnings</p>
       </div>
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] relative shrink-0 text-[20px] w-[700px]">This challenge was a great opportunity to explore designing a meeting room booking app from scratch. I learned how to prioritize user flows and create an intuitive interface with minimal guidance.</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32px] relative shrink-0 text-[16px] sm:text-[20px] w-full max-w-[700px] px-[16px] sm:px-0 text-center">This challenge was a great opportunity to explore designing a meeting room booking app from scratch. I learned how to prioritize user flows and create an intuitive interface with minimal guidance.</p>
     </div>
   );
 }
@@ -3373,55 +3267,6 @@ function Group8() {
   );
 }
 
-function Frame5() {
-  return (
-    <div className="bg-[#796ff1] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap">IA</p>
-    </div>
-  );
-}
-
-function Frame6() {
-  return (
-    <div className="bg-[#688cf8] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap">UX/UI</p>
-    </div>
-  );
-}
-
-function Frame59() {
-  return (
-    <div className="content-stretch flex gap-[8px] items-center relative shrink-0">
-      <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
-        <Frame5 />
-      </div>
-      <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
-        <Frame6 />
-      </div>
-    </div>
-  );
-}
-
-function Title() {
-  return (
-    <div className="content-stretch flex gap-[12px] items-center relative shrink-0 w-full" data-name="Title">
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[24px] text-black whitespace-nowrap">Chatty</p>
-      <Frame59 />
-    </div>
-  );
-}
-
-function ProjectCard() {
-  return (
-    <div className="content-stretch flex flex-col gap-[16px] items-center justify-center relative shrink-0 w-[366px]" data-name="Project card">
-      <Group8 />
-      <Title />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[16px] w-[365px]">Improved Chatty through a user-centered redesign, focusing on usability, clarity, and seamless interactions.</p>
-      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[14px] text-black w-[365px]">Freelance · 2025</p>
-    </div>
-  );
-}
-
 function Group6() {
   return (
     <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-[28.2px] place-items-start relative row-1">
@@ -3461,63 +3306,6 @@ function Group9() {
         </div>
       </div>
       <Group6 />
-    </div>
-  );
-}
-
-function Frame7() {
-  return (
-    <div className="bg-[#c8e793] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-black whitespace-nowrap">FINANCE</p>
-    </div>
-  );
-}
-
-function Frame20() {
-  return (
-    <div className="content-stretch flex items-center relative shrink-0">
-      <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
-        <Frame7 />
-      </div>
-    </div>
-  );
-}
-
-function Frame8() {
-  return (
-    <div className="bg-[#796ff1] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap">IA</p>
-    </div>
-  );
-}
-
-function Frame9() {
-  return (
-    <div className="bg-[#688cf8] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap">UX/UI</p>
-    </div>
-  );
-}
-
-function Frame60() {
-  return (
-    <div className="content-stretch flex gap-[8px] items-center relative shrink-0">
-      <Frame20 />
-      <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
-        <Frame8 />
-      </div>
-      <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
-        <Frame9 />
-      </div>
-    </div>
-  );
-}
-
-function Title1() {
-  return (
-    <div className="content-stretch flex gap-[12px] items-center relative shrink-0 w-full" data-name="Title">
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[24px] text-black whitespace-nowrap">Payana</p>
-      <Frame60 />
     </div>
   );
 }
@@ -3565,78 +3353,43 @@ function Group10() {
   );
 }
 
-function Frame10() {
-  return (
-    <div className="bg-[#ffabe7] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-black whitespace-nowrap">CASE STUDY</p>
-    </div>
-  );
-}
-
-function Frame22() {
-  return (
-    <div className="content-stretch flex items-center relative shrink-0">
-      <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
-        <Frame10 />
-      </div>
-    </div>
-  );
-}
-
-function Frame11() {
-  return (
-    <div className="bg-[#688cf8] content-stretch flex h-[30px] items-center justify-center px-[16px] py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap">Accessibility</p>
-    </div>
-  );
-}
-
-function Frame25() {
-  return (
-    <div className="content-stretch flex items-center relative shrink-0">
-      <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
-        <Frame11 />
-      </div>
-    </div>
-  );
-}
-
-function Frame23() {
-  return (
-    <div className="content-stretch flex items-center relative shrink-0">
-      <Frame25 />
-    </div>
-  );
-}
-
-function Title2() {
-  return (
-    <div className="content-stretch flex gap-[12px] items-center relative shrink-0 w-full" data-name="Title">
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[24px] text-black whitespace-nowrap">Bookup</p>
-      <Frame22 />
-      <Frame23 />
-    </div>
-  );
-}
-
 function Frame19() {
   return (
-    <div className="content-stretch flex gap-[42px] items-center relative shrink-0 w-full">
-      <Link to="/chatty" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col items-center relative shrink-0 w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 8">
-        <ProjectCard />
-      </Link>
-      <Link to="/payana" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 6">
-        <Group9 />
-        <Title1 />
-        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[16px] w-[365px]">Led the redesign of the Payana app, optimizing core user flows to simplify financial management and improve usability.</p>
-        <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[14px] text-black w-[365px]">Client Project · 2025</p>
-      </Link>
-      <Link to="/bookup" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 7">
-        <Group10 />
-        <Title2 />
-        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[16px] w-[365px]">Designed an accessibility-focused experience for an online bookstore, improving navigation and usability for diverse users.</p>
-        <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[14px] text-black w-[365px]">UTN Project · 2022</p>
-      </Link>
+    <div className="content-stretch flex flex-col sm:flex-row flex-wrap gap-[24px] sm:gap-[42px] items-center sm:items-start relative shrink-0 w-full px-[16px] sm:px-0">
+      <OtherProjectCard
+        href="/chatty"
+        mockup={<Group8 />}
+        title="Chatty"
+        badges={[
+          { label: "IA", bg: "#796ff1", color: "#ffffff" },
+          { label: "UX/UI", bg: "#688cf8", color: "#ffffff" },
+        ]}
+        description="Improved Chatty through a user-centered redesign, focusing on usability, clarity, and seamless interactions."
+        meta="Freelance · 2025"
+      />
+      <OtherProjectCard
+        href="/payana"
+        mockup={<Group9 />}
+        title="Payana"
+        badges={[
+          { label: "FINANCE", bg: "#c8e793", color: "#000000" },
+          { label: "IA", bg: "#796ff1", color: "#ffffff" },
+          { label: "UX/UI", bg: "#688cf8", color: "#ffffff" },
+        ]}
+        description="Led the redesign of the Payana app, optimizing core user flows to simplify financial management and improve usability."
+        meta="Client Project · 2025"
+      />
+      <OtherProjectCard
+        href="/bookup"
+        mockup={<Group10 />}
+        title="Bookup"
+        badges={[
+          { label: "CASE STUDY", bg: "#ffabe7", color: "#000000" },
+          { label: "Accessibility", bg: "#688cf8", color: "#ffffff" },
+        ]}
+        description="Designed an accessibility-focused experience for an online bookstore, improving navigation and usability for diverse users."
+        meta="UTN Project · 2022"
+      />
     </div>
   );
 }
@@ -3651,8 +3404,8 @@ function Frame21() {
 
 function Frame58() {
   return (
-    <div className="content-stretch flex flex-col gap-[32px] items-start justify-center relative shrink-0 w-[1186px]">
-      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[40px] text-black whitespace-nowrap">
+    <div className="content-stretch flex flex-col gap-[32px] items-start justify-center relative shrink-0 w-full max-w-[1186px] px-[16px] sm:px-0">
+      <div className="flex flex-col font-['EB_Garamond',serif] justify-end leading-[0] not-italic relative shrink-0 text-[28px] sm:text-[40px] text-black whitespace-nowrap">
         <p className="leading-[normal]">Other projects</p>
       </div>
       <Frame21 />
@@ -3660,80 +3413,9 @@ function Frame58() {
   );
 }
 
-function Frame62() {
-  return (
-    <div className="absolute content-stretch flex flex-col gap-[9.96px] items-center left-[10px] top-[46.5px] w-[1166px]">
-      <a className="block font-['Serat:Ultra',sans-serif] leading-[0] not-italic relative shrink-0 text-[#c8e793] text-[48px] text-center w-[352px]" href="mailto:dn.chiapin@gmail.com?subject=Contact%20from%20your%20portfolio" target="_blank">
-        <p className="cursor-pointer leading-[normal]">Get in touch!</p>
-      </a>
-      <div className="absolute h-[18px] left-[804px] top-[-17.5px] w-[29px]" data-name="Vector">
-        <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 29 18">
-          <path d={svgPaths.p6f7b100} fill="var(--fill-0, #FDF2D6)" id="Vector" />
-        </svg>
-      </div>
-      <div className="absolute h-[18px] left-[272px] top-[72.5px] w-[29px]" data-name="Vector">
-        <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 29 18">
-          <path d={svgPaths.p6f7b100} fill="var(--fill-0, #C8E793)" id="Vector" />
-        </svg>
-      </div>
-      <div className="absolute h-[8px] left-[354px] top-[29.5px] w-[13px]" data-name="Vector">
-        <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 13 8">
-          <path d={svgPaths.p35e6c480} fill="var(--fill-0, #688CF8)" id="Vector" />
-        </svg>
-      </div>
-    </div>
-  );
-}
-
-function Group28() {
-  return (
-    <div className="-translate-x-1/2 absolute contents left-1/2 top-[-47.5px]">
-      <Frame62 />
-      <div className="-translate-x-1/2 absolute h-[95px] left-[calc(50%+12.5px)] top-[31px] w-[449px]">
-        <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 449 95">
-          <path d={svgPaths.p5c12f0} id="Ellipse 41" stroke="var(--stroke-0, #F3F3F3)" />
-        </svg>
-      </div>
-      <div className="-translate-x-1/2 absolute flex h-[268.377px] items-center justify-center left-[calc(50%+12.73px)] top-[-47.5px] w-[684.401px]" style={{ "--transform-inner-width": "1200", "--transform-inner-height": "19" } as React.CSSProperties}>
-        <div className="flex-none rotate-[7.86deg]">
-          <div className="h-[179px] relative w-[666.187px]">
-            <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 666.187 179">
-              <path d={svgPaths.pcd30c00} id="Ellipse 42" stroke="var(--stroke-0, #F3F3F3)" />
-            </svg>
-          </div>
-        </div>
-      </div>
-      <div className="-translate-x-1/2 absolute flex h-[249.635px] items-center justify-center left-[calc(50%-11.31px)] top-[-32px] w-[563.373px]" style={{ "--transform-inner-width": "1200", "--transform-inner-height": "19" } as React.CSSProperties}>
-        <div className="flex-none rotate-[-6.78deg]">
-          <div className="h-[186.537px] relative w-[545.154px]">
-            <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 545.154 186.537">
-              <path d={svgPaths.p9b20b00} id="Ellipse 43" stroke="var(--stroke-0, #F3F3F3)" />
-            </svg>
-          </div>
-        </div>
-      </div>
-      <div className="absolute h-[33px] left-[704px] top-[101px] w-[21px]" data-name="Vector">
-        <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 21 33">
-          <path d={svgPaths.p1f675c80} fill="var(--fill-0, #FF6465)" id="Vector" />
-        </svg>
-      </div>
-      <div className="absolute h-[10px] left-[756px] top-[5px] w-[6px]" data-name="Vector">
-        <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 6 10">
-          <path d={svgPaths.p3a21b9f0} fill="var(--fill-0, #F5F3EC)" id="Vector" />
-        </svg>
-      </div>
-      <div className="absolute h-[33px] left-[403px] top-[10px] w-[21px]" data-name="Vector">
-        <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 21 33">
-          <path d={svgPaths.p1f675c80} fill="var(--fill-0, #FDF2D6)" id="Vector" />
-        </svg>
-      </div>
-    </div>
-  );
-}
-
 function BannerFinal() {
   return (
-    <a href="mailto:dn.chiapin@gmail.com?subject=Contact%20from%20your%20portfolio" target="_blank">
+    <a href="mailto:dn.chiapin@gmail.com?subject=Contact%20from%20your%20portfolio" target="_blank" className="hidden sm:block">
       <img src={imgGetInTouch} alt="Get in touch" className="rounded-[8px] w-full object-cover cursor-pointer" />
     </a>
   );
@@ -3741,7 +3423,7 @@ function BannerFinal() {
 
 function Frame63() {
   return (
-    <div className="relative content-stretch flex flex-col gap-[120px] items-center justify-center mx-auto pb-[120px] mt-[160px]">
+    <div className="relative content-stretch flex flex-col gap-[64px] sm:gap-[120px] items-center justify-center mx-auto pb-[64px] sm:pb-[120px] pt-[40px] w-full max-w-[1260px]">
       <Frame33 />
       <Frame70 />
       <Frame71 />
@@ -3758,209 +3440,9 @@ function Frame63() {
   );
 }
 
-function Frame74() {
-  return (
-    <div className="content-stretch flex gap-[3px] items-center relative shrink-0 w-full">
-      <p className="font-['Kimochi:Regular',sans-serif] leading-[normal] not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap">Denchi</p>
-      <div className="h-[22px] relative shrink-0 w-[34px]" data-name="Vector">
-        <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 34 22">
-          <path d={svgPaths.p13c99900} fill="var(--fill-0, #FF6465)" id="Vector" />
-        </svg>
-      </div>
-    </div>
-  );
-}
-
-function Frame75() {
-  return (
-    <div className="content-stretch flex flex-col items-start p-[8px] relative shrink-0 w-[133px]">
-      <Frame74 />
-    </div>
-  );
-}
-
-function Frame26() {
-  return (
-    <div className="content-stretch flex items-center justify-between relative shrink-0 w-full">
-      <Frame75 />
-      <a
-        className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-black whitespace-nowrap"
-        href="mailto:dn.chiapin@gmail.com?subject=Contact%20from%20your%20portfolio
-"
-        target="_blank"
-      >
-        <p className="cursor-pointer decoration-solid leading-[normal] underline">Get in touch -</p>
-      </a>
-    </div>
-  );
-}
-
-function Footer() {
-  return (
-    <div className="absolute bg-white bottom-0 content-stretch flex flex-col h-[80px] items-start justify-center left-0 px-[32px] py-[10px] w-[1440px]" data-name="Footer">
-      <Frame26 />
-    </div>
-  );
-}
-
-function Frame28() {
-  return (
-    <Link to="/" className="content-stretch flex gap-[8px] items-center relative shrink-0 no-underline logo-link">
-      <svg fill="none" viewBox="0 0 34 22" className="w-[34px] h-[22px] shrink-0 logo-star">
-        <path d="M34 2.47042C20.0898 7.79276 17.9004 7.54971 11.7118 0C13.7777 9.61712 12.6273 11.5368 0 19.5296C13.9102 14.2072 16.0996 14.4503 22.2882 22C20.2223 12.3829 21.3727 10.4632 34 2.47042Z" fill="#FF6465" />
-      </svg>
-      <p className="font-['Kimochi:Regular',sans-serif] leading-[normal] not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap">My portfolio</p>
-    </Link>
-  );
-}
-
-function SpeechBalloon() {
-  return (
-    <div className="relative shrink-0 size-[24px]" data-name="speech_balloon">
-      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24 24">
-        <g id="speech_balloon">
-          <path d={svgPaths.p20986480} fill="var(--fill-0, white)" id="Vector" stroke="var(--stroke-0, white)" strokeLinejoin="round" strokeMiterlimit="10" />
-          <g id="Group">
-            <path d={svgPaths.p2a5f0180} fill="var(--fill-0, #54646D)" id="Vector_2" />
-            <path d={svgPaths.p29df600} fill="var(--fill-0, #54646D)" id="Vector_3" />
-            <path d={svgPaths.p1e1ea9b0} fill="var(--fill-0, #54646D)" id="Vector_4" />
-          </g>
-        </g>
-      </svg>
-    </div>
-  );
-}
-
-function Frame31() {
-  return (
-    <div className="bg-black content-stretch flex gap-[10px] items-center justify-center px-[16px] py-[10px] relative rounded-[100px] shrink-0 hover:bg-[#333333] transition-colors cursor-pointer">
-      <div aria-hidden="true" className="absolute border border-black border-solid inset-0 pointer-events-none rounded-[100px]" />
-      <SpeechBalloon />
-      <a className="block font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[20px] text-white whitespace-nowrap" href="https://www.linkedin.com/in/denisechiapin/?skipRedirect=true" target="_blank">
-        <p className="cursor-pointer leading-[normal]">See my profile!</p>
-      </a>
-    </div>
-  );
-}
-
-function Frame30() {
-  return (
-    <div className="content-stretch flex items-start relative shrink-0">
-      <Frame31 />
-    </div>
-  );
-}
-
-function Frame29() {
-  return (
-    <div className="content-stretch flex gap-[24px] items-center relative shrink-0">
-      <Link to="/" className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] no-underline not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap hover:opacity-70 transition-opacity">Home</Link>
-      <Link to="/about" className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] no-underline not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap hover:opacity-70 transition-opacity">About me</Link>
-      <Link to="/blog" className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] no-underline not-italic relative shrink-0 text-[20px] text-black whitespace-nowrap hover:opacity-70 transition-opacity">Blog</Link>
-      <div className="flex items-center gap-[8px]">
-        <a href="/CV- Denise Chiapin EN - Classic.pdf" download className="font-['Inter:Regular',sans-serif] font-normal text-[20px] text-black border border-black px-[16px] h-[44px] flex items-center rounded-[100px] whitespace-nowrap hover:bg-black hover:text-white transition-colors">My CV</a>
-      <Frame30 />
-      </div>
-    </div>
-  );
-}
-
-function Frame27() {
-  return (
-    <div className="content-stretch flex items-center justify-between relative shrink-0 w-full">
-      <Frame28 />
-      <Frame29 />
-    </div>
-  );
-}
-
-function Frame12() {
-  return (
-    <div className="bg-white h-[80px] relative shrink-0 w-full">
-      <div className="flex flex-col justify-center size-full">
-        <div className="content-stretch flex flex-col items-start justify-center px-[48px] py-[10px] relative size-full">
-          <Frame27 />
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function Group2() {
-  return (
-    <div className="absolute inset-[0.99%_3.07%_3.08%_0.99%]" data-name="Group">
-      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 23.0248 23.0218">
-        <g id="Group">
-          <path d={svgPaths.p10482c70} fill="var(--fill-0, #FFECB3)" id="Vector" />
-          <g id="Group_2">
-            <g id="Vector_2" />
-            <g id="Vector_3" />
-          </g>
-          <path d={svgPaths.p931ce00} fill="var(--fill-0, #616161)" id="Vector_4" />
-          <path d={svgPaths.p3be89600} fill="var(--fill-0, #EF5350)" id="Vector_5" />
-          <path d={svgPaths.p1dd3c900} fill="var(--fill-0, #FFC107)" id="Vector_6" />
-          <path d={svgPaths.p25892900} fill="var(--fill-0, #FFA000)" id="Vector_7" />
-          <path d={svgPaths.p14926380} fill="var(--fill-0, #FDD835)" id="Vector_8" />
-          <g id="Group_3">
-            <path d={svgPaths.pe372b80} fill="var(--fill-0, #D1762C)" id="Vector_9" />
-          </g>
-          <g id="Group_4">
-            <path d={svgPaths.p9a0df00} fill="var(--fill-0, #F19534)" id="Vector_10" />
-          </g>
-          <path d={svgPaths.pd831e00} fill="var(--fill-0, #4E342E)" id="Vector_11" opacity="0.2" />
-          <path d={svgPaths.p1fe27c00} fill="var(--fill-0, #94D1E0)" id="Vector_12" />
-          <path d={svgPaths.pc4ff00} fill="var(--fill-0, #FF8383)" id="Vector_13" />
-          <path d={svgPaths.pb558880} fill="var(--fill-0, #B9E4EA)" id="Vector_14" />
-          <path d={svgPaths.p3694f500} fill="var(--fill-0, #B9E4EA)" id="Vector_15" />
-        </g>
-      </svg>
-    </div>
-  );
-}
-
-function Pencil() {
-  return (
-    <div className="overflow-clip relative shrink-0 size-[24px]" data-name="pencil2">
-      <Group2 />
-    </div>
-  );
-}
-
-function Frame32() {
-  return (
-    <div className="bg-[#ebfaaa] drop-shadow-[0px_4px_2px_rgba(159,159,159,0.25)] h-[49px] relative shrink-0 w-full">
-      <div className="flex flex-row items-center justify-center size-full">
-        <div className="content-stretch flex gap-[10px] items-center justify-center p-[10px] relative size-full">
-          <p className="font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[0px] text-black whitespace-nowrap">
-            <span className="leading-[normal] text-[16px]">{` A`}</span>
-            <span className="leading-[normal] text-[20px]">{` `}</span>
-            <span className="font-['EB_Garamond',serif] leading-[normal] text-[24px]">designer passionate</span>
-            <span className="leading-[normal] text-[20px]">{` `}</span>
-            <span className="leading-[normal] text-[16px]">about creating beautifu</span>
-            <span className="leading-[normal] text-[20px]">l</span>
-            <span className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] text-[20px]">{` `}</span>
-            <span className="font-['EB_Garamond',serif] leading-[normal] text-[24px]">user friendly products</span>
-          </p>
-          <Pencil />
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function Frame61() {
-  return (
-    <div className="bg-white content-stretch fixed flex flex-col items-start left-0 top-0 w-full z-50">
-      <Frame12 />
-      <Frame32 />
-    </div>
-  );
-}
-
 export default function MyWorkGruya() {
   return (
-    <div className="bg-white flex flex-col relative" data-name="My work/ Gruya">
-      <Frame61 />
+    <div className="bg-white flex flex-col relative overflow-x-hidden" data-name="My work/ Gruya">
       <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}>
         <Frame63 />
       </motion.div>
