@@ -4,7 +4,7 @@ import imgBanner1 from "./banner1.png";
 import imgPost3 from "./90its.png";
 import imgBanner3 from "./90.png";
 
-const imgPost1 = "https://www.figma.com/api/mcp/asset/74940caa-8a8d-43e9-8a99-5d28b420a4e1";
+const imgPost1 = "/UXBlog.png";
 
 export const posts = [
   {

@@ -352,7 +352,7 @@ function Frame48() {
 
 function Title() {
   return (
-    <div className="content-stretch flex gap-[12px] items-center relative shrink-0 w-full" data-name="Title">
+    <div className="content-stretch flex gap-[12px] items-center justify-center sm:justify-start relative shrink-0 w-full" data-name="Title">
       <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[20px] sm:text-[24px] text-black whitespace-nowrap">Payana</p>
       <Frame48 />
     </div>
@@ -433,7 +433,7 @@ function Frame47() {
 
 function Title1() {
   return (
-    <div className="content-stretch flex gap-[12px] items-center relative shrink-0 w-full" data-name="Title">
+    <div className="content-stretch flex gap-[12px] items-center justify-center sm:justify-start relative shrink-0 w-full" data-name="Title">
       <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[20px] sm:text-[24px] text-black whitespace-nowrap">Chatty</p>
       <Frame47 />
     </div>
@@ -442,8 +442,8 @@ function Title1() {
 
 function MockupScale({ children }: { children: ReactNode }) {
   return (
-    <div className="relative w-[280px] h-[227px] overflow-hidden sm:w-auto sm:h-auto sm:overflow-visible">
-      <div className="absolute top-0 left-0 origin-top-left scale-[0.755] sm:static sm:scale-100">
+    <div className="flex items-center justify-center w-[324px] h-[261px] mx-auto overflow-hidden sm:w-auto sm:h-auto sm:mx-0 sm:overflow-visible">
+      <div className="scale-[0.87] sm:scale-100">
         {children}
       </div>
     </div>
@@ -455,8 +455,8 @@ function ProjectCard() {
     <Link to="/chatty" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center justify-center relative shrink-0 w-full max-w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Project card">
       <MockupScale><Group12 /></MockupScale>
       <Title1 />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[14px] sm:text-[16px] w-full">Improved Chatty through a user-centered redesign, focusing on usability, clarity, and seamless interactions.</p>
-      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-black w-full">Freelance · 2025</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[14px] sm:text-[16px] w-full text-center sm:text-left">Improved Chatty through a user-centered redesign, focusing on usability, clarity, and seamless interactions.</p>
+      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-black w-full text-center sm:text-left">Freelance · 2025</p>
     </Link>
   );
 }
@@ -550,7 +550,7 @@ function Frame24() {
 
 function Title2() {
   return (
-    <div className="content-stretch flex gap-[12px] items-center relative shrink-0 w-full" data-name="Title">
+    <div className="content-stretch flex gap-[12px] items-center justify-center sm:justify-start relative shrink-0 w-full" data-name="Title">
       <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[20px] sm:text-[24px] text-black whitespace-nowrap">Bookup</p>
       <Frame18 />
       <Frame24 />
@@ -565,7 +565,7 @@ function Frame13() {
       <FadeIn delay={0} className="shrink-0 w-full max-w-[366px]">
         <Link to="/denchi" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-full max-w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Denchi">
           <MockupScale><DenchiMockup /></MockupScale>
-          <div className="content-stretch flex gap-[12px] items-center relative shrink-0 w-full" data-name="Title">
+          <div className="content-stretch flex gap-[12px] items-center justify-center sm:justify-start relative shrink-0 w-full" data-name="Title">
             <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[20px] sm:text-[24px] text-black whitespace-nowrap">DenchiNoNihongo</p>
             <div className="content-stretch flex items-center relative shrink-0">
               <div className="bg-[#688cf8] content-stretch flex h-[26px] sm:h-[30px] items-center justify-center px-[12px] sm:px-[16px] py-[6px] sm:py-[10px] relative rounded-[24px] shrink-0">
@@ -578,8 +578,8 @@ function Frame13() {
               </div>
             </div>
           </div>
-          <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[14px] sm:text-[16px] w-full">Designed and developed DenchiNoNihongo, a mobile-first Japanese learning PWA.</p>
-          <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-black w-full">Real project · 2026</p>
+          <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[14px] sm:text-[16px] w-full text-center sm:text-left">Designed and developed DenchiNoNihongo, a mobile-first Japanese learning PWA.</p>
+          <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-black w-full text-center sm:text-left">Real project · 2026</p>
         </Link>
       </FadeIn>
       {/* 2. Payana */}
@@ -587,8 +587,8 @@ function Frame13() {
         <Link to="/payana" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative w-full no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 6">
           <MockupScale><Group11 /></MockupScale>
           <Title />
-          <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[14px] sm:text-[16px] w-full">Led the redesign of the Payana app, optimizing core user flows to simplify financial management and improve usability.</p>
-          <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-black w-full">Client Project · 2025</p>
+          <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[14px] sm:text-[16px] w-full text-center sm:text-left">Led the redesign of the Payana app, optimizing core user flows to simplify financial management and improve usability.</p>
+          <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-black w-full text-center sm:text-left">Client Project · 2025</p>
         </Link>
       </FadeIn>
       {/* 3. Chatty */}
@@ -602,8 +602,8 @@ function Frame13() {
         <Link to="/bookup" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative w-full no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 7">
           <MockupScale><Group13 /></MockupScale>
           <Title2 />
-          <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[14px] sm:text-[16px] w-full">Designed an accessibility-focused experience for an online bookstore, improving navigation and usability for diverse users.</p>
-          <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-black w-full">UTN Project · 2022</p>
+          <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[14px] sm:text-[16px] w-full text-center sm:text-left">Designed an accessibility-focused experience for an online bookstore, improving navigation and usability for diverse users.</p>
+          <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-black w-full text-center sm:text-left">UTN Project · 2022</p>
         </Link>
       </FadeIn>
       {/* 5. Gruya */}
@@ -611,8 +611,8 @@ function Frame13() {
         <Link to="/gruya" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative w-full no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 9">
           <MockupScale><Group14 /></MockupScale>
           <Title3 />
-          <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[14px] sm:text-[16px] w-full">Designed Gruya, a meeting room booking app for a challenge, creating intuitive flows and a seamless user experience.</p>
-          <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-black w-full">Case Study · 2022</p>
+          <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[14px] sm:text-[16px] w-full text-center sm:text-left">Designed Gruya, a meeting room booking app for a challenge, creating intuitive flows and a seamless user experience.</p>
+          <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-black w-full text-center sm:text-left">Case Study · 2022</p>
         </Link>
       </FadeIn>
     </div>
@@ -744,7 +744,7 @@ function Frame50() {
 
 function Title3() {
   return (
-    <div className="content-stretch flex gap-[12px] items-center relative shrink-0 w-full" data-name="Title">
+    <div className="content-stretch flex gap-[12px] items-center justify-center sm:justify-start relative shrink-0 w-full" data-name="Title">
       <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[20px] sm:text-[24px] text-black whitespace-nowrap">Gruya</p>
       <Frame50 />
     </div>
