@@ -391,7 +391,7 @@ function Group13() {
 
 function Frame13() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[32px] sm:gap-[42px] items-start relative shrink-0 w-full">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-[42px] items-start relative shrink-0 w-full">
       <FadeIn delay={0} className="shrink-0 w-full max-w-[366px] mx-auto">
         <OtherProjectCard
           href="/denchi"
