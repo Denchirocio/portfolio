@@ -1,7 +1,8 @@
-﻿import { useState, type ReactNode } from "react";
+﻿import { useState } from "react";
 import { Link } from "react-router";
 import imgBanner from "./Banner.png";
 import FadeIn from "../../app/components/FadeIn";
+import OtherProjectCard from "../../app/components/OtherProjectCard";
 import svgPaths from "./svg-ek4j21yj9u";
 import imgWireframe1 from "./483d2b5fb9135af80493b63eb9d11b5a20e88c06.png";
 import imgAccesibility1 from "./8560324619c7e6225750fc6c0ac0844adc4fb439.png";
@@ -302,63 +303,6 @@ function Group11() {
   );
 }
 
-function Frame7() {
-  return (
-    <div className="bg-[#c8e793] content-stretch flex h-[26px] sm:h-[30px] items-center justify-center px-[12px] sm:px-[16px] py-[6px] sm:py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-black whitespace-nowrap">FINANCE</p>
-    </div>
-  );
-}
-
-function Frame14() {
-  return (
-    <div className="content-stretch flex items-center relative shrink-0">
-      <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
-        <Frame7 />
-      </div>
-    </div>
-  );
-}
-
-function Frame8() {
-  return (
-    <div className="bg-[#796ff1] content-stretch flex h-[26px] sm:h-[30px] items-center justify-center px-[12px] sm:px-[16px] py-[6px] sm:py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-white whitespace-nowrap">IA</p>
-    </div>
-  );
-}
-
-function Frame15() {
-  return (
-    <div className="bg-[#688cf8] content-stretch flex h-[26px] sm:h-[30px] items-center justify-center px-[12px] sm:px-[16px] py-[6px] sm:py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-white whitespace-nowrap">UX/UI</p>
-    </div>
-  );
-}
-
-function Frame48() {
-  return (
-    <div className="content-stretch flex gap-[8px] items-center relative shrink-0">
-      <Frame14 />
-      <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
-        <Frame8 />
-      </div>
-      <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
-        <Frame15 />
-      </div>
-    </div>
-  );
-}
-
-function Title() {
-  return (
-    <div className="content-stretch flex gap-[12px] items-center justify-center sm:justify-start relative shrink-0 w-full" data-name="Title">
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[20px] sm:text-[24px] text-black whitespace-nowrap">Payana</p>
-      <Frame48 />
-    </div>
-  );
-}
-
 function Group8() {
   return (
     <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-[28.2px] place-items-start relative row-1">
@@ -399,65 +343,6 @@ function Group12() {
       </div>
       <Group8 />
     </div>
-  );
-}
-
-function Frame16() {
-  return (
-    <div className="bg-[#796ff1] content-stretch flex h-[26px] sm:h-[30px] items-center justify-center px-[12px] sm:px-[16px] py-[6px] sm:py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-white whitespace-nowrap">IA</p>
-    </div>
-  );
-}
-
-function Frame17() {
-  return (
-    <div className="bg-[#688cf8] content-stretch flex h-[26px] sm:h-[30px] items-center justify-center px-[12px] sm:px-[16px] py-[6px] sm:py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-white whitespace-nowrap">UX/UI</p>
-    </div>
-  );
-}
-
-function Frame47() {
-  return (
-    <div className="content-stretch flex gap-[8px] items-center relative shrink-0">
-      <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
-        <Frame16 />
-      </div>
-      <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
-        <Frame17 />
-      </div>
-    </div>
-  );
-}
-
-function Title1() {
-  return (
-    <div className="content-stretch flex gap-[12px] items-center justify-center sm:justify-start relative shrink-0 w-full" data-name="Title">
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[20px] sm:text-[24px] text-black whitespace-nowrap">Chatty</p>
-      <Frame47 />
-    </div>
-  );
-}
-
-function MockupScale({ children }: { children: ReactNode }) {
-  return (
-    <div className="flex items-center justify-center w-[324px] h-[261px] mx-auto overflow-hidden sm:w-auto sm:h-auto sm:mx-0 sm:overflow-visible">
-      <div className="scale-[0.87] sm:scale-100">
-        {children}
-      </div>
-    </div>
-  );
-}
-
-function ProjectCard() {
-  return (
-    <Link to="/chatty" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center justify-center relative shrink-0 w-full max-w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Project card">
-      <MockupScale><Group12 /></MockupScale>
-      <Title1 />
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[14px] sm:text-[16px] w-full text-center sm:text-left">Improved Chatty through a user-centered redesign, focusing on usability, clarity, and seamless interactions.</p>
-      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-black w-full text-center sm:text-left">Freelance · 2025</p>
-    </Link>
   );
 }
 
@@ -504,116 +389,74 @@ function Group13() {
   );
 }
 
-function Frame19() {
-  return (
-    <div className="bg-[#ffabe7] content-stretch flex h-[26px] sm:h-[30px] items-center justify-center px-[12px] sm:px-[16px] py-[6px] sm:py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-black whitespace-nowrap">CASE STUDY</p>
-    </div>
-  );
-}
-
-function Frame18() {
-  return (
-    <div className="content-stretch flex items-center relative shrink-0">
-      <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
-        <Frame19 />
-      </div>
-    </div>
-  );
-}
-
-function Frame26() {
-  return (
-    <div className="bg-[#688cf8] content-stretch flex h-[26px] sm:h-[30px] items-center justify-center px-[12px] sm:px-[16px] py-[6px] sm:py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-white whitespace-nowrap">Accessibility</p>
-    </div>
-  );
-}
-
-function Frame25() {
-  return (
-    <div className="content-stretch flex items-center relative shrink-0">
-      <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
-        <Frame26 />
-      </div>
-    </div>
-  );
-}
-
-function Frame24() {
-  return (
-    <div className="content-stretch flex items-center relative shrink-0">
-      <Frame25 />
-    </div>
-  );
-}
-
-function Title2() {
-  return (
-    <div className="content-stretch flex gap-[12px] items-center justify-center sm:justify-start relative shrink-0 w-full" data-name="Title">
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[20px] sm:text-[24px] text-black whitespace-nowrap">Bookup</p>
-      <Frame18 />
-      <Frame24 />
-    </div>
-  );
-}
-
 function Frame13() {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[32px] sm:gap-[42px] items-start relative shrink-0 w-full">
-      {/* 1. Denchi */}
       <FadeIn delay={0} className="shrink-0 w-full max-w-[366px]">
-        <Link to="/denchi" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-full max-w-[366px] no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Denchi">
-          <MockupScale><DenchiMockup /></MockupScale>
-          <div className="content-stretch flex gap-[12px] items-center justify-center sm:justify-start relative shrink-0 w-full" data-name="Title">
-            <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[20px] sm:text-[24px] text-black whitespace-nowrap">DenchiNoNihongo</p>
-            <div className="content-stretch flex items-center relative shrink-0">
-              <div className="bg-[#688cf8] content-stretch flex h-[26px] sm:h-[30px] items-center justify-center px-[12px] sm:px-[16px] py-[6px] sm:py-[10px] relative rounded-[24px] shrink-0">
-                <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-white whitespace-nowrap">CLAUDE</p>
-              </div>
-            </div>
-            <div className="content-stretch flex items-center relative shrink-0">
-              <div className="bg-[#c8e793] content-stretch flex h-[26px] sm:h-[30px] items-center justify-center px-[12px] sm:px-[16px] py-[6px] sm:py-[10px] relative rounded-[24px] shrink-0">
-                <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-black whitespace-nowrap">IA</p>
-              </div>
-            </div>
-          </div>
-          <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[14px] sm:text-[16px] w-full text-center sm:text-left">Designed and developed DenchiNoNihongo, a mobile-first Japanese learning PWA.</p>
-          <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-black w-full text-center sm:text-left">Real project · 2026</p>
-        </Link>
+        <OtherProjectCard
+          href="/denchi"
+          mockup={<DenchiMockup />}
+          title="DenchiNoNihongo"
+          badges={[
+            { label: "CLAUDE", bg: "#688cf8", color: "#ffffff" },
+            { label: "IA", bg: "#c8e793", color: "#000000" },
+          ]}
+          description="Designed and developed DenchiNoNihongo, a mobile-first Japanese learning PWA."
+          meta="Real project · 2026"
+        />
       </FadeIn>
-      {/* 2. Payana */}
       <FadeIn delay={0.15} className="shrink-0 w-full max-w-[366px]">
-        <Link to="/payana" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative w-full no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 6">
-          <MockupScale><Group11 /></MockupScale>
-          <Title />
-          <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[14px] sm:text-[16px] w-full text-center sm:text-left">Led the redesign of the Payana app, optimizing core user flows to simplify financial management and improve usability.</p>
-          <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-black w-full text-center sm:text-left">Client Project · 2025</p>
-        </Link>
+        <OtherProjectCard
+          href="/payana"
+          mockup={<Group11 />}
+          title="Payana"
+          badges={[
+            { label: "FINANCE", bg: "#c8e793", color: "#000000" },
+            { label: "IA", bg: "#796ff1", color: "#ffffff" },
+            { label: "UX/UI", bg: "#688cf8", color: "#ffffff" },
+          ]}
+          description="Led the redesign of the Payana app, optimizing core user flows to simplify financial management and improve usability."
+          meta="Client Project · 2025"
+        />
       </FadeIn>
-      {/* 3. Chatty */}
       <FadeIn delay={0.3} className="shrink-0 w-full max-w-[366px]">
-        <div className="content-stretch flex flex-col items-center relative w-full" data-name="Component 6">
-          <ProjectCard />
-        </div>
+        <OtherProjectCard
+          href="/chatty"
+          mockup={<Group12 />}
+          title="Chatty"
+          badges={[
+            { label: "IA", bg: "#796ff1", color: "#ffffff" },
+            { label: "UX/UI", bg: "#688cf8", color: "#ffffff" },
+          ]}
+          description="Improved Chatty through a user-centered redesign, focusing on usability, clarity, and seamless interactions."
+          meta="Freelance · 2025"
+        />
       </FadeIn>
-      {/* 4. Bookup */}
       <FadeIn delay={0.45} className="shrink-0 w-full max-w-[366px]">
-        <Link to="/bookup" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative w-full no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 7">
-          <MockupScale><Group13 /></MockupScale>
-          <Title2 />
-          <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[14px] sm:text-[16px] w-full text-center sm:text-left">Designed an accessibility-focused experience for an online bookstore, improving navigation and usability for diverse users.</p>
-          <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-black w-full text-center sm:text-left">UTN Project · 2022</p>
-        </Link>
+        <OtherProjectCard
+          href="/bookup"
+          mockup={<Group13 />}
+          title="Bookup"
+          badges={[
+            { label: "CASE STUDY", bg: "#ffabe7", color: "#000000" },
+            { label: "Accessibility", bg: "#688cf8", color: "#ffffff" },
+          ]}
+          description="Designed an accessibility-focused experience for an online bookstore, improving navigation and usability for diverse users."
+          meta="UTN Project · 2022"
+        />
       </FadeIn>
-      {/* 5. Gruya */}
       <FadeIn delay={0.6} className="shrink-0 w-full max-w-[366px]">
-        <Link to="/gruya" onClick={() => window.scrollTo(0, 0)} className="content-stretch flex flex-col gap-[16px] items-center relative w-full no-underline hover:-translate-y-2 hover:drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer" data-name="Component 9">
-          <MockupScale><Group14 /></MockupScale>
-          <Title3 />
-          <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#7a7a7a] text-[14px] sm:text-[16px] w-full text-center sm:text-left">Designed Gruya, a meeting room booking app for a challenge, creating intuitive flows and a seamless user experience.</p>
-          <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-black w-full text-center sm:text-left">Case Study · 2022</p>
-        </Link>
+        <OtherProjectCard
+          href="/gruya"
+          mockup={<Group14 />}
+          title="Gruya"
+          badges={[
+            { label: "CASE STUDY", bg: "#ffabe7", color: "#000000" },
+            { label: "PERSONAL", bg: "#796ff1", color: "#ffffff" },
+          ]}
+          description="Designed Gruya, a meeting room booking app for a challenge, creating intuitive flows and a seamless user experience."
+          meta="Case Study · 2022"
+        />
       </FadeIn>
     </div>
   );
@@ -693,60 +536,6 @@ function Group14() {
         </div>
       </div>
       <Group10 />
-    </div>
-  );
-}
-
-function Frame30() {
-  return (
-    <div className="bg-[#ffabe7] content-stretch flex h-[26px] sm:h-[30px] items-center justify-center px-[12px] sm:px-[16px] py-[6px] sm:py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-black whitespace-nowrap">CASE STUDY</p>
-    </div>
-  );
-}
-
-function Frame29() {
-  return (
-    <div className="content-stretch flex items-center relative shrink-0">
-      <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
-        <Frame30 />
-      </div>
-    </div>
-  );
-}
-
-function Frame32() {
-  return (
-    <div className="bg-[#796ff1] content-stretch flex h-[26px] sm:h-[30px] items-center justify-center px-[12px] sm:px-[16px] py-[6px] sm:py-[10px] relative rounded-[24px] shrink-0">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[12px] sm:text-[14px] text-white whitespace-nowrap">PERSONAL</p>
-    </div>
-  );
-}
-
-function Frame31() {
-  return (
-    <div className="content-stretch flex items-center relative shrink-0">
-      <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
-        <Frame32 />
-      </div>
-    </div>
-  );
-}
-
-function Frame50() {
-  return (
-    <div className="content-stretch flex gap-[8px] items-center relative shrink-0">
-      <Frame29 />
-      <Frame31 />
-    </div>
-  );
-}
-
-function Title3() {
-  return (
-    <div className="content-stretch flex gap-[12px] items-center justify-center sm:justify-start relative shrink-0 w-full" data-name="Title">
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[20px] sm:text-[24px] text-black whitespace-nowrap">Gruya</p>
-      <Frame50 />
     </div>
   );
 }
