@@ -3463,7 +3463,7 @@ function Group9() {
 
 function Frame29() {
   return (
-    <div className="content-stretch flex flex-col sm:flex-row flex-wrap gap-[24px] sm:gap-[42px] items-center sm:items-start relative shrink-0 w-full px-[16px] sm:px-0">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-[42px] items-start relative shrink-0 w-full px-[16px] sm:px-0">
       <OtherProjectCard
         href="/payana"
         mockup={<Group7 />}
