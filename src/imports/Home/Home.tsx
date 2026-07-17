@@ -392,7 +392,7 @@ function Group13() {
 function Frame13() {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[32px] sm:gap-[42px] items-start relative shrink-0 w-full">
-      <FadeIn delay={0} className="shrink-0 w-full max-w-[366px]">
+      <FadeIn delay={0} className="shrink-0 w-full max-w-[366px] mx-auto">
         <OtherProjectCard
           href="/denchi"
           mockup={<DenchiMockup />}
@@ -405,7 +405,7 @@ function Frame13() {
           meta="Real project · 2026"
         />
       </FadeIn>
-      <FadeIn delay={0.15} className="shrink-0 w-full max-w-[366px]">
+      <FadeIn delay={0.15} className="shrink-0 w-full max-w-[366px] mx-auto">
         <OtherProjectCard
           href="/payana"
           mockup={<Group11 />}
@@ -419,7 +419,7 @@ function Frame13() {
           meta="Client Project · 2025"
         />
       </FadeIn>
-      <FadeIn delay={0.3} className="shrink-0 w-full max-w-[366px]">
+      <FadeIn delay={0.3} className="shrink-0 w-full max-w-[366px] mx-auto">
         <OtherProjectCard
           href="/chatty"
           mockup={<Group12 />}
@@ -432,7 +432,7 @@ function Frame13() {
           meta="Freelance · 2025"
         />
       </FadeIn>
-      <FadeIn delay={0.45} className="shrink-0 w-full max-w-[366px]">
+      <FadeIn delay={0.45} className="shrink-0 w-full max-w-[366px] mx-auto">
         <OtherProjectCard
           href="/bookup"
           mockup={<Group13 />}
@@ -445,7 +445,7 @@ function Frame13() {
           meta="UTN Project · 2022"
         />
       </FadeIn>
-      <FadeIn delay={0.6} className="shrink-0 w-full max-w-[366px]">
+      <FadeIn delay={0.6} className="shrink-0 w-full max-w-[366px] mx-auto">
         <OtherProjectCard
           href="/gruya"
           mockup={<Group14 />}
