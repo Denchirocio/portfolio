@@ -88,7 +88,7 @@ function Frame22() {
 
   return (
     <div
-      className="content-stretch flex flex-nowrap gap-[8px] sm:gap-[16px] items-center justify-center sm:justify-start relative shrink-0 w-full"
+      className="content-stretch flex flex-nowrap gap-[8px] sm:gap-[16px] items-center justify-center xl:justify-start relative shrink-0 w-full"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -108,8 +108,8 @@ function Frame22() {
 
 function Frame9() {
   return (
-    <div className="content-stretch flex flex-col items-center sm:items-start relative shrink-0 w-full md:w-[541px]">
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-black w-full text-[28px] sm:text-[60px] text-center sm:text-left">I’m Denise, hello !</p>
+    <div className="content-stretch flex flex-col items-center xl:items-start relative shrink-0 w-full md:w-[541px]">
+      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-black w-full text-[28px] sm:text-[60px] text-center xl:text-left">I’m Denise, hello !</p>
     </div>
   );
 }
@@ -152,7 +152,7 @@ function Frame4() {
 
 function Frame3() {
   return (
-    <div className="content-stretch flex flex-wrap gap-[8px] items-center justify-center sm:justify-start relative shrink-0 w-full">
+    <div className="content-stretch flex flex-wrap gap-[8px] items-center justify-center xl:justify-start relative shrink-0 w-full">
       <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
         <Frame />
       </div>
@@ -180,7 +180,7 @@ function Frame6() {
 
 function Frame5() {
   return (
-    <div className="content-stretch flex items-center justify-center sm:justify-start relative shrink-0 w-full">
+    <div className="content-stretch flex items-center justify-center xl:justify-start relative shrink-0 w-full">
       <div className="content-stretch flex items-center relative shrink-0" data-name="Badge">
         <Frame6 />
       </div>
@@ -190,7 +190,7 @@ function Frame5() {
 
 function Frame20() {
   return (
-    <div className="content-stretch flex flex-col gap-[8px] items-center sm:items-start relative shrink-0 w-full">
+    <div className="content-stretch flex flex-col gap-[8px] items-center xl:items-start relative shrink-0 w-full">
       <Frame3 />
       <Frame5 />
     </div>
@@ -199,7 +199,7 @@ function Frame20() {
 
 function Frame57() {
   return (
-    <div className="content-stretch flex flex-col gap-[16px] items-center sm:items-start justify-center relative shrink-0 xl:shrink xl:flex-1 xl:min-w-0 xl:w-auto w-full">
+    <div className="content-stretch flex flex-col gap-[16px] items-center xl:items-start justify-center relative shrink-0 xl:shrink xl:flex-1 xl:min-w-0 xl:w-auto w-full">
       <Frame9 />
       <Frame20 />
     </div>
