@@ -199,7 +199,7 @@ function Frame20() {
 
 function Frame57() {
   return (
-    <div className="content-stretch flex flex-col gap-[16px] items-center sm:items-start justify-center relative shrink-0 w-full">
+    <div className="content-stretch flex flex-col gap-[16px] items-center sm:items-start justify-center relative shrink-0 xl:shrink xl:flex-1 xl:min-w-0 xl:w-auto w-full">
       <Frame9 />
       <Frame20 />
     </div>
@@ -234,7 +234,7 @@ function Frame58() {
 
 function Frame59() {
   return (
-    <div className="content-stretch flex flex-col items-start p-[16px] relative rounded-[8px] shrink-0 w-full md:w-[541px]">
+    <div className="content-stretch flex flex-col items-start p-[16px] relative rounded-[8px] shrink-0 xl:shrink xl:min-w-0 w-full xl:max-w-[541px]">
       <div aria-hidden="true" className="absolute border border-[#c9c9c9] border-solid inset-0 pointer-events-none rounded-[8px]" />
       <Frame58 />
     </div>
@@ -243,7 +243,7 @@ function Frame59() {
 
 function Frame12() {
   return (
-    <div className="content-stretch flex flex-col md:flex-row md:items-center justify-between gap-[24px] md:gap-[80px] relative shrink-0 w-full">
+    <div className="content-stretch flex flex-col xl:flex-row xl:items-center justify-between gap-[24px] xl:gap-[80px] relative shrink-0 w-full">
       <Frame57 />
       <Frame59 />
     </div>
@@ -1556,7 +1556,7 @@ function Frame42() {
 
 export default function Home() {
   return (
-    <div className="bg-white flex flex-col relative" data-name="Home">
+    <div className="bg-white flex flex-col relative overflow-x-hidden" data-name="Home">
       <Frame41 />
     </div>
   );
